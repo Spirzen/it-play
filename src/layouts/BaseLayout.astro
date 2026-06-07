@@ -1,0 +1,73 @@
+---
+import {sitePath} from '@/lib/site';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {title, description = 'Интерактивные демо для энциклопедии Вселенная IT'} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ru" data-base={import.meta.env.BASE_URL}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="frame-ancestors https://spirzen.ru https://www.spirzen.ru http://localhost:3000 http://127.0.0.1:3000;"
+    />
+    <title>{title}</title>
+    <link rel="icon" href={sitePath('favicon.ico')} sizes="any" />
+    <script is:inline src={sitePath('scripts/theme.js')}></script>
+    <link rel="stylesheet" href={sitePath('styles/global.css')} />
+    <link rel="stylesheet" href={sitePath('styles/demo.css')} />
+  </head>
+  <body class="site">
+    <header class="site-header">
+      <div class="wrap site-header__row">
+        <div>
+          <a class="brand" href={sitePath('')}>
+            <span class="brand__glyph" aria-hidden="true">▶</span>
+            <span class="brand__text">
+              <span class="brand__title">Вселенная IT</span>
+              <span class="brand__subtitle">Play · интерактив</span>
+            </span>
+          </a>
+          <p class="site-header__lead">
+            Демо для встраивания в{' '}
+            <a href="https://spirzen.ru/" rel="noopener noreferrer">энциклопедию</a>
+            {' '}· play.spirzen.ru
+          </p>
+        </div>
+        <div class="theme-toggle" role="group" aria-label="Тема оформления">
+          <button type="button" class="theme-toggle__btn" data-theme-toggle="light" aria-pressed="false">
+            Светлая
+          </button>
+          <button type="button" class="theme-toggle__btn" data-theme-toggle="dark" aria-pressed="false">
+            Тёмная
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap site-footer__inner">
+        <p>
+          Часть проекта{' '}
+          <a href="https://spirzen.ru/" rel="noopener noreferrer">Вселенная IT</a>.
+          Исходники —{' '}
+          <a href="https://github.com/spirzen/it-play" rel="noopener noreferrer">it-play</a>.
+        </p>
+        <p class="site-footer__muted">
+          Для авторов: embed <code>/p/embed/&lt;slug&gt;/</code>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

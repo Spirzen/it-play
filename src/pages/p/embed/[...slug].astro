@@ -1,0 +1,19 @@
+---
+import EmbedLayout from '@/layouts/EmbedLayout.astro';
+import PlayViewer from '@/components/PlayViewer';
+import {loadAllPlays} from '@/lib/plays';
+
+export function getStaticPaths() {
+  return loadAllPlays().map((play) => ({
+    params: {slug: play.slug},
+    props: {play},
+  }));
+}
+
+const {play} = Astro.props;
+const pageTitle = `${play.title} — embed`;
+---
+
+<EmbedLayout title={pageTitle}>
+  <PlayViewer play={play} client:load />
+</EmbedLayout>

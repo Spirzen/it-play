@@ -1,0 +1,96 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.levelBadge {
+  margin-left: auto;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--it-primary) 12%, transparent);
+  color: var(--it-primary);
+  border: 1px solid var(--it-primary);
+}
+
+.editor {
+  position: relative;
+  min-height: 14rem;
+  max-height: 24rem;
+  overflow: auto;
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  background: var(--code-bg);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.empty {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--demo-muted);
+  font-style: italic;
+}
+
+.lineRow {
+  display: flex;
+  align-items: stretch;
+  min-height: 1.55em;
+}
+
+.lineGutter {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.indentGuide {
+  width: 0.65rem;
+  border-right: 2px solid color-mix(in srgb, var(--it-primary) 35%, transparent);
+  margin-right: 2px;
+  opacity: 0.6;
+}
+
+.lineNum {
+  width: 2rem;
+  padding: 0 0.35rem 0 0.25rem;
+  text-align: right;
+  color: var(--demo-muted);
+  user-select: none;
+  font-size: 0.7rem;
+}
+
+.lineContent {
+  flex: 1;
+  padding: 0 0.5rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.braceOpen {
+  color: var(--demo-success, #2e7d32);
+  font-weight: 700;
+}
+
+.braceClose {
+  color: var(--demo-error, #c62828);
+  font-weight: 700;
+}
+
+.instruction {
+  color: var(--text);
+}
+
+.tip {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.78rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--it-primary) 8%, var(--surface));
+  border-left: 3px solid var(--it-primary);
+  line-height: 1.45;
+}

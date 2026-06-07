@@ -1,0 +1,33 @@
+---
+import {sitePath} from '@/lib/site';
+
+interface Props {
+  title: string;
+}
+
+const {title} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ru" class="embed-doc" data-base={import.meta.env.BASE_URL}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="frame-ancestors https://spirzen.ru https://www.spirzen.ru http://localhost:3000 http://127.0.0.1:3000;"
+    />
+    <title>{title}</title>
+    <link rel="icon" href={sitePath('favicon.ico')} sizes="any" />
+    <script is:inline src={sitePath('scripts/theme.js')}></script>
+    <link rel="stylesheet" href={sitePath('styles/embed.css')} />
+    <link rel="stylesheet" href={sitePath('styles/demo.css')} />
+  </head>
+  <body class="embed-body">
+    <main class="embed-main">
+      <slot />
+    </main>
+    <script is:inline src={sitePath('scripts/embed-resize.js')}></script>
+  </body>
+</html>

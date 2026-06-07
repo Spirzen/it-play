@@ -1,0 +1,52 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PlayViewer from '@/components/PlayViewer';
+import {loadAllPlays} from '@/lib/plays';
+import {sitePath} from '@/lib/site';
+
+export function getStaticPaths() {
+  return loadAllPlays().map((play) => ({
+    params: {slug: play.slug},
+    props: {play},
+  }));
+}
+
+const {play} = Astro.props;
+const embedSnippet = `<ExternalPlayEmbed example="${play.slug}" title="${play.title}" />`;
+---
+
+<BaseLayout title={`${play.title} — IT Play`} description={play.description}>
+  <div class="wrap play-page">
+    <nav class="play-page__crumb">
+      <a href={sitePath('')}>Каталог</a>
+      <span aria-hidden="true">/</span>
+      <span>{play.categoryTitle}</span>
+    </nav>
+    <header class="play-page__head">
+      <h1>{play.title}</h1>
+      {play.description && <p class="play-page__lead">{play.description}</p>}
+      {play.tags.length > 0 && (
+        <div class="play-page__tags">
+          {play.tags.map((tag) => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+      )}
+    </header>
+    <PlayViewer play={play} client:load />
+    <aside class="play-page__embed-help">
+      <h2>Встраивание в статью</h2>
+      <pre class="embed-snippet"><code>{embedSnippet}</code></pre>
+      <p>
+        Embed URL:{' '}
+        <a href={sitePath(`p/embed/${play.slug}/`)}>{sitePath(`p/embed/${play.slug}/`)}</a>
+      </p>
+      {play.encyclopediaUrl && (
+        <p>
+          Статья:{' '}
+          <a href={play.encyclopediaUrl} rel="noopener noreferrer">{play.encyclopediaUrl}</a>
+        </p>
+      )}
+    </aside>
+  </div>
+</BaseLayout>

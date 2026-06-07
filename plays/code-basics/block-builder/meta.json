@@ -1,0 +1,10 @@
+{
+  "title": "Конструктор блоков",
+  "description": "Соберите вложенную структуру кода — блоки, скобки и инструкции как в программе.",
+  "category": "code-basics",
+  "categoryTitle": "Основы кода",
+  "component": "block-builder",
+  "tags": ["beginner", "blocks", "structure"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/617",
+  "order": 1
+}

@@ -1,0 +1,116 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import {buildSearchIndex, getCategoryTitles, groupByCategory, loadAllPlays} from '@/lib/plays';
+import {sitePath} from '@/lib/site';
+
+const plays = loadAllPlays();
+const grouped = groupByCategory(plays);
+const categoryTitles = getCategoryTitles(plays);
+const searchIndex = buildSearchIndex(plays);
+const categories = [...grouped.keys()].sort((a, b) =>
+  (categoryTitles.get(a) ?? a).localeCompare(categoryTitles.get(b) ?? b, 'ru'),
+);
+---
+
+<BaseLayout
+  title="IT Play — интерактивные демо"
+  description="Каталог интерактивных демо, симуляторов и визуализаций для энциклопедии Вселенная IT."
+>
+  <div class="catalog-home" data-catalog-search>
+    <section class="hero-panel">
+      <div class="hero-panel__copy">
+        <p class="hero-panel__eyebrow">Вселенная IT · Play</p>
+        <h1>Интерактивные демо</h1>
+        <p class="hero-panel__lead">
+          Симуляторы, конструкторы и визуализации для{' '}
+          <a href="https://spirzen.ru/" rel="noopener noreferrer">Вселенной IT</a>: в статьях — через iframe,
+          здесь — полный каталог.
+        </p>
+        <div class="hero-panel__stats">
+          <span class="stat-pill"><strong>{plays.length}</strong> демо</span>
+          <span class="stat-pill"><strong>{categories.length}</strong> категорий</span>
+        </div>
+        <p class="hero-panel__links">
+          Связанные сервисы:{' '}
+          <a href="https://spirzen.ru/" rel="noopener noreferrer">spirzen.ru</a>
+          {' · '}
+          <a href="https://code.spirzen.ru/" rel="noopener noreferrer">code.spirzen.ru</a>
+        </p>
+      </div>
+      <div class="hero-panel__search">
+        <label class="sr-only" for="catalog-q">Поиск по каталогу</label>
+        <input
+          id="catalog-q"
+          class="catalog-search__input catalog-search__input--hero"
+          type="search"
+          placeholder="Поиск: блоки, циклы, симулятор…"
+          autocomplete="off"
+          data-search-input
+        />
+        <p class="catalog-search__meta" data-search-count></p>
+      </div>
+    </section>
+
+    <p class="catalog-search__empty" data-search-empty hidden>Ничего не найдено — попробуйте другой запрос.</p>
+
+    <section class="catalog-block">
+      <div class="catalog-block__head">
+        <h2>Каталог</h2>
+        <p>Фильтр по категории или текстовый поиск выше</p>
+      </div>
+      <div class="lang-chips" role="group" aria-label="Фильтр по категории">
+        <button type="button" class="lang-chip is-active" data-lang-filter="all">Все</button>
+        {
+          categories.map((cat) => (
+            <button type="button" class="lang-chip" data-lang-filter={cat}>
+              {categoryTitles.get(cat) ?? cat}
+              <span class="lang-chip__count">{grouped.get(cat)?.length}</span>
+            </button>
+          ))
+        }
+      </div>
+
+      <div class="catalog-sections">
+        {
+          categories.map((cat) => {
+            const items = grouped.get(cat) ?? [];
+            return (
+              <section class="catalog-section" data-catalog-section data-language={cat}>
+                <h3 class="catalog-section__title">
+                  <span>{categoryTitles.get(cat) ?? cat}</span>
+                  <span class="catalog-section__count">{items.length}</span>
+                </h3>
+                <ul class="example-grid">
+                  {items.map((item) => (
+                    <li
+                      class="example-card"
+                      data-catalog-item
+                      data-title={item.title}
+                      data-description={item.description}
+                      data-slug={item.slug}
+                      data-language={item.category}
+                      data-tags={item.tags.join(' ')}
+                    >
+                      <a class="example-card__link" href={sitePath(`p/${item.slug}/`)}>
+                        <span class="example-card__title">{item.title}</span>
+                        {item.description && <span class="example-card__desc">{item.description}</span>}
+                      </a>
+                      <div class="example-card__foot">
+                        {item.tags.slice(0, 3).map((tag) => (
+                          <span class="tag">{tag}</span>
+                        ))}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            );
+          })
+        }
+      </div>
+    </section>
+
+    <script type="application/json" id="catalog-search-index" set:html={JSON.stringify(searchIndex)} />
+  </div>
+  <script src={sitePath('scripts/catalog-search.js')} defer></script>
+</BaseLayout>
