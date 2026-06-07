@@ -31,7 +31,14 @@ const {title, description = 'Интерактивные демо для энци
       <div class="wrap site-header__row">
         <div>
           <a class="brand" href={sitePath('')}>
-            <span class="brand__glyph" aria-hidden="true">▶</span>
+            <img
+              class="brand__logo"
+              src={sitePath('img/logo.png')}
+              alt=""
+              width="40"
+              height="40"
+              decoding="async"
+            />
             <span class="brand__text">
               <span class="brand__title">Вселенная IT</span>
               <span class="brand__subtitle">Play · интерактив</span>

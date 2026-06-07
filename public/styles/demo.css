@@ -151,15 +151,24 @@ html[data-theme='dark'] .it-demo {
   font-size: 0.8rem;
 }
 
+/* Embed: тот же вид, что на play.spirzen.ru — карточка, границы, тени */
 .embed-main .it-demo {
   margin: 0;
 }
 
 .embed-main .it-demo__card {
-  border: none;
-  box-shadow: none;
+  border: 1px solid var(--demo-border);
+  border-radius: var(--demo-radius);
+  box-shadow: var(--shadow-sm);
+  background: var(--demo-surface);
 }
 
 .embed-main .it-demo__header {
-  padding-top: 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--demo-border);
 }
+
+.embed-main .it-demo__body {
+  background: var(--demo-surface);
+}
+

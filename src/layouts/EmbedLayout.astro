@@ -20,7 +20,18 @@ const {title} = Astro.props;
     />
     <title>{title}</title>
     <link rel="icon" href={sitePath('favicon.ico')} sizes="any" />
+    <script is:inline>
+      (function () {
+        try {
+          var t = new URLSearchParams(window.location.search).get('theme');
+          if (t === 'light' || t === 'dark') {
+            document.documentElement.setAttribute('data-theme', t);
+          }
+        } catch (e) {}
+      })();
+    </script>
     <script is:inline src={sitePath('scripts/theme.js')}></script>
+    <link rel="stylesheet" href={sitePath('styles/tokens.css')} />
     <link rel="stylesheet" href={sitePath('styles/embed.css')} />
     <link rel="stylesheet" href={sitePath('styles/demo.css')} />
   </head>
