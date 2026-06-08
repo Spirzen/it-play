@@ -1,0 +1,13 @@
+{
+  "title": "Проброс портов",
+  "description": "Интерактивное демо «Проброс портов» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "port-forwarding-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7",
+  "order": 23
+}

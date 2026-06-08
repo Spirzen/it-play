@@ -1,0 +1,13 @@
+{
+  "title": "Match-3 — механика игры",
+  "description": "Интерактивное демо «Match-3 — механика игры» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "match-three-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-18-kompyuternye-igry/1",
+  "order": 27
+}

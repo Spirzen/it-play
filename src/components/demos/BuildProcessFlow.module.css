@@ -1,0 +1,276 @@
+.root {
+  --build-code: #3b82f6;
+  --build-start: #8b5cf6;
+  --build-pre: #10b981;
+  --build-compile: #f59e0b;
+  --build-link: #ef4444;
+  --build-ship: #06b6d4;
+}
+
+/* —— Степпер этапов —— */
+.stepTrack {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+@media (max-width: 720px) {
+  .stepTrack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 721px) and (max-width: 996px) {
+  .stepTrack {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.stepChip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0.35rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+  min-width: 0;
+}
+
+.stepChip:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.stepChip:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.stepChipDone {
+  border-color: color-mix(in srgb, var(--step-color) 55%, var(--demo-border));
+  background: color-mix(in srgb, var(--step-color) 8%, var(--ifm-background-surface-color));
+}
+
+.stepChipActive {
+  border-color: var(--step-color);
+  background: color-mix(in srgb, var(--step-color) 14%, var(--ifm-background-surface-color));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--step-color) 22%, transparent);
+}
+
+.stepIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--step-color) 18%, var(--ifm-background-color));
+  flex-shrink: 0;
+}
+
+.stepChipDone .stepIcon {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--step-color);
+  background: color-mix(in srgb, var(--step-color) 20%, transparent);
+}
+
+.stepLabel {
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ifm-color-content);
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.stepChip:not(.stepChipActive):not(.stepChipDone) .stepLabel {
+  color: var(--demo-muted);
+}
+
+.stepIndex {
+  font-size: 0.58rem;
+  font-weight: 500;
+  color: var(--demo-muted);
+  letter-spacing: 0.02em;
+}
+
+.progressMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+}
+
+.progressMeta strong {
+  color: var(--ifm-color-content);
+  font-weight: 600;
+}
+
+/* —— Карточка текущего этапа —— */
+.stageCard {
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border);
+  border-left: 4px solid var(--step-color);
+  background: var(--ifm-background-surface-color);
+  margin-bottom: 1rem;
+}
+
+.stageHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.stageIconWrap {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--step-color) 16%, var(--ifm-background-color));
+  border: 1px solid color-mix(in srgb, var(--step-color) 35%, transparent);
+}
+
+.stageTitles {
+  flex: 1;
+  min-width: 0;
+}
+
+.stageTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ifm-color-content);
+  word-break: break-word;
+}
+
+.stageSubtitle {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  color: var(--demo-muted);
+  line-height: 1.4;
+}
+
+.stageDescription {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--ifm-color-content);
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0.6rem;
+  margin: 1rem 0 0.85rem;
+}
+
+.detailCard {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.detailCard strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--demo-muted);
+}
+
+.artifactRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.artifact {
+  padding: 0.2rem 0.55rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  color: var(--ifm-pre-color);
+  border: 1px solid var(--demo-border);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--demo-border);
+}
+
+.buildTypes {
+  margin-top: 1rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.buildTypesTitle {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ifm-color-content);
+}
+
+.buildTypeRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.65rem;
+}
+
+.buildDebug,
+.buildRelease {
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--demo-border);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.buildDebug {
+  border-left: 3px solid var(--demo-error);
+}
+
+.buildRelease {
+  border-left: 3px solid var(--demo-success);
+}

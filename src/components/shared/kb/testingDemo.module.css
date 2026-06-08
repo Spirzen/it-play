@@ -1,0 +1,350 @@
+.root {
+  max-width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45rem;
+}
+
+@media (max-width: 560px) {
+  .grid2,
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.cardActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+}
+
+.cardLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.cardHint {
+  margin: 0.25rem 0 0;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.35;
+}
+
+.flowSteps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.flowStep {
+  flex: 1 1 7rem;
+  min-width: 6.5rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.flowStepActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+}
+
+.detailBox {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  margin-bottom: 0.65rem;
+}
+
+.terminal {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  white-space: pre-wrap;
+  max-height: 11rem;
+  overflow: auto;
+}
+
+.pass {
+  color: #4ec9b0;
+}
+
+.fail {
+  color: #f48771;
+}
+
+.codeBlock {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.7rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  white-space: pre-wrap;
+  margin: 0.35rem 0;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.pipeNode {
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.pipeNodeDone {
+  border-color: #2e7d32;
+  background: color-mix(in srgb, #2e7d32 12%, transparent);
+}
+
+.pipeNodeActive {
+  border-color: var(--ifm-color-primary);
+  animation: pulse 1.2s ease infinite;
+}
+
+.pipeArrow {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.85rem;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.65;
+  }
+}
+
+.pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.75rem 0;
+}
+
+.pyramidLayer {
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.pyramidLayerActive {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.lane {
+  display: grid;
+  grid-template-columns: minmax(4rem, 1fr) minmax(0, 2.5fr) minmax(4rem, 1fr);
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin: 0.5rem 0;
+}
+
+.host {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.track {
+  position: relative;
+  min-height: 3rem;
+}
+
+.msg {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.45rem;
+  margin: 0.25rem 0;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.msgOk {
+  border-color: #2e7d32;
+}
+
+.msgFail {
+  border-color: #c62828;
+}
+
+.meterRow {
+  display: grid;
+  grid-template-columns: 5rem 1fr 2.5rem;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  margin: 0.35rem 0;
+}
+
+.meterBar {
+  height: 0.45rem;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.meterFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.35s ease;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.chartBar {
+  flex: 1;
+  min-width: 4px;
+  border-radius: 3px 3px 0 0;
+  background: var(--ifm-color-primary);
+  transition: height 0.3s ease;
+}
+
+.form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.formField label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.formField input {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.8rem;
+}
+
+.formError {
+  color: #c62828;
+  font-size: 0.7rem;
+  margin-top: 0.15rem;
+}
+
+.formSuccess {
+  color: #2e7d32;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.checkRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  cursor: pointer;
+}
+
+.checkRowDone {
+  opacity: 0.75;
+}
+
+.highlight {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.sliderRow {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+  font-size: 0.75rem;
+}
+
+.sliderRow input[type='range'] {
+  width: 100%;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.badgeOk {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.badgeErr {
+  background: #ffebee;
+  color: #b71c1c;
+}

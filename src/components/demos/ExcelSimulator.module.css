@@ -1,0 +1,76 @@
+.gridWrap {
+  overflow: auto;
+  max-height: 280px;
+}
+
+.grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.grid th,
+.grid td {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0;
+  min-width: 72px;
+}
+
+.grid thead th {
+  background: #e8f5e9;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.25rem;
+}
+
+.grid tbody th {
+  background: #f1f8e9;
+  text-align: center;
+  width: 28px;
+}
+
+.cell {
+  width: 100%;
+  min-height: 30px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 0.35rem 0.45rem;
+  cursor: cell;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.cellSelected {
+  outline: 2px solid #217346;
+  outline-offset: -2px;
+  background: color-mix(in srgb, #217346 12%, transparent);
+}
+
+.formulaLabel {
+  font-weight: 700;
+  color: #217346;
+  padding: 0 0.25rem;
+}
+
+.formulaInput {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.25rem 0.45rem;
+  border-radius: 5px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: ui-monospace, monospace;
+  font-size: 0.75rem;
+}
+
+.applyBtn {
+  background: #217346 !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}

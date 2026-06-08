@@ -1,0 +1,13 @@
+{
+  "title": "Game Architecture",
+  "description": "Интерактивное демо «Game Architecture» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "game-architecture-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-18-kompyuternye-igry/3",
+  "order": 29
+}

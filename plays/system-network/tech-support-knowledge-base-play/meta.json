@@ -1,0 +1,13 @@
+{
+  "title": "База знаний поддержки",
+  "description": "Интерактивное демо «База знаний поддержки» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "tech-support-knowledge-base-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/114",
+  "order": 27
+}

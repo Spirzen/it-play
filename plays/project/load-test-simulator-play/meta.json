@@ -1,0 +1,13 @@
+{
+  "title": "Симулятор нагрузочного тестирования",
+  "description": "Интерактивное демо «Симулятор нагрузочного тестирования» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "load-test-simulator-play",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-05-testirovanie/1014",
+  "order": 14
+}

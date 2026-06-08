@@ -1,0 +1,13 @@
+{
+  "title": "Симулятор браузера",
+  "description": "Интерактивное демо «Симулятор браузера» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "web-browser-simulator",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3",
+  "order": 20
+}

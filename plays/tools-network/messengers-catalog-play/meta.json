@@ -1,0 +1,12 @@
+{
+  "title": "Messengers Catalog",
+  "description": "Интерактивное демо «Messengers Catalog» — раздел Инструменты · Сеть.",
+  "category": "tools-network",
+  "categoryTitle": "Инструменты · Сеть",
+  "component": "messengers-catalog-play",
+  "tags": [
+    "toolsnetwork"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/network/2",
+  "order": 85
+}

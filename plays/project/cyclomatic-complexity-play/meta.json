@@ -1,0 +1,13 @@
+{
+  "title": "Цикломатическая сложность",
+  "description": "Интерактивное демо «Цикломатическая сложность» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "cyclomatic-complexity-play",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-10-kultura-koda/2",
+  "order": 29
+}

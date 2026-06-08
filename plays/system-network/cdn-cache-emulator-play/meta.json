@@ -1,0 +1,13 @@
+{
+  "title": "Эмулятор CDN-кэша",
+  "description": "Интерактивное демо «Эмулятор CDN-кэша» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "cdn-cache-emulator-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-03-set-i-internet/211",
+  "order": 9
+}

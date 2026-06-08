@@ -1,0 +1,223 @@
+.shell {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.8rem;
+}
+
+.ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.4rem 0.55rem;
+  background: #0078d4;
+  color: #fff;
+}
+
+.ribbon button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.72rem;
+}
+
+.ribbon button:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-color-emphasis-100);
+}
+
+.tab {
+  padding: 0.4rem 0.75rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  border-bottom: 2px solid transparent;
+}
+
+.tabActive {
+  border-bottom-color: #0078d4;
+  font-weight: 600;
+  background: var(--ifm-background-color);
+}
+
+.mailGrid {
+  display: grid;
+  grid-template-columns: 140px 200px 1fr;
+  min-height: 320px;
+}
+
+@media (max-width: 900px) {
+  .mailGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.folders {
+  padding: 0.4rem;
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-color-emphasis-100);
+}
+
+.folderBtn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.3rem 0.45rem;
+  margin-bottom: 0.15rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+}
+
+.folderActive {
+  background: color-mix(in srgb, #0078d4 18%, transparent);
+  font-weight: 600;
+}
+
+.list {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+  overflow-y: auto;
+}
+
+.listItem {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.45rem 0.5rem;
+  border: none;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.listItem strong {
+  display: block;
+  font-size: 0.78rem;
+}
+
+.listItem small {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.68rem;
+}
+
+.listActive {
+  background: color-mix(in srgb, #0078d4 12%, var(--ifm-background-color));
+}
+
+.read {
+  padding: 0.55rem;
+  overflow-y: auto;
+}
+
+.read h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+}
+
+.meta {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.envelope {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  background: var(--ifm-color-emphasis-100);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+}
+
+.compose {
+  padding: 0.55rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.compose label {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.compose input,
+.compose textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.78rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.setup {
+  padding: 0.55rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+@media (max-width: 700px) {
+  .setup {
+    grid-template-columns: 1fr;
+  }
+}
+
+.setupBlock {
+  padding: 0.45rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
+
+.setupBlock h5 {
+  margin: 0 0 0.4rem;
+  font-size: 0.82rem;
+}
+
+.setupRow {
+  margin-bottom: 0.35rem;
+}
+
+.setupRow label {
+  display: block;
+  font-size: 0.68rem;
+  margin-bottom: 0.15rem;
+}
+
+.setupRow input,
+.setupRow select {
+  width: 100%;
+  font-size: 0.75rem;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: inherit;
+}
+
+.testOk {
+  color: #2e7d32;
+  font-size: 0.72rem;
+  margin-top: 0.35rem;
+}
+
+.testErr {
+  color: #c62828;
+  font-size: 0.72rem;
+  margin-top: 0.35rem;
+}

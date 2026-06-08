@@ -1,0 +1,43 @@
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.node {
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  font-size: 0.82rem;
+  min-width: 5.5rem;
+  text-align: center;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.nodeActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.08);
+}
+
+.nodeFail {
+  border-color: #c62828;
+  background: rgba(198, 40, 40, 0.08);
+}
+
+.arrow {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 1rem;
+}
+
+.payload {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  margin: 0.5rem 0;
+  word-break: break-word;
+}

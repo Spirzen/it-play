@@ -1,0 +1,51 @@
+.root {
+  max-width: min(640px, 100%);
+  margin: 0 auto;
+}
+
+.prompt {
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin: 0 0 0.65rem;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.choice {
+  text-align: left;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.choice.ok {
+  border-color: #16a34a;
+  background: color-mix(in srgb, #16a34a 12%, transparent);
+}
+
+.choice.bad {
+  border-color: #dc2626;
+  background: color-mix(in srgb, #dc2626 10%, transparent);
+}
+
+.dim {
+  opacity: 0.45;
+}
+
+.feedback {
+  font-size: 0.78rem;
+  margin: 0 0 0.65rem;
+}
+
+.result {
+  font-size: 0.85rem;
+  margin-bottom: 0.65rem;
+}

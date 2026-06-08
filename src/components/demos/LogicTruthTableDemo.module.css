@@ -1,0 +1,103 @@
+.layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.select {
+  flex: 1 1 12rem;
+  min-width: 10rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.85rem;
+}
+
+.exprInput {
+  flex: 1 1 14rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.table th,
+.table td {
+  padding: 0.35rem 0.6rem;
+  border-bottom: 1px solid var(--demo-border);
+  text-align: center;
+}
+
+.table th {
+  background: var(--ifm-background-surface-color);
+  font-weight: 600;
+}
+
+.rowTrue td:last-child {
+  color: var(--ifm-color-success);
+  font-weight: 600;
+}
+
+.rowFalse td:last-child {
+  color: var(--ifm-color-danger);
+}
+
+.equiv {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px dashed var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.82rem;
+}
+
+.equivBadge {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--ifm-color-success-contrast-background);
+  color: var(--ifm-color-success-darkest);
+}
+
+.equivBadgeFail {
+  background: var(--ifm-color-danger-contrast-background);
+  color: var(--ifm-color-danger-darkest);
+}
+
+.code {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.note {
+  font-size: 0.78rem;
+  color: var(--demo-muted);
+  margin: 0;
+}
+
+.error {
+  color: var(--ifm-color-danger);
+  font-size: 0.82rem;
+}

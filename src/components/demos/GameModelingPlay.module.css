@@ -1,0 +1,125 @@
+.root {
+  max-width: min(540px, 100%);
+  margin: 0 auto;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.stepBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.68rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 4.2rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.stepBtnActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.stepBtnDone {
+  border-color: #2e7d32;
+}
+
+.stepIcon {
+  font-size: 1rem;
+}
+
+.previewRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 480px) {
+  .previewRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.canvas {
+  width: 100%;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
+
+.stats {
+  font-size: 0.78rem;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.artifacts {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.detail {
+  font-size: 0.82rem;
+  margin: 0 0 0.5rem;
+}
+
+.barTrack {
+  height: 5px;
+  border-radius: 3px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin-bottom: 0.35rem;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--ifm-color-primary);
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0 0 0.65rem;
+}
+
+.primaryBtn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground, #fff);
+}
+
+.linkBtn {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.35rem;
+  border: none;
+  background: transparent;
+  color: var(--ifm-color-primary);
+  font-size: 0.78rem;
+  cursor: pointer;
+}

@@ -1,0 +1,416 @@
+/**
+ * Копирует React-демо из docs/encyclopedia/6-ai (it-knowledge-base) в it-play.
+ * Переносит AI-демо из about/ и lab/ в категорию ai/.
+ * Usage: node scripts/migrate-ai-from-kb.mjs [--dry-run]
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const IT_PLAY_ROOT = path.join(__dirname, '..');
+const KB_ROOT = path.join(IT_PLAY_ROOT, '..', 'it-knowledge-base');
+const KB_COMPONENTS = path.join(KB_ROOT, 'src', 'components');
+const KB_DOCS = path.join(KB_ROOT, 'docs', 'encyclopedia', '6-ai');
+const PLAYS_ROOT = path.join(IT_PLAY_ROOT, 'plays');
+const DEMOS_DIR = path.join(IT_PLAY_ROOT, 'src', 'components', 'demos');
+const KB_SHARED_DIR = path.join(IT_PLAY_ROOT, 'src', 'components', 'shared', 'kb');
+const MANIFEST_PATH = path.join(IT_PLAY_ROOT, 'scripts', 'plays-manifest.json');
+
+const DRY_RUN = process.argv.includes('--dry-run');
+
+const SKIP_COMPONENTS = new Set([
+  'RandomChecklistItem',
+  'ExternalPlayEmbed',
+  'ExternalCodeEmbed',
+]);
+
+const NAMED_EXPORT_SOURCES = {};
+
+const TITLE_MAP = {
+  BackpropStepPlay: 'Backprop по шагам',
+  TrainTestSplitDemo: 'Train / Test split',
+  NeuralNetworkDemo: 'Neural Network Demo',
+  AiAgentPlay: 'ИИ-агент',
+  PromptPipelineDemo: 'Пайплайн промптов',
+};
+
+/** Демо, уже живущие в it-play под about/ или lab/ — переносим в ai/. */
+const REALLOCATE_TO_AI = {
+  NeuralNetworkDemo: {
+    oldSlug: 'about/neural-network-demo',
+    encyclopediaUrl: 'https://spirzen.ru/encyclopedia/6-ai/6-03-neyroseti/1',
+  },
+  AiAgentPlay: {
+    oldSlug: 'about/ai-agent-play',
+    encyclopediaUrl: 'https://spirzen.ru/encyclopedia/6-ai/6-04-modeli-i-instrumenty/111',
+  },
+  PromptPipelineDemo: {
+    oldSlug: 'lab/prompt-pipeline-demo',
+    encyclopediaUrl: 'https://spirzen.ru/encyclopedia/6-ai/6-06-primenenie-ii/1',
+  },
+};
+
+function pascalToKebab(name) {
+  return name
+    .replace(/\.(jsx|js|tsx|ts)$/, '')
+    .replace(/([a-z0-9])([A-Z])/g, '$1-$2')
+    .replace(/([A-Z]+)([A-Z][a-z])/g, '$1-$2')
+    .toLowerCase();
+}
+
+function resolveComponentFile(baseName) {
+  for (const ext of ['.jsx', '.js', '.tsx', '.ts']) {
+    const p = path.join(KB_COMPONENTS, baseName + ext);
+    if (fs.existsSync(p)) return p;
+  }
+  return null;
+}
+
+function parseDocImports(docPath) {
+  const text = fs.readFileSync(docPath, 'utf8');
+  const imports = [];
+  const defaultRe = /import\s+(\w+)\s+from\s+'@site\/src\/components\/([^']+)'/g;
+  let m;
+  while ((m = defaultRe.exec(text)) !== null) {
+    const subPath = m[2].replace(/\.(jsx|js)$/, '');
+    const fileBase = subPath.split('/').pop();
+    imports.push({manifestKey: m[1], fileBase, docPath});
+  }
+  const namedRe = /import\s+\{(\w+)\}\s+from\s+'@site\/src\/components\/([^']+)'/g;
+  while ((m = namedRe.exec(text)) !== null) {
+    const subPath = m[2].replace(/\.(jsx|js)$/, '');
+    const fileBase = subPath.split('/').pop();
+    imports.push({manifestKey: m[1], fileBase, docPath, named: true});
+  }
+  return imports;
+}
+
+function collectDocFiles(dir) {
+  const files = [];
+  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) files.push(...collectDocFiles(full));
+    else if (/\.(md|mdx)$/.test(entry.name)) files.push(full);
+  }
+  return files;
+}
+
+function inferPlayMeta(manifestKey, docPath) {
+  const rel = path.relative(path.join(KB_ROOT, 'docs'), docPath).replace(/\\/g, '/');
+  const slug = pascalToKebab(manifestKey);
+  const docUrl = `https://spirzen.ru/${rel.replace(/\.(md|mdx)$/, '')}`;
+
+  return {
+    playSlug: `ai/${slug}`,
+    category: 'ai',
+    categoryTitle: 'Энциклопедия · Искусственный интеллект',
+    component: slug,
+    encyclopediaUrl: docUrl,
+  };
+}
+
+function humanTitle(manifestKey) {
+  if (TITLE_MAP[manifestKey]) return TITLE_MAP[manifestKey];
+  return manifestKey
+    .replace(/Play$/, '')
+    .replace(/Demo$/, '')
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
+    .trim();
+}
+
+function extractImports(source) {
+  const imports = [];
+  const re = /^\s*import\s+.+?\s+from\s+['"]([^'"]+)['"]/gm;
+  let m;
+  while ((m = re.exec(source)) !== null) {
+    imports.push(m[1]);
+  }
+  return imports;
+}
+
+function transformSource(source) {
+  let out = source;
+
+  out = out.replace(/import BrowserOnly from '@docusaurus\/BrowserOnly';\n?/g, '');
+  out = out.replace(/import Link from '@docusaurus\/Link';\n?/g, "import Link from '@/components/shared/KbLink';\n");
+  out = out.replace(/import ExternalPlayEmbed from '\.\/ExternalPlayEmbed';\n?/g, '');
+  out = out.replace(/import\s+\{[^}]*\}\s+from\s+'@site\/src\/[^']+';\n?/g, '');
+  out = out.replace(/import\s+\w+\s+from\s+'@site\/src\/[^']+';\n?/g, '');
+  out = out.replace(/import\s+.+?\s+from\s+'@theme\/[^']+';\n?/g, '');
+  out = out.replace(
+    /import\s+\{([^}]+)\}\s+from\s+'@site\/src\/data\/([^']+)';\n?/g,
+    "import {$1} from '@/data/$2';\n",
+  );
+
+  out = out.replace(
+    /import\s+DemoShell(?:,\s*\{DemoCard\})?\s+from\s+'\.\/shared\/DemoShell';\n?/g,
+    "import DemoShell, {DemoCard} from '@/components/shared/DemoShell';\n",
+  );
+  out = out.replace(
+    /import\s+DemoShell(?:,\s*\{DemoCard\})?\s+from\s+'\.\.\/shared\/DemoShell';\n?/g,
+    "import DemoShell, {DemoCard} from '@/components/shared/DemoShell';\n",
+  );
+  out = out.replace(/import\s+\{[^}]*\}\s+from\s+'\.\.\/shared\/demoFallback';\n?/g, '');
+  out = out.replace(/import\s+\{[^}]*\}\s+from\s+'\.\/shared\/demoFallback';\n?/g, '');
+  out = out.replace(/from '\.\.\/shared\//g, "from '@/components/shared/kb/");
+  out = out.replace(/from "\.\.\/shared\//g, 'from "@/components/shared/kb/');
+  out = out.replace(/from '\.\/shared\//g, "from '@/components/shared/kb/");
+  out = out.replace(/from "\.\/shared\//g, 'from "@/components/shared/kb/');
+
+  out = out.replace(/from '\.\/([A-Z][^']+)'/g, "from '@/components/demos/$1'");
+  out = out.replace(/from "\.\/([A-Z][^"]+)"/g, 'from "@/components/demos/$1"');
+
+  out = out.replace(
+    /export default function (\w+)\(([^)]*)\)\s*\{\s*return\s*\(\s*<BrowserOnly[^>]*>\s*\{\(\)\s*=>\s*<(\w+Inner)[^>]*([^/]*)\/>\s*\}\s*<\/BrowserOnly>\s*\);\s*\}/gs,
+    'export default function $1($2) {\n  return <$3$4/>;\n}',
+  );
+
+  out = out.replace(
+    /export default function (\w+)\(([^)]*)\)\s*\{\s*return\s*\(\s*<BrowserOnly[^>]*>\s*\{\(\)\s*=>\s*<(\w+)[^>]*([^/]*)\/>\s*\}\s*<\/BrowserOnly>\s*\);\s*\}/gs,
+    'export default function $1($2) {\n  return <$3$4/>;\n}',
+  );
+
+  return out;
+}
+
+function writeFile(filePath, content) {
+  if (DRY_RUN) {
+    console.log(`[dry-run] write ${path.relative(IT_PLAY_ROOT, filePath)}`);
+    return;
+  }
+  fs.mkdirSync(path.dirname(filePath), {recursive: true});
+  fs.writeFileSync(filePath, content, 'utf8');
+}
+
+function removePath(targetPath) {
+  if (DRY_RUN) {
+    console.log(`[dry-run] remove ${path.relative(IT_PLAY_ROOT, targetPath)}`);
+    return;
+  }
+  if (fs.existsSync(targetPath)) {
+    fs.rmSync(targetPath, {recursive: true, force: true});
+  }
+}
+
+function copyAndTransform(srcPath, destPath) {
+  if (fs.existsSync(destPath) && !DRY_RUN) {
+    const existing = fs.readFileSync(destPath, 'utf8');
+    const incoming = transformSource(fs.readFileSync(srcPath, 'utf8'));
+    if (existing === incoming) return false;
+  }
+  const source = fs.readFileSync(srcPath, 'utf8');
+  const transformed = transformSource(source);
+  writeFile(destPath, transformed);
+  return true;
+}
+
+function collectSharedDeps(entryFiles) {
+  const queue = [...entryFiles];
+  const sharedFiles = new Set();
+  const demoFiles = new Set();
+
+  while (queue.length) {
+    const filePath = queue.pop();
+    if (!fs.existsSync(filePath)) continue;
+
+    const source = fs.readFileSync(filePath, 'utf8');
+    for (const imp of extractImports(source)) {
+      if (imp.startsWith('./shared/') || imp.startsWith('../shared/')) {
+        const rel = imp.replace(/^\.\.?\//, '').replace(/^shared[/\\]/, '');
+        const base = path.join(KB_COMPONENTS, 'shared', rel);
+        const candidates = [
+          base,
+          base + '.js',
+          base + '.jsx',
+          base + '.ts',
+          base + '.tsx',
+          base + '.css',
+          base + '.module.css',
+        ];
+        for (const c of candidates) {
+          if (fs.existsSync(c) && !sharedFiles.has(c)) {
+            sharedFiles.add(c);
+            queue.push(c);
+          }
+        }
+      } else if (imp.startsWith('./') || imp.startsWith('../')) {
+        const rel = imp.replace(/^\.\.?\//, '');
+        const baseName = rel.replace(/\.(jsx|js|tsx|ts|css|module\.css)$/, '').split('/').pop();
+        if (!baseName || baseName.endsWith('.module') || baseName.endsWith('.css')) continue;
+        const compFile = resolveComponentFile(baseName);
+        if (compFile && !demoFiles.has(compFile)) {
+          demoFiles.add(compFile);
+          queue.push(compFile);
+          const cssMod = compFile.replace(/\.(jsx|js|tsx|ts)$/, '.module.css');
+          if (fs.existsSync(cssMod)) queue.push(cssMod);
+        }
+      }
+    }
+  }
+
+  return {sharedFiles: [...sharedFiles], demoFiles: [...demoFiles]};
+}
+
+function loadExistingManifest() {
+  if (!fs.existsSync(MANIFEST_PATH)) return {};
+  return JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
+}
+
+function resolveFileBase(manifestKey, fileBase) {
+  if (NAMED_EXPORT_SOURCES[manifestKey]) {
+    return NAMED_EXPORT_SOURCES[manifestKey].fileBase;
+  }
+  return fileBase;
+}
+
+function writePlayMeta(manifestKey, meta, order) {
+  const metaJson = {
+    title: humanTitle(manifestKey),
+    description: `Интерактивное демо «${humanTitle(manifestKey)}» — раздел ${meta.categoryTitle}.`,
+    category: meta.category,
+    categoryTitle: meta.categoryTitle,
+    component: meta.component,
+    tags: ['ai', 'encyclopedia'],
+    encyclopediaUrl: meta.encyclopediaUrl,
+    order,
+  };
+
+  const metaDir = path.join(PLAYS_ROOT, ...meta.playSlug.split('/'));
+  writeFile(path.join(metaDir, 'meta.json'), JSON.stringify(metaJson, null, 2) + '\n');
+  return metaJson;
+}
+
+function relocateExistingPlays(manifest, orderStart) {
+  let order = orderStart;
+
+  for (const [manifestKey, spec] of Object.entries(REALLOCATE_TO_AI)) {
+    const slug = spec.oldSlug.split('/').pop();
+    const playSlug = `ai/${slug}`;
+    const meta = {
+      playSlug,
+      category: 'ai',
+      categoryTitle: 'Энциклопедия · Искусственный интеллект',
+      component: slug,
+      encyclopediaUrl: spec.encyclopediaUrl,
+    };
+
+    writePlayMeta(manifestKey, meta, order++);
+    manifest[manifestKey] = {
+      example: playSlug,
+      title: humanTitle(manifestKey),
+      component: slug,
+    };
+
+    removePath(path.join(PLAYS_ROOT, ...spec.oldSlug.split('/')));
+    console.log(`Relocated ${manifestKey}: ${spec.oldSlug} → ${playSlug}`);
+  }
+
+  return order;
+}
+
+function main() {
+  if (!fs.existsSync(KB_DOCS)) {
+    console.error(`Missing docs dir: ${KB_DOCS}`);
+    process.exit(1);
+  }
+
+  const allImports = [];
+  for (const doc of collectDocFiles(KB_DOCS)) {
+    allImports.push(...parseDocImports(doc));
+  }
+
+  const componentMap = new Map();
+  for (const imp of allImports) {
+    if (SKIP_COMPONENTS.has(imp.manifestKey)) continue;
+    const fileBase = resolveFileBase(imp.manifestKey, imp.fileBase);
+    if (!componentMap.has(imp.manifestKey)) {
+      componentMap.set(imp.manifestKey, {
+        fileBase,
+        meta: inferPlayMeta(imp.manifestKey, imp.docPath),
+        named: Boolean(imp.named || NAMED_EXPORT_SOURCES[imp.manifestKey]),
+      });
+    }
+  }
+
+  console.log(`AI inline components to migrate: ${componentMap.size}`);
+  for (const name of componentMap.keys()) console.log(`  - ${name}`);
+
+  const entryFiles = [];
+  const fileBasesNeeded = new Set();
+  for (const [, spec] of componentMap) {
+    fileBasesNeeded.add(spec.fileBase);
+  }
+
+  for (const fileBase of fileBasesNeeded) {
+    const src = resolveComponentFile(fileBase);
+    if (!src) {
+      console.warn(`Missing component file: ${fileBase}`);
+      continue;
+    }
+    entryFiles.push(src);
+    const cssMod = src.replace(/\.(jsx|js|tsx|ts)$/, '.module.css');
+    if (fs.existsSync(cssMod)) entryFiles.push(cssMod);
+  }
+
+  const {sharedFiles, demoFiles} = collectSharedDeps(entryFiles);
+  const allDemoFiles = new Set([...entryFiles, ...demoFiles]);
+
+  for (const src of sharedFiles) {
+    const base = path.basename(src);
+    if (base === 'DemoShell.jsx' || base === 'DemoShell.tsx') continue;
+    const dest = path.join(KB_SHARED_DIR, path.relative(path.join(KB_COMPONENTS, 'shared'), src));
+    if (DRY_RUN) {
+      console.log(`[dry-run] copy shared ${base}`);
+    } else {
+      fs.mkdirSync(path.dirname(dest), {recursive: true});
+      fs.copyFileSync(src, dest);
+    }
+  }
+
+  let copied = 0;
+  let skipped = 0;
+  for (const src of allDemoFiles) {
+    if (!/\.(jsx|js|tsx|ts|css)$/.test(src)) continue;
+    const dest = path.join(DEMOS_DIR, path.basename(src));
+    if (/\.(jsx|js|tsx|ts)$/.test(src)) {
+      const didWrite = copyAndTransform(src, dest);
+      if (didWrite === false) skipped += 1;
+      else copied += 1;
+    } else if (!DRY_RUN) {
+      fs.mkdirSync(path.dirname(dest), {recursive: true});
+      if (!fs.existsSync(dest)) {
+        fs.copyFileSync(src, dest);
+        copied += 1;
+      } else {
+        skipped += 1;
+      }
+    }
+  }
+
+  const existingManifest = loadExistingManifest();
+  const manifest = {...existingManifest};
+  let order =
+    Math.max(0, ...Object.values(existingManifest).map((e) => e.order ?? 0)) + 1;
+
+  for (const [manifestKey, spec] of componentMap) {
+    if (!resolveComponentFile(spec.fileBase) && !NAMED_EXPORT_SOURCES[manifestKey]) continue;
+
+    const meta = spec.meta;
+    writePlayMeta(manifestKey, meta, order++);
+    manifest[manifestKey] = {
+      example: meta.playSlug,
+      title: humanTitle(manifestKey),
+      component: meta.component,
+    };
+  }
+
+  order = relocateExistingPlays(manifest, order);
+
+  writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + '\n');
+
+  console.log(`Done. Copied/updated ${copied}, skipped ${skipped} unchanged.`);
+  console.log(`Manifest entries updated for AI category.`);
+}
+
+main();

@@ -1,0 +1,75 @@
+.root {
+  max-width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.codeCol,
+.regCol {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.codeHead {
+  padding: 0.4rem 0.65rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.instr {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.35rem 0.65rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  border-left: 3px solid transparent;
+}
+
+.instrActive {
+  border-left-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.op {
+  color: #c586c0;
+  min-width: 2.5rem;
+}
+
+.regRow {
+  display: grid;
+  grid-template-columns: 4.5rem 4rem 1fr;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.72rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-100);
+}
+
+.val {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 600;
+}
+
+.role {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.68rem;
+}
+
+.log {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.8rem;
+}

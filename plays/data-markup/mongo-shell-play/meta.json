@@ -1,0 +1,13 @@
+{
+  "title": "MongoDB Shell",
+  "description": "Интерактивное демо «MongoDB Shell» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "mongo-shell-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-06-nosql/411",
+  "order": 23
+}

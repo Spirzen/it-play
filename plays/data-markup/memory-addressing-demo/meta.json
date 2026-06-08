@@ -1,0 +1,13 @@
+{
+  "title": "Адресация памяти",
+  "description": "Интерактивное демо «Адресация памяти» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "memory-addressing-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/112",
+  "order": 2
+}

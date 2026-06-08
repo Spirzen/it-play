@@ -1,0 +1,13 @@
+{
+  "title": "Архитектура соцсети",
+  "description": "Интерактивное демо «Архитектура соцсети» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "social-network-arch-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-02-platformy/311",
+  "order": 7
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Соглашения об именовании",
+  "description": "Интерактивное демо «Соглашения об именовании» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "naming-convention-play",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-10-kultura-koda/1",
+  "order": 28
+}

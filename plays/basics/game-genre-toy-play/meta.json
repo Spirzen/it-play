@@ -1,0 +1,13 @@
+{
+  "title": "Жанр игры — интерактив",
+  "description": "Интерактивное демо «Жанр игры — интерактив» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "game-genre-toy-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-18-kompyuternye-igry/5",
+  "order": 30
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Стек облачных сервисов",
+  "description": "Интерактивное демо «Стек облачных сервисов» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "cloud-service-stack-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-02-platformy/3",
+  "order": 5
+}

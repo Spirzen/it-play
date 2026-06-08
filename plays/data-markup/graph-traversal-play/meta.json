@@ -1,0 +1,13 @@
+{
+  "title": "Обход графа (Cypher)",
+  "description": "Интерактивное демо «Обход графа (Cypher)» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "graph-traversal-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-06-nosql/7",
+  "order": 26
+}

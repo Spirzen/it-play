@@ -1,38 +1,43 @@
 # IT Play
 
-**Интерактивные демо для [Вселенной IT](https://spirzen.ru/)**
+**Интерактивные демо для [Вселенной IT](https://spirzen.ru/) — ~500 симуляторов**
 
 | | |
 |---|---|
 | Публичный сайт | [play.spirzen.ru](https://play.spirzen.ru/) |
 | Энциклопедия | [spirzen.ru](https://spirzen.ru/) |
 | Код (листинги) | [code.spirzen.ru](https://code.spirzen.ru/) |
-| Репозиторий энциклопедии | [it-knowledge-base](https://github.com/spirzen/it-knowledge-base) |
+| Панель разработчика | [it-management](../it-management/) → `:8787` |
 
-Тяжёлые React-симуляторы, конструкторы и визуализации живут здесь; в статьях — текст и встроенный блок через iframe. Отдельный репозиторий не раздувает JS-бандл Docusaurus (~4000 файлов) и даёт третий лимит GitHub Pages.
+Тяжёлые React-симуляторы, конструкторы и визуализации живут здесь; в статьях — текст и встроенный блок через iframe. Отдельный репозиторий не раздувает JS-бандл Docusaurus и даёт третий лимит GitHub Pages.
 
 ---
 
-## Трёхуровневая архитектура
+## Место в экосистеме
 
-| Сервис | Стек | Роль |
-|--------|------|------|
-| **spirzen.ru** | Docusaurus + React | Текст, навигация, SEO, лёгкие inline-виджеты |
-| **code.spirzen.ru** | Astro + Shiki | Длинные листинги, мультифайловые практикумы |
-| **play.spirzen.ru** | Astro + React | Интерактивные демо, симуляторы, визуализации |
+| Сервис | Репозиторий | Стек | Роль |
+|--------|-------------|------|------|
+| **spirzen.ru** | `it-knowledge-base` | Docusaurus + React | Текст, SEO, DocSearch, лёгкие inline-виджеты |
+| **code.spirzen.ru** | `it-code-examples` | Astro + Shiki | ~2312 листингов |
+| **play.spirzen.ru** | `it-play` (этот) | Astro + React 19 | ~500 интерактивных демо |
 
-**Правило для новых статей:** текст → `it-knowledge-base`, код → `it-code-examples`, интерактив → `it-play`.
+**Правило:** тяжёлый React-интерактив → здесь; текст → `it-knowledge-base`; длинный код → `it-code-examples`.
+
+Интеграция: [`it-knowledge-base/info/ECOSYSTEM.md`](../it-knowledge-base/info/ECOSYSTEM.md).
 
 ---
 
 ## Возможности
 
-- **Каталог** с поиском и фильтром по категориям
-- **Embed** для iframe в энциклопедии (`ExternalPlayEmbed`)
-- **Светлая / тёмная тема** — синхрон с Docusaurus (`postMessage`)
-- **Авто-высота iframe** — `ResizeObserver` + `postMessage`
+- **Каталог** с `catalog-search` и фильтром по категориям
+- **Embed** для энциклопедии (`ExternalPlayEmbed`)
+- **Светлая / тёмная тема** — `postMessage` `it-play-theme`
+- **Авто-высота iframe** — `ResizeObserver` + `it-play-embed-height`
+- **Fullscreen** — `it-play-fullscreen` / `it-play-fullscreen-close`
+- **Данные из статьи** — `it-play-embed-data` (экзамены, каталоги игр)
+- **Konva** — диаграммы и canvas-симуляторы
 
-Подробности для агентов — в [AGENTS.md](AGENTS.md).
+Подробности для агентов — [AGENTS.md](AGENTS.md).
 
 ---
 
@@ -41,7 +46,9 @@
 | Область | Технология |
 |---------|------------|
 | Сборка | [Astro 5](https://astro.build/) + [@astrojs/react](https://docs.astro.build/en/guides/integrations-guide/react/) |
-| Интерактив | React 19 (islands, `client:load` на embed-страницах) |
+| Интерактив | React 19 (islands, `client:load` на embed) |
+| Графика | `konva`, `react-konva` |
+| Утилиты | `html2canvas`, `jspdf`, `qrcode`, `uuid` |
 | Node.js | ≥ 20 |
 | Деплой | GitHub Actions → GitHub Pages (`play.spirzen.ru`) |
 
@@ -49,20 +56,15 @@
 
 ## Быстрый старт
 
-**Windows:** `start.bat` — проверит Node.js, при необходимости `npm install`, запустит dev на порту **4322**.
+**Windows:** `start.bat` — dev на порту **4322**.
 
 ```bash
 git clone https://github.com/spirzen/it-play.git
 cd it-play
 npm install
-npm run dev
-```
-
-Откройте [http://localhost:4322/](http://localhost:4322/).
-
-```bash
+npm run dev      # http://localhost:4322/
 npm run build    # dist/
-npm run preview  # проверка сборки
+npm run preview
 ```
 
 ---
@@ -71,68 +73,58 @@ npm run preview  # проверка сборки
 
 ```
 it-play/
-├── plays/                       # метаданные демо
-│   └── <category>/
-│       └── <slug>/
-│           └── meta.json
+├── plays/                       # ~500 демо
+│   └── <category>/<slug>/meta.json
 ├── src/
 │   ├── components/demos/        # React-компоненты
-│   ├── lib/
-│   │   ├── plays.ts             # сканер каталога
-│   │   └── demoRegistry.tsx     # slug → компонент
-│   ├── layouts/
-│   └── pages/
-│       ├── index.astro          # каталог
-│       ├── p/[...slug].astro    # полная страница
-│       └── p/embed/[...slug].astro
-├── public/
-│   ├── scripts/                 # theme, embed-resize, catalog-search
-│   └── styles/                  # global, embed, demo
-└── .github/workflows/deploy.yml
+│   ├── lib/demoRegistry.tsx     # slug → компонент (import.meta.glob)
+│   └── pages/p/embed/[...slug].astro
+├── public/scripts/
+│   ├── embed-resize.js          # it-play-embed-height
+│   ├── theme.js                 # it-play-theme
+│   └── catalog-search.js
+└── AGENTS.md
 ```
 
 ---
 
-## URL и пути
+## URL
 
-Канонический **`BASE=/`** на custom domain `play.spirzen.ru`.
+Канонический **`BASE=/`** на `play.spirzen.ru`.
 
 | Тип | Путь |
 |-----|------|
-| Главная | `/` |
+| Каталог | `/` |
 | Демо | `/p/<category>/<slug>/` |
 | Embed | `/p/embed/<category>/<slug>/` |
 
-Прод-сборка:
-
-```bash
-IT_PLAY_SITE=https://play.spirzen.ru
-IT_PLAY_BASE=/
-```
+Prod: `IT_PLAY_SITE=https://play.spirzen.ru`, `IT_PLAY_BASE=/`.
 
 ---
 
-## Добавление нового демо
+## Добавление демо
 
-1. Создайте `plays/<category>/<slug>/meta.json`
-2. Реализуйте React-компонент в `src/components/demos/`
-3. Зарегистрируйте в `src/lib/demoRegistry.tsx`
-4. В статье энциклопедии:
+1. `plays/<category>/<slug>/meta.json`
+2. React в `src/components/demos/`
+3. Авторегистрация через `demoRegistry.tsx`
+4. В статье:
 
 ```jsx
 import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
-
 <ExternalPlayEmbed example="code-basics/block-builder" title="Конструктор блоков" />
 ```
 
 ---
 
-## iframe-контракт
+## Контракт iframe
 
 | Сообщение | Направление | Payload |
 |-----------|-------------|---------|
 | `it-play-embed-height` | iframe → parent | `{ height: number }` |
 | `it-play-theme` | parent → iframe | `{ theme: 'light' \| 'dark' }` |
+| `it-play-embed-data` | parent → iframe | `{ payload: Record<string, unknown> }` |
+| `it-play-fullscreen` | iframe → parent | `{ active: boolean }` |
+| `it-play-fullscreen-close` | parent → iframe | `{}` |
 
 CSP `frame-ancestors`: `spirzen.ru`, `localhost:3000`.
 

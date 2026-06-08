@@ -1,0 +1,75 @@
+.root {
+  max-width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.tower {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 200px;
+  margin-bottom: 1rem;
+}
+
+.tier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tier:hover {
+  transform: scale(1.01);
+}
+
+.tierActive {
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+  font-weight: 700;
+}
+
+.tierLabel {
+  font-size: 0.85rem;
+}
+
+.detail {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+}
+
+.traits {
+  margin: 0 0 0.65rem;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+}
+
+.code {
+  margin: 0;
+  padding: 0.65rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  background: var(--ifm-code-background);
+  white-space: pre-wrap;
+}
+
+.managed {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}

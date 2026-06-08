@@ -1,0 +1,131 @@
+.disk {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 3px;
+  margin-bottom: 0.85rem;
+}
+
+.block {
+  aspect-ratio: 1;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  font-size: 0.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.blockFree {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--ifm-background-surface-color),
+    var(--ifm-background-surface-color) 4px,
+    var(--ifm-color-emphasis-200) 4px,
+    var(--ifm-color-emphasis-200) 8px
+  );
+  color: transparent;
+}
+
+.blockActive {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+  transform: scale(1.08);
+  z-index: 1;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  font-size: 0.82rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat strong {
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.readout {
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  font-size: 0.84rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.45;
+}
+
+.readoutWarn {
+  border: 1px solid rgba(198, 40, 40, 0.35);
+  background: rgba(198, 40, 40, 0.08);
+}
+
+.readoutGood {
+  border: 1px solid rgba(46, 125, 50, 0.35);
+  background: rgba(46, 125, 50, 0.08);
+}
+
+.fileList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.fileBtn {
+  padding: 0.28rem 0.55rem;
+  font-size: 0.76rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fileBtnActive {
+  border-color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.actionBtn {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.actionBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.actionPrimary {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .disk {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}

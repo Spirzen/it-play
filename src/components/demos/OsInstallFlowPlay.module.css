@@ -1,0 +1,110 @@
+.root {
+  max-width: min(480px, 100%);
+  margin: 0 auto;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.dot {
+  flex: 1;
+  padding: 0.4rem 0;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 1rem;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+  opacity: 0.55;
+}
+
+.dotActive {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.dotDone {
+  opacity: 0.85;
+  border-color: #2e7d32;
+}
+
+.barTrack {
+  height: 5px;
+  border-radius: 3px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--ifm-color-primary);
+  transition: width 0.35s ease;
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.cardTitle {
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.detail {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+}
+
+.checklist {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn,
+.btnPrimary {
+  flex: 1;
+  padding: 0.45rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.btn {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btnPrimary {
+  border: none;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground, #fff);
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  text-align: center;
+}

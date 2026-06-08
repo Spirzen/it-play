@@ -1,0 +1,13 @@
+{
+  "title": "Оптимизация игр",
+  "description": "Интерактивное демо «Оптимизация игр» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-optimization-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/123",
+  "order": 18
+}

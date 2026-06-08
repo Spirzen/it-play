@@ -1,0 +1,13 @@
+{
+  "title": "Дерево React-компонентов",
+  "description": "Интерактивное демо «Дерево React-компонентов» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "react-tree-demo",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/27",
+  "order": 5
+}

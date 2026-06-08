@@ -1,0 +1,13 @@
+{
+  "title": "ORM — объектно-реляционное отображение",
+  "description": "Интерактивное демо «ORM — объектно-реляционное отображение» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "orm-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/112",
+  "order": 45
+}

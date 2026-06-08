@@ -1,0 +1,13 @@
+{
+  "title": "Отраслевое ПО — обзор",
+  "description": "Интерактивное демо «Отраслевое ПО — обзор» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "vertical-software-explorer-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-06-otraslevoe-po/1",
+  "order": 24
+}

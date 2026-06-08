@@ -1,0 +1,6967 @@
+[
+  {
+    "term": "double click",
+    "definition": "двойной клик",
+    "category": "Общие"
+  },
+  {
+    "term": "right click",
+    "definition": "правый клик (контекстное меню)",
+    "category": "Общие"
+  },
+  {
+    "term": "hover",
+    "definition": "наведение курсора",
+    "category": "Общие"
+  },
+  {
+    "term": "deselect",
+    "definition": "отменить выбор",
+    "category": "Общие"
+  },
+  {
+    "term": "highlight",
+    "definition": "выделить (цветом/фоном)",
+    "category": "Общие"
+  },
+  {
+    "term": "redo",
+    "definition": "повторить действие",
+    "category": "Общие"
+  },
+  {
+    "term": "save as",
+    "definition": "сохранить как",
+    "category": "Общие"
+  },
+  {
+    "term": "quit",
+    "definition": "завершить работу",
+    "category": "Общие"
+  },
+  {
+    "term": "shutdown",
+    "definition": "выключить",
+    "category": "Общие"
+  },
+  {
+    "term": "hibernate",
+    "definition": "гибернация",
+    "category": "Общие"
+  },
+  {
+    "term": "unlock",
+    "definition": "разблокировать",
+    "category": "Общие"
+  },
+  {
+    "term": "login",
+    "definition": "вход (в систему)",
+    "category": "Общие"
+  },
+  {
+    "term": "logout",
+    "definition": "выход (из системы)",
+    "category": "Общие"
+  },
+  {
+    "term": "sign in",
+    "definition": "войти (аналог login)",
+    "category": "Общие"
+  },
+  {
+    "term": "sign out",
+    "definition": "выйти (аналог logout)",
+    "category": "Общие"
+  },
+  {
+    "term": "register",
+    "definition": "зарегистрироваться",
+    "category": "Общие"
+  },
+  {
+    "term": "subscribe",
+    "definition": "подписаться",
+    "category": "Общие"
+  },
+  {
+    "term": "unsubscribe",
+    "definition": "отписаться",
+    "category": "Общие"
+  },
+  {
+    "term": "follow",
+    "definition": "следить (за пользователем/каналом)",
+    "category": "Общие"
+  },
+  {
+    "term": "unfollow",
+    "definition": "отписаться (от слежения)",
+    "category": "Общие"
+  },
+  {
+    "term": "dislike",
+    "definition": "не нравится",
+    "category": "Общие"
+  },
+  {
+    "term": "recycle bin",
+    "definition": "корзина (Windows)",
+    "category": "Общие"
+  },
+  {
+    "term": "empty trash",
+    "definition": "очистить корзину",
+    "category": "Общие"
+  },
+  {
+    "term": "rename",
+    "definition": "переименовать",
+    "category": "Общие"
+  },
+  {
+    "term": "preview",
+    "definition": "предпросмотр",
+    "category": "Общие"
+  },
+  {
+    "term": "scan",
+    "definition": "сканировать",
+    "category": "Общие"
+  },
+  {
+    "term": "collapse",
+    "definition": "свернуть",
+    "category": "Общие"
+  },
+  {
+    "term": "activate",
+    "definition": "активировать",
+    "category": "Общие"
+  },
+  {
+    "term": "deactivate",
+    "definition": "деактивировать",
+    "category": "Общие"
+  },
+  {
+    "term": "install",
+    "definition": "установить",
+    "category": "Общие"
+  },
+  {
+    "term": "uninstall",
+    "definition": "удалить (программу)",
+    "category": "Общие"
+  },
+  {
+    "term": "upgrade",
+    "definition": "повысить версию",
+    "category": "Общие"
+  },
+  {
+    "term": "sync",
+    "definition": "синхронизировать",
+    "category": "Общие"
+  },
+  {
+    "term": "attach",
+    "definition": "прикрепить (файл)",
+    "category": "Общие"
+  },
+  {
+    "term": "detach",
+    "definition": "открепить",
+    "category": "Общие"
+  },
+  {
+    "term": "mount",
+    "definition": "смонтировать (диск/образ)",
+    "category": "Общие"
+  },
+  {
+    "term": "unmount",
+    "definition": "размонтировать",
+    "category": "Общие"
+  },
+  {
+    "term": "eject",
+    "definition": "извлечь",
+    "category": "Общие"
+  },
+  {
+    "term": "partition",
+    "definition": "разметка диска/раздел",
+    "category": "Общие"
+  },
+  {
+    "term": "verify",
+    "definition": "проверить (целостность)",
+    "category": "Общие"
+  },
+  {
+    "term": "settings",
+    "definition": "настройки",
+    "category": "Общие"
+  },
+  {
+    "term": "preferences",
+    "definition": "предпочтения",
+    "category": "Общие"
+  },
+  {
+    "term": "options",
+    "definition": "опции",
+    "category": "Общие"
+  },
+  {
+    "term": "properties",
+    "definition": "свойства",
+    "category": "Общие"
+  },
+  {
+    "term": "support",
+    "definition": "поддержка",
+    "category": "Общие"
+  },
+  {
+    "term": "feedback",
+    "definition": "обратная связь",
+    "category": "Общие"
+  },
+  {
+    "term": "alert",
+    "definition": "тревога/оповещение",
+    "category": "Общие"
+  },
+  {
+    "term": "popup",
+    "definition": "всплывающее окно",
+    "category": "Общие"
+  },
+  {
+    "term": "dialog",
+    "definition": "диалоговое окно",
+    "category": "Общие"
+  },
+  {
+    "term": "tab",
+    "definition": "вкладка",
+    "category": "Общие"
+  },
+  {
+    "term": "sidebar",
+    "definition": "боковая панель",
+    "category": "Общие"
+  },
+  {
+    "term": "toolbar",
+    "definition": "панель инструментов",
+    "category": "Общие"
+  },
+  {
+    "term": "submenu",
+    "definition": "подменю",
+    "category": "Общие"
+  },
+  {
+    "term": "dropdown",
+    "definition": "выпадающий список",
+    "category": "Общие"
+  },
+  {
+    "term": "checkbox",
+    "definition": "флажок (галочка)",
+    "category": "Общие"
+  },
+  {
+    "term": "radio button",
+    "definition": "переключатель (один из многих)",
+    "category": "Общие"
+  },
+  {
+    "term": "slider",
+    "definition": "ползунок",
+    "category": "Общие"
+  },
+  {
+    "term": "toggle",
+    "definition": "тумблер (вкл/выкл)",
+    "category": "Общие"
+  },
+  {
+    "term": "icon",
+    "definition": "иконка",
+    "category": "Общие"
+  },
+  {
+    "term": "caret",
+    "definition": "каретка (мигающая палочка ввода)",
+    "category": "Общие"
+  },
+  {
+    "term": "placeholder",
+    "definition": "заполнитель (текст-подсказка)",
+    "category": "Общие"
+  },
+  {
+    "term": "command line",
+    "definition": "командная строка",
+    "category": "Общие"
+  },
+  {
+    "term": "prompt",
+    "definition": "приглашение ввода",
+    "category": "Общие"
+  },
+  {
+    "term": "extension",
+    "definition": "расширение",
+    "category": "Общие"
+  },
+  {
+    "term": "author",
+    "definition": "автор",
+    "category": "Общие"
+  },
+  {
+    "term": "owner",
+    "definition": "владелец",
+    "category": "Общие"
+  },
+  {
+    "term": "permissions",
+    "definition": "права доступа",
+    "category": "Общие"
+  },
+  {
+    "term": "read-only",
+    "definition": "только для чтения",
+    "category": "Общие"
+  },
+  {
+    "term": "system",
+    "definition": "системный",
+    "category": "Общие"
+  },
+  {
+    "term": "archive",
+    "definition": "архивный",
+    "category": "Общие"
+  },
+  {
+    "term": "shortcut",
+    "definition": "ярлык",
+    "category": "Общие"
+  },
+  {
+    "term": "desktop",
+    "definition": "рабочий стол",
+    "category": "Общие"
+  },
+  {
+    "term": "wallpaper",
+    "definition": "обои",
+    "category": "Общие"
+  },
+  {
+    "term": "theme",
+    "definition": "тема",
+    "category": "Общие"
+  },
+  {
+    "term": "scheme",
+    "definition": "схема (цветовая)",
+    "category": "Общие"
+  },
+  {
+    "term": "bold",
+    "definition": "жирный",
+    "category": "Общие"
+  },
+  {
+    "term": "italic",
+    "definition": "курсив",
+    "category": "Общие"
+  },
+  {
+    "term": "underline",
+    "definition": "подчеркнутый",
+    "category": "Общие"
+  },
+  {
+    "term": "strike",
+    "definition": "зачеркнутый",
+    "category": "Общие"
+  },
+  {
+    "term": "justify",
+    "definition": "по ширине",
+    "category": "Общие"
+  },
+  {
+    "term": "indent",
+    "definition": "отступ",
+    "category": "Общие"
+  },
+  {
+    "term": "opacity",
+    "definition": "прозрачность",
+    "category": "Общие"
+  },
+  {
+    "term": "zoom",
+    "definition": "масштаб",
+    "category": "Общие"
+  },
+  {
+    "term": "crop",
+    "definition": "обрезать",
+    "category": "Общие"
+  },
+  {
+    "term": "flip",
+    "definition": "отразить",
+    "category": "Общие"
+  },
+  {
+    "term": "extract",
+    "definition": "извлечь",
+    "category": "Общие"
+  },
+  {
+    "term": "backup",
+    "definition": "резервная копия",
+    "category": "Общие"
+  },
+  {
+    "term": "snapshot",
+    "definition": "снимок",
+    "category": "Общие"
+  },
+  {
+    "term": "username",
+    "definition": "имя пользователя",
+    "category": "Общие"
+  },
+  {
+    "term": "subscription",
+    "definition": "подписка",
+    "category": "Общие"
+  },
+  {
+    "term": "paid",
+    "definition": "платно",
+    "category": "Общие"
+  },
+  {
+    "term": "trial",
+    "definition": "пробный период",
+    "category": "Общие"
+  },
+  {
+    "term": "demo",
+    "definition": "демо-версия",
+    "category": "Общие"
+  },
+  {
+    "term": "beta",
+    "definition": "бета-версия",
+    "category": "Общие"
+  },
+  {
+    "term": "alpha",
+    "definition": "альфа-версия",
+    "category": "Общие"
+  },
+  {
+    "term": "release candidate",
+    "definition": "кандидат в релизы",
+    "category": "Общие"
+  },
+  {
+    "term": "legacy",
+    "definition": "устаревшая версия",
+    "category": "Общие"
+  },
+  {
+    "term": "obsolete",
+    "definition": "устаревший (более не поддерживается)",
+    "category": "Общие"
+  },
+  {
+    "term": "latest",
+    "definition": "последний",
+    "category": "Общие"
+  },
+  {
+    "term": "all",
+    "definition": "все",
+    "category": "Общие"
+  },
+  {
+    "term": "few",
+    "definition": "несколько",
+    "category": "Общие"
+  },
+  {
+    "term": "least",
+    "definition": "наименьшее",
+    "category": "Общие"
+  },
+  {
+    "term": "better",
+    "definition": "лучше",
+    "category": "Общие"
+  },
+  {
+    "term": "worse",
+    "definition": "хуже",
+    "category": "Общие"
+  },
+  {
+    "term": "best",
+    "definition": "лучший",
+    "category": "Общие"
+  },
+  {
+    "term": "worst",
+    "definition": "худший",
+    "category": "Общие"
+  },
+  {
+    "term": "dark",
+    "definition": "темный",
+    "category": "Общие"
+  },
+  {
+    "term": "shallow",
+    "definition": "поверхностный",
+    "category": "Общие"
+  },
+  {
+    "term": "clean",
+    "definition": "чистый",
+    "category": "Общие"
+  },
+  {
+    "term": "dirty",
+    "definition": "грязный (данные)",
+    "category": "Общие"
+  },
+  {
+    "term": "unsafe",
+    "definition": "небезопасный",
+    "category": "Общие"
+  },
+  {
+    "term": "insecure",
+    "definition": "незащищенный",
+    "category": "Общие"
+  },
+  {
+    "term": "universal",
+    "definition": "универсальный",
+    "category": "Общие"
+  },
+  {
+    "term": "generic",
+    "definition": "общий/родовой",
+    "category": "Общие"
+  },
+  {
+    "term": "advanced",
+    "definition": "продвинутый",
+    "category": "Общие"
+  },
+  {
+    "term": "expert",
+    "definition": "экспертный",
+    "category": "Общие"
+  },
+  {
+    "term": "impossible",
+    "definition": "невозможный",
+    "category": "Общие"
+  },
+  {
+    "term": "available",
+    "definition": "доступный",
+    "category": "Общие"
+  },
+  {
+    "term": "unavailable",
+    "definition": "недоступный",
+    "category": "Общие"
+  },
+  {
+    "term": "online",
+    "definition": "в сети",
+    "category": "Общие"
+  },
+  {
+    "term": "offline",
+    "definition": "не в сети",
+    "category": "Общие"
+  },
+  {
+    "term": "incorrect",
+    "definition": "неправильный",
+    "category": "Общие"
+  },
+  {
+    "term": "back",
+    "definition": "зад",
+    "category": "Общие"
+  },
+  {
+    "term": "across",
+    "definition": "поперек",
+    "category": "Общие"
+  },
+  {
+    "term": "along",
+    "definition": "вдоль",
+    "category": "Общие"
+  },
+  {
+    "term": "around",
+    "definition": "вокруг",
+    "category": "Общие"
+  },
+  {
+    "term": "far",
+    "definition": "далеко",
+    "category": "Общие"
+  },
+  {
+    "term": "here",
+    "definition": "здесь",
+    "category": "Общие"
+  },
+  {
+    "term": "admin",
+    "definition": "администратор",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "guest",
+    "definition": "гость",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "shared",
+    "definition": "разделяемая",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "temp",
+    "definition": "временная",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "tmp",
+    "definition": "временная (unix)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "var",
+    "definition": "переменные данные",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "etc",
+    "definition": "конфигурация (unix)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "bin",
+    "definition": "исполняемые файлы",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "sbin",
+    "definition": "системные исполняемые",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "lib",
+    "definition": "библиотеки",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "usr",
+    "definition": "пользовательские программы",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "opt",
+    "definition": "дополнительные пакеты",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "mnt",
+    "definition": "точка монтирования",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "media",
+    "definition": "съемные носители",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "dev",
+    "definition": "устройства",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "proc",
+    "definition": "процессы (виртуальная ФС)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "sys",
+    "definition": "система (виртуальная ФС)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "boot",
+    "definition": "загрузка",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "swap",
+    "definition": "файл подкачки",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "pagefile",
+    "definition": "файл подкачки (Windows)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "inode",
+    "definition": "инода (индексный дескриптор)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "block",
+    "definition": "блок данных",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "sector",
+    "definition": "сектор",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "cluster",
+    "definition": "кластер",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "allocation unit",
+    "definition": "единица размещения",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "fragmentation",
+    "definition": "фрагментация",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "defragmentation",
+    "definition": "дефрагментация",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "indexing",
+    "definition": "индексирование",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "search index",
+    "definition": "поисковый индекс",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "attribute",
+    "definition": "атрибут",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "timestamp",
+    "definition": "временная метка",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "created",
+    "definition": "создано",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "modified",
+    "definition": "изменено",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "accessed",
+    "definition": "accessed (доступ открыт)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "owner",
+    "definition": "владелец",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "others",
+    "definition": "остальные",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "chmod",
+    "definition": "изменение прав (unix)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "chown",
+    "definition": "изменение владельца (unix)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "acl",
+    "definition": "список контроля доступа",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "permission denied",
+    "definition": "доступ запрещен",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "access denied",
+    "definition": "доступ запрещен",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "read permission",
+    "definition": "право на чтение",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "write permission",
+    "definition": "право на запись",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "execute permission",
+    "definition": "право на выполнение",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "traverse",
+    "definition": "проход (по директории)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "inherit",
+    "definition": "наследовать (права)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "grant",
+    "definition": "предоставить (права)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "revoke",
+    "definition": "отозвать (права)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "quota",
+    "definition": "квота (дисковая)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "usage",
+    "definition": "использование",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "free space",
+    "definition": "свободное место",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "used space",
+    "definition": "занятое место",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "total space",
+    "definition": "общее место",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "disk usage",
+    "definition": "использование диска",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "volume",
+    "definition": "том",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "drive",
+    "definition": "диск (логический)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "partition table",
+    "definition": "таблица разделов",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "mbr",
+    "definition": "master boot record",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "gpt",
+    "definition": "guid partition table",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "file system type",
+    "definition": "тип файловой системы",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "ntfs",
+    "definition": "ntfs",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "fat32",
+    "definition": "fat32",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "exfat",
+    "definition": "exfat",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "ext4",
+    "definition": "ext4",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "ext3",
+    "definition": "ext3",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "btrfs",
+    "definition": "btrfs",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "zfs",
+    "definition": "zfs",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "apfs",
+    "definition": "apfs",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "hfs+",
+    "definition": "hfs+",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "ufs",
+    "definition": "ufs",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "iso image",
+    "definition": "iso-образ",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "img file",
+    "definition": "img-файл",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "virtual disk",
+    "definition": "виртуальный диск",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "mapped drive",
+    "definition": "подключенный сетевой диск",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "network share",
+    "definition": "сетевая папка",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "smb",
+    "definition": "smb (протокол)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "cifs",
+    "definition": "cifs (протокол)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "nfs",
+    "definition": "nfs (протокол)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "afp",
+    "definition": "afp (протокол)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "ftp server",
+    "definition": "ftp-сервер",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "sftp server",
+    "definition": "sftp-сервер",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "webdav",
+    "definition": "webdav",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "cloud storage",
+    "definition": "облачное хранилище",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "sync folder",
+    "definition": "папка синхронизации",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "conflict",
+    "definition": "конфликт (версий файлов)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "version history",
+    "definition": "история версий",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "previous versions",
+    "definition": "предыдущие версии",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "shadow copy",
+    "definition": "теневая копия",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "snapshot",
+    "definition": "снимок",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "backup set",
+    "definition": "набор резервных копий",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "incremental backup",
+    "definition": "инкрементальное резервное копирование",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "differential backup",
+    "definition": "дифференциальное резервное копирование",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "full backup",
+    "definition": "полное резервное копирование",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "mirror",
+    "definition": "зеркало",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "replication",
+    "definition": "репликация",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "redundancy",
+    "definition": "избыточность",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "raid",
+    "definition": "raid-массив",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "striping",
+    "definition": "чередование (raid 0)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "mirroring",
+    "definition": "зеркалирование (raid 1)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "parity",
+    "definition": "четность (raid 5/6)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "hot spare",
+    "definition": "горячий резерв",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "cold spare",
+    "definition": "холодный резерв",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "failover",
+    "definition": "аварийное переключение",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "failback",
+    "definition": "возврат после сбоя",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "uptime",
+    "definition": "время бесперебойной работы",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "downtime",
+    "definition": "время простоя",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "maintenance window",
+    "definition": "окно обслуживания",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "patch Tuesday",
+    "definition": "вторник патчей (Microsoft)",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "update cycle",
+    "definition": "цикл обновлений",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "end of life",
+    "definition": "конец жизненного цикла",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "end of support",
+    "definition": "конец поддержки",
+    "category": "Уровень 1: Файловая система и управление данными"
+  },
+  {
+    "term": "usb port",
+    "definition": "usb-порт",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "type-a",
+    "definition": "тип а",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "type-c",
+    "definition": "тип ц",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "thunderbolt",
+    "definition": "thunderbolt",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "hdmi",
+    "definition": "hdmi",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "displayport",
+    "definition": "displayport",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "vga",
+    "definition": "vga",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "dvi",
+    "definition": "dvi",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "audio jack",
+    "definition": "аудиоразъем",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "microphone",
+    "definition": "микрофон",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "headphones",
+    "definition": "наушники",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "speakers",
+    "definition": "колонки",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "webcam",
+    "definition": "веб-камера",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "printer",
+    "definition": "принтер",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "scanner",
+    "definition": "сканер",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "multifunction device",
+    "definition": "мфу",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "plotter",
+    "definition": "плоттер",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "projector",
+    "definition": "проектор",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "monitor stand",
+    "definition": "подставка для монитора",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "mount",
+    "definition": "крепление",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "arm",
+    "definition": "кронштейн",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "dock",
+    "definition": "док-станция",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "hub",
+    "definition": "хаб",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "adapter",
+    "definition": "адаптер",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "converter",
+    "definition": "конвертер",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "cable management",
+    "definition": "укладка кабелей",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "wireless",
+    "definition": "беспроводной",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "wired",
+    "definition": "проводной",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "bluetooth",
+    "definition": "bluetooth",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "nfc",
+    "definition": "nfc",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "rfid",
+    "definition": "rfid",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "ir",
+    "definition": "инфракрасный порт",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "battery",
+    "definition": "батарея",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "charger",
+    "definition": "зарядное устройство",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "power bank",
+    "definition": "пауэрбанк",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "ups",
+    "definition": "источник бесперебойного питания",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "surge protector",
+    "definition": "сетевой фильтр",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "extension cord",
+    "definition": "удлинитель",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "smart plug",
+    "definition": "умная розетка",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "thermostat",
+    "definition": "термостат",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "sensor",
+    "definition": "датчик",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "camera",
+    "definition": "камера",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "lens",
+    "definition": "объектив",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "flash",
+    "definition": "вспышка",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "tripod",
+    "definition": "штатив",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "gimbal",
+    "definition": "стабилизатор",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "drone",
+    "definition": "дрон",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "controller",
+    "definition": "контроллер (геймпад)",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "joystick",
+    "definition": "джойстик",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "gamepad",
+    "definition": "геймпад",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "steering wheel",
+    "definition": "руль",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "pedals",
+    "definition": "педали",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "vr headset",
+    "definition": "vr-шлем",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "ar glasses",
+    "definition": "ar-очки",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "haptic feedback",
+    "definition": "тактильная отдача",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "vibration",
+    "definition": "вибрация",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "force feedback",
+    "definition": "обратная связь по усилию",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "resolution",
+    "definition": "разрешение",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "dpi",
+    "definition": "точек на дюйм",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "ppi",
+    "definition": "пикселей на дюйм",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "refresh rate",
+    "definition": "частота обновления",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "response time",
+    "definition": "время отклика",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "brightness",
+    "definition": "яркость",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "contrast",
+    "definition": "контрастность",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "saturation",
+    "definition": "насыщенность",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "hue",
+    "definition": "оттенок",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "gamma",
+    "definition": "гамма",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "color profile",
+    "definition": "цветовой профиль",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "calibration",
+    "definition": "калибровка",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "aspect ratio",
+    "definition": "соотношение сторон",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "bezel",
+    "definition": "рамка экрана",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "stand",
+    "definition": "подставка",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "vesa mount",
+    "definition": "крепление vesa",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "keyboard layout",
+    "definition": "раскладка клавиатуры",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "qwerty",
+    "definition": "qwerty",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "azerty",
+    "definition": "azerty",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "qwertz",
+    "definition": "qwertz",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "dvorak",
+    "definition": "дворака",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "colemak",
+    "definition": "колемак",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "mechanical keyboard",
+    "definition": "механическая клавиатура",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "membrane keyboard",
+    "definition": "мембранная клавиатура",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "keycap",
+    "definition": "кейкап (колпачок клавиши)",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "stem",
+    "definition": "стем (ножка свитча)",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "actuation",
+    "definition": "срабатывание",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "travel",
+    "definition": "ход клавиши",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "tactile",
+    "definition": "тактильный",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "linear",
+    "definition": "линейный",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "clicky",
+    "definition": "кликающий",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "rgb подсветка",
+    "definition": "rgb backlight",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "macro",
+    "definition": "макрос",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "programmable keys",
+    "definition": "программируемые клавиши",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "numpad",
+    "definition": "нампад (цифровой блок)",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "touchpad",
+    "definition": "тачпад",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "trackpoint",
+    "definition": "трекпоинт",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "mouse pad",
+    "definition": "коврик для мыши",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "sensor type",
+    "definition": "тип сенсора",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "optical",
+    "definition": "оптический",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "laser",
+    "definition": "лазерный",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "polling rate",
+    "definition": "частота опроса",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "acceleration",
+    "definition": "ускорение",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "sensitivity",
+    "definition": "чувствительность",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "button mapping",
+    "definition": "назначение кнопок",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "side buttons",
+    "definition": "боковые кнопки",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "scroll wheel",
+    "definition": "колесо прокрутки",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "tilt wheel",
+    "definition": "наклон колеса",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "infinity scroll",
+    "definition": "бесконечная прокрутка",
+    "category": "Уровень 2: Периферия и внешние устройства"
+  },
+  {
+    "term": "wi-fi",
+    "definition": "вай-фай",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "ethernet",
+    "definition": "ethernet (кабель)",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "lan",
+    "definition": "локальная сеть",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "wan",
+    "definition": "глобальная сеть",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "pan",
+    "definition": "персональная сеть",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "ssid",
+    "definition": "имя сети",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "encryption",
+    "definition": "шифрование",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "wep",
+    "definition": "wep (устаревшее)",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "wpa",
+    "definition": "wpa",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "wpa2",
+    "definition": "wpa2",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "wpa3",
+    "definition": "wpa3",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "frequency",
+    "definition": "частота",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "2.4 ghz",
+    "definition": "2.4 гГц",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "5 ghz",
+    "definition": "5 гГц",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "6 ghz",
+    "definition": "6 гГц",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "signal strength",
+    "definition": "уровень сигнала",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "interference",
+    "definition": "помехи",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "repeater",
+    "definition": "репитер (повторитель)",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "extender",
+    "definition": "усилитель сигнала",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "mesh network",
+    "definition": "ячеистая сеть",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "backhaul",
+    "definition": "обратный канал",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "latency",
+    "definition": "пинг/задержка",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "jitter",
+    "definition": "джиттер (дрожание задержки)",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "packet loss",
+    "definition": "потеря пакетов",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "bandwidth",
+    "definition": "ширина канала",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "speed test",
+    "definition": "тест скорости",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "download speed",
+    "definition": "скорость скачивания",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "upload speed",
+    "definition": "скорость загрузки",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "isp",
+    "definition": "интернет-провайдер",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "modem",
+    "definition": "модем",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "router",
+    "definition": "роутер",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "gateway",
+    "definition": "шлюз",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "dns server",
+    "definition": "dns-сервер",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "dhcp server",
+    "definition": "dhcp-сервер",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "ip address",
+    "definition": "ip-адрес",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "subnet mask",
+    "definition": "маска подсети",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "default gateway",
+    "definition": "шлюз по умолчанию",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "mac address",
+    "definition": "mac-адрес",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "static ip",
+    "definition": "статический ip",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "dynamic ip",
+    "definition": "динамический ip",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "port forwarding",
+    "definition": "проброс портов",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "dmz",
+    "definition": "демилитаризованная зона",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "firewall rules",
+    "definition": "правила фаервола",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "blocked",
+    "definition": "заблокировано",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "allowed",
+    "definition": "разрешено",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "whitelist",
+    "definition": "белый список",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "blacklist",
+    "definition": "черный список",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "parental control",
+    "definition": "родительский контроль",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "guest network",
+    "definition": "гостевая сеть",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "vpn",
+    "definition": "виртуальная частная сеть",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "proxy",
+    "definition": "прокси",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "tor",
+    "definition": "тор",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "chrome",
+    "definition": "хром",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "firefox",
+    "definition": "файрфокс",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "safari",
+    "definition": "сафари",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "opera",
+    "definition": "опера",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "brave",
+    "definition": "брейв",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "vivaldi",
+    "definition": "вивальди",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "arc",
+    "definition": "арк",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "tab group",
+    "definition": "группа вкладок",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "bookmark",
+    "definition": "закладка",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "favorite",
+    "definition": "избранное",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "cache clearing",
+    "definition": "очистка кэша",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "cookies management",
+    "definition": "управление куки",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "incognito mode",
+    "definition": "режим инкогнито",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "private browsing",
+    "definition": "приватный просмотр",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "extension",
+    "definition": "расширение (браузера)",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "plugin",
+    "definition": "плагин",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "add-on",
+    "definition": "дополнение",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "user agent",
+    "definition": "пользовательский агент",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "referrer",
+    "definition": "реферер",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "homepage",
+    "definition": "домашняя страница",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "new tab page",
+    "definition": "страница новой вкладки",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "search engine",
+    "definition": "поисковая система",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "google",
+    "definition": "гугл",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "bing",
+    "definition": "бинг",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "duckduckgo",
+    "definition": "дакдакго",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "yandex",
+    "definition": "яндекс",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "baidu",
+    "definition": "байду",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "url",
+    "definition": "url-адрес",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "domain",
+    "definition": "домен",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "subdomain",
+    "definition": "поддомен",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "tld",
+    "definition": "домен верхнего уровня",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "http status code",
+    "definition": "код состояния http",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "200 ok",
+    "definition": "успешно",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "301 moved permanently",
+    "definition": "перемещено навсегда",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "302 found",
+    "definition": "найдено (временное)",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "400 bad request",
+    "definition": "неверный запрос",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "401 unauthorized",
+    "definition": "не авторизован",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "403 forbidden",
+    "definition": "запрещено",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "404 not found",
+    "definition": "не найдено",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "500 internal server error",
+    "definition": "внутренняя ошибка сервера",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "502 bad gateway",
+    "definition": "неверный шлюз",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "503 service unavailable",
+    "definition": "сервис недоступен",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "ssl certificate",
+    "definition": "ssl-сертификат",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "https lock",
+    "definition": "замок https",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "mixed content",
+    "definition": "смешанный контент",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "pop-up blocker",
+    "definition": "блокировщик всплывающих окон",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "ad blocker",
+    "definition": "блокировщик рекламы",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "tracker protection",
+    "definition": "защита от трекеров",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "do not track",
+    "definition": "не отслеживать",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "privacy policy",
+    "definition": "политика конфиденциальности",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "terms of service",
+    "definition": "условия использования",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "eula",
+    "definition": "лицензионное соглашение",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "gdpr consent",
+    "definition": "согласие gdpr",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "captcha",
+    "definition": "капча",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "two-factor authentication",
+    "definition": "двухфакторная аутентификация",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "sms code",
+    "definition": "смс-код",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "authenticator app",
+    "definition": "приложение-аутентификатор",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "security key",
+    "definition": "ключ безопасности",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "biometrics",
+    "definition": "биометрия",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "fingerprint",
+    "definition": "отпечаток пальца",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "face id",
+    "definition": "распознавание лица",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "iris scan",
+    "definition": "сканирование радужки",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "voice recognition",
+    "definition": "распознавание голоса",
+    "category": "Уровень 3: Сеть и Интернет для пользователя"
+  },
+  {
+    "term": "word processor",
+    "definition": "текстовый процессор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "spreadsheet",
+    "definition": "электронная таблица",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "presentation",
+    "definition": "презентация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cell",
+    "definition": "ячейка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "formula",
+    "definition": "формула",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chart",
+    "definition": "диаграмма",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pivot table",
+    "definition": "сводная таблица",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mail merge",
+    "definition": "слияние почты",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "heading",
+    "definition": "заголовок",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bullet list",
+    "definition": "маркированный список",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "numbered list",
+    "definition": "нумерованный список",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "table of contents",
+    "definition": "оглавление",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "footnote",
+    "definition": "сноска",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "endnote",
+    "definition": "концевая сноска",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "citation",
+    "definition": "цитата",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bibliography",
+    "definition": "библиография",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "spell check",
+    "definition": "проверка орфографии",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "grammar check",
+    "definition": "проверка грамматики",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "thesaurus",
+    "definition": "тезаурус",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "translate",
+    "definition": "перевести",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pdf",
+    "definition": "pdf-файл",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "reader",
+    "definition": "читалка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "editor",
+    "definition": "редактор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "annotator",
+    "definition": "аннотатор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "watermark",
+    "definition": "водяной знак",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "footer",
+    "definition": "нижний колонтитул",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "page break",
+    "definition": "разрыв страницы",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "section break",
+    "definition": "разрыв раздела",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "paper size",
+    "definition": "размер бумаги",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "print preview",
+    "definition": "предпросмотр печати",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "duplex printing",
+    "definition": "двусторонняя печать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "collate",
+    "definition": "упорядочить (при печати)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "staple",
+    "definition": "сшить (скрепкой)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hole punch",
+    "definition": "пробить отверстия",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "laminate",
+    "definition": "ламинировать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "shred",
+    "definition": "shred (уничтожить бумагу)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fax",
+    "definition": "факс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "email client",
+    "definition": "почтовый клиент",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "inbox",
+    "definition": "входящие",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "outbox",
+    "definition": "исходящие",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sent",
+    "definition": "отправленные",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "drafts",
+    "definition": "черновики",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "spam",
+    "definition": "спам",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "junk",
+    "definition": "мусор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "archive",
+    "definition": "архив (писем)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "star",
+    "definition": "добавить в избранное",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "search query",
+    "definition": "поисковый запрос",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "attachment",
+    "definition": "вложение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "inline image",
+    "definition": "встроенное изображение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "html email",
+    "definition": "html-письмо",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "plain text",
+    "definition": "простой текст",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rich text",
+    "definition": "форматированный текст",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "calendar",
+    "definition": "календарь",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "appointment",
+    "definition": "встреча",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "reminder",
+    "definition": "напоминание",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "invite",
+    "definition": "приглашение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "decline",
+    "definition": "отклонить",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tentative",
+    "definition": "предварительно",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "out of office",
+    "definition": "нет на месте",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "recurring event",
+    "definition": "повторяющееся событие",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "timezone",
+    "definition": "часовой пояс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "day view",
+    "definition": "вид по дням",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "week view",
+    "definition": "вид по неделям",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "month view",
+    "definition": "вид по месяцам",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "agenda",
+    "definition": "повестка/список дел",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "todo",
+    "definition": "сделать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "deadline",
+    "definition": "крайний срок",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "due date",
+    "definition": "дата выполнения",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "not started",
+    "definition": "не начато",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "in progress",
+    "definition": "в процессе",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cancelled",
+    "definition": "отменено",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "postponed",
+    "definition": "отложено",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "delegate",
+    "definition": "делегировать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "collaborate",
+    "definition": "сотрудничать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "share access",
+    "definition": "предоставить доступ",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mention",
+    "definition": "упомянуть",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "notify",
+    "definition": "уведомить",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chat",
+    "definition": "чат",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "direct message",
+    "definition": "личное сообщение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "emoji",
+    "definition": "эмодзи",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "reaction",
+    "definition": "реакция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gif",
+    "definition": "гифка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sticker",
+    "definition": "стикер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "video call",
+    "definition": "видеозвонок",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "audio call",
+    "definition": "аудиозвонок",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "screen share",
+    "definition": "демонстрация экрана",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "transcribe",
+    "definition": "транскрибировать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mute",
+    "definition": "отключить звук",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "unmute",
+    "definition": "включить звук",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "camera on",
+    "definition": "камера включена",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "camera off",
+    "definition": "камера выключена",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "background blur",
+    "definition": "размытие фона",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "virtual background",
+    "definition": "виртуальный фон",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hand raise",
+    "definition": "поднять руку",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "poll",
+    "definition": "опрос",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "breakout room",
+    "definition": "отдельная комната",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "whiteboard",
+    "definition": "белая доска",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "drawing",
+    "definition": "рисунок",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "shape",
+    "definition": "фигура",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "text box",
+    "definition": "текстовое поле",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "video",
+    "definition": "видео",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "audio",
+    "definition": "аудио",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "player",
+    "definition": "плеер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rewind",
+    "definition": "перемотать назад",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "volume",
+    "definition": "громкость",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "balance",
+    "definition": "баланс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "equalizer",
+    "definition": "эквалайzer",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "playlist",
+    "definition": "плейлист",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "shuffle",
+    "definition": "перемешать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "subtitle",
+    "definition": "субтитр",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "caption",
+    "definition": "титр",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "codec",
+    "definition": "кодек",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bitrate",
+    "definition": "битрейт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "frame rate",
+    "definition": "частота кадров",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "resolution",
+    "definition": "разрешение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "aspect ratio",
+    "definition": "соотношение сторон",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "crop",
+    "definition": "обрезка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "buffering",
+    "definition": "буферизация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "quality",
+    "definition": "качество",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "auto",
+    "definition": "автоматически",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hd",
+    "definition": "высокое определение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "4k",
+    "definition": "4k",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "8k",
+    "definition": "8k",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hdr",
+    "definition": "hdr",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dolby vision",
+    "definition": "dolby vision",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dolby atmos",
+    "definition": "dolby atmos",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "surround sound",
+    "definition": "объемный звук",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "stereo",
+    "definition": "стерео",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mono",
+    "definition": "моно",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cpu",
+    "definition": "центральный процессор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gpu",
+    "definition": "графический процессор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ram",
+    "definition": "оперативная память",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rom",
+    "definition": "постоянная память",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hdd",
+    "definition": "жесткий диск",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ssd",
+    "definition": "твердотельный накопитель",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "motherboard",
+    "definition": "материнская плата",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chipset",
+    "definition": "чипсет",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bus",
+    "definition": "шина данных",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "slot",
+    "definition": "слот расширения",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "power supply",
+    "definition": "блок питания",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cooling system",
+    "definition": "система охлаждения",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fan",
+    "definition": "вентилятор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "heat sink",
+    "definition": "радиатор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "thermal paste",
+    "definition": "термопаста",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "peripheral",
+    "definition": "периферийное устройство",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "keyboard",
+    "definition": "клавиатура",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mouse",
+    "definition": "мышь",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "resolution",
+    "definition": "разрешение экрана",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "refresh rate",
+    "definition": "частота обновления",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kilobyte",
+    "definition": "килобайт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "megabyte",
+    "definition": "мегабайт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gigabyte",
+    "definition": "гигабайт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "terabyte",
+    "definition": "терабайт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "decimal",
+    "definition": "десятичный",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hexadecimal",
+    "definition": "шестнадцатеричный",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "octal",
+    "definition": "восьмеричный",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "architecture",
+    "definition": "архитектура (ПК)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "instruction set",
+    "definition": "набор инструкций",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "register",
+    "definition": "регистр",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "clock speed",
+    "definition": "тактовая частота",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "core",
+    "definition": "ядро",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cache memory",
+    "definition": "кэш-память",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "firmware",
+    "definition": "микропрограмма",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bios",
+    "definition": "базовая система ввода-вывода",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "uefi",
+    "definition": "унифицированный расширяемый интерфейс прошивки",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bootloader",
+    "definition": "загрузчик",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kernel",
+    "definition": "ядро операционной системы",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "driver",
+    "definition": "драйвер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "voltage",
+    "definition": "напряжение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "circuit",
+    "definition": "схема",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "transistor",
+    "definition": "транзистор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "capacitor",
+    "definition": "конденсатор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "resistor",
+    "definition": "резистор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "diode",
+    "definition": "диод",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "inductor",
+    "definition": "катушка индуктивности",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "logic gate",
+    "definition": "логический элемент",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "XOR",
+    "definition": "исключающее ИЛИ",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "NAND",
+    "definition": "И-НЕ",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "flip-flop",
+    "definition": "триггер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "latch",
+    "definition": "защелка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "multiplexer",
+    "definition": "мультиплексор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "decoder",
+    "definition": "дешифратор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "encoder",
+    "definition": "кодер (аппаратный)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "adc",
+    "definition": "аналого-цифровой преобразователь",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dac",
+    "definition": "цифро-аналоговый преобразователь",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sensor",
+    "definition": "датчик",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "actuator",
+    "definition": "исполнительное устройство",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "controller",
+    "definition": "контроллер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "microcontroller",
+    "definition": "микроконтроллер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fpga",
+    "definition": "программируемая логическая интегральная схема",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "asic",
+    "definition": "специализированная интегральная схема",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "network card",
+    "definition": "сетевая карта",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sound card",
+    "definition": "звуковая карта",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "graphics card",
+    "definition": "видеокарта",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cable",
+    "definition": "кабель",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "wire",
+    "definition": "провод",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "antenna",
+    "definition": "антенна",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "modem",
+    "definition": "модем",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "router",
+    "definition": "маршрутизатор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hub",
+    "definition": "концентратор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bridge",
+    "definition": "мост",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gateway",
+    "definition": "шлюз",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "firewall",
+    "definition": "межсетевой экран",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "proxy",
+    "definition": "прокси-сервер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "latency",
+    "definition": "задержка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bandwidth",
+    "definition": "пропускная способность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "throughput",
+    "definition": "производительность передачи",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "packet",
+    "definition": "пакет",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "frame",
+    "definition": "кадр",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "segment",
+    "definition": "сегмент",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "datagram",
+    "definition": "датаграмма",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "payload",
+    "definition": "полезная нагрузка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "footer",
+    "definition": "нижний колонтитул (в пакете)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "checksum",
+    "definition": "контрольная сумма",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "error correction",
+    "definition": "коррекция ошибок",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "parity",
+    "definition": "четность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "redundancy",
+    "definition": "избыточность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "backup",
+    "definition": "резервная копия",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "archive",
+    "definition": "архив",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "decompress",
+    "definition": "распаковывать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "encrypt",
+    "definition": "шифровать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "decrypt",
+    "definition": "расшифровывать",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "certificate",
+    "definition": "сертификат",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "buffer",
+    "definition": "буфер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pool",
+    "definition": "пул",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cluster",
+    "definition": "кластер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "grid",
+    "definition": "грид",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cloud",
+    "definition": "облако",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "virtualization",
+    "definition": "виртуализация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "containerization",
+    "definition": "контейнеризация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hypervisor",
+    "definition": "гипервизор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vm",
+    "definition": "виртуальная машина",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "snapshot",
+    "definition": "снимок состояния",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "clone",
+    "definition": "клон",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "deployment",
+    "definition": "развертывание",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "provisioning",
+    "definition": "предоставление ресурсов",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "configuration",
+    "definition": "конфигурация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "orchestration",
+    "definition": "оркестрация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "automation",
+    "definition": "автоматизация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "daemon",
+    "definition": "демон (фоновый процесс)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "service",
+    "definition": "служба",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cron",
+    "definition": "планировщик задач",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "scheduler",
+    "definition": "планировщик",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "deadlock",
+    "definition": "взаимная блокировка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "race condition",
+    "definition": "состояние гонки",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "starvation",
+    "definition": "голодание (процесса)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "context switch",
+    "definition": "переключение контекста",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "syscall",
+    "definition": "системный вызов",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "abi",
+    "definition": "бинарный интерфейс приложения",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sdk",
+    "definition": "набор средств разработки",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "editor",
+    "definition": "редактор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "compiler",
+    "definition": "компилятор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "interpreter",
+    "definition": "интерпретатор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "linker",
+    "definition": "компоновщик",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "loader",
+    "definition": "загрузчик",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "assembler",
+    "definition": "ассемблер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "preprocessor",
+    "definition": "препроцессор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "debugger",
+    "definition": "отладчик",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "profiler",
+    "definition": "профилировщик",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "linter",
+    "definition": "линтер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "formatter",
+    "definition": "форматировщик",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pull request",
+    "definition": "запрос на слияние",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hotfix",
+    "definition": "срочное исправление",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "changelog",
+    "definition": "журнал изменений",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "copyright",
+    "definition": "авторское право",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "patent",
+    "definition": "патент",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "trademark",
+    "definition": "торговая марка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "open source",
+    "definition": "открытый исходный код",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "proprietary",
+    "definition": "проприетарный",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "free software",
+    "definition": "свободное ПО",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "freeware",
+    "definition": "бесплатное ПО",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "shareware",
+    "definition": "условно-бесплатное ПО",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "adware",
+    "definition": "рекламное ПО",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "malware",
+    "definition": "вредоносное ПО",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "virus",
+    "definition": "вирус",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "worm",
+    "definition": "червь",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "trojan",
+    "definition": "троян",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ransomware",
+    "definition": "вымогатель",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "spyware",
+    "definition": "шпионское ПО",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rootkit",
+    "definition": "руткит",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "exploit",
+    "definition": "эксплойт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vulnerability",
+    "definition": "уязвимость",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "threat",
+    "definition": "угроза",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "risk",
+    "definition": "риск",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "attack",
+    "definition": "атака",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "defense",
+    "definition": "защита",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "security",
+    "definition": "безопасность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "privacy",
+    "definition": "конфиденциальность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "anonymity",
+    "definition": "анонимность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "authentication",
+    "definition": "аутентификация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "authorization",
+    "definition": "авторизация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "accounting",
+    "definition": "учет (AAA)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "audit",
+    "definition": "аудит",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "alert",
+    "definition": "оповещение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dashboard",
+    "definition": "панель управления",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kpi",
+    "definition": "ключевой показатель эффективности",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sla",
+    "definition": "соглашение об уровне обслуживания",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "slo",
+    "definition": "целевой показатель уровня обслуживания",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sli",
+    "definition": "индикатор уровня обслуживания",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "uptime",
+    "definition": "время работы",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "downtime",
+    "definition": "время простоя",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "maintenance",
+    "definition": "обслуживание",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "upgrade",
+    "definition": "модернизация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "migration",
+    "definition": "миграция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "integration",
+    "definition": "интеграция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "interoperability",
+    "definition": "совместимость",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "availability",
+    "definition": "доступность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "reliability",
+    "definition": "надежность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "durability",
+    "definition": "долговечность (данных)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "consistency",
+    "definition": "согласованность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "partition tolerance",
+    "definition": "устойчивость к разделению",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cap theorem",
+    "definition": "теорема CAP",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "acid",
+    "definition": "свойства транзакций (ACID)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "savepoint",
+    "definition": "точка сохранения",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "isolation",
+    "definition": "изоляция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "durability",
+    "definition": "сохранность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "atomicity",
+    "definition": "атомарность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "consistency",
+    "definition": "целостность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "semaphore",
+    "definition": "семафор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "condition variable",
+    "definition": "условная переменная",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "barrier",
+    "definition": "барьер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "coroutine",
+    "definition": "корутина",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "generator",
+    "definition": "генератор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "iterator",
+    "definition": "итератор",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "enumerable",
+    "definition": "перечисляемый",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "collection",
+    "definition": "коллекция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "subroutine",
+    "definition": "подпрограмма",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nil",
+    "definition": "ноль (в некоторых языках)",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "char",
+    "definition": "символ",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "unsigned",
+    "definition": "беззнаковый",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "signed",
+    "definition": "знаковый",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dynamic",
+    "definition": "динамический",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "strong typing",
+    "definition": "строгая типизация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "weak typing",
+    "definition": "слабая типизация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "duck typing",
+    "definition": "утиная типизация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "abstract class",
+    "definition": "абстрактный класс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "trait",
+    "definition": "трейт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mixin",
+    "definition": "миксин",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "composition",
+    "definition": "композиция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "aggregation",
+    "definition": "агрегация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "association",
+    "definition": "ассоциация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "coupling",
+    "definition": "связность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cohesion",
+    "definition": "сцепление",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "solid",
+    "definition": "принципы SOLID",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dry",
+    "definition": "не повторяйся",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kiss",
+    "definition": "будь проще",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "yagni",
+    "definition": "тебе это не понадобится",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "soc",
+    "definition": "разделение ответственности",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mvc",
+    "definition": "модель-представление-контроллер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mvvm",
+    "definition": "модель-представление-модель представления",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mvp",
+    "definition": "модель-представление-презентер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "clean architecture",
+    "definition": "чистая архитектура",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hexagonal architecture",
+    "definition": "гексагональная архитектура",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "microservices",
+    "definition": "микросервисы",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "monolith",
+    "definition": "монолит",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "soa",
+    "definition": "сервис-ориентированная архитектура",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "event driven",
+    "definition": "событийно-ориентированный",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "reactive",
+    "definition": "реактивный",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "functional programming",
+    "definition": "функциональное программирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "object oriented programming",
+    "definition": "объектно-ориентированное программирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "procedural programming",
+    "definition": "процедурное программирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "declarative programming",
+    "definition": "декларативное программирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "imperative programming",
+    "definition": "императивное программирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "logic programming",
+    "definition": "логическое программирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "constraint programming",
+    "definition": "программирование в ограничениях",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "concurrent programming",
+    "definition": "конкурентное программирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "parallel programming",
+    "definition": "параллельное программирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "distributed systems",
+    "definition": "распределенные системы",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "big data",
+    "definition": "большие данные",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "data mining",
+    "definition": "интеллектуальный анализ данных",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "machine learning",
+    "definition": "машинное обучение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "deep learning",
+    "definition": "глубокое обучение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "neural network",
+    "definition": "нейронная сеть",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "artificial intelligence",
+    "definition": "искусственный интеллект",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "natural language processing",
+    "definition": "обработка естественного языка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "computer vision",
+    "definition": "компьютерное зрение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "robotics",
+    "definition": "робототехника",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "iot",
+    "definition": "интернет вещей",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "blockchain",
+    "definition": "блокчейн",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cryptocurrency",
+    "definition": "криптовалюта",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "smart contract",
+    "definition": "смарт-контракт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "web3",
+    "definition": "веб 3.0",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "metaverse",
+    "definition": "метавселенная",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vr",
+    "definition": "виртуальная реальность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ar",
+    "definition": "дополненная реальность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mr",
+    "definition": "смешанная реальность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "xr",
+    "definition": "расширенная реальность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ui",
+    "definition": "пользовательский интерфейс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ux",
+    "definition": "пользовательский опыт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gui",
+    "definition": "графический интерфейс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cli",
+    "definition": "командная строка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tui",
+    "definition": "текстовый интерфейс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "responsive design",
+    "definition": "адаптивный дизайн",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mobile first",
+    "definition": "сначала мобильные",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "accessibility",
+    "definition": "доступность",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "localization",
+    "definition": "локализация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "internationalization",
+    "definition": "интернационализация",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rtl",
+    "definition": "справа налево",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ltr",
+    "definition": "слева направо",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fullstack",
+    "definition": "фулстек",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "devops",
+    "definition": "девопс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sre",
+    "definition": "инженер по надежности сайта",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "qa",
+    "definition": "обеспечение качества",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "testing",
+    "definition": "тестирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "end to end test",
+    "definition": "сквозное тестирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "performance test",
+    "definition": "тест производительности",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "load test",
+    "definition": "нагрузочное тестирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "stress test",
+    "definition": "стресс-тест",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "smoke test",
+    "definition": "дымовое тестирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "regression test",
+    "definition": "регрессионное тестирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "acceptance test",
+    "definition": "приемочное тестирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "manual testing",
+    "definition": "ручное тестирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "automated testing",
+    "definition": "автоматизированное тестирование",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ci/cd",
+    "definition": "непрерывная интеграция/непрерывное развертывание",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pipeline",
+    "definition": "конвейер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "artifact",
+    "definition": "артефакт",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "repository",
+    "definition": "репозиторий",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dependency management",
+    "definition": "управление зависимостями",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "version control",
+    "definition": "контроль версий",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "git",
+    "definition": "гит",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "svn",
+    "definition": "субверсия",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mercurial",
+    "definition": "меркуриал",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "perforce",
+    "definition": "перфорс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "clearcase",
+    "definition": "клиркейс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tfs",
+    "definition": "team foundation server",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "azure devops",
+    "definition": "azure devops",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jenkins",
+    "definition": "дженкинс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gitlab ci",
+    "definition": "гитлаб си",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "github actions",
+    "definition": "гитхаб экшнс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "circleci",
+    "definition": "circleci",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "travis ci",
+    "definition": "travis ci",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bamboo",
+    "definition": "бамбук",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "teamcity",
+    "definition": "тимсити",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nexus",
+    "definition": "нексус",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "artifactory",
+    "definition": "артифактори",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "docker",
+    "definition": "докер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kubernetes",
+    "definition": "кубернетес",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "helm",
+    "definition": "хелм",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "terraform",
+    "definition": "терраформ",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ansible",
+    "definition": "ансибл",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "puppet",
+    "definition": "паппет",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chef",
+    "definition": "шеф",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "saltstack",
+    "definition": "солтстек",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vagrant",
+    "definition": "вагрант",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "packer",
+    "definition": "пакер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "prometheus",
+    "definition": "прометей",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "grafana",
+    "definition": "графана",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "elk stack",
+    "definition": "elk стек",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "splunk",
+    "definition": "спланк",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "datadog",
+    "definition": "датадог",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "new relic",
+    "definition": "new relic",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "app dynamics",
+    "definition": "app dynamics",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sentry",
+    "definition": "сентри",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rollbar",
+    "definition": "роллбар",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bugsnag",
+    "definition": "багснаг",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jira",
+    "definition": "джира",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "confluence",
+    "definition": "конфлюэнс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "trello",
+    "definition": "трелло",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "asana",
+    "definition": "асана",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "notion",
+    "definition": "ноушн",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "slack",
+    "definition": "слак",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "teams",
+    "definition": "тимс",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "discord",
+    "definition": "дискорд",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "zoom",
+    "definition": "зум",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "skype",
+    "definition": "скайп",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "telegram",
+    "definition": "телеграм",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "whatsapp",
+    "definition": "вотсап",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "irc",
+    "definition": "ирк",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "xmpp",
+    "definition": "xmpp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "smtp",
+    "definition": "smtp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pop3",
+    "definition": "pop3",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "imap",
+    "definition": "imap",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "http",
+    "definition": "http",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "https",
+    "definition": "https",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ftp",
+    "definition": "ftp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sftp",
+    "definition": "sftp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ssh",
+    "definition": "ssh",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "telnet",
+    "definition": "телнет",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dns",
+    "definition": "dns",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dhcp",
+    "definition": "dhcp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ntp",
+    "definition": "ntp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ldap",
+    "definition": "ldap",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "active directory",
+    "definition": "active directory",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kerberos",
+    "definition": "kerberos",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "oauth",
+    "definition": "oauth",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "openid connect",
+    "definition": "openid connect",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "saml",
+    "definition": "saml",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jwt",
+    "definition": "jwt",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cors",
+    "definition": "cors",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "csrf",
+    "definition": "csrf",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "xss",
+    "definition": "xss",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sql injection",
+    "definition": "sql инъекция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ddos",
+    "definition": "ddos",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mitm",
+    "definition": "man in the middle",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "phishing",
+    "definition": "фишинг",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "social engineering",
+    "definition": "социальная инженерия",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "penetration testing",
+    "definition": "тестирование на проникновение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ethical hacking",
+    "definition": "этичный хакинг",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "white hat",
+    "definition": "белый хакер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "black hat",
+    "definition": "черный хакер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gray hat",
+    "definition": "серый хакер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "red team",
+    "definition": "красная команда",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "blue team",
+    "definition": "синяя команда",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "purple team",
+    "definition": "фиолетовая команда",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "incident response",
+    "definition": "реагирование на инциденты",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "forensics",
+    "definition": "компьютерная криминалистика",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "compliance",
+    "definition": "соответствие требованиям",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gdpr",
+    "definition": "gdpr",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hipaa",
+    "definition": "hipaa",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pci dss",
+    "definition": "pci dss",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "iso 27001",
+    "definition": "iso 27001",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "soc 2",
+    "definition": "soc 2",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nist",
+    "definition": "nist",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "owasp",
+    "definition": "owasp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cwe",
+    "definition": "cwe",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cve",
+    "definition": "cve",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cvss",
+    "definition": "cvss",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "exploit db",
+    "definition": "exploit db",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "metasploit",
+    "definition": "metasploit",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nmap",
+    "definition": "nmap",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "wireshark",
+    "definition": "wireshark",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "burp suite",
+    "definition": "burp suite",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kali linux",
+    "definition": "kali linux",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "parrot os",
+    "definition": "parrot os",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ubuntu",
+    "definition": "ubuntu",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "debian",
+    "definition": "debian",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "centos",
+    "definition": "centos",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rhel",
+    "definition": "rhel",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fedora",
+    "definition": "fedora",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "arch linux",
+    "definition": "arch linux",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gentoo",
+    "definition": "gentoo",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "slackware",
+    "definition": "slackware",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "opensuse",
+    "definition": "opensuse",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "freebsd",
+    "definition": "freebsd",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "openbsd",
+    "definition": "openbsd",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "netbsd",
+    "definition": "netbsd",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "macos",
+    "definition": "macos",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ios",
+    "definition": "ios",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "android",
+    "definition": "android",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "windows",
+    "definition": "windows",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "linux",
+    "definition": "linux",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "unix",
+    "definition": "unix",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "posix",
+    "definition": "posix",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gnu",
+    "definition": "gnu",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "lsf",
+    "definition": "lsf",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bsd",
+    "definition": "bsd",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sysv",
+    "definition": "sysv",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "init",
+    "definition": "init",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "systemd",
+    "definition": "systemd",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "upstart",
+    "definition": "upstart",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rc",
+    "definition": "rc",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bash",
+    "definition": "bash",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "zsh",
+    "definition": "zsh",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fish",
+    "definition": "fish",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sh",
+    "definition": "sh",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "csh",
+    "definition": "csh",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ksh",
+    "definition": "ksh",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "powershell",
+    "definition": "powershell",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cmd",
+    "definition": "cmd",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "shell",
+    "definition": "оболочка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "option",
+    "definition": "опция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pipe",
+    "definition": "конвейер",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "redirect",
+    "definition": "перенаправление",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "wildcard",
+    "definition": "подстановочный знак",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "regex",
+    "definition": "регулярное выражение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "grep",
+    "definition": "grep",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sed",
+    "definition": "sed",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "awk",
+    "definition": "awk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ls",
+    "definition": "ls",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cd",
+    "definition": "cd",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pwd",
+    "definition": "pwd",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mkdir",
+    "definition": "mkdir",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rm",
+    "definition": "rm",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cp",
+    "definition": "cp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mv",
+    "definition": "mv",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cat",
+    "definition": "cat",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tail",
+    "definition": "tail",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chmod",
+    "definition": "chmod",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chown",
+    "definition": "chown",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chgrp",
+    "definition": "chgrp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ps",
+    "definition": "ps",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "htop",
+    "definition": "htop",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pkill",
+    "definition": "pkill",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "renice",
+    "definition": "renice",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "df",
+    "definition": "df",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "du",
+    "definition": "du",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "uname",
+    "definition": "uname",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hostname",
+    "definition": "hostname",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ifconfig",
+    "definition": "ifconfig",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ip",
+    "definition": "ip",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ping",
+    "definition": "ping",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "traceroute",
+    "definition": "traceroute",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "netstat",
+    "definition": "netstat",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ss",
+    "definition": "ss",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dig",
+    "definition": "dig",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nslookup",
+    "definition": "nslookup",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "whois",
+    "definition": "whois",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "curl",
+    "definition": "curl",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "wget",
+    "definition": "wget",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "scp",
+    "definition": "scp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rsync",
+    "definition": "rsync",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tar",
+    "definition": "tar",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gzip",
+    "definition": "gzip",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bzip2",
+    "definition": "bzip2",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "xz",
+    "definition": "xz",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "zip",
+    "definition": "zip",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "unzip",
+    "definition": "unzip",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "7z",
+    "definition": "7z",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rar",
+    "definition": "rar",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nano",
+    "definition": "nano",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vim",
+    "definition": "vim",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "emacs",
+    "definition": "emacs",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vscode",
+    "definition": "vscode",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "intellij idea",
+    "definition": "intellij idea",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "eclipse",
+    "definition": "eclipse",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "netbeans",
+    "definition": "netbeans",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "visual studio",
+    "definition": "visual studio",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "xcode",
+    "definition": "xcode",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "android studio",
+    "definition": "android studio",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pycharm",
+    "definition": "pycharm",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "phpstorm",
+    "definition": "phpstorm",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "webstorm",
+    "definition": "webstorm",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rider",
+    "definition": "rider",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "clion",
+    "definition": "clion",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rubymine",
+    "definition": "rubymine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "goland",
+    "definition": "goland",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "datagrip",
+    "definition": "datagrip",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fleet",
+    "definition": "fleet",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sublime text",
+    "definition": "sublime text",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "atom",
+    "definition": "atom",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "brackets",
+    "definition": "brackets",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "notepad++",
+    "definition": "notepad++",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "textmate",
+    "definition": "textmate",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bbedit",
+    "definition": "bbedit",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "komodo",
+    "definition": "komodo",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bluefish",
+    "definition": "bluefish",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "geany",
+    "definition": "geany",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "codeblocks",
+    "definition": "codeblocks",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "devcpp",
+    "definition": "devcpp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "qt creator",
+    "definition": "qt creator",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "anjuta",
+    "definition": "anjuta",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "monodevelop",
+    "definition": "monodevelop",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sharpdevelop",
+    "definition": "sharpdevelop",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "glade",
+    "definition": "glade",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "wxwidgets",
+    "definition": "wxwidgets",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gtk",
+    "definition": "gtk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "qt",
+    "definition": "qt",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "swing",
+    "definition": "swing",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "javafx",
+    "definition": "javafx",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "swt",
+    "definition": "swt",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "awt",
+    "definition": "awt",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "winforms",
+    "definition": "winforms",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "wpf",
+    "definition": "wpf",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "uwp",
+    "definition": "uwp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "maui",
+    "definition": "maui",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "xamarin",
+    "definition": "xamarin",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cordova",
+    "definition": "cordova",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "phonegap",
+    "definition": "phonegap",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ionic",
+    "definition": "ionic",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "react native",
+    "definition": "react native",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "flutter",
+    "definition": "flutter",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "xamarin forms",
+    "definition": "xamarin forms",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nativescript",
+    "definition": "nativescript",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "electron",
+    "definition": "electron",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tauri",
+    "definition": "tauri",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "neutralinojs",
+    "definition": "neutralinojs",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nwjs",
+    "definition": "nwjs",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "proton native",
+    "definition": "proton native",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "qt for python",
+    "definition": "qt for python",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pyqt",
+    "definition": "pyqt",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pyside",
+    "definition": "pyside",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tkinter",
+    "definition": "tkinter",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kivy",
+    "definition": "kivy",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pygame",
+    "definition": "pygame",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "arcade",
+    "definition": "arcade",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "panda3d",
+    "definition": "panda3d",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "godot",
+    "definition": "godot",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "unity",
+    "definition": "unity",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "unreal engine",
+    "definition": "unreal engine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cryengine",
+    "definition": "cryengine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "source engine",
+    "definition": "source engine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "id tech",
+    "definition": "id tech",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "Frostbite",
+    "definition": "frostbite",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "red engine",
+    "definition": "red engine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rage",
+    "definition": "rage",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "anvil",
+    "definition": "anvil",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "snowdrop",
+    "definition": "snowdrop",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "decima",
+    "definition": "decima",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fox engine",
+    "definition": "fox engine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "re engine",
+    "definition": "re engine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dragon engine",
+    "definition": "dragon engine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mt framework",
+    "definition": "mt framework",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "havok",
+    "definition": "havok",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "physx",
+    "definition": "physx",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bullet",
+    "definition": "bullet",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ode",
+    "definition": "ode",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "box2d",
+    "definition": "box2d",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chipmunk",
+    "definition": "chipmunk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "matter.js",
+    "definition": "matter.js",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "three.js",
+    "definition": "three.js",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "babylon.js",
+    "definition": "babylon.js",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "aframe",
+    "definition": "aframe",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "playcanvas",
+    "definition": "playcanvas",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cocos2d",
+    "definition": "cocos2d",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "phaser",
+    "definition": "phaser",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pixijs",
+    "definition": "pixijs",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "konva",
+    "definition": "konva",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fabric.js",
+    "definition": "fabric.js",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "paper.js",
+    "definition": "paper.js",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "p5.js",
+    "definition": "p5.js",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "openframeworks",
+    "definition": "openframeworks",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cinder",
+    "definition": "cinder",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "max/msp",
+    "definition": "max/msp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pure data",
+    "definition": "pure data",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "superCollider",
+    "definition": "superCollider",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "csound",
+    "definition": "csound",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "faust",
+    "definition": "faust",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "chuck",
+    "definition": "chuck",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "livecode",
+    "definition": "livecode",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "scratch",
+    "definition": "scratch",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "blockly",
+    "definition": "blockly",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "snap!",
+    "definition": "snap!",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "alice",
+    "definition": "alice",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "greenfoot",
+    "definition": "greenfoot",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bluej",
+    "definition": "bluej",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "drjava",
+    "definition": "drjava",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jgrasp",
+    "definition": "jgrasp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "codio",
+    "definition": "codio",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "replit",
+    "definition": "replit",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "codesandbox",
+    "definition": "codesandbox",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "stackblitz",
+    "definition": "stackblitz",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "glitch",
+    "definition": "glitch",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "codepen",
+    "definition": "codepen",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jsfiddle",
+    "definition": "jsfiddle",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "plunker",
+    "definition": "plunker",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jsbin",
+    "definition": "jsbin",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "thimble",
+    "definition": "thimble",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "observable",
+    "definition": "observable",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "colab",
+    "definition": "colab",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kaggle",
+    "definition": "kaggle",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sagemaker",
+    "definition": "sagemaker",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vertex ai",
+    "definition": "vertex ai",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "azure ml",
+    "definition": "azure ml",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "aws sagemaker",
+    "definition": "aws sagemaker",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tensorflow",
+    "definition": "tensorflow",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pytorch",
+    "definition": "pytorch",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "keras",
+    "definition": "keras",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "scikit-learn",
+    "definition": "scikit-learn",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pandas",
+    "definition": "pandas",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "numpy",
+    "definition": "numpy",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "scipy",
+    "definition": "scipy",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "matplotlib",
+    "definition": "matplotlib",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "seaborn",
+    "definition": "seaborn",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "plotly",
+    "definition": "plotly",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bokeh",
+    "definition": "bokeh",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "altair",
+    "definition": "altair",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dash",
+    "definition": "dash",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "streamlit",
+    "definition": "streamlit",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gradio",
+    "definition": "gradio",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "flask",
+    "definition": "flask",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "django",
+    "definition": "django",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "fastapi",
+    "definition": "fastapi",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tornado",
+    "definition": "tornado",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "aiohttp",
+    "definition": "aiohttp",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sanic",
+    "definition": "sanic",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "quart",
+    "definition": "quart",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "falcon",
+    "definition": "falcon",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bottle",
+    "definition": "bottle",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pyramid",
+    "definition": "pyramid",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cherrypy",
+    "definition": "cherrypy",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "web2py",
+    "definition": "web2py",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "turbogears",
+    "definition": "turbogears",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "zope",
+    "definition": "zope",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "plone",
+    "definition": "plone",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "odoo",
+    "definition": "odoo",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tryton",
+    "definition": "tryton",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "erpnext",
+    "definition": "erpnext",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "frappe",
+    "definition": "frappe",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "saleor",
+    "definition": "saleor",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "prestashop",
+    "definition": "prestashop",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "magento",
+    "definition": "magento",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "woocommerce",
+    "definition": "woocommerce",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "shopify",
+    "definition": "shopify",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bigcommerce",
+    "definition": "bigcommerce",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "opencart",
+    "definition": "opencart",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "zen cart",
+    "definition": "zen cart",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "oscommerce",
+    "definition": "oscommerce",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cube cart",
+    "definition": "cube cart",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "virtuemart",
+    "definition": "virtuemart",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hikashop",
+    "definition": "hikashop",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "j2store",
+    "definition": "j2store",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ecommerce",
+    "definition": "электронная коммерция",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cms",
+    "definition": "система управления контентом",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "lms",
+    "definition": "система управления обучением",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "crm",
+    "definition": "система управления взаимоотношениями с клиентами",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "erp",
+    "definition": "система планирования ресурсов предприятия",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hrm",
+    "definition": "система управления человеческими ресурсами",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ats",
+    "definition": "система отслеживания кандидатов",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pos",
+    "definition": "кассовая система",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bi",
+    "definition": "бизнес-аналитика",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "etl",
+    "definition": "извлечение, преобразование, загрузка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "data warehouse",
+    "definition": "хранилище данных",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "data lake",
+    "definition": "озеро данных",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "data mart",
+    "definition": "витрина данных",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "olap",
+    "definition": "онлайн-аналитическая обработка",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "oltp",
+    "definition": "онлайн-обработка транзакций",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nosql",
+    "definition": "nosql",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sql",
+    "definition": "sql",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rdbms",
+    "definition": "реляционная СУБД",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "orm",
+    "definition": "объектно-реляционное отображение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "odm",
+    "definition": "объектно-документное отображение",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jdbc",
+    "definition": "jdbc",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "odbc",
+    "definition": "odbc",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ado.net",
+    "definition": "ado.net",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hibernate",
+    "definition": "hibernate",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "entity framework",
+    "definition": "entity framework",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dapper",
+    "definition": "dapper",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sqlalchemy",
+    "definition": "sqlalchemy",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "peewee",
+    "definition": "peewee",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mongoose",
+    "definition": "mongoose",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sequelize",
+    "definition": "sequelize",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "typeorm",
+    "definition": "typeorm",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "prisma",
+    "definition": "prisma",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "knex",
+    "definition": "knex",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bookshelf",
+    "definition": "bookshelf",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "waterline",
+    "definition": "waterline",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "objection",
+    "definition": "objection",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mikro-orm",
+    "definition": "mikro-orm",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "typeorm",
+    "definition": "typeorm",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "drizzle",
+    "definition": "drizzle",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "kysely",
+    "definition": "kysely",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "slonik",
+    "definition": "slonik",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "pg-promise",
+    "definition": "pg-promise",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "node-postgres",
+    "definition": "node-postgres",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mysql2",
+    "definition": "mysql2",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tedious",
+    "definition": "tedious",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "mssql",
+    "definition": "mssql",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "oracledb",
+    "definition": "oracledb",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sqlite3",
+    "definition": "sqlite3",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "better-sqlite3",
+    "definition": "better-sqlite3",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "lowdb",
+    "definition": "lowdb",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nedb",
+    "definition": "nedb",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "levelup",
+    "definition": "levelup",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rocksdb",
+    "definition": "rocksdb",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "leveldb",
+    "definition": "leveldb",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "indexeddb",
+    "definition": "indexeddb",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "localstorage",
+    "definition": "localstorage",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sessionstorage",
+    "definition": "sessionstorage",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cookies",
+    "definition": "cookies",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "web storage",
+    "definition": "веб-хранилище",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "cache api",
+    "definition": "cache api",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "service worker",
+    "definition": "service worker",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "web worker",
+    "definition": "web worker",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "shared worker",
+    "definition": "shared worker",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "websocket",
+    "definition": "websocket",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "web rtc",
+    "definition": "web rtc",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "graphql",
+    "definition": "graphql",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rest",
+    "definition": "rest",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "soap",
+    "definition": "soap",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "grpc",
+    "definition": "grpc",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "thrift",
+    "definition": "thrift",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "avro",
+    "definition": "avro",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "protobuf",
+    "definition": "protobuf",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "json",
+    "definition": "json",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "xml",
+    "definition": "xml",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "yaml",
+    "definition": "yaml",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "toml",
+    "definition": "toml",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ini",
+    "definition": "ini",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "csv",
+    "definition": "csv",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tsv",
+    "definition": "tsv",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "html",
+    "definition": "html",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "css",
+    "definition": "css",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "javascript",
+    "definition": "javascript",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "typescript",
+    "definition": "typescript",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jsx",
+    "definition": "jsx",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "tsx",
+    "definition": "tsx",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vue",
+    "definition": "vue",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "angular",
+    "definition": "angular",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "react",
+    "definition": "react",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "svelte",
+    "definition": "svelte",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "solidjs",
+    "definition": "solidjs",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "qwik",
+    "definition": "qwik",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "astro",
+    "definition": "astro",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "next.js",
+    "definition": "next.js",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "nuxt.js",
+    "definition": "nuxt.js",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "gatsby",
+    "definition": "gatsby",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "remix",
+    "definition": "remix",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sapper",
+    "definition": "sapper",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sveltekit",
+    "definition": "sveltekit",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "blazor",
+    "definition": "blazor",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "razor",
+    "definition": "razor",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "asp.net",
+    "definition": "asp.net",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "spring boot",
+    "definition": "spring boot",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "spring framework",
+    "definition": "spring framework",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "hibernate",
+    "definition": "hibernate",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "struts",
+    "definition": "struts",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jsf",
+    "definition": "jsf",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "play framework",
+    "definition": "play framework",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "dropwizard",
+    "definition": "dropwizard",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "micronaut",
+    "definition": "micronaut",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "quarkus",
+    "definition": "quarkus",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "helidon",
+    "definition": "helidon",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "vert.x",
+    "definition": "vert.x",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "rxjava",
+    "definition": "rxjava",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "project reactor",
+    "definition": "project reactor",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "akka",
+    "definition": "akka",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "spark java",
+    "definition": "spark java",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jersey",
+    "definition": "jersey",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "resteasy",
+    "definition": "resteasy",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jax-rs",
+    "definition": "jax-rs",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jax-ws",
+    "definition": "jax-ws",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jaxb",
+    "definition": "jaxb",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jpa",
+    "definition": "jpa",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jta",
+    "definition": "jta",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jms",
+    "definition": "jms",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jndi",
+    "definition": "jndi",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jmx",
+    "definition": "jmx",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jmx",
+    "definition": "jmx",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jni",
+    "definition": "jni",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jna",
+    "definition": "jna",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "jnr",
+    "definition": "jnr",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "graalvm",
+    "definition": "graalvm",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "openjdk",
+    "definition": "openjdk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "oracle jdk",
+    "definition": "oracle jdk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "ibm jdk",
+    "definition": "ibm jdk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "amazon corretto",
+    "definition": "amazon corretto",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "azul zulu",
+    "definition": "azul zulu",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "adoptopenjdk",
+    "definition": "adoptopenjdk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "eclipse temurin",
+    "definition": "eclipse temurin",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "sap machine",
+    "definition": "sap machine",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "bellsoft liberica",
+    "definition": "bellsoft liberica",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "redhat build of openjdk",
+    "definition": "redhat build of openjdk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  },
+  {
+    "term": "microsoft build of openjdk",
+    "definition": "microsoft build of openjdk",
+    "category": "Уровень 4: Офис, продуктивность и мультимедиа"
+  }
+]

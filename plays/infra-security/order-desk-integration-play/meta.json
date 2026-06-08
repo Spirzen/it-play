@@ -1,0 +1,13 @@
+{
+  "title": "Order Desk — REST и WebSocket",
+  "description": "Интерактивное демо «Order Desk — REST и WebSocket» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "order-desk-integration-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/2",
+  "order": 34
+}

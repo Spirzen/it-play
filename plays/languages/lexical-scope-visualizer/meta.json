@@ -1,0 +1,13 @@
+{
+  "title": "Лексическая область видимости",
+  "description": "Интерактивное демо «Лексическая область видимости» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "lexical-scope-visualizer",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-01-javascript/16",
+  "order": 2
+}

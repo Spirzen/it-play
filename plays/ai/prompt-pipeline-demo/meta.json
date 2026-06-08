@@ -1,0 +1,13 @@
+{
+  "title": "Пайплайн промптов",
+  "description": "Интерактивное демо «Пайплайн промптов» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "prompt-pipeline-demo",
+  "tags": [
+    "ai",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-06-primenenie-ii/1",
+  "order": 5
+}

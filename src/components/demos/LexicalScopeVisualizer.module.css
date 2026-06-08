@@ -1,0 +1,209 @@
+.layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.presetBtn {
+  font-size: 0.78rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: var(--ifm-font-family-monospace);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.presetBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.presetBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-background-color));
+  font-weight: 600;
+}
+
+.searchRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.searchInput {
+  flex: 1;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.pathBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.pathStep {
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.pathStepActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  color: var(--ifm-font-color-base);
+  font-weight: 600;
+  animation: scopePulse 0.6s ease;
+}
+
+.pathStepFound {
+  border-color: var(--demo-success, #2e7d32);
+  background: color-mix(in srgb, var(--demo-success, #2e7d32) 16%, transparent);
+}
+
+.pathArrow {
+  opacity: 0.45;
+  user-select: none;
+}
+
+.chain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.scopeCard {
+  width: min(100%, 18rem);
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.scopeCardActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+  transform: scale(1.02);
+}
+
+.scopeCardFound {
+  border-color: var(--demo-success, #2e7d32);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--demo-success, #2e7d32) 22%, transparent);
+}
+
+.scopeCardMiss {
+  border-color: var(--demo-error, #c62828);
+  background: color-mix(in srgb, var(--demo-error, #c62828) 8%, var(--ifm-background-surface-color));
+}
+
+.scopeTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--demo-muted);
+  border-bottom: 1px solid var(--demo-border);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.varRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  border-bottom: 1px dashed var(--demo-border);
+}
+
+.varRow:last-child {
+  border-bottom: none;
+}
+
+.varHit {
+  background: color-mix(in srgb, var(--demo-success, #2e7d32) 20%, transparent);
+  margin: 0 -0.35rem;
+  padding: 0.25rem 0.35rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.outerRef {
+  margin-top: 0.45rem;
+  font-size: 0.72rem;
+  color: var(--demo-muted);
+}
+
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1.75rem;
+  color: var(--demo-muted);
+}
+
+.connectorLine {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(
+    var(--ifm-color-primary),
+    var(--demo-muted)
+  );
+  opacity: 0.5;
+}
+
+.connectorArrow {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+@keyframes scopePulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.65;
+  }
+}
+
+.tokenKw {
+  color: #c586c0;
+}
+.tokenFn {
+  color: #dcdcaa;
+}
+.tokenV {
+  color: #9cdcfe;
+}
+.tokenP {
+  color: var(--ifm-font-color-base);
+}
+.tokenSearch {
+  background: color-mix(in srgb, #ffc107 35%, transparent);
+  border-radius: 2px;
+  padding: 0 2px;
+}

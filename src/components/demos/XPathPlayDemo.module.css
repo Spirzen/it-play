@@ -1,0 +1,64 @@
+.statusBanner {
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.statusValid {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.35);
+}
+
+.statusInvalid {
+  background: rgba(198, 40, 40, 0.1);
+  color: #c62828;
+  border: 1px solid rgba(198, 40, 40, 0.35);
+}
+
+.statusPending {
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content-secondary);
+  border: 1px dashed var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.resultList {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-height: 14rem;
+  overflow: auto;
+}
+
+.resultItem {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  font-size: 0.82rem;
+}
+
+.resultIndex {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  width: 1.25rem;
+}
+
+.resultCode {
+  font-family: var(--ifm-font-family-monospace);
+  word-break: break-word;
+}
+
+.resultMore {
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  padding: 0.25rem 0.5rem;
+}

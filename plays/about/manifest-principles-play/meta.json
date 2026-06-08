@@ -1,0 +1,12 @@
+{
+  "title": "Manifest Principles",
+  "description": "Интерактивное демо «Manifest Principles» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "manifest-principles-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/manifest",
+  "order": 31
+}

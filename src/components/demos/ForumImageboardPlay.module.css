@@ -1,0 +1,64 @@
+.root {
+  max-width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.traits {
+  margin: 0 0 0.65rem;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+}
+
+.bump {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.65rem;
+}
+
+.warn {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.mock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.post {
+  padding: 0.55rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.8rem;
+}
+
+.postSticky {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.post header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.72rem;
+}
+
+.role {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.post p {
+  margin: 0;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}

@@ -1,0 +1,391 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.scenarioTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.scenarioTab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scenarioTab:hover:not(:disabled) {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.scenarioTab:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.scenarioTabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.scenarioHint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.zone {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem 0.65rem;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoneActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.zoneExternal {
+  border-color: color-mix(in srgb, #1976d2 35%, var(--ifm-color-emphasis-300));
+}
+
+.zoneFirewall {
+  border-color: color-mix(in srgb, #c62828 35%, var(--ifm-color-emphasis-300));
+}
+
+.zoneServer {
+  border-color: color-mix(in srgb, #2e7d32 30%, var(--ifm-color-emphasis-300));
+}
+
+.zoneHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.zoneIcon {
+  font-size: 1.1rem;
+}
+
+.zoneLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ifm-color-content);
+}
+
+.zoneIp {
+  margin-left: auto;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+}
+
+.externalNode,
+.serverNode {
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0.78;
+}
+
+.nodeActive {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-color));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent);
+  transform: scale(1.02);
+}
+
+.nodeBlocked {
+  border-color: var(--ifm-color-danger);
+  background: color-mix(in srgb, var(--ifm-color-danger) 8%, var(--ifm-background-color));
+}
+
+.nodeName {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.nodeRole {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.65rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.serverPort {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.rulesList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.ruleRow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.35rem 0.4rem;
+  align-items: center;
+  padding: 0.3rem 0.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+  transition: all 0.25s ease;
+}
+
+.ruleRowDim {
+  opacity: 0.45;
+}
+
+.ruleRowMatch {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-color));
+  box-shadow: 0 0 8px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.ruleNum {
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: var(--ifm-color-content-secondary);
+}
+
+.ruleText {
+  font-size: 0.62rem;
+  line-height: 1.3;
+  word-break: break-all;
+}
+
+.ruleAction {
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.12rem 0.35rem;
+  border-radius: 4px;
+}
+
+.ruleAccept {
+  color: #1b5e20;
+  background: color-mix(in srgb, #2e7d32 18%, transparent);
+}
+
+.ruleDrop {
+  color: var(--ifm-color-danger);
+  background: color-mix(in srgb, var(--ifm-color-danger) 12%, transparent);
+}
+
+.blockBadge {
+  display: block;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--ifm-color-danger);
+  background: color-mix(in srgb, var(--ifm-color-danger) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ifm-color-danger) 35%, transparent);
+}
+
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+
+.connectorLine {
+  display: block;
+  width: 3px;
+  height: 1.1rem;
+  border-radius: 2px;
+  background: var(--ifm-color-emphasis-300);
+  transition: background 0.25s ease;
+}
+
+.connectorPulseDown {
+  background: linear-gradient(
+    180deg,
+    var(--ifm-color-emphasis-300) 0%,
+    var(--ifm-color-primary) 50%,
+    var(--ifm-color-emphasis-300) 100%
+  );
+  animation: pulseDown 0.9s ease-in-out infinite;
+}
+
+.connectorPulseUp {
+  background: linear-gradient(
+    0deg,
+    var(--ifm-color-emphasis-300) 0%,
+    var(--demo-success, #2e7d32) 50%,
+    var(--ifm-color-emphasis-300) 100%
+  );
+  animation: pulseUp 0.9s ease-in-out infinite;
+}
+
+.connectorBlocked {
+  background: linear-gradient(
+    180deg,
+    var(--ifm-color-emphasis-300) 0%,
+    var(--ifm-color-danger) 50%,
+    var(--ifm-color-emphasis-300) 100%
+  );
+  animation: pulseDown 0.7s ease-in-out infinite;
+}
+
+.connectorCheck {
+  background: linear-gradient(
+    180deg,
+    var(--ifm-color-emphasis-300) 0%,
+    #ed6c02 50%,
+    var(--ifm-color-emphasis-300) 100%
+  );
+  animation: pulseDown 0.85s ease-in-out infinite;
+}
+
+@keyframes pulseDown {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseUp {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.connectorLabel {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.stepCard {
+  margin-bottom: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+}
+
+.stepBadge {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-primary);
+}
+
+.stepTitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.stepDetail {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepLog {
+  margin: 0.4rem 0 0;
+  padding-top: 0.35rem;
+  border-top: 1px dashed var(--ifm-color-emphasis-200);
+  font-size: 0.76rem;
+  font-style: italic;
+  color: var(--ifm-color-content-secondary);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.stepDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-300);
+  transition: all 0.25s ease;
+}
+
+.stepDotDone {
+  background: color-mix(in srgb, var(--ifm-color-primary) 50%, var(--ifm-color-emphasis-300));
+}
+
+.stepDotCurrent {
+  background: var(--ifm-color-primary);
+  transform: scale(1.35);
+}
+
+.footer {
+  margin-top: 0.75rem;
+  font-size: 0.74rem;
+  line-height: 1.4;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}

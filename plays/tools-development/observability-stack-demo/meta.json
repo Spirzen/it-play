@@ -1,0 +1,12 @@
+{
+  "title": "Observability Stack Demo",
+  "description": "Интерактивное демо «Observability Stack Demo» — раздел Инструменты · Разработка.",
+  "category": "tools-development",
+  "categoryTitle": "Инструменты · Разработка",
+  "component": "observability-stack-demo",
+  "tags": [
+    "toolsdevelopment"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/development/4",
+  "order": 56
+}

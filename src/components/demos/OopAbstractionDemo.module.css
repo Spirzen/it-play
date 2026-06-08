@@ -1,0 +1,241 @@
+.tabRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tabBtn {
+  flex: 1 1 auto;
+  min-width: 5rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.tabBtnActive {
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.45;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.abstractCard {
+  border: 2px dashed #e65100;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, #e65100 7%, transparent);
+}
+
+.abstractTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #e65100;
+}
+
+.implCard {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.implCardActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+}
+
+.implTitle {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.sectionLabel {
+  margin: 0.45rem 0 0.2rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.methodRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+}
+
+.abstractBadge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.hiddenBadge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.chip {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.chipActive {
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.chipDisabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.methodBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.65rem 0;
+}
+
+.toggleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.8rem;
+}
+
+.detailPanel {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px dashed #2e7d32;
+  background: color-mix(in srgb, #2e7d32 6%, transparent);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.detailPanel strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #2e7d32;
+}
+
+.hierarchyArrow {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--demo-muted);
+  margin: 0.35rem 0;
+}
+
+.errorBox {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #c62828;
+  background: color-mix(in srgb, #c62828 8%, transparent);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  color: #b71c1c;
+}
+
+.outputBox {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  min-height: 2.5rem;
+}
+
+.log {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 7rem;
+  overflow-y: auto;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+}
+
+.log li {
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed var(--demo-border);
+}
+
+.log li:last-child {
+  border-bottom: none;
+}
+
+.ifaceCard {
+  border: 2px dashed #1565c0;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, #1565c0 6%, transparent);
+}
+
+.ifaceTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1565c0;
+}

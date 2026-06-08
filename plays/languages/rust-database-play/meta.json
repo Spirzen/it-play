@@ -1,0 +1,13 @@
+{
+  "title": "Rust и базы данных",
+  "description": "Интерактивное демо «Rust и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "rust-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-13-rust/16",
+  "order": 30
+}

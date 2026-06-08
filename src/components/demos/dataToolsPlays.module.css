@@ -1,0 +1,312 @@
+.lead {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.exampleRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.pill {
+  padding: 0.25rem 0.55rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+}
+
+.noteGood,
+.noteWarn {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.noteGood {
+  background: color-mix(in srgb, #2ecc71 12%, transparent);
+  border: 1px solid color-mix(in srgb, #2ecc71 35%, transparent);
+}
+
+.noteWarn {
+  background: color-mix(in srgb, #e67e22 10%, transparent);
+  border: 1px solid color-mix(in srgb, #e67e22 30%, transparent);
+}
+
+.noteGood p,
+.noteWarn p {
+  margin: 0.35rem 0 0;
+}
+
+.splitPanels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 720px) {
+  .splitPanels {
+    grid-template-columns: 1fr;
+  }
+}
+
+.codePane,
+.queryBox {
+  margin: 0;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: var(--ifm-font-family-monospace);
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.queryBox {
+  margin-bottom: 0.5rem;
+}
+
+.metaLine {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.fmDual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .fmDual {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fmPane {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.fmPath {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.7rem;
+  font-family: var(--ifm-font-family-monospace);
+  background: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.fmList {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+}
+
+.fmRow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  background: transparent;
+  font-size: 0.78rem;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fmRow:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.fmRowActive {
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+}
+
+.fmIcon {
+  width: 1.1rem;
+}
+
+.fmSize {
+  margin-left: auto;
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.fmToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.fmAction {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fmAction:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.fmLog {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.78rem;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.fmLog li {
+  margin: 0.2rem 0;
+}
+
+.fmLogEmpty {
+  color: var(--ifm-color-content-secondary);
+}
+
+.compareTable {
+  width: 100%;
+  font-size: 0.85rem;
+  border-collapse: collapse;
+}
+
+.compareTable th {
+  text-align: left;
+  padding: 0.4rem 0.65rem 0.4rem 0;
+  color: var(--ifm-color-content-secondary);
+  font-weight: 600;
+  width: 38%;
+}
+
+.compareTable td {
+  padding: 0.4rem 0;
+}
+
+.backupTimeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.backupBlock {
+  flex: 1;
+  min-width: 4.5rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  font-size: 0.72rem;
+  opacity: 0.45;
+  transition:
+    opacity 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.backupBlockLit {
+  opacity: 1;
+}
+
+.backupDay {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.range {
+  accent-color: var(--ifm-color-primary);
+}
+
+.chartArea {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 140px;
+  padding: 0.75rem;
+  margin-bottom: 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.barCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 56px;
+  height: 120px;
+}
+
+.barFill {
+  width: 100%;
+  max-width: 40px;
+  margin-top: auto;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, var(--ifm-color-primary), color-mix(in srgb, var(--ifm-color-primary) 55%, #1a1a2e));
+}
+
+.barLabel {
+  font-size: 0.68rem;
+  margin-top: 0.35rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.chartPie .pieRing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.pieSlice {
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  background: hsl(var(--hue, 220) 55% 42% / 0.25);
+  border: 1px solid hsl(var(--hue, 220) 50% 50% / 0.5);
+}
+
+.chartScatter {
+  align-items: center;
+}
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}

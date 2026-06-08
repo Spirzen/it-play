@@ -1,0 +1,12 @@
+{
+  "title": "Карта отраслей",
+  "description": "Интерактивное демо «Карта отраслей» — раздел Контекст.",
+  "category": "context",
+  "categoryTitle": "Контекст",
+  "component": "context-domains-hub",
+  "tags": [
+    "context"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/context/intro",
+  "order": 2
+}

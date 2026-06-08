@@ -1,0 +1,12 @@
+{
+  "title": "Compiler Simulator",
+  "description": "Интерактивное демо «Compiler Simulator» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "compiler-simulator",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 9
+}

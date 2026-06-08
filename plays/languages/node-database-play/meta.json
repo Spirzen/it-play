@@ -1,0 +1,13 @@
+{
+  "title": "Node.js и базы данных",
+  "description": "Интерактивное демо «Node.js и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "node-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/26",
+  "order": 4
+}

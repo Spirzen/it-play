@@ -1,0 +1,98 @@
+.statusBanner {
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 0.75rem;
+}
+
+.statusValid {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.35);
+}
+
+.statusInvalid {
+  background: rgba(198, 40, 40, 0.1);
+  color: #c62828;
+  border: 1px solid rgba(198, 40, 40, 0.35);
+}
+
+.pathList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 14rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.pathItem {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.4rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  font-size: 0.8rem;
+}
+
+.pathKey {
+  font-family: var(--ifm-font-family-monospace);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pathType {
+  font-size: 0.72rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.pathVal {
+  color: var(--ifm-color-content-secondary);
+  max-width: 8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.jsonPreview {
+  margin: 0;
+  padding: 0.65rem;
+  max-height: 14rem;
+  overflow: auto;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  background: var(--ifm-code-background);
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.issueList {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.issueItem {
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.issueOk {
+  background: rgba(46, 125, 50, 0.08);
+}
+
+.issueFail {
+  background: rgba(198, 40, 40, 0.06);
+  border-color: rgba(198, 40, 40, 0.35);
+}

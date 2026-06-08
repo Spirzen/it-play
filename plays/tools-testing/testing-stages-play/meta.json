@@ -1,0 +1,12 @@
+{
+  "title": "Testing Stages",
+  "description": "Интерактивное демо «Testing Stages» — раздел Инструменты · Тестирование.",
+  "category": "tools-testing",
+  "categoryTitle": "Инструменты · Тестирование",
+  "component": "testing-stages-play",
+  "tags": [
+    "toolstesting"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/testing/1",
+  "order": 96
+}

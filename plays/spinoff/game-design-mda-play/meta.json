@@ -1,0 +1,13 @@
+{
+  "title": "MDA — механики, динамика, эстетика",
+  "description": "Интерактивное демо «MDA — механики, динамика, эстетика» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-design-mda-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/117",
+  "order": 12
+}

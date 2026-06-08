@@ -1,0 +1,258 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.tab {
+  padding: 0.4rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.78rem;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.tabActive {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  border-color: transparent;
+}
+
+.panel {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.panel h5 {
+  margin: 0 0 0.4rem;
+  font-size: 0.88rem;
+}
+
+.panel p,
+.panel li {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.panel ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.68rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-content);
+}
+
+.tagIt {
+  background: rgba(123, 104, 238, 0.2);
+  color: var(--ifm-color-primary);
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 0.65rem;
+}
+
+.step {
+  flex: 1;
+  min-width: 72px;
+  padding: 0.45rem 0.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.72rem;
+  text-align: center;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.stepActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(123, 104, 238, 0.25);
+  transform: translateY(-1px);
+}
+
+.stepDone {
+  opacity: 0.75;
+}
+
+.arrow {
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.layers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.layer {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.layerActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(123, 104, 238, 0.08);
+}
+
+.layerNum {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.layerBody strong {
+  display: block;
+  font-size: 0.82rem;
+  margin-bottom: 0.15rem;
+}
+
+.layerBody span {
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.flowRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.flowChip {
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.flowChipOk {
+  background: rgba(46, 125, 50, 0.15);
+  border-color: #2e7d32;
+}
+
+.flowChipPending {
+  opacity: 0.55;
+}
+
+.flowChipFail {
+  background: rgba(198, 40, 40, 0.12);
+  border-color: #c62828;
+}
+
+.btn {
+  padding: 0.4rem 0.85rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.78rem;
+  margin-top: 0.35rem;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hubGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.45rem;
+}
+
+.hubCard {
+  padding: 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.hubCard:hover,
+.hubCardActive {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-1px);
+}
+
+.hubIcon {
+  font-size: 1.25rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.hubLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: block;
+}
+
+.hubDetail {
+  margin-top: 0.65rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+}
+
+@media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .pipeline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+}

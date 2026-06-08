@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Lisp",
+  "description": "Интерактивное демо «Экосистема Lisp» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "lisp-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/3",
+  "order": 38
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Симплекс — пошаговый тренажёр",
+  "description": "Интерактивное демо «Симплекс — пошаговый тренажёр» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "simplex-step-trainer",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/4",
+  "order": 53
+}

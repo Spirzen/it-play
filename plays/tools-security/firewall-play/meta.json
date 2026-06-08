@@ -1,0 +1,12 @@
+{
+  "title": "Firewall",
+  "description": "Интерактивное демо «Firewall» — раздел Инструменты · Безопасность.",
+  "category": "tools-security",
+  "categoryTitle": "Инструменты · Безопасность",
+  "component": "firewall-play",
+  "tags": [
+    "toolssecurity"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/security/2",
+  "order": 89
+}

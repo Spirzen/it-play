@@ -1,0 +1,12 @@
+{
+  "title": "Archive Utility Simulator",
+  "description": "Интерактивное демо «Archive Utility Simulator» — раздел Инструменты · Разработка.",
+  "category": "tools-development",
+  "categoryTitle": "Инструменты · Разработка",
+  "component": "archive-utility-simulator",
+  "tags": [
+    "toolsdevelopment"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/development/2",
+  "order": 49
+}

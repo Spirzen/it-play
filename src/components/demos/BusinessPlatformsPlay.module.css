@@ -1,0 +1,48 @@
+.root {
+  max-width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  margin: 0.65rem 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.node {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.nodeActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  font-weight: 600;
+}
+
+.arrow {
+  color: var(--ifm-color-content-secondary);
+  font-weight: 400;
+}
+
+.detail {
+  margin: 0;
+  font-size: 0.82rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+}

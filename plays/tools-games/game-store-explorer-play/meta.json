@@ -1,0 +1,12 @@
+{
+  "title": "Game Store Explorer",
+  "description": "Интерактивное демо «Game Store Explorer» — раздел Инструменты · Игры.",
+  "category": "tools-games",
+  "categoryTitle": "Инструменты · Игры",
+  "component": "game-store-explorer-play",
+  "tags": [
+    "toolsgames"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/games/3",
+  "order": 69
+}

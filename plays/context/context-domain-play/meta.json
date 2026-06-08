@@ -1,0 +1,12 @@
+{
+  "title": "Отраслевое демо",
+  "description": "Интерактивное демо «Отраслевое демо» — раздел Контекст.",
+  "category": "context",
+  "categoryTitle": "Контекст",
+  "component": "context-domain-play",
+  "tags": [
+    "context"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/context/commerce/1",
+  "order": 1
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ИТ-инфраструктура",
+  "description": "Интерактивное демо «ИТ-инфраструктура» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "it-infrastructure-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3",
+  "order": 21
+}

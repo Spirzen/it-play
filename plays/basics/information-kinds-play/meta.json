@@ -1,0 +1,13 @@
+{
+  "title": "Information Kinds",
+  "description": "Интерактивное демо «Information Kinds» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "information-kinds-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-09-dannye-i-informatsiya/2",
+  "order": 15
+}

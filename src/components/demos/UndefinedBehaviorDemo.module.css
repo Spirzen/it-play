@@ -1,0 +1,238 @@
+.root {
+  max-width: min(960px, 100%);
+  margin: 0 auto;
+}
+
+.modeBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.modeBtn {
+  --scenario-accent: var(--ifm-color-primary);
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  color: var(--demo-muted);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s,
+    color 0.2s;
+}
+
+.modeBtn:hover:not(:disabled) {
+  border-color: var(--scenario-accent);
+  color: var(--scenario-accent);
+}
+
+.modeBtnActive {
+  border-color: var(--scenario-accent);
+  background: color-mix(in srgb, var(--scenario-accent) 14%, var(--ifm-background-color));
+  color: var(--scenario-accent);
+  font-weight: 600;
+}
+
+.scenarioHint {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--demo-muted);
+  margin: 0 0 0.85rem;
+  line-height: 1.45;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.codePanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.codeBlock {
+  margin: 0;
+  padding: 0.75rem 0.85rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  background: var(--demo-code-bg);
+  color: var(--demo-code-fg);
+  border: 1px solid var(--demo-border);
+  overflow-x: auto;
+  white-space: pre;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.envRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.envField {
+  flex: 1 1 120px;
+  min-width: 0;
+}
+
+.resultPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.resultBox {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+  min-height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.resultBoxInfo {
+  border-color: var(--demo-info);
+  background: color-mix(in srgb, var(--demo-info) 8%, var(--ifm-background-color));
+}
+
+.resultBoxWarning {
+  border-color: var(--demo-warning);
+  background: color-mix(in srgb, var(--demo-warning) 10%, var(--ifm-background-color));
+}
+
+.resultBoxError {
+  border-color: var(--demo-error);
+  background: color-mix(in srgb, var(--demo-error) 10%, var(--ifm-background-color));
+}
+
+.resultValue {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+  word-break: break-word;
+}
+
+.resultLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.resultDetail {
+  font-size: 0.78rem;
+  color: var(--demo-muted);
+  line-height: 1.4;
+  margin: 0;
+  max-width: 28rem;
+}
+
+.guarantee {
+  font-size: 0.78rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color);
+  color: var(--demo-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.runCount {
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+  text-align: center;
+}
+
+.logPanel {
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  max-height: 11rem;
+  overflow-y: auto;
+}
+
+.logTitle {
+  margin: 0;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--demo-border);
+  color: var(--demo-muted);
+}
+
+.logList {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem 0;
+}
+
+.logItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.65rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.75rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--demo-border) 60%, transparent);
+}
+
+.logItem:last-child {
+  border-bottom: none;
+}
+
+.logTime {
+  color: var(--demo-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.logEnv {
+  font-size: 0.7rem;
+  color: var(--demo-muted);
+}
+
+.logOutcome {
+  font-weight: 600;
+}
+
+.logEmpty {
+  padding: 0.75rem;
+  text-align: center;
+  color: var(--demo-muted);
+  font-size: 0.8rem;
+}
+
+.kindBar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}

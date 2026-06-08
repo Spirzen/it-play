@@ -1,0 +1,13 @@
+{
+  "title": "UI-тест регистрации",
+  "description": "Интерактивное демо «UI-тест регистрации» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "ui-registration-test-play",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-05-testirovanie/1013",
+  "order": 13
+}

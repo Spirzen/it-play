@@ -1,0 +1,13 @@
+{
+  "title": "Jira — трекер задач",
+  "description": "Интерактивное демо «Jira — трекер задач» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "jira-task-tracker-demo",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/2",
+  "order": 27
+}

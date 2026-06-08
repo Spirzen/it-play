@@ -1,0 +1,12 @@
+{
+  "title": "Testing Basics Demo",
+  "description": "Интерактивное демо «Testing Basics Demo» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "testing-basics-demo",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 21
+}

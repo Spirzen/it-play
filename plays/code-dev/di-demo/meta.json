@@ -1,0 +1,13 @@
+{
+  "title": "Dependency Injection",
+  "description": "Интерактивное демо «Dependency Injection» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "di-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-09-zavisimosti/12",
+  "order": 44
+}

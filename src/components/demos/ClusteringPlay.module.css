@@ -1,0 +1,26 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.status {
+  margin: 0.55rem 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 0.45rem;
+  justify-content: center;
+}

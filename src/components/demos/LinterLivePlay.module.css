@@ -1,0 +1,84 @@
+.root {
+  width: 100%;
+}
+
+.editorWrap {
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, 220px);
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .editorWrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.code {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-code-background);
+  font-size: 0.78rem;
+  overflow-x: auto;
+}
+
+.line {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.05rem 0.5rem;
+}
+
+.lineBad {
+  background: rgba(255, 80, 80, 0.12);
+}
+
+.ln {
+  min-width: 1.5rem;
+  text-align: right;
+  color: var(--ifm-color-content-secondary);
+  user-select: none;
+}
+
+.issues {
+  font-size: 0.78rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.issues ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.ok {
+  color: var(--ifm-color-success);
+  margin: 0.35rem 0 0;
+}
+
+.tools {
+  margin: 0.5rem 0 0;
+  font-size: 0.72rem;
+  opacity: 0.85;
+}
+
+.linterGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  justify-content: center;
+}
+
+.badge {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-color-emphasis-100);
+  cursor: default;
+}

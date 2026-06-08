@@ -1,0 +1,13 @@
+{
+  "title": "Confluence / Wiki",
+  "description": "Интерактивное демо «Confluence / Wiki» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "confluence-wiki-demo",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-04-analitika/119",
+  "order": 7
+}

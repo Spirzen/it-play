@@ -1,0 +1,57 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.types {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.55rem;
+}
+
+.typeBtn {
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.typeBtnOn {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.desc {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.order {
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+}
+
+.order header {
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+
+.vo {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 700;
+}
+
+.footer {
+  margin: 0.55rem 0 0;
+  font-size: 0.74rem;
+  text-align: center;
+}

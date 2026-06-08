@@ -1,0 +1,12 @@
+{
+  "title": "Browser Address Bar",
+  "description": "Интерактивное демо «Browser Address Bar» — раздел Инструменты · Сеть.",
+  "category": "tools-network",
+  "categoryTitle": "Инструменты · Сеть",
+  "component": "browser-address-bar-play",
+  "tags": [
+    "toolsnetwork"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/network/1",
+  "order": 84
+}

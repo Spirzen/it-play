@@ -1,0 +1,13 @@
+{
+  "title": "Генератор QR-кода",
+  "description": "Интерактивное демо «Генератор QR-кода» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "qr-code-generator",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/2",
+  "order": 4
+}

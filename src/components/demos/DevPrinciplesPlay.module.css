@@ -1,0 +1,41 @@
+.toggle {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.65rem 0 0.5rem;
+}
+
+.modeBtn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.modeBad {
+  border-color: #c62828;
+  background: color-mix(in srgb, #c62828 12%, transparent);
+}
+
+.modeGood {
+  border-color: #2e7d32;
+  background: color-mix(in srgb, #2e7d32 12%, transparent);
+}
+
+.code {
+  margin: 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  white-space: pre-wrap;
+}
+
+.codeBad {
+  background: color-mix(in srgb, #c62828 8%, var(--ifm-code-background));
+}
+
+.codeGood {
+  background: color-mix(in srgb, #2e7d32 8%, var(--ifm-code-background));
+}

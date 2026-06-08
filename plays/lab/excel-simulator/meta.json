@@ -1,0 +1,12 @@
+{
+  "title": "Excel Simulator",
+  "description": "Интерактивное демо «Excel Simulator» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "excel-simulator",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/1139",
+  "order": 10
+}

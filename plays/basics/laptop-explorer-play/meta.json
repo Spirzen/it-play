@@ -1,0 +1,13 @@
+{
+  "title": "Laptop Explorer",
+  "description": "Интерактивное демо «Laptop Explorer» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "laptop-explorer-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/711",
+  "order": 9
+}

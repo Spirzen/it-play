@@ -1,0 +1,12 @@
+{
+  "title": "Redis Data Types",
+  "description": "Интерактивное демо «Redis Data Types» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "redis-data-types-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/2",
+  "order": 40
+}

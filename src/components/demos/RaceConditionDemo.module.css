@@ -1,0 +1,344 @@
+.root {
+  max-width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--demo-border);
+}
+
+.title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.1rem, 4vw, 1.45rem);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--demo-muted);
+}
+
+.modeBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.modeBtn {
+  --scenario-accent: var(--ifm-color-primary);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.82rem;
+  font-family: inherit;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  color: var(--demo-muted);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s,
+    color 0.2s;
+}
+
+.modeBtn:hover:not(:disabled) {
+  border-color: var(--scenario-accent);
+  color: var(--scenario-accent);
+}
+
+.modeBtnActive {
+  border-color: var(--scenario-accent);
+  background: color-mix(in srgb, var(--scenario-accent) 14%, var(--ifm-background-color));
+  color: var(--scenario-accent);
+  font-weight: 600;
+}
+
+.scenarioHint {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--demo-muted);
+  margin: 0 0 1rem;
+  line-height: 1.45;
+  padding: 0 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.panelTitle {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badgeOk {
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: color-mix(in srgb, #2ecc71 20%, transparent);
+  color: #1e8449;
+}
+
+.badgeBad {
+  composes: badgeOk;
+  background: color-mix(in srgb, #e74c3c 20%, transparent);
+  color: #c0392b;
+}
+
+.balanceBox {
+  text-align: center;
+  padding: 0.85rem;
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--demo-border);
+  margin-bottom: 0.75rem;
+}
+
+.balanceValue {
+  font-size: clamp(1.8rem, 6vw, 2.4rem);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-color-primary);
+}
+
+.balanceMeta {
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+  margin-top: 0.35rem;
+}
+
+.extraStat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  padding: 0.45rem;
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  margin-bottom: 0.75rem;
+}
+
+.memoryLane {
+  margin-top: 0.5rem;
+}
+
+.memoryTitle {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--demo-muted);
+  margin-bottom: 0.35rem;
+}
+
+.lanes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.lane {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.laneLabel {
+  font-size: 0.7rem;
+  color: var(--demo-muted);
+}
+
+.laneTrack {
+  display: flex;
+  gap: 3px;
+  min-height: 1.1rem;
+  align-items: stretch;
+}
+
+.laneSeg {
+  flex: 1;
+  border-radius: 3px;
+  min-width: 4px;
+  background: var(--ifm-color-emphasis-200);
+  transition: background 0.15s ease;
+}
+
+.phaseIdle {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.phaseRead {
+  background: #3498db;
+}
+
+.phaseCompute {
+  background: #9b59b6;
+}
+
+.phaseWrite {
+  background: #e67e22;
+}
+
+.phaseWait {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f39c12,
+    #f39c12 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+.phaseLock {
+  background: #2ecc71;
+}
+
+.threadList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.threadRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.threadRowActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.threadDot {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.threadMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.threadName {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.threadStatus {
+  font-size: 0.7rem;
+  color: var(--demo-muted);
+}
+
+.log {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  max-height: 22rem;
+  overflow-y: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--demo-border);
+}
+
+.logLine {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--demo-border);
+  word-break: break-word;
+}
+
+.logTime {
+  color: var(--demo-muted);
+  margin-right: 0.35rem;
+}
+
+.logEmpty {
+  text-align: center;
+  color: var(--demo-muted);
+  padding: 2rem 0.5rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.note {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--note-accent, var(--ifm-color-primary));
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border);
+  border-left-width: 4px;
+}
+
+.noteTitle {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  font-size: 0.68rem;
+  color: var(--demo-muted);
+  margin-top: 0.5rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.legendSwatch {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 2px;
+}

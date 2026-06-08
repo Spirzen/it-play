@@ -1,0 +1,13 @@
+{
+  "title": "Процессы и потоки",
+  "description": "Интерактивное демо «Процессы и потоки» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "process-thread-visualizer",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-05-asinhronnost/1",
+  "order": 25
+}

@@ -1,0 +1,113 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.step {
+  padding: 0.3rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.stepActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.stepDone {
+  opacity: 0.65;
+}
+
+.canvasWrap {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.canvas {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.panel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.panelTitle {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.chip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  margin-left: 0.25rem;
+}
+
+.detail {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.barTrack {
+  height: 5px;
+  border-radius: 3px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin-bottom: 0.65rem;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--ifm-color-primary);
+  transition: width 0.3s ease;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

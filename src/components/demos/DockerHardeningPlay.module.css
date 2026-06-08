@@ -1,0 +1,50 @@
+.opts {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+}
+
+.opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  cursor: pointer;
+}
+
+.optOn {
+  border-color: #2e7d52;
+  background: rgba(46, 125, 82, 0.08);
+}
+
+.scoreBar {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin-bottom: 0.35rem;
+}
+
+.scoreFill {
+  height: 100%;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.cmd {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #9cdcfe;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.risk {
+  font-size: 0.82rem;
+  margin: 0.5rem 0 0;
+  line-height: 1.45;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Rollout low-code",
+  "description": "Интерактивное демо «Rollout low-code» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "low-code-rollout-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-02-low-code-no-code/111",
+  "order": 2
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Fortran",
+  "description": "Интерактивное демо «Экосистема Fortran» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "fortran-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/3",
+  "order": 37
+}

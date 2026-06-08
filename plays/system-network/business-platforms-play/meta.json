@@ -1,0 +1,13 @@
+{
+  "title": "Бизнес-платформы",
+  "description": "Интерактивное демо «Бизнес-платформы» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "business-platforms-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-02-platformy/3002",
+  "order": 6
+}

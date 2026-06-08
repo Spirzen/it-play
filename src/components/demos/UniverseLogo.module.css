@@ -1,0 +1,456 @@
+/* Интерактивный логотип "Вселенная IT" — всегда в тёмной палитре */
+
+.logoLink {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 20px;
+  outline: none;
+}
+
+.logoLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoLink:focus-visible .logo {
+  outline: 3px solid #9370db;
+  outline-offset: 6px;
+}
+
+.logo {
+  /* Палитра всегда как в тёмной теме сайта */
+  --logo-glow-core: #9370db;
+  --logo-glow-edge: transparent;
+  --logo-title-from: #e8e8e8;
+  --logo-title-mid: #b19cd9;
+  --logo-title-to: #6a8cff;
+  --logo-core-bg: linear-gradient(145deg, #9370db 0%, #6a8cff 50%, #4ecb8d 100%);
+  --logo-core-text: #ffffff;
+  --logo-spotlight: rgba(147, 112, 219, 0.28);
+  --logo-spotlight-strong: rgba(110, 231, 168, 0.2);
+  --logo-glyph: rgba(177, 156, 217, 0.22);
+  --logo-star: rgba(200, 184, 232, 0.75);
+  --logo-orbit-stroke: rgba(147, 112, 219, 0.35);
+  --logo-spoke: rgba(147, 112, 219, 0.18);
+  --logo-surface: #14141c;
+  --logo-surface-mid: #1a1d2e;
+  --logo-surface-edge: #12121a;
+  --logo-border: rgba(147, 112, 219, 0.38);
+  --logo-hint: #a8a8b8;
+  --logo-hint-active: #b19cd9;
+  --logo-primary: #9370db;
+  --logo-spot-soft: rgba(147, 112, 219, 0.35);
+
+  --ptr-x: 0.5;
+  --ptr-y: 0.5;
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+  position: relative;
+  width: min(100%, 42rem);
+  min-height: 11rem;
+  margin: 0 auto;
+  padding: 1.75rem 2rem 2.25rem;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(900px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transition:
+    transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 0.35s ease;
+  background: linear-gradient(
+    160deg,
+    var(--logo-surface-mid) 0%,
+    var(--logo-surface) 48%,
+    var(--logo-surface-edge) 100%
+  );
+  border: 1px solid var(--logo-border);
+  box-shadow:
+    0 4px 28px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(147, 112, 219, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at calc(var(--ptr-x) * 100%) calc(var(--ptr-y) * 100%),
+    var(--logo-spotlight-strong) 0%,
+    var(--logo-spotlight) 22%,
+    transparent 55%
+  );
+  opacity: 0.85;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.logoActive::before,
+.logoFocused::before {
+  opacity: 1;
+}
+
+.logo:hover,
+.logoActive {
+  box-shadow:
+    0 14px 44px rgba(0, 0, 0, 0.55),
+    0 0 32px rgba(147, 112, 219, 0.22),
+    0 0 0 1px rgba(147, 112, 219, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.starCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.star {
+  fill: var(--logo-star);
+  animation: starTwinkle 3.2s ease-in-out infinite;
+}
+
+@keyframes starTwinkle {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.orbitRingGroup {
+  transform-origin: 50px 50px;
+  animation: orbitSpin 48s linear infinite;
+}
+
+.orbitRingSvg {
+  stroke: var(--logo-orbit-stroke);
+  stroke-width: 0.35;
+  stroke-dasharray: 2 3;
+}
+
+@keyframes orbitSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spoke {
+  stroke: var(--logo-spoke);
+  stroke-width: 0.25;
+  transition: stroke 0.25s ease, stroke-width 0.25s ease;
+}
+
+.spokeLit {
+  stroke: color-mix(in srgb, var(--node-color, var(--logo-primary)) 55%, transparent);
+  stroke-width: 0.45;
+}
+
+.orbitNodeSvg {
+  fill: var(--node-color, var(--logo-primary));
+  opacity: 0.55;
+  transition:
+    opacity 0.25s ease,
+    r 0.25s ease,
+    filter 0.25s ease;
+}
+
+.orbitNodeSvgLit {
+  opacity: 1;
+  filter: drop-shadow(0 0 4px var(--node-color));
+}
+
+.glyphField {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.glyph {
+  position: absolute;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--logo-glyph);
+  opacity: 0.5;
+  animation: glyphDrift 14s ease-in-out infinite;
+  animation-delay: calc(var(--glyph-i) * -1.4s);
+  user-select: none;
+}
+
+@keyframes glyphDrift {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate(6px, -10px) rotate(8deg);
+    opacity: 0.7;
+  }
+}
+
+.spotlight {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  left: calc(var(--ptr-x) * 100% - 6rem);
+  top: calc(var(--ptr-y) * 100% - 6rem);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    var(--logo-spot-soft) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 3;
+  mix-blend-mode: soft-light;
+  transition: left 0.12s linear, top 0.12s linear;
+}
+
+.wordmark {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 1.35rem;
+}
+
+.titleLine {
+  display: block;
+}
+
+.titleWord {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.02em;
+  font-size: clamp(1.65rem, 5.5vw, 2.85rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.titleLetter {
+  display: inline-block;
+  background: linear-gradient(
+    120deg,
+    var(--logo-title-from) 0%,
+    var(--logo-title-mid) 42%,
+    var(--logo-title-to) 88%
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translateY(0) scale(1);
+  animation: letterShimmer 6s ease-in-out infinite;
+  animation-delay: calc(var(--letter-i) * 0.08s);
+}
+
+.logo:hover .titleLetter,
+.logoActive .titleLetter {
+  transform: translateY(calc((var(--letter-i) - 4) * -0.6px)) scale(1.03);
+}
+
+@keyframes letterShimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.coreBadge {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: clamp(4.5rem, 14vw, 6.5rem);
+  height: clamp(4.5rem, 14vw, 6.5rem);
+  flex-shrink: 0;
+}
+
+.coreRing,
+.coreRingOuter {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(147, 112, 219, 0.45);
+  pointer-events: none;
+}
+
+.coreRing {
+  inset: 4%;
+  animation: corePulse 2.8s ease-in-out infinite;
+}
+
+.coreRingOuter {
+  inset: -6%;
+  border-style: dashed;
+  opacity: 0.5;
+  animation: coreSpin 16s linear infinite;
+}
+
+@keyframes corePulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+@keyframes coreSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.coreLabel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72%;
+  height: 72%;
+  border-radius: 50%;
+  font-size: clamp(1.35rem, 4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--logo-core-text);
+  background: var(--logo-core-bg);
+  box-shadow:
+    0 4px 24px rgba(147, 112, 219, 0.45),
+    inset 0 -2px 10px rgba(0, 0, 0, 0.35),
+    inset 0 2px 6px rgba(255, 255, 255, 0.2);
+  transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.logo:hover .coreLabel,
+.logoActive .coreLabel {
+  transform: scale(1.06);
+}
+
+.coreHint {
+  position: absolute;
+  bottom: -1.35rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--logo-hint);
+  white-space: nowrap;
+  opacity: 0.9;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.logoActive .coreHint {
+  color: var(--logo-hint-active);
+  opacity: 1;
+}
+
+.orbitLegend {
+  position: absolute;
+  bottom: 0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.35rem;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.legendDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--node-color);
+  opacity: 0.35;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.legendDotLit {
+  opacity: 1;
+  transform: scale(1.35);
+  box-shadow: 0 0 8px var(--node-color);
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo {
+    transform: none;
+    transition: box-shadow 0.2s ease;
+  }
+
+  .star,
+  .orbitRingSvg,
+  .coreRing,
+  .coreRingOuter,
+  .glyph,
+  .titleLetter {
+    animation: none;
+  }
+
+  .spotlight {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .logo {
+    padding: 1.35rem 1rem 2rem;
+    min-height: 10rem;
+  }
+
+  .titleWord {
+    letter-spacing: 0.04em;
+  }
+
+  .orbitLegend {
+    gap: 0.28rem;
+  }
+
+  .legendDot {
+    width: 0.38rem;
+    height: 0.38rem;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Команда разработки игр",
+  "description": "Интерактивное демо «Команда разработки игр» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-dev-team-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/111",
+  "order": 7
+}

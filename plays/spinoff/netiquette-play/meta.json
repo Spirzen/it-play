@@ -1,0 +1,13 @@
+{
+  "title": "Нетикет",
+  "description": "Интерактивное демо «Нетикет» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "netiquette-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-10-internet-kultura/113",
+  "order": 32
+}

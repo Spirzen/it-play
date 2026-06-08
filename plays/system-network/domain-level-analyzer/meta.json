@@ -1,0 +1,13 @@
+{
+  "title": "Domain Level Analyzer",
+  "description": "Интерактивное демо «Domain Level Analyzer» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "domain-level-analyzer",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-03-set-i-internet/511",
+  "order": 12
+}

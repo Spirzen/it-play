@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Zig",
+  "description": "Интерактивное демо «Экосистема Zig» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "zig-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-20-zig/3",
+  "order": 44
+}

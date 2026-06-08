@@ -1,0 +1,12 @@
+{
+  "title": "Keyboard",
+  "description": "Интерактивное демо «Keyboard» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "keyboard-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 3
+}

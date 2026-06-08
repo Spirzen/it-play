@@ -1,0 +1,13 @@
+{
+  "title": "Шестнадцатеричная запись",
+  "description": "Интерактивное демо «Шестнадцатеричная запись» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "hex-notation-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-03-vypolnenie-koda/211",
+  "order": 16
+}

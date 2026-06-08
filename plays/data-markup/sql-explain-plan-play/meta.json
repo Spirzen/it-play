@@ -1,0 +1,13 @@
+{
+  "title": "EXPLAIN — план запроса",
+  "description": "Интерактивное демо «EXPLAIN — план запроса» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "sql-explain-plan-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-07-sql/881",
+  "order": 38
+}

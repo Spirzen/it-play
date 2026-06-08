@@ -1,0 +1,13 @@
+{
+  "title": "AI-анализ данных",
+  "description": "Интерактивное демо «AI-анализ данных» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "ai-data-analysis-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-11-analiz-dannyh/421",
+  "order": 48
+}

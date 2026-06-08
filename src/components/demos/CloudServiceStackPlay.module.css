@@ -1,0 +1,91 @@
+.root {
+  max-width: min(780px, 100%);
+  margin: 0 auto;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.chip {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: transparent;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.chipActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+  font-weight: 600;
+}
+
+.tag {
+  font-size: 0.8rem;
+  margin: 0 0 0.75rem;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.matrix h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--ifm-color-content-secondary);
+}
+
+.matrix ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+}
+
+.you {
+  color: #1565c0;
+}
+.vendor {
+  color: #2e7d32;
+}
+.none {
+  color: var(--ifm-color-content-secondary);
+  list-style: none;
+  padding-left: 0;
+}
+
+.stackViz {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stackRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.owner_you {
+  background: color-mix(in srgb, #1976d2 12%, transparent);
+}
+.owner_vendor {
+  background: color-mix(in srgb, #388e3c 12%, transparent);
+}
+
+@media (max-width: 560px) {
+  .matrix {
+    grid-template-columns: 1fr;
+  }
+}

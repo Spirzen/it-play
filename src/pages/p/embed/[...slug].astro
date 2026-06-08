@@ -15,5 +15,5 @@ const pageTitle = `${play.title} — embed`;
 ---
 
 <EmbedLayout title={pageTitle}>
-  <PlayViewer play={play} client:load />
+  <PlayViewer play={play} client:only="react" />
 </EmbedLayout>

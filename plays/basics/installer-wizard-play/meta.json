@@ -1,0 +1,13 @@
+{
+  "title": "Мастер установки",
+  "description": "Интерактивное демо «Мастер установки» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "installer-wizard-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11",
+  "order": 24
+}

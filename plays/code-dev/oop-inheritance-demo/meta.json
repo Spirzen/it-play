@@ -1,0 +1,13 @@
+{
+  "title": "ООП — наследование",
+  "description": "Интерактивное демо «ООП — наследование» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "oop-inheritance-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-08-oop/4",
+  "order": 41
+}

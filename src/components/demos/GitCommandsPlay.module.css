@@ -1,0 +1,82 @@
+.root {
+  max-width: min(900px, 100%);
+  margin: 0 auto 1.25rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stepBtn {
+  text-align: left;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font: inherit;
+}
+
+.stepBtn code {
+  font-size: 0.72rem;
+}
+
+.stepDone {
+  border-color: color-mix(in srgb, #2e7d32 35%, transparent);
+}
+
+.stepActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin: 0.75rem 0;
+}
+
+@media (max-width: 640px) {
+  .panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fileList {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.76rem;
+}
+
+.fileList li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-100);
+}
+
+.badge {
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.staged {
+  font-size: 0.65rem;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.term {
+  margin: 0.35rem 0 0;
+  padding: 0.55rem;
+  min-height: 6rem;
+  font-size: 0.68rem;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+}

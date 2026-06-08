@@ -1,0 +1,12 @@
+{
+  "title": "Spirzen Online Tools Panel",
+  "description": "Интерактивное демо «Spirzen Online Tools Panel» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "spirzen-online-tools-panel",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/author",
+  "order": 2
+}

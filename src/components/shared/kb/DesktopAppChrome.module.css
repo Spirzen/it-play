@@ -1,0 +1,78 @@
+.shell {
+  --app-accent: #2b579a;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--ifm-background-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-size: 0.82rem;
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.65rem;
+  background: linear-gradient(180deg, var(--app-accent), color-mix(in srgb, var(--app-accent) 82%, #000));
+  color: #fff;
+}
+
+.dots {
+  display: flex;
+  gap: 0.22rem;
+}
+
+.dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.title {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.menu,
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.toolbar button,
+.menu button {
+  padding: 0.22rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+}
+
+.toolbar button:hover,
+.menu button:hover {
+  border-color: var(--app-accent);
+}
+
+.toolbar .active {
+  background: color-mix(in srgb, var(--app-accent) 18%, transparent);
+  border-color: var(--app-accent);
+}
+
+.body {
+  min-height: 200px;
+}
+
+.status {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.7rem;
+  color: var(--ifm-color-content-secondary);
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}

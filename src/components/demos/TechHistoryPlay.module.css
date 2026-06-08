@@ -1,0 +1,225 @@
+.root {
+  max-width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.headText {
+  flex: 1;
+  min-width: 12rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.4;
+}
+
+.sectionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.sectionBtn {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+}
+
+.sectionBtn:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.sectionBtnActive {
+  border-color: var(--accent, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--accent, var(--ifm-color-primary)) 12%, var(--ifm-background-surface-color));
+  color: var(--accent, var(--ifm-color-primary));
+}
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.filterBtn {
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: transparent;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.filterBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.trackWrap {
+  position: relative;
+  margin: 0.5rem 0 1rem;
+  padding: 1.25rem 0 0.35rem;
+}
+
+.track {
+  position: relative;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.trackFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--accent, var(--ifm-color-primary));
+  transition: width 0.25s ease;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  border: 2px solid var(--ifm-background-surface-color);
+  background: var(--ifm-color-emphasis-400);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dot:hover {
+  transform: scale(1.15);
+}
+
+.dotActive {
+  background: var(--accent, var(--ifm-color-primary));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, var(--ifm-color-primary)) 35%, transparent);
+  transform: scale(1.2);
+}
+
+.panel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  background: var(--ifm-background-surface-color);
+  border-left: 4px solid var(--accent, var(--ifm-color-primary));
+}
+
+.eventTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.badgeYear {
+  background: var(--accent, var(--ifm-color-primary));
+}
+
+.detail {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.5;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.navBtn {
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.navBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.slider {
+  flex: 1;
+  min-width: 0;
+  accent-color: var(--accent, var(--ifm-color-primary));
+}
+
+.ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.35rem;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Аутентификация в CI/CD",
+  "description": "Интерактивное демо «Аутентификация в CI/CD» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "cicd-auth-flow-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/211",
+  "order": 17
+}

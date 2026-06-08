@@ -1,0 +1,13 @@
+{
+  "title": "Unit-тесты (pytest)",
+  "description": "Интерактивное демо «Unit-тесты (pytest)» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "unit-test-pytest-play",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-05-testirovanie/1011",
+  "order": 11
+}

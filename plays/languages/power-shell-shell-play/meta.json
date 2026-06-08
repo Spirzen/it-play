@@ -1,0 +1,13 @@
+{
+  "title": "PowerShell Shell",
+  "description": "Интерактивное демо «PowerShell Shell» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "power-shell-shell-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-26-powershell/1",
+  "order": 50
+}

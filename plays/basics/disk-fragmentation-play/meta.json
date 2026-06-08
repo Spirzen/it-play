@@ -1,0 +1,13 @@
+{
+  "title": "Disk Fragmentation",
+  "description": "Интерактивное демо «Disk Fragmentation» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "disk-fragmentation-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/3",
+  "order": 7
+}

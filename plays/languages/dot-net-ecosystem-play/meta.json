@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема .NET",
+  "description": "Интерактивное демо «Экосистема .NET» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "dot-net-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-04-platforma-dotnet/1",
+  "order": 9
+}

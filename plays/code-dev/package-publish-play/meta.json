@@ -1,0 +1,13 @@
+{
+  "title": "Публикация пакета",
+  "description": "Интерактивное демо «Публикация пакета» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "package-publish-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/113",
+  "order": 52
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Чеклист threat hunting",
+  "description": "Интерактивное демо «Чеклист threat hunting» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "threat-hunt-checklist-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/2",
+  "order": 33
+}

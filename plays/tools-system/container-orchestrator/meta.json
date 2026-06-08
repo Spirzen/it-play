@@ -1,0 +1,12 @@
+{
+  "title": "Container Orchestrator",
+  "description": "Интерактивное демо «Container Orchestrator» — раздел Инструменты · ОС и система.",
+  "category": "tools-system",
+  "categoryTitle": "Инструменты · ОС и система",
+  "component": "container-orchestrator",
+  "tags": [
+    "toolssystem"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/system/4",
+  "order": 94
+}

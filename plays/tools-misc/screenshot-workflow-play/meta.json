@@ -1,0 +1,12 @@
+{
+  "title": "Screenshot Workflow",
+  "description": "Интерактивное демо «Screenshot Workflow» — раздел Инструменты · Разное.",
+  "category": "tools-misc",
+  "categoryTitle": "Инструменты · Разное",
+  "component": "screenshot-workflow-play",
+  "tags": [
+    "toolsmisc"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/misc/5",
+  "order": 75
+}

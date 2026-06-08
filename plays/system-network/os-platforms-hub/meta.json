@@ -1,0 +1,13 @@
+{
+  "title": "Операционные системы — хаб",
+  "description": "Интерактивное демо «Операционные системы — хаб» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "os-platforms-hub",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/2",
+  "order": 3
+}

@@ -1,0 +1,218 @@
+.root {
+  max-width: min(860px, 100%);
+  margin: 0 auto;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.tab {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+/* —— Эволюция —— */
+.deviceSilhouette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  min-height: 200px;
+  justify-content: center;
+}
+
+.phoneBody {
+  border-radius: 18px;
+  border: 3px solid var(--ifm-color-emphasis-500);
+  background: linear-gradient(180deg, var(--ifm-color-emphasis-200), var(--ifm-color-emphasis-300));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.35s ease;
+}
+
+.phoneScreen {
+  background: #0c1220;
+  border-radius: 12px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 1.35;
+}
+
+.phoneKeys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 8px 12px 12px;
+  width: 100%;
+}
+
+.keyBtn {
+  height: 14px;
+  border-radius: 3px;
+  background: var(--ifm-color-emphasis-400);
+}
+
+.evTitle {
+  margin: 0.5rem 0 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.evDesc {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+  text-align: center;
+  max-width: 280px;
+}
+
+/* —— SoC —— */
+.socGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.socBlock {
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.socBlock:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.socBlockActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-surface-color));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.socName {
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.socRole {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.15rem 0 0;
+}
+
+.socDetail {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border-left: 3px solid var(--accent, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--accent, var(--ifm-color-primary)) 8%, transparent);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* —— Тачскрин —— */
+.touchArena {
+  position: relative;
+  height: 160px;
+  border-radius: 12px;
+  border: 2px dashed var(--ifm-color-emphasis-400);
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 19px,
+    color-mix(in srgb, var(--ifm-color-primary) 12%, transparent) 19px,
+    color-mix(in srgb, var(--ifm-color-primary) 12%, transparent) 20px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 19px,
+    color-mix(in srgb, var(--ifm-color-primary) 12%, transparent) 19px,
+    color-mix(in srgb, var(--ifm-color-primary) 12%, transparent) 20px
+  );
+  touch-action: none;
+  overflow: hidden;
+}
+
+.touchDot {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+  border: 2px solid var(--ifm-color-primary);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.touchStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.65rem;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.touchStat strong {
+  color: var(--ifm-color-content);
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}

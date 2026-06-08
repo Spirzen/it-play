@@ -1,0 +1,13 @@
+{
+  "title": "Жизненный цикл ПО",
+  "description": "Интерактивное демо «Жизненный цикл ПО» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "software-lifecycle-demo",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1",
+  "order": 1
+}

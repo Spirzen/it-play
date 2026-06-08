@@ -1,0 +1,13 @@
+{
+  "title": "Дорожная карта геймдева",
+  "description": "Интерактивное демо «Дорожная карта геймдева» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-dev-roadmap-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/11",
+  "order": 6
+}

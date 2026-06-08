@@ -1,0 +1,12 @@
+{
+  "title": "Notes Workflow",
+  "description": "Интерактивное демо «Notes Workflow» — раздел Инструменты · Разное.",
+  "category": "tools-misc",
+  "categoryTitle": "Инструменты · Разное",
+  "component": "notes-workflow-play",
+  "tags": [
+    "toolsmisc"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/misc/3",
+  "order": 73
+}

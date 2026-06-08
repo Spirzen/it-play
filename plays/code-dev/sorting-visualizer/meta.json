@@ -1,0 +1,13 @@
+{
+  "title": "Визуализация сортировки",
+  "description": "Интерактивное демо «Визуализация сортировки» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "sorting-visualizer",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-01-algoritmy/2",
+  "order": 2
+}

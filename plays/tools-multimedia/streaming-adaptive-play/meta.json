@@ -1,0 +1,12 @@
+{
+  "title": "Streaming Adaptive",
+  "description": "Интерактивное демо «Streaming Adaptive» — раздел Инструменты · Мультимedia.",
+  "category": "tools-multimedia",
+  "categoryTitle": "Инструменты · Мультимedia",
+  "component": "streaming-adaptive-play",
+  "tags": [
+    "toolsmultimedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/multimedia/5",
+  "order": 82
+}

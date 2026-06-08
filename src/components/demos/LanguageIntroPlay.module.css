@@ -1,0 +1,136 @@
+.root {
+  max-width: min(920px, 100%);
+  margin: 0 auto 1.25rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.headText {
+  flex: 1;
+  min-width: 12rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.meta {
+  margin: 0.2rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.chip {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content-secondary);
+}
+
+.chipKind {
+  border-color: transparent;
+  color: #fff;
+}
+
+.tabRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.panel {
+  padding: 0.75rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  min-height: 5.5rem;
+}
+
+.summary {
+  margin: 0 0 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.list li {
+  margin-bottom: 0.25rem;
+}
+
+.note {
+  margin: 0.65rem 0 0;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  background: color-mix(in srgb, var(--accent, #6366f1) 12%, transparent);
+  border-left: 3px solid var(--accent, #6366f1);
+}
+
+.related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.relatedBtn {
+  padding: 0.28rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--ifm-color-primary);
+}
+
+.relatedBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.footer {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.footer a {
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+}

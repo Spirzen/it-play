@@ -1,0 +1,57 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.net {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.node {
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.nodeOn {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+}
+
+.arrow {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.metric {
+  margin: 0 0 0.5rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.stepText {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.phase {
+  margin: 0 0 0.65rem;
+  font-size: 0.76rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 0.45rem;
+  justify-content: center;
+}

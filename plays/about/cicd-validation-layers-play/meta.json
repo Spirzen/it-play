@@ -1,0 +1,12 @@
+{
+  "title": "Cicd Validation Layers",
+  "description": "Интерактивное демо «Cicd Validation Layers» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "cicd-validation-layers-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 25
+}

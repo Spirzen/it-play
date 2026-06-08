@@ -1,0 +1,12 @@
+{
+  "title": "Sql Join Trainer",
+  "description": "Интерактивное демо «Sql Join Trainer» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "sql-join-trainer",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 15
+}

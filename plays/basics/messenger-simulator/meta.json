@@ -1,0 +1,13 @@
+{
+  "title": "Симулятор мессенджера",
+  "description": "Интерактивное демо «Симулятор мессенджера» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "messenger-simulator",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/5",
+  "order": 22
+}

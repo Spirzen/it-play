@@ -1,0 +1,132 @@
+/** Сценарии VPN-туннеля для образовательного демо. */
+
+export const PROTOCOLS = [
+  {id: 'wireguard', label: 'WireGuard', cipher: 'ChaCha20-Poly1305'},
+  {id: 'openvpn', label: 'OpenVPN', cipher: 'TLS + AES-256-GCM'},
+  {id: 'ipsec', label: 'IPsec/IKEv2', cipher: 'ESP + AES-GCM'},
+];
+
+export const SCENARIOS = [
+  {
+    id: 'handshake',
+    short: 'Сессия',
+    title: 'Установление туннеля',
+    subtitle: 'Согласование ключей и аутентификация перед передачей данных',
+    steps: [
+      {
+        spotlight: ['client'],
+        phase: 'Инициализация',
+        label: 'Клиент запускает VPN',
+        detail: 'Запрос к VPN-шлюзу (UDP 51820 / TCP 443)',
+        log: 'Публичный IP клиента виден только до шлюза',
+        encrypted: false,
+      },
+      {
+        spotlight: ['client', 'gateway'],
+        phase: 'IKE/TLS',
+        label: 'Обмен ключами',
+        detail: 'Curve25519 / IKE SA / TLS handshake',
+        log: 'Согласованы алгоритмы шифрования и срок сессии',
+        encrypted: false,
+      },
+      {
+        spotlight: ['gateway'],
+        phase: 'Аутентификация',
+        label: 'Проверка подлинности',
+        detail: 'Сертификат X.509, PSK или MFA-токен',
+        log: 'Шлюз выдаёт внутренний IP из пула 10.8.0.0/24',
+        encrypted: false,
+      },
+      {
+        spotlight: ['client', 'gateway', 'corp'],
+        phase: 'Туннель',
+        label: 'Туннель активен',
+        detail: 'Инкапсуляция IP-пакетов в UDP/TLS',
+        log: 'Между клиентом и шлюзом — только шифротекст',
+        encrypted: true,
+      },
+    ],
+  },
+  {
+    id: 'traffic',
+    short: 'Трафик',
+    title: 'Защищённый обмен',
+    subtitle: 'Пакет приложения внутри туннеля до корпоративного ресурса',
+    steps: [
+      {
+        spotlight: ['client'],
+        phase: 'Приложение',
+        label: 'Запрос к внутреннему серверу',
+        detail: 'HTTPS → gitlab.corp.local (10.8.0.12)',
+        log: 'ОС направляет трафик в TUN-интерфейс VPN',
+        encrypted: false,
+      },
+      {
+        spotlight: ['client', 'gateway'],
+        phase: 'Туннель',
+        label: 'Шифрование на клиенте',
+        detail: 'Внутренний IP-пакет → UDP датаграмма к шлюзу',
+        log: 'Провайдер видит только "шум" до VPN-сервера',
+        encrypted: true,
+      },
+      {
+        spotlight: ['gateway', 'corp'],
+        phase: 'Расшифровка',
+        label: 'Шлюз передаёт в LAN',
+        detail: 'Декapsulation → маршрут в корпоративную сеть',
+        log: 'Сервер видит IP VPN-клиента как источник',
+        encrypted: false,
+      },
+      {
+        spotlight: ['corp', 'gateway', 'client'],
+        phase: 'Ответ',
+        label: 'Обратный путь в туннеле',
+        detail: 'Ответ шифруется на шлюзе и доставляется клиенту',
+        log: 'Целостность проверяется MAC (Poly1305 / GCM)',
+        encrypted: true,
+      },
+    ],
+  },
+  {
+    id: 'split',
+    short: 'Split',
+    title: 'Раздельное туннелирование',
+    subtitle: 'Только корпоративные префиксы через VPN, остальное — напрямую',
+    steps: [
+      {
+        spotlight: ['client'],
+        phase: 'Маршруты',
+        label: 'Таблица маршрутизации',
+        detail: '10.0.0.0/8 → VPN; 0.0.0.0/0 → локальный шлюз',
+        log: 'YouTube и почта — мимо VPN (меньше нагрузка)',
+        encrypted: false,
+      },
+      {
+        spotlight: ['client', 'gateway', 'corp'],
+        phase: 'Корп.',
+        label: 'Файловый сервер через туннель',
+        detail: 'smb://files.corp → зашифровано',
+        log: 'Split tunnel: только доверенные подсети',
+        encrypted: true,
+      },
+      {
+        spotlight: ['client', 'internet'],
+        phase: 'Интернет',
+        label: 'Публичный сайт напрямую',
+        detail: 'news.example.com — без VPN',
+        log: '⚠ При ошибке маршрута возможна утечка DNS',
+        encrypted: false,
+        leak: false,
+      },
+      {
+        spotlight: ['client', 'internet'],
+        phase: 'Утечка',
+        label: 'Ошибка: DNS в обход VPN',
+        detail: 'Запрос к 8.8.8.8 раскрывает посещённые домены',
+        log: 'Риск DNS leak — нужен принудительный корп. DNS',
+        encrypted: false,
+        leak: true,
+      },
+    ],
+  },
+];

@@ -1,0 +1,13 @@
+{
+  "title": "Задачи по программированию",
+  "description": "Интерактивное демо «Задачи по программированию» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "programming-tasks-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/613",
+  "order": 10
+}

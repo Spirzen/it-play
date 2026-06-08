@@ -1,0 +1,13 @@
+{
+  "title": "Жизненный цикл IaC",
+  "description": "Интерактивное демо «Жизненный цикл IaC» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "iac-lifecycle-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/215",
+  "order": 23
+}

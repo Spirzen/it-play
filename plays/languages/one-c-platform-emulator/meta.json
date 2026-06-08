@@ -1,0 +1,13 @@
+{
+  "title": "Эмулятор платформы 1С",
+  "description": "Интерактивное демо «Эмулятор платформы 1С» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "one-c-platform-emulator",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-27-1s/1",
+  "order": 52
+}

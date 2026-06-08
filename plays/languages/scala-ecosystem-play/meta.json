@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Scala",
+  "description": "Интерактивное демо «Экосистема Scala» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "scala-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-18-scala/3",
+  "order": 42
+}

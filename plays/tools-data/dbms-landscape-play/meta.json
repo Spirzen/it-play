@@ -1,0 +1,12 @@
+{
+  "title": "Dbms Landscape",
+  "description": "Интерактивное демо «Dbms Landscape» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "dbms-landscape-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/1",
+  "order": 36
+}

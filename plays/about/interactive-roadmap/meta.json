@@ -1,0 +1,12 @@
+{
+  "title": "Interactive Roadmap",
+  "description": "Интерактивное демо «Interactive Roadmap» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "interactive-roadmap",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 10
+}

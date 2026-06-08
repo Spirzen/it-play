@@ -1,0 +1,29 @@
+.seeAlso {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.heading {
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.hint {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.cardList {
+  margin-bottom: 0;
+}
+
+.moreLink {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+}
+
+.moreLink a {
+  font-weight: 600;
+}

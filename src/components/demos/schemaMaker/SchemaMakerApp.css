@@ -1,0 +1,56 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  background: var(--bg-canvas);
+}
+
+.app-main.tool-eraser .canvas-wrap {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='%23f5f3ef' stroke='%238b9dc3' stroke-width='1.5'/%3E%3C/svg%3E")
+      12 12,
+    cell;
+}
+
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-hint-subtle {
+  opacity: 0.85;
+  font-size: 11px;
+}
+
+.canvas-hint {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  background: rgba(255, 252, 248, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--text-muted);
+  box-shadow: var(--shadow);
+  pointer-events: none;
+  z-index: 5;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Энтропия информации",
+  "description": "Интерактивное демо «Энтропия информации» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "information-entropy-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/39",
+  "order": 13
+}

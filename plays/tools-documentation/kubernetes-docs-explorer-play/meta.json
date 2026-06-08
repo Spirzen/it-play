@@ -1,0 +1,12 @@
+{
+  "title": "Kubernetes Docs Explorer",
+  "description": "Интерактивное демо «Kubernetes Docs Explorer» — раздел Инструменты · Документация.",
+  "category": "tools-documentation",
+  "categoryTitle": "Инструменты · Документация",
+  "component": "kubernetes-docs-explorer-play",
+  "tags": [
+    "toolsdocumentation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/documentation/7",
+  "order": 64
+}

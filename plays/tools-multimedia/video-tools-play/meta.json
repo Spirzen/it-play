@@ -1,0 +1,12 @@
+{
+  "title": "Video Tools",
+  "description": "Интерактивное демо «Video Tools» — раздел Инструменты · Мультимedia.",
+  "category": "tools-multimedia",
+  "categoryTitle": "Инструменты · Мультимedia",
+  "component": "video-tools-play",
+  "tags": [
+    "toolsmultimedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/multimedia/3",
+  "order": 79
+}

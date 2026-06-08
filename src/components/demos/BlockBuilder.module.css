@@ -12,9 +12,9 @@
   font-size: 0.75rem;
   font-weight: 600;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--it-primary) 12%, transparent);
-  color: var(--it-primary);
-  border: 1px solid var(--it-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
 }
 
 .editor {
@@ -24,8 +24,8 @@
   overflow: auto;
   border: 1px solid var(--demo-border);
   border-radius: 10px;
-  background: var(--code-bg);
-  font-family: var(--mono);
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
   font-size: 0.8rem;
   line-height: 1.55;
 }
@@ -50,7 +50,7 @@
 
 .indentGuide {
   width: 0.65rem;
-  border-right: 2px solid color-mix(in srgb, var(--it-primary) 35%, transparent);
+  border-right: 2px solid color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
   margin-right: 2px;
   opacity: 0.6;
 }
@@ -82,7 +82,7 @@
 }
 
 .instruction {
-  color: var(--text);
+  color: var(--ifm-color-content);
 }
 
 .tip {
@@ -90,7 +90,7 @@
   padding: 0.65rem 0.85rem;
   font-size: 0.78rem;
   border-radius: 8px;
-  background: color-mix(in srgb, var(--it-primary) 8%, var(--surface));
-  border-left: 3px solid var(--it-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+  border-left: 3px solid var(--ifm-color-primary);
   line-height: 1.45;
 }

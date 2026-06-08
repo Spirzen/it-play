@@ -1,0 +1,67 @@
+.root {
+  max-width: min(900px, 100%);
+  margin: 0 auto 1.25rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.stepTitle {
+  margin: 0 0 0.65rem;
+  font-size: 0.9rem;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.lane {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.laneLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.commits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.commit {
+  padding: 0.2rem 0.45rem;
+  font-size: 0.68rem;
+  border: 2px solid;
+  border-radius: 999px;
+  background: var(--ifm-background-color);
+}
+
+.pre {
+  margin: 0.75rem 0 0;
+  padding: 0.6rem;
+  font-size: 0.68rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  white-space: pre-wrap;
+}
+
+.footerNav {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}

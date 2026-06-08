@@ -1,0 +1,13 @@
+{
+  "title": "SRE-метрики",
+  "description": "Интерактивное демо «SRE-метрики» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "sre-metrics-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/2111",
+  "order": 18
+}

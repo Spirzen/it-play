@@ -1,0 +1,128 @@
+.root {
+  max-width: min(540px, 100%);
+  margin: 0 auto;
+}
+
+.symptomGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.symptomBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.symptomActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.symptomIcon {
+  font-size: 1.25rem;
+}
+
+.statusPanel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  margin-bottom: 0.35rem;
+}
+
+.ok {
+  color: #2e7d32;
+}
+
+.bad {
+  color: #c62828;
+}
+
+.ledRow {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.led {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-content-secondary);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.ledOn {
+  background: #c62828;
+  color: #fff;
+}
+
+.ledDram.ledOn {
+  background: #f57c00;
+}
+
+.ledVga.ledOn {
+  background: #1565c0;
+}
+
+.checkBlock {
+  margin-bottom: 0.75rem;
+}
+
+.checkTitle {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+}
+
+.checkList {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.checkLabel {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.success {
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, #2e7d32 12%, transparent);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.tip {
+  margin: 0.75rem 0 0;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+  text-align: center;
+}

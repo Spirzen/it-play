@@ -1,0 +1,161 @@
+.shell {
+  width: 100%;
+  font-family: 'Cascadia Code', 'Consolas', var(--ifm-font-family-monospace);
+  font-size: clamp(12px, 2.8vw, 14px);
+  line-height: 1.5;
+  background: #012456;
+  color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #1a4a8a;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  background: #0a3d7a;
+  border-bottom: 1px solid #1a5a9a;
+  font-size: 0.82rem;
+}
+
+.title {
+  flex: 1;
+  opacity: 0.9;
+}
+
+.body {
+  padding: 0.65rem 0.75rem 0.85rem;
+  min-height: 200px;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.banner {
+  color: #7ec8ff;
+  margin: 0 0 0.5rem;
+  white-space: pre-wrap;
+  font-size: 0.8rem;
+}
+
+.line {
+  margin: 0.12rem 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.prompt {
+  color: #ffff00;
+}
+
+.commandLine {
+  color: #dcdcdc;
+}
+
+.output {
+  color: #f0f0f0;
+}
+
+.success {
+  color: #98fb98;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.system {
+  color: #7ec8ff;
+}
+
+.muted {
+  color: #8aa4c8;
+}
+
+.inputRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.input {
+  flex: 1;
+  min-width: 120px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font: inherit;
+  outline: none;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lessonPanel {
+  padding: 0.75rem 0.9rem;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-toc-border-color);
+}
+
+.lessonTitle {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+}
+
+.lessonGoal {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+}
+
+.progressBar {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: #0078d4;
+  transition: width 0.25s ease;
+}
+
+.progressDone {
+  background: #0078d4;
+  color: #fff;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.hintRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+}
+
+.hintBtn {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-toc-border-color);
+  cursor: pointer;
+}

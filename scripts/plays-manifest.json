@@ -1,0 +1,2502 @@
+{
+  "AuthorProfilePlay": {
+    "example": "about/author-profile-play",
+    "title": "Author Profile",
+    "component": "author-profile-play"
+  },
+  "SpirzenOnlineToolsPanel": {
+    "example": "about/spirzen-online-tools-panel",
+    "title": "Spirzen Online Tools Panel",
+    "component": "spirzen-online-tools-panel"
+  },
+  "KeyboardPlay": {
+    "example": "about/keyboard-play",
+    "title": "Keyboard",
+    "component": "keyboard-play"
+  },
+  "TouchTypingFingerPlay": {
+    "example": "about/touch-typing-finger-play",
+    "title": "Touch Typing Finger",
+    "component": "touch-typing-finger-play"
+  },
+  "TypingSpeedTrainerPlay": {
+    "example": "about/typing-speed-trainer-play",
+    "title": "Typing Speed Trainer",
+    "component": "typing-speed-trainer-play"
+  },
+  "IoDevicesPlay": {
+    "example": "about/io-devices-play",
+    "title": "Io Devices",
+    "component": "io-devices-play"
+  },
+  "DataTypesPlay": {
+    "example": "about/data-types-play",
+    "title": "Data Types",
+    "component": "data-types-play"
+  },
+  "ComputerArchitecturePlay": {
+    "example": "about/computer-architecture-play",
+    "title": "Computer Architecture",
+    "component": "computer-architecture-play"
+  },
+  "CompilerSimulator": {
+    "example": "about/compiler-simulator",
+    "title": "Compiler Simulator",
+    "component": "compiler-simulator"
+  },
+  "InteractiveRoadmap": {
+    "example": "about/interactive-roadmap",
+    "title": "Interactive Roadmap",
+    "component": "interactive-roadmap"
+  },
+  "WebAppArchitecturePlay": {
+    "example": "about/web-app-architecture-play",
+    "title": "Web App Architecture",
+    "component": "web-app-architecture-play"
+  },
+  "NetworkStackExplorerPlay": {
+    "example": "about/network-stack-explorer-play",
+    "title": "Network Stack Explorer",
+    "component": "network-stack-explorer-play"
+  },
+  "HttpRequestAnalyzer": {
+    "example": "about/http-request-analyzer",
+    "title": "Http Request Analyzer",
+    "component": "http-request-analyzer"
+  },
+  "HTMLPlayground": {
+    "example": "about/html-playground",
+    "title": "HTML Playground",
+    "component": "html-playground"
+  },
+  "SqlJoinTrainer": {
+    "example": "about/sql-join-trainer",
+    "title": "Sql Join Trainer",
+    "component": "sql-join-trainer"
+  },
+  "AlgoCodeVisualizer": {
+    "example": "about/algo-code-visualizer",
+    "title": "Algo Code Visualizer",
+    "component": "algo-code-visualizer"
+  },
+  "GitEmulator": {
+    "example": "about/git-emulator",
+    "title": "Git Emulator",
+    "component": "git-emulator"
+  },
+  "BashShellPlay": {
+    "example": "about/bash-shell-play",
+    "title": "Bash Shell",
+    "component": "bash-shell-play"
+  },
+  "NeuralNetworkDemo": {
+    "example": "ai/neural-network-demo",
+    "title": "Neural Network Demo",
+    "component": "neural-network-demo"
+  },
+  "AiAgentPlay": {
+    "example": "ai/ai-agent-play",
+    "title": "ИИ-агент",
+    "component": "ai-agent-play"
+  },
+  "TestingBasicsDemo": {
+    "example": "about/testing-basics-demo",
+    "title": "Testing Basics Demo",
+    "component": "testing-basics-demo"
+  },
+  "BpmnReferencePlay": {
+    "example": "about/bpmn-reference-play",
+    "title": "Bpmn Reference",
+    "component": "bpmn-reference-play"
+  },
+  "InfraDiagramStudio": {
+    "example": "about/infra-diagram-studio",
+    "title": "Infra Diagram Studio",
+    "component": "infra-diagram-studio"
+  },
+  "DockerComposePlay": {
+    "example": "about/docker-compose-play",
+    "title": "Docker Compose",
+    "component": "docker-compose-play"
+  },
+  "CicdValidationLayersPlay": {
+    "example": "about/cicd-validation-layers-play",
+    "title": "Cicd Validation Layers",
+    "component": "cicd-validation-layers-play"
+  },
+  "EnglishVocabularyTrainer": {
+    "example": "about/english-vocabulary-trainer",
+    "title": "English Vocabulary Trainer",
+    "component": "english-vocabulary-trainer"
+  },
+  "ArchiStylerPlay": {
+    "example": "about/archi-styler-play",
+    "title": "Archi Styler",
+    "component": "archi-styler-play"
+  },
+  "DatabaseSchemaViewerPlay": {
+    "example": "about/database-schema-viewer-play",
+    "title": "Database Schema Viewer",
+    "component": "database-schema-viewer-play"
+  },
+  "SchemaMakerPlay": {
+    "example": "about/schema-maker-play",
+    "title": "Schema Maker",
+    "component": "schema-maker-play"
+  },
+  "LicenseUsagePlay": {
+    "example": "about/license-usage-play",
+    "title": "License Usage",
+    "component": "license-usage-play"
+  },
+  "ManifestPrinciplesPlay": {
+    "example": "about/manifest-principles-play",
+    "title": "Manifest Principles",
+    "component": "manifest-principles-play"
+  },
+  "CronSchedulePlay": {
+    "example": "tools-automation/cron-schedule-play",
+    "title": "Cron Schedule",
+    "component": "cron-schedule-play"
+  },
+  "FileOpsLabPlay": {
+    "example": "tools-automation/file-ops-lab-play",
+    "title": "File Ops Lab",
+    "component": "file-ops-lab-play"
+  },
+  "ArchiveFormatExplorerPlay": {
+    "example": "tools-automation/archive-format-explorer-play",
+    "title": "Archive Format Explorer",
+    "component": "archive-format-explorer-play"
+  },
+  "DevAutomationPlay": {
+    "example": "tools-automation/dev-automation-play",
+    "title": "Dev Automation",
+    "component": "dev-automation-play"
+  },
+  "DbmsLandscapePlay": {
+    "example": "tools-data/dbms-landscape-play",
+    "title": "Dbms Landscape",
+    "component": "dbms-landscape-play"
+  },
+  "DbmsArchitecturePlay": {
+    "example": "tools-data/dbms-architecture-play",
+    "title": "Dbms Architecture",
+    "component": "dbms-architecture-play"
+  },
+  "NoSqlModelsPlay": {
+    "example": "tools-data/no-sql-models-play",
+    "title": "No Sql Models",
+    "component": "no-sql-models-play"
+  },
+  "MongoDbExplorerPlay": {
+    "example": "tools-data/mongo-db-explorer-play",
+    "title": "Mongo Db Explorer",
+    "component": "mongo-db-explorer-play"
+  },
+  "RedisDataTypesPlay": {
+    "example": "tools-data/redis-data-types-play",
+    "title": "Redis Data Types",
+    "component": "redis-data-types-play"
+  },
+  "CassandraPartitionPlay": {
+    "example": "tools-data/cassandra-partition-play",
+    "title": "Cassandra Partition",
+    "component": "cassandra-partition-play"
+  },
+  "FileManagerDualPanePlay": {
+    "example": "tools-data/file-manager-dual-pane-play",
+    "title": "File Manager Dual Pane",
+    "component": "file-manager-dual-pane-play"
+  },
+  "CloudStorageComparePlay": {
+    "example": "tools-data/cloud-storage-compare-play",
+    "title": "Cloud Storage Compare",
+    "component": "cloud-storage-compare-play"
+  },
+  "BackupStrategyPlay": {
+    "example": "tools-data/backup-strategy-play",
+    "title": "Backup Strategy",
+    "component": "backup-strategy-play"
+  },
+  "DataVizToolkitPlay": {
+    "example": "tools-data/data-viz-toolkit-play",
+    "title": "Data Viz Toolkit",
+    "component": "data-viz-toolkit-play"
+  },
+  "DataAnalyticsPipelinePlay": {
+    "example": "tools-data/data-analytics-pipeline-play",
+    "title": "Data Analytics Pipeline",
+    "component": "data-analytics-pipeline-play"
+  },
+  "IDEWorkspaceDemo": {
+    "example": "tools-development/ide-workspace-demo",
+    "title": "IDE Workspace Demo",
+    "component": "ide-workspace-demo"
+  },
+  "AiCodingAssistantPlay": {
+    "example": "tools-development/ai-coding-assistant-play",
+    "title": "Ai Coding Assistant",
+    "component": "ai-coding-assistant-play"
+  },
+  "ArchiveUtilitySimulator": {
+    "example": "tools-development/archive-utility-simulator",
+    "title": "Archive Utility Simulator",
+    "component": "archive-utility-simulator"
+  },
+  "TerminalEmulator": {
+    "example": "tools-development/terminal-emulator",
+    "title": "Terminal Emulator",
+    "component": "terminal-emulator"
+  },
+  "NetworkTrafficMonitorDemo": {
+    "example": "tools-development/network-traffic-monitor-demo",
+    "title": "Network Traffic Monitor Demo",
+    "component": "network-traffic-monitor-demo"
+  },
+  "DockerEmulator": {
+    "example": "tools-development/docker-emulator",
+    "title": "Docker Emulator",
+    "component": "docker-emulator"
+  },
+  "MediaPlayerSimulator": {
+    "example": "tools-development/media-player-simulator",
+    "title": "Media Player Simulator",
+    "component": "media-player-simulator"
+  },
+  "DebuggerEmulator": {
+    "example": "tools-development/debugger-emulator",
+    "title": "Debugger Emulator",
+    "component": "debugger-emulator"
+  },
+  "ResourceMetricsDemo": {
+    "example": "tools-development/resource-metrics-demo",
+    "title": "Resource Metrics Demo",
+    "component": "resource-metrics-demo"
+  },
+  "ObservabilityStackDemo": {
+    "example": "tools-development/observability-stack-demo",
+    "title": "Observability Stack Demo",
+    "component": "observability-stack-demo"
+  },
+  "WebMetricsDemo": {
+    "example": "tools-development/web-metrics-demo",
+    "title": "Web Metrics Demo",
+    "component": "web-metrics-demo"
+  },
+  "LoadStressMetricsPlay": {
+    "example": "tools-development/load-stress-metrics-play",
+    "title": "Load Stress Metrics",
+    "component": "load-stress-metrics-play"
+  },
+  "LiteratureShelfPlay": {
+    "example": "tools-documentation/literature-shelf-play",
+    "title": "Literature Shelf",
+    "component": "literature-shelf-play"
+  },
+  "DocHubExplorerPlay": {
+    "example": "tools-documentation/doc-hub-explorer-play",
+    "title": "Doc Hub Explorer",
+    "component": "doc-hub-explorer-play"
+  },
+  "TechArticlesDigestPlay": {
+    "example": "tools-documentation/tech-articles-digest-play",
+    "title": "Tech Articles Digest",
+    "component": "tech-articles-digest-play"
+  },
+  "CrossPlatformMobilePlay": {
+    "example": "tools-documentation/cross-platform-mobile-play",
+    "title": "Cross Platform Mobile",
+    "component": "cross-platform-mobile-play"
+  },
+  "MicrosoftLearnExplorerPlay": {
+    "example": "tools-documentation/microsoft-learn-explorer-play",
+    "title": "Microsoft Learn Explorer",
+    "component": "microsoft-learn-explorer-play"
+  },
+  "KubernetesDocsExplorerPlay": {
+    "example": "tools-documentation/kubernetes-docs-explorer-play",
+    "title": "Kubernetes Docs Explorer",
+    "component": "kubernetes-docs-explorer-play"
+  },
+  "GameEnginePickerPlay": {
+    "example": "tools-games/game-engine-picker-play",
+    "title": "Game Engine Picker",
+    "component": "game-engine-picker-play"
+  },
+  "GameEnginePlay": {
+    "example": "tools-games/game-engine-play",
+    "title": "Game Engine",
+    "component": "game-engine-play"
+  },
+  "XboxStorageCompatPlay": {
+    "example": "tools-games/xbox-storage-compat-play",
+    "title": "Xbox Storage Compat",
+    "component": "xbox-storage-compat-play"
+  },
+  "GamerToolsExplorerPlay": {
+    "example": "tools-games/gamer-tools-explorer-play",
+    "title": "Gamer Tools Explorer",
+    "component": "gamer-tools-explorer-play"
+  },
+  "GameStoreExplorerPlay": {
+    "example": "tools-games/game-store-explorer-play",
+    "title": "Game Store Explorer",
+    "component": "game-store-explorer-play"
+  },
+  "OfficeSuiteComparePlay": {
+    "example": "tools-misc/office-suite-compare-play",
+    "title": "Office Suite Compare",
+    "component": "office-suite-compare-play"
+  },
+  "WordSimulator": {
+    "example": "tools-misc/word-simulator",
+    "title": "Word Simulator",
+    "component": "word-simulator"
+  },
+  "PasswordManagerComparePlay": {
+    "example": "tools-misc/password-manager-compare-play",
+    "title": "Password Manager Compare",
+    "component": "password-manager-compare-play"
+  },
+  "NotesWorkflowPlay": {
+    "example": "tools-misc/notes-workflow-play",
+    "title": "Notes Workflow",
+    "component": "notes-workflow-play"
+  },
+  "GisStackExplorerPlay": {
+    "example": "tools-misc/gis-stack-explorer-play",
+    "title": "Gis Stack Explorer",
+    "component": "gis-stack-explorer-play"
+  },
+  "ScreenshotWorkflowPlay": {
+    "example": "tools-misc/screenshot-workflow-play",
+    "title": "Screenshot Workflow",
+    "component": "screenshot-workflow-play"
+  },
+  "MiscToolsCatalogPlay": {
+    "example": "tools-misc/misc-tools-catalog-play",
+    "title": "Misc Tools Catalog",
+    "component": "misc-tools-catalog-play"
+  },
+  "MultimediaEditorsPlay": {
+    "example": "tools-multimedia/multimedia-editors-play",
+    "title": "Multimedia Editors",
+    "component": "multimedia-editors-play"
+  },
+  "ModelingToolsPlay": {
+    "example": "tools-multimedia/modeling-tools-play",
+    "title": "Modeling Tools",
+    "component": "modeling-tools-play"
+  },
+  "VideoToolsPlay": {
+    "example": "tools-multimedia/video-tools-play",
+    "title": "Video Tools",
+    "component": "video-tools-play"
+  },
+  "AudioToolsPlay": {
+    "example": "tools-multimedia/audio-tools-play",
+    "title": "Audio Tools",
+    "component": "audio-tools-play"
+  },
+  "ObsStreamStudioPlay": {
+    "example": "tools-multimedia/obs-stream-studio-play",
+    "title": "Obs Stream Studio",
+    "component": "obs-stream-studio-play"
+  },
+  "StreamingAdaptivePlay": {
+    "example": "tools-multimedia/streaming-adaptive-play",
+    "title": "Streaming Adaptive",
+    "component": "streaming-adaptive-play"
+  },
+  "BrowserCatalogPlay": {
+    "example": "tools-network/browser-catalog-play",
+    "title": "Browser Catalog",
+    "component": "browser-catalog-play"
+  },
+  "BrowserAddressBarPlay": {
+    "example": "tools-network/browser-address-bar-play",
+    "title": "Browser Address Bar",
+    "component": "browser-address-bar-play"
+  },
+  "MessengersCatalogPlay": {
+    "example": "tools-network/messengers-catalog-play",
+    "title": "Messengers Catalog",
+    "component": "messengers-catalog-play"
+  },
+  "VideoConferencingCatalogPlay": {
+    "example": "tools-network/video-conferencing-catalog-play",
+    "title": "Video Conferencing Catalog",
+    "component": "video-conferencing-catalog-play"
+  },
+  "ProtocolCatalogPlay": {
+    "example": "tools-network/protocol-catalog-play",
+    "title": "Protocol Catalog",
+    "component": "protocol-catalog-play"
+  },
+  "AntivirusDetectionPlay": {
+    "example": "tools-security/antivirus-detection-play",
+    "title": "Antivirus Detection",
+    "component": "antivirus-detection-play"
+  },
+  "FirewallPlay": {
+    "example": "tools-security/firewall-play",
+    "title": "Firewall",
+    "component": "firewall-play"
+  },
+  "EncryptionPlay": {
+    "example": "tools-security/encryption-play",
+    "title": "Encryption",
+    "component": "encryption-play"
+  },
+  "PacketCapturePlay": {
+    "example": "tools-security/packet-capture-play",
+    "title": "Packet Capture",
+    "component": "packet-capture-play"
+  },
+  "ProgramOsInteractionPlay": {
+    "example": "tools-system/program-os-interaction-play",
+    "title": "Program Os Interaction",
+    "component": "program-os-interaction-play"
+  },
+  "HypervisorPlay": {
+    "example": "tools-system/hypervisor-play",
+    "title": "Hypervisor",
+    "component": "hypervisor-play"
+  },
+  "ContainerOrchestrator": {
+    "example": "tools-system/container-orchestrator",
+    "title": "Container Orchestrator",
+    "component": "container-orchestrator"
+  },
+  "TestingToolsCatalogPlay": {
+    "example": "tools-testing/testing-tools-catalog-play",
+    "title": "Testing Tools Catalog",
+    "component": "testing-tools-catalog-play"
+  },
+  "TestingStagesPlay": {
+    "example": "tools-testing/testing-stages-play",
+    "title": "Testing Stages",
+    "component": "testing-stages-play"
+  },
+  "UnitTestingAaaPlay": {
+    "example": "tools-testing/unit-testing-aaa-play",
+    "title": "Unit Testing Aaa",
+    "component": "unit-testing-aaa-play"
+  },
+  "TestingClassificationPlay": {
+    "example": "tools-testing/testing-classification-play",
+    "title": "Testing Classification",
+    "component": "testing-classification-play"
+  },
+  "TestDoublesComparePlay": {
+    "example": "tools-testing/test-doubles-compare-play",
+    "title": "Test Doubles Compare",
+    "component": "test-doubles-compare-play"
+  },
+  "ProfilerCatalogPlay": {
+    "example": "tools-testing/profiler-catalog-play",
+    "title": "Profiler Catalog",
+    "component": "profiler-catalog-play"
+  },
+  "LinterLivePlay": {
+    "example": "tools-testing/linter-live-play",
+    "title": "Linter Live",
+    "component": "linter-live-play"
+  },
+  "CodeStylePlay": {
+    "example": "tools-testing/code-style-play",
+    "title": "Code Style",
+    "component": "code-style-play"
+  },
+  "BlockBuilder": {
+    "example": "code-basics/block-builder",
+    "title": "Конструктор блоков",
+    "component": "block-builder"
+  },
+  "FlexGridPlay": {
+    "example": "lab/flex-grid-play",
+    "title": "Flex и Grid",
+    "component": "flex-grid-play"
+  },
+  "TurtleGraphicsSimulator": {
+    "example": "lab/turtle-graphics-simulator",
+    "title": "Turtle Graphics",
+    "component": "turtle-graphics-simulator"
+  },
+  "DockerfileBuilder": {
+    "example": "lab/dockerfile-builder",
+    "title": "Dockerfile Builder",
+    "component": "dockerfile-builder"
+  },
+  "YamlPlayDemo": {
+    "example": "lab/yaml-play-demo",
+    "title": "YAML-манифесты",
+    "component": "yaml-play-demo"
+  },
+  "CssTransitionPlay": {
+    "example": "lab/css-transition-play",
+    "title": "CSS-анимации",
+    "component": "css-transition-play"
+  },
+  "ScratchPythonTable": {
+    "example": "lab/scratch-python-table",
+    "title": "Scratch → Python",
+    "component": "scratch-python-table"
+  },
+  "TinkercadCircuitsPlay": {
+    "example": "lab/tinkercad-circuits-play",
+    "title": "Tinkercad Circuits",
+    "component": "tinkercad-circuits-play"
+  },
+  "ExcelSimulator": {
+    "example": "lab/excel-simulator",
+    "title": "Excel Simulator",
+    "component": "excel-simulator"
+  },
+  "JsDomBridgePlay": {
+    "example": "lab/js-dom-bridge-play",
+    "title": "JavaScript DOM",
+    "component": "js-dom-bridge-play"
+  },
+  "FirstProgramPlay": {
+    "example": "lab/first-program-play",
+    "title": "Первая программа",
+    "component": "first-program-play"
+  },
+  "PromptPipelineDemo": {
+    "example": "ai/prompt-pipeline-demo",
+    "title": "Пайплайн промптов",
+    "component": "prompt-pipeline-demo"
+  },
+  "SqlTrainer": {
+    "example": "lab/sql-trainer",
+    "title": "SQL-тренажёр",
+    "component": "sql-trainer"
+  },
+  "RegexPlaygroundDemo": {
+    "example": "lab/regex-playground-demo",
+    "title": "Regex Playground",
+    "component": "regex-playground-demo"
+  },
+  "RoleDevelopmentPlanPlay": {
+    "example": "lab/role-development-plan-play",
+    "title": "План развития",
+    "component": "role-development-plan-play"
+  },
+  "InterestNavigatorGameV2Play": {
+    "example": "lab/interest-navigator-game-v2-play",
+    "title": "Навигатор интересов",
+    "component": "interest-navigator-game-v2-play"
+  },
+  "ContextDomainPlay": {
+    "example": "context/context-domain-play",
+    "title": "Отраслевое демо",
+    "component": "context-domain-play"
+  },
+  "ContextDomainsHub": {
+    "example": "context/context-domains-hub",
+    "title": "Карта отраслей",
+    "component": "context-domains-hub"
+  },
+  "TextEncoderConverter": {
+    "example": "basics/text-encoder-converter",
+    "title": "Кодировки текста",
+    "component": "text-encoder-converter"
+  },
+  "IpAddressAnalyzer": {
+    "example": "basics/ip-address-analyzer",
+    "title": "Анализатор IP-адреса",
+    "component": "ip-address-analyzer"
+  },
+  "PrivacyConsentPlay": {
+    "example": "basics/privacy-consent-play",
+    "title": "Privacy Consent",
+    "component": "privacy-consent-play"
+  },
+  "TechHistoryPlay": {
+    "example": "basics/tech-history-play",
+    "title": "История технологий",
+    "component": "tech-history-play"
+  },
+  "TechHistoryHub": {
+    "example": "basics/tech-history-hub",
+    "title": "История технологий — хаб",
+    "component": "tech-history-hub"
+  },
+  "ComputerBootSequence": {
+    "example": "basics/computer-boot-sequence",
+    "title": "Последовательность загрузки",
+    "component": "computer-boot-sequence"
+  },
+  "DiskFragmentationPlay": {
+    "example": "basics/disk-fragmentation-play",
+    "title": "Disk Fragmentation",
+    "component": "disk-fragmentation-play"
+  },
+  "BIOSemulator": {
+    "example": "basics/bio-semulator",
+    "title": "Эмулятор BIOS",
+    "component": "bio-semulator"
+  },
+  "LaptopExplorerPlay": {
+    "example": "basics/laptop-explorer-play",
+    "title": "Laptop Explorer",
+    "component": "laptop-explorer-play"
+  },
+  "MobileDevicesPlay": {
+    "example": "basics/mobile-devices-play",
+    "title": "Mobile Devices",
+    "component": "mobile-devices-play"
+  },
+  "MouseInteractionsPlay": {
+    "example": "basics/mouse-interactions-play",
+    "title": "Mouse Interactions",
+    "component": "mouse-interactions-play"
+  },
+  "GamepadPlay": {
+    "example": "basics/gamepad-play",
+    "title": "Gamepad",
+    "component": "gamepad-play"
+  },
+  "DisplayTechPlay": {
+    "example": "basics/display-tech-play",
+    "title": "Технологии дисплеев",
+    "component": "display-tech-play"
+  },
+  "DataInformationPlay": {
+    "example": "basics/data-information-play",
+    "title": "Data Information",
+    "component": "data-information-play"
+  },
+  "InformationKindsPlay": {
+    "example": "basics/information-kinds-play",
+    "title": "Information Kinds",
+    "component": "information-kinds-play"
+  },
+  "TypingPlay": {
+    "example": "basics/typing-play",
+    "title": "Typing",
+    "component": "typing-play"
+  },
+  "MetadataExplorerPlay": {
+    "example": "basics/metadata-explorer-play",
+    "title": "Metadata Explorer",
+    "component": "metadata-explorer-play"
+  },
+  "ReadWritePlay": {
+    "example": "basics/read-write-play",
+    "title": "Read Write",
+    "component": "read-write-play"
+  },
+  "CacheHierarchyPlay": {
+    "example": "basics/cache-hierarchy-play",
+    "title": "Cache Hierarchy",
+    "component": "cache-hierarchy-play"
+  },
+  "WebBrowserSimulator": {
+    "example": "basics/web-browser-simulator",
+    "title": "Симулятор браузера",
+    "component": "web-browser-simulator"
+  },
+  "VideoConferenceSimulator": {
+    "example": "basics/video-conference-simulator",
+    "title": "Симулятор видеосвязи",
+    "component": "video-conference-simulator"
+  },
+  "MessengerSimulator": {
+    "example": "basics/messenger-simulator",
+    "title": "Симулятор мессенджера",
+    "component": "messenger-simulator"
+  },
+  "EndUserSoftwareHub": {
+    "example": "basics/end-user-software-hub",
+    "title": "Софт пользователя — хаб",
+    "component": "end-user-software-hub"
+  },
+  "InstallerWizardPlay": {
+    "example": "basics/installer-wizard-play",
+    "title": "Мастер установки",
+    "component": "installer-wizard-play"
+  },
+  "LogExplorerDemo": {
+    "example": "basics/log-explorer-demo",
+    "title": "Log Explorer",
+    "component": "log-explorer-demo"
+  },
+  "RasterVectorCompareDemo": {
+    "example": "basics/raster-vector-compare-demo",
+    "title": "Raster Vector Compare",
+    "component": "raster-vector-compare-demo"
+  },
+  "MatchThreePlay": {
+    "example": "basics/match-three-play",
+    "title": "Match-3 — механика игры",
+    "component": "match-three-play"
+  },
+  "GameGenreToysHub": {
+    "example": "basics/game-genre-toys-hub",
+    "title": "Жанры игр — обзор",
+    "component": "game-genre-toys-hub"
+  },
+  "GameArchitecturePlay": {
+    "example": "basics/game-architecture-play",
+    "title": "Game Architecture",
+    "component": "game-architecture-play"
+  },
+  "GameGenreToyPlay": {
+    "example": "basics/game-genre-toy-play",
+    "title": "Жанр игры — интерактив",
+    "component": "game-genre-toy-play"
+  },
+  "WindowsProgramTypesPlay": {
+    "example": "basics/windows-program-types-play",
+    "title": "Типы программ Windows",
+    "component": "windows-program-types-play"
+  },
+  "ProgramBehaviorPlay": {
+    "example": "basics/program-behavior-play",
+    "title": "Поведение программы",
+    "component": "program-behavior-play"
+  },
+  "ProgramLifecyclePlay": {
+    "example": "basics/program-lifecycle-play",
+    "title": "Жизненный цикл программы",
+    "component": "program-lifecycle-play"
+  },
+  "MobileAppEmulator": {
+    "example": "basics/mobile-app-emulator",
+    "title": "Mobile App Emulator",
+    "component": "mobile-app-emulator"
+  },
+  "AppConfigStackPlay": {
+    "example": "basics/app-config-stack-play",
+    "title": "Стек конфигурации приложения",
+    "component": "app-config-stack-play"
+  },
+  "SearchPipelinePlay": {
+    "example": "basics/search-pipeline-play",
+    "title": "Search Pipeline",
+    "component": "search-pipeline-play"
+  },
+  "QueryLanguagesPlay": {
+    "example": "basics/query-languages-play",
+    "title": "Query Languages",
+    "component": "query-languages-play"
+  },
+  "SearchQueryLab": {
+    "example": "basics/search-query-lab",
+    "title": "Search Query Lab",
+    "component": "search-query-lab"
+  },
+  "SearchEnginesHub": {
+    "example": "basics/search-engines-hub",
+    "title": "Поисковые системы — хаб",
+    "component": "search-engines-hub"
+  },
+  "OutlookMailPlay": {
+    "example": "basics/outlook-mail-play",
+    "title": "Outlook Mail",
+    "component": "outlook-mail-play"
+  },
+  "OrgHierarchyPlay": {
+    "example": "basics/org-hierarchy-play",
+    "title": "Org Hierarchy",
+    "component": "org-hierarchy-play"
+  },
+  "DigitalFormPlay": {
+    "example": "basics/digital-form-play",
+    "title": "Digital Form",
+    "component": "digital-form-play"
+  },
+  "LanguageIntroHub": {
+    "example": "basics/language-intro-hub",
+    "title": "Обзор языков программирования",
+    "component": "language-intro-hub"
+  },
+  "UiVisualElementsDemo": {
+    "example": "basics/ui-visual-elements-demo",
+    "title": "Ui Visual Elements",
+    "component": "ui-visual-elements-demo"
+  },
+  "UiFunctionalElementsDemo": {
+    "example": "basics/ui-functional-elements-demo",
+    "title": "Ui Functional Elements",
+    "component": "ui-functional-elements-demo"
+  },
+  "UiNavigationElementsDemo": {
+    "example": "basics/ui-navigation-elements-demo",
+    "title": "Ui Navigation Elements",
+    "component": "ui-navigation-elements-demo"
+  },
+  "UiFeedbackElementsDemo": {
+    "example": "basics/ui-feedback-elements-demo",
+    "title": "Ui Feedback Elements",
+    "component": "ui-feedback-elements-demo"
+  },
+  "UiUxPrinciplesDemo": {
+    "example": "basics/ui-ux-principles-demo",
+    "title": "Ui Ux Principles",
+    "component": "ui-ux-principles-demo"
+  },
+  "ItCareerPlanPlay": {
+    "example": "basics/it-career-plan-play",
+    "title": "It Career Plan",
+    "component": "it-career-plan-play"
+  },
+  "RemoteWorkConnectPlay": {
+    "example": "basics/remote-work-connect-play",
+    "title": "Remote Work Connect",
+    "component": "remote-work-connect-play"
+  },
+  "MarketingFunnelPlay": {
+    "example": "basics/marketing-funnel-play",
+    "title": "Marketing Funnel",
+    "component": "marketing-funnel-play"
+  },
+  "PersonalizedPricingPlay": {
+    "example": "basics/personalized-pricing-play",
+    "title": "Personalized Pricing",
+    "component": "personalized-pricing-play"
+  },
+  "BusinessFinancePlay": {
+    "example": "basics/business-finance-play",
+    "title": "Business Finance",
+    "component": "business-finance-play"
+  },
+  "BusinessProcessAutomationPlay": {
+    "example": "basics/business-process-automation-play",
+    "title": "Business Process Automation",
+    "component": "business-process-automation-play"
+  },
+  "ItBusinessModelPlay": {
+    "example": "basics/it-business-model-play",
+    "title": "It Business Model",
+    "component": "it-business-model-play"
+  },
+  "EnglishWordRandomizer": {
+    "example": "basics/english-word-randomizer",
+    "title": "English Word Randomizer",
+    "component": "english-word-randomizer"
+  },
+  "OsStackPlay": {
+    "example": "system-network/os-stack-play",
+    "title": "Стек операционной системы",
+    "component": "os-stack-play"
+  },
+  "OsClassificationPlay": {
+    "example": "system-network/os-classification-play",
+    "title": "Классификация ОС",
+    "component": "os-classification-play"
+  },
+  "OsPlatformsHub": {
+    "example": "system-network/os-platforms-hub",
+    "title": "Операционные системы — хаб",
+    "component": "os-platforms-hub"
+  },
+  "KernelArchitecturePlay": {
+    "example": "system-network/kernel-architecture-play",
+    "title": "Архитектура ядра",
+    "component": "kernel-architecture-play"
+  },
+  "CloudServiceStackPlay": {
+    "example": "system-network/cloud-service-stack-play",
+    "title": "Стек облачных сервисов",
+    "component": "cloud-service-stack-play"
+  },
+  "BusinessPlatformsPlay": {
+    "example": "system-network/business-platforms-play",
+    "title": "Бизнес-платформы",
+    "component": "business-platforms-play"
+  },
+  "SocialNetworkArchPlay": {
+    "example": "system-network/social-network-arch-play",
+    "title": "Архитектура соцсети",
+    "component": "social-network-arch-play"
+  },
+  "SystemRequirementsComparePlay": {
+    "example": "system-network/system-requirements-compare-play",
+    "title": "System Requirements Compare",
+    "component": "system-requirements-compare-play"
+  },
+  "CdnCacheEmulatorPlay": {
+    "example": "system-network/cdn-cache-emulator-play",
+    "title": "Эмулятор CDN-кэша",
+    "component": "cdn-cache-emulator-play"
+  },
+  "UrlUriRnConverter": {
+    "example": "system-network/url-uri-rn-converter",
+    "title": "Конвертер URL / URI / URN",
+    "component": "url-uri-rn-converter"
+  },
+  "NetworkEmulatorPlay": {
+    "example": "system-network/network-emulator-play",
+    "title": "Эмулятор сети",
+    "component": "network-emulator-play"
+  },
+  "DomainLevelAnalyzer": {
+    "example": "system-network/domain-level-analyzer",
+    "title": "Domain Level Analyzer",
+    "component": "domain-level-analyzer"
+  },
+  "VpnTunnelPlay": {
+    "example": "system-network/vpn-tunnel-play",
+    "title": "Vpn Tunnel",
+    "component": "vpn-tunnel-play"
+  },
+  "ProxyServerPlay": {
+    "example": "system-network/proxy-server-play",
+    "title": "Прокси-сервер",
+    "component": "proxy-server-play"
+  },
+  "CookieSessionPlay": {
+    "example": "system-network/cookie-session-play",
+    "title": "Cookie и сессии",
+    "component": "cookie-session-play"
+  },
+  "WirelessNetworkPlay": {
+    "example": "system-network/wireless-network-play",
+    "title": "Беспроводные сети",
+    "component": "wireless-network-play"
+  },
+  "WebPageLayersPlay": {
+    "example": "system-network/web-page-layers-play",
+    "title": "Слои веб-страницы",
+    "component": "web-page-layers-play"
+  },
+  "WebsiteBuilderPlay": {
+    "example": "system-network/website-builder-play",
+    "title": "Конструктор сайта",
+    "component": "website-builder-play"
+  },
+  "PushNotificationPlay": {
+    "example": "system-network/push-notification-play",
+    "title": "Push-уведомления",
+    "component": "push-notification-play"
+  },
+  "OsInstallFlowPlay": {
+    "example": "system-network/os-install-flow-play",
+    "title": "Установка операционной системы",
+    "component": "os-install-flow-play"
+  },
+  "ItInfrastructurePlay": {
+    "example": "system-network/it-infrastructure-play",
+    "title": "ИТ-инфраструктура",
+    "component": "it-infrastructure-play"
+  },
+  "HomeNetworkPlay": {
+    "example": "system-network/home-network-play",
+    "title": "Домашняя сеть",
+    "component": "home-network-play"
+  },
+  "PortForwardingPlay": {
+    "example": "system-network/port-forwarding-play",
+    "title": "Проброс портов",
+    "component": "port-forwarding-play"
+  },
+  "BackupDemo": {
+    "example": "system-network/backup-demo",
+    "title": "Резервное копирование",
+    "component": "backup-demo"
+  },
+  "TechSupportOverviewPlay": {
+    "example": "system-network/tech-support-overview-play",
+    "title": "Техподдержка — обзор",
+    "component": "tech-support-overview-play"
+  },
+  "TechSupportTicketFlowPlay": {
+    "example": "system-network/tech-support-ticket-flow-play",
+    "title": "Жизненный цикл тикета",
+    "component": "tech-support-ticket-flow-play"
+  },
+  "TechSupportKnowledgeBasePlay": {
+    "example": "system-network/tech-support-knowledge-base-play",
+    "title": "База знаний поддержки",
+    "component": "tech-support-knowledge-base-play"
+  },
+  "TechSupportLevelsPlay": {
+    "example": "system-network/tech-support-levels-play",
+    "title": "Уровни поддержки",
+    "component": "tech-support-levels-play"
+  },
+  "TechSupportMetricsPlay": {
+    "example": "system-network/tech-support-metrics-play",
+    "title": "Метрики поддержки",
+    "component": "tech-support-metrics-play"
+  },
+  "TechSupportItsmPlay": {
+    "example": "system-network/tech-support-itsm-play",
+    "title": "ITSM в поддержке",
+    "component": "tech-support-itsm-play"
+  },
+  "TechSupportItamPlay": {
+    "example": "system-network/tech-support-itam-play",
+    "title": "ITAM в поддержке",
+    "component": "tech-support-itam-play"
+  },
+  "AuthenticationFlow": {
+    "example": "system-network/authentication-flow",
+    "title": "Поток аутентификации",
+    "component": "authentication-flow"
+  },
+  "WebAttackSimulatorPlay": {
+    "example": "system-network/web-attack-simulator-play",
+    "title": "Симулятор веб-атак",
+    "component": "web-attack-simulator-play"
+  },
+  "MalwareRemediationPlay": {
+    "example": "system-network/malware-remediation-play",
+    "title": "Устранение вредоносного ПО",
+    "component": "malware-remediation-play"
+  },
+  "IntegrationBasicsPlay": {
+    "example": "system-network/integration-basics-play",
+    "title": "Основы интеграции",
+    "component": "integration-basics-play"
+  },
+  "SynchronousInteraction": {
+    "example": "system-network/synchronous-interaction",
+    "title": "Synchronous Interaction",
+    "component": "synchronous-interaction"
+  },
+  "AsynchronousInteraction": {
+    "example": "system-network/asynchronous-interaction",
+    "title": "Асинхронное взаимодействие",
+    "component": "asynchronous-interaction"
+  },
+  "ReactiveInteraction": {
+    "example": "system-network/reactive-interaction",
+    "title": "Реактивное взаимодействие",
+    "component": "reactive-interaction"
+  },
+  "IntegrationDataFlowPlay": {
+    "example": "system-network/integration-data-flow-play",
+    "title": "Потоки данных интеграции",
+    "component": "integration-data-flow-play"
+  },
+  "SessionInteraction": {
+    "example": "system-network/session-interaction",
+    "title": "Сессионное взаимодействие",
+    "component": "session-interaction"
+  },
+  "WebServicePlay": {
+    "example": "system-network/web-service-play",
+    "title": "Веб-сервисы",
+    "component": "web-service-play"
+  },
+  "RequestResponseModel": {
+    "example": "system-network/request-response-model",
+    "title": "Модель запрос–ответ",
+    "component": "request-response-model"
+  },
+  "SwaggerApiExplorer": {
+    "example": "system-network/swagger-api-explorer",
+    "title": "Swagger API Explorer",
+    "component": "swagger-api-explorer"
+  },
+  "MessageBrokerOverviewPlay": {
+    "example": "system-network/message-broker-overview-play",
+    "title": "Обзор брокеров сообщений",
+    "component": "message-broker-overview-play"
+  },
+  "DataStructureQueue": {
+    "example": "system-network/data-structure-queue",
+    "title": "Очередь (структура данных)",
+    "component": "data-structure-queue"
+  },
+  "RabbitMQSimulation": {
+    "example": "system-network/rabbit-mq-simulation",
+    "title": "Rabbit MQ Simulation",
+    "component": "rabbit-mq-simulation"
+  },
+  "KafkaSimulation": {
+    "example": "system-network/kafka-simulation",
+    "title": "Симуляция Kafka",
+    "component": "kafka-simulation"
+  },
+  "IntegrationSolutionsPlay": {
+    "example": "system-network/integration-solutions-play",
+    "title": "Решения интеграции",
+    "component": "integration-solutions-play"
+  },
+  "SOAPTrainer": {
+    "example": "system-network/soap-trainer",
+    "title": "Тренажёр SOAP",
+    "component": "soap-trainer"
+  },
+  "PcAssemblyPlay": {
+    "example": "system-network/pc-assembly-play",
+    "title": "Сборка ПК",
+    "component": "pc-assembly-play"
+  },
+  "PcFirstBootDiagnosticPlay": {
+    "example": "system-network/pc-first-boot-diagnostic-play",
+    "title": "Диагностика первого запуска ПК",
+    "component": "pc-first-boot-diagnostic-play"
+  },
+  "VonNeumannArchitecturePlay": {
+    "example": "system-network/von-neumann-architecture-play",
+    "title": "Архитектура фон Неймана",
+    "component": "von-neumann-architecture-play"
+  },
+  "EmbeddedSystemPlay": {
+    "example": "system-network/embedded-system-play",
+    "title": "Встраиваемые системы",
+    "component": "embedded-system-play"
+  },
+  "MarshalingDemo": {
+    "example": "data-markup/marshaling-demo",
+    "title": "Маршалинг данных",
+    "component": "marshaling-demo"
+  },
+  "MemoryAddressingDemo": {
+    "example": "data-markup/memory-addressing-demo",
+    "title": "Адресация памяти",
+    "component": "memory-addressing-demo"
+  },
+  "DataStructureTable": {
+    "example": "data-markup/data-structure-table",
+    "title": "Табличная структура данных",
+    "component": "data-structure-table"
+  },
+  "DataStructureHierarchy": {
+    "example": "data-markup/data-structure-hierarchy",
+    "title": "Иерархическая структура данных",
+    "component": "data-structure-hierarchy"
+  },
+  "DataStructureGraph": {
+    "example": "data-markup/data-structure-graph",
+    "title": "Граф как структура данных",
+    "component": "data-structure-graph"
+  },
+  "DataStructureLinear": {
+    "example": "data-markup/data-structure-linear",
+    "title": "Линейные структуры данных",
+    "component": "data-structure-linear"
+  },
+  "DataStructureKeyValue": {
+    "example": "data-markup/data-structure-key-value",
+    "title": "Key-Value структуры",
+    "component": "data-structure-key-value"
+  },
+  "DataStructureStack": {
+    "example": "data-markup/data-structure-stack",
+    "title": "Стек — структура данных",
+    "component": "data-structure-stack"
+  },
+  "GisDemo": {
+    "example": "data-markup/gis-demo",
+    "title": "GIS — геоданные",
+    "component": "gis-demo"
+  },
+  "LogicTruthTableDemo": {
+    "example": "data-markup/logic-truth-table-demo",
+    "title": "Таблицы истинности",
+    "component": "logic-truth-table-demo"
+  },
+  "DiscreteMathDemo": {
+    "example": "data-markup/discrete-math-demo",
+    "title": "Дискретная математика",
+    "component": "discrete-math-demo"
+  },
+  "ComplexityDemo": {
+    "example": "data-markup/complexity-demo",
+    "title": "Сложность алгоритмов",
+    "component": "complexity-demo"
+  },
+  "InformationEntropyDemo": {
+    "example": "data-markup/information-entropy-demo",
+    "title": "Энтропия информации",
+    "component": "information-entropy-demo"
+  },
+  "FiniteAutomatonDemo": {
+    "example": "data-markup/finite-automaton-demo",
+    "title": "Конечный автомат",
+    "component": "finite-automaton-demo"
+  },
+  "XsdValidationDemo": {
+    "example": "data-markup/xsd-validation-demo",
+    "title": "XSD — валидация XML",
+    "component": "xsd-validation-demo"
+  },
+  "XsltTransformDemo": {
+    "example": "data-markup/xslt-transform-demo",
+    "title": "XSLT — трансформация",
+    "component": "xslt-transform-demo"
+  },
+  "XPathPlayDemo": {
+    "example": "data-markup/x-path-play-demo",
+    "title": "XPath — запросы к XML",
+    "component": "x-path-play-demo"
+  },
+  "JsonPlayDemo": {
+    "example": "data-markup/json-play-demo",
+    "title": "JSON — интерактив",
+    "component": "json-play-demo"
+  },
+  "MarkdownLivePlay": {
+    "example": "data-markup/markdown-live-play",
+    "title": "Markdown — live preview",
+    "component": "markdown-live-play"
+  },
+  "XamlLayoutPlay": {
+    "example": "data-markup/xaml-layout-play",
+    "title": "XAML — разметка",
+    "component": "xaml-layout-play"
+  },
+  "ERDDemo": {
+    "example": "data-markup/erd-demo",
+    "title": "ERD — диаграмма сущностей",
+    "component": "erd-demo"
+  },
+  "DataGovernancePlay": {
+    "example": "data-markup/data-governance-play",
+    "title": "Data Governance",
+    "component": "data-governance-play"
+  },
+  "MongoShellPlay": {
+    "example": "data-markup/mongo-shell-play",
+    "title": "MongoDB Shell",
+    "component": "mongo-shell-play"
+  },
+  "RedisCacheDemo": {
+    "example": "data-markup/redis-cache-demo",
+    "title": "Redis — кэш и типы данных",
+    "component": "redis-cache-demo"
+  },
+  "CassandraCqlPlay": {
+    "example": "data-markup/cassandra-cql-play",
+    "title": "Cassandra CQL",
+    "component": "cassandra-cql-play"
+  },
+  "GraphTraversalPlay": {
+    "example": "data-markup/graph-traversal-play",
+    "title": "Обход графа (Cypher)",
+    "component": "graph-traversal-play"
+  },
+  "MemcachedCachePlay": {
+    "example": "data-markup/memcached-cache-play",
+    "title": "Memcached — кэш",
+    "component": "memcached-cache-play"
+  },
+  "MemcachedShellPlay": {
+    "example": "data-markup/memcached-shell-play",
+    "title": "Memcached Shell",
+    "component": "memcached-shell-play"
+  },
+  "VectorSimilarityPlay": {
+    "example": "data-markup/vector-similarity-play",
+    "title": "Векторное сходство",
+    "component": "vector-similarity-play"
+  },
+  "LanguageIntroPlay": {
+    "example": "data-markup/language-intro-play",
+    "title": "Обзор языка разметки/данных",
+    "component": "language-intro-play"
+  },
+  "DbIndexVisualizerPlay": {
+    "example": "data-markup/db-index-visualizer-play",
+    "title": "Визуализация индексов БД",
+    "component": "db-index-visualizer-play"
+  },
+  "SqlInsertTrainer": {
+    "example": "data-markup/sql-insert-trainer",
+    "title": "SQL INSERT — тренажёр",
+    "component": "sql-insert-trainer"
+  },
+  "SqlUpdateTrainer": {
+    "example": "data-markup/sql-update-trainer",
+    "title": "SQL UPDATE — тренажёр",
+    "component": "sql-update-trainer"
+  },
+  "SqlDeleteTrainer": {
+    "example": "data-markup/sql-delete-trainer",
+    "title": "SQL DELETE — тренажёр",
+    "component": "sql-delete-trainer"
+  },
+  "SqlCtePlay": {
+    "example": "data-markup/sql-cte-play",
+    "title": "SQL CTE",
+    "component": "sql-cte-play"
+  },
+  "SqlViewPlay": {
+    "example": "data-markup/sql-view-play",
+    "title": "SQL VIEW",
+    "component": "sql-view-play"
+  },
+  "SqlProcedureTriggerPlay": {
+    "example": "data-markup/sql-procedure-trigger-play",
+    "title": "SQL процедуры и триггеры",
+    "component": "sql-procedure-trigger-play"
+  },
+  "SqlExplainPlanPlay": {
+    "example": "data-markup/sql-explain-plan-play",
+    "title": "EXPLAIN — план запроса",
+    "component": "sql-explain-plan-play"
+  },
+  "BeginnerWebStackHub": {
+    "example": "data-markup/beginner-web-stack-hub",
+    "title": "Веб-стек для новичка",
+    "component": "beginner-web-stack-hub"
+  },
+  "CssHtmlBridgePlay": {
+    "example": "data-markup/css-html-bridge-play",
+    "title": "Мост HTML ↔ CSS",
+    "component": "css-html-bridge-play"
+  },
+  "BoxModelPlay": {
+    "example": "data-markup/box-model-play",
+    "title": "CSS Box Model",
+    "component": "box-model-play"
+  },
+  "BannerCarouselPlay": {
+    "example": "data-markup/banner-carousel-play",
+    "title": "CSS-карусель баннеров",
+    "component": "banner-carousel-play"
+  },
+  "ResponsiveViewportPlay": {
+    "example": "data-markup/responsive-viewport-play",
+    "title": "Адаптивный viewport",
+    "component": "responsive-viewport-play"
+  },
+  "StyleInjectionPlay": {
+    "example": "data-markup/style-injection-play",
+    "title": "Инъекция стилей",
+    "component": "style-injection-play"
+  },
+  "BigDataFiveVsPlay": {
+    "example": "data-markup/big-data-five-vs-play",
+    "title": "Big Data — 5V",
+    "component": "big-data-five-vs-play"
+  },
+  "DataScienceRolesPlay": {
+    "example": "data-markup/data-science-roles-play",
+    "title": "Роли в Data Science",
+    "component": "data-science-roles-play"
+  },
+  "ClusteringPlay": {
+    "example": "data-markup/clustering-play",
+    "title": "Кластеризация",
+    "component": "clustering-play"
+  },
+  "AiDataAnalysisPlay": {
+    "example": "data-markup/ai-data-analysis-play",
+    "title": "AI-анализ данных",
+    "component": "ai-data-analysis-play"
+  },
+  "CausalAnalysisPlay": {
+    "example": "data-markup/causal-analysis-play",
+    "title": "Причинно-следственный анализ",
+    "component": "causal-analysis-play"
+  },
+  "PythonDataStatsPlay": {
+    "example": "data-markup/python-data-stats-play",
+    "title": "Python — описательная статистика",
+    "component": "python-data-stats-play"
+  },
+  "EtlEltOrchestrationPlay": {
+    "example": "data-markup/etl-elt-orchestration-play",
+    "title": "ETL/ELT — оркестрация",
+    "component": "etl-elt-orchestration-play"
+  },
+  "LinearProgrammingPlayground": {
+    "example": "data-markup/linear-programming-playground",
+    "title": "Линейное программирование",
+    "component": "linear-programming-playground"
+  },
+  "SimplexStepTrainer": {
+    "example": "data-markup/simplex-step-trainer",
+    "title": "Симплекс — пошаговый тренажёр",
+    "component": "simplex-step-trainer"
+  },
+  "SyntaxComparePlay": {
+    "example": "data-markup/syntax-compare-play",
+    "title": "Сравнение синтаксиса языков",
+    "component": "syntax-compare-play"
+  },
+  "CodeRunPlacePlay": {
+    "example": "data-markup/code-run-place-play",
+    "title": "Где выполняется код",
+    "component": "code-run-place-play"
+  },
+  "SearchVisualizer": {
+    "example": "code-dev/search-visualizer",
+    "title": "Визуализация поиска",
+    "component": "search-visualizer"
+  },
+  "SortingVisualizer": {
+    "example": "code-dev/sorting-visualizer",
+    "title": "Визуализация сортировки",
+    "component": "sorting-visualizer"
+  },
+  "CodeTransformationDemo": {
+    "example": "code-dev/code-transformation-demo",
+    "title": "Трансформация кода",
+    "component": "code-transformation-demo"
+  },
+  "QrCodeGenerator": {
+    "example": "code-dev/qr-code-generator",
+    "title": "Генератор QR-кода",
+    "component": "qr-code-generator"
+  },
+  "OperatorsPlay": {
+    "example": "code-dev/operators-play",
+    "title": "Операторы",
+    "component": "operators-play"
+  },
+  "FunctionSimulator": {
+    "example": "code-dev/function-simulator",
+    "title": "Симулятор функций",
+    "component": "function-simulator"
+  },
+  "LoopsSimulator": {
+    "example": "code-dev/loops-simulator",
+    "title": "Симулятор циклов",
+    "component": "loops-simulator"
+  },
+  "LanguageAbstractionPlay": {
+    "example": "code-dev/language-abstraction-play",
+    "title": "Уровни абстракции языка",
+    "component": "language-abstraction-play"
+  },
+  "RefactoringDemo": {
+    "example": "code-dev/refactoring-demo",
+    "title": "Рефакторинг",
+    "component": "refactoring-demo"
+  },
+  "ProgrammingTasksPlay": {
+    "example": "code-dev/programming-tasks-play",
+    "title": "Задачи по программированию",
+    "component": "programming-tasks-play"
+  },
+  "ObjectLifecycleSimulator": {
+    "example": "code-dev/object-lifecycle-simulator",
+    "title": "Жизненный цикл объекта",
+    "component": "object-lifecycle-simulator"
+  },
+  "UndefinedBehaviorDemo": {
+    "example": "code-dev/undefined-behavior-demo",
+    "title": "Неопределённое поведение",
+    "component": "undefined-behavior-demo"
+  },
+  "ConditionalFlowPlay": {
+    "example": "code-dev/conditional-flow-play",
+    "title": "Условный поток выполнения",
+    "component": "conditional-flow-play"
+  },
+  "VariableLifecyclePlay": {
+    "example": "code-dev/variable-lifecycle-play",
+    "title": "Жизненный цикл переменной",
+    "component": "variable-lifecycle-play"
+  },
+  "MethodCallSimulator": {
+    "example": "code-dev/method-call-simulator",
+    "title": "Симулятор вызова методов",
+    "component": "method-call-simulator"
+  },
+  "HexNotationPlay": {
+    "example": "code-dev/hex-notation-play",
+    "title": "Шестнадцатеричная запись",
+    "component": "hex-notation-play"
+  },
+  "ProcessorExecutionPlay": {
+    "example": "code-dev/processor-execution-play",
+    "title": "Выполнение на процессоре",
+    "component": "processor-execution-play"
+  },
+  "CpuRegistersPlay": {
+    "example": "code-dev/cpu-registers-play",
+    "title": "Регистры CPU",
+    "component": "cpu-registers-play"
+  },
+  "BytecodeVmPlay": {
+    "example": "code-dev/bytecode-vm-play",
+    "title": "Виртуальная машина байт-кода",
+    "component": "bytecode-vm-play"
+  },
+  "ProjectStructureExplorer": {
+    "example": "code-dev/project-structure-explorer",
+    "title": "Структура проекта",
+    "component": "project-structure-explorer"
+  },
+  "LibraryConnectionDemo": {
+    "example": "code-dev/library-connection-demo",
+    "title": "Подключение библиотек",
+    "component": "library-connection-demo"
+  },
+  "BuildProcessFlow": {
+    "example": "code-dev/build-process-flow",
+    "title": "Процесс сборки",
+    "component": "build-process-flow"
+  },
+  "FrameworkDemo": {
+    "example": "code-dev/framework-demo",
+    "title": "Фреймворки",
+    "component": "framework-demo"
+  },
+  "ModuleDependencyGraph": {
+    "example": "code-dev/module-dependency-graph",
+    "title": "Граф зависимостей модулей",
+    "component": "module-dependency-graph"
+  },
+  "ProcessThreadVisualizer": {
+    "example": "code-dev/process-thread-visualizer",
+    "title": "Процессы и потоки",
+    "component": "process-thread-visualizer"
+  },
+  "RaceConditionDemo": {
+    "example": "code-dev/race-condition-demo",
+    "title": "Состояние гонки",
+    "component": "race-condition-demo"
+  },
+  "ThreadLifecycleDemo": {
+    "example": "code-dev/thread-lifecycle-demo",
+    "title": "Жизненный цикл потока",
+    "component": "thread-lifecycle-demo"
+  },
+  "ProcessLifecycleDemo": {
+    "example": "code-dev/process-lifecycle-demo",
+    "title": "Жизненный цикл процесса",
+    "component": "process-lifecycle-demo"
+  },
+  "PromiseAsyncDemo": {
+    "example": "code-dev/promise-async-demo",
+    "title": "Promise и async/await",
+    "component": "promise-async-demo"
+  },
+  "ExecutionPerformancePlay": {
+    "example": "code-dev/execution-performance-play",
+    "title": "Производительность выполнения",
+    "component": "execution-performance-play"
+  },
+  "ExceptionHandlingDemo": {
+    "example": "code-dev/exception-handling-demo",
+    "title": "Обработка исключений",
+    "component": "exception-handling-demo"
+  },
+  "CallChainPlay": {
+    "example": "code-dev/call-chain-play",
+    "title": "Цепочка вызовов",
+    "component": "call-chain-play"
+  },
+  "DeadCodeScannerPlay": {
+    "example": "code-dev/dead-code-scanner-play",
+    "title": "Сканер мёртвого кода",
+    "component": "dead-code-scanner-play"
+  },
+  "BitRepresentationPlay": {
+    "example": "code-dev/bit-representation-play",
+    "title": "Битовое представление",
+    "component": "bit-representation-play"
+  },
+  "ProgrammingParadigmPlay": {
+    "example": "code-dev/programming-paradigm-play",
+    "title": "Парадигмы программирования",
+    "component": "programming-paradigm-play"
+  },
+  "MetaprogrammingPhasesPlay": {
+    "example": "code-dev/metaprogramming-phases-play",
+    "title": "Фазы метапрограммирования",
+    "component": "metaprogramming-phases-play"
+  },
+  "SolidDemo": {
+    "example": "code-dev/solid-demo",
+    "title": "SOLID",
+    "component": "solid-demo"
+  },
+  "OopBasicsDemo": {
+    "example": "code-dev/oop-basics-demo",
+    "title": "ООП — основы",
+    "component": "oop-basics-demo"
+  },
+  "OopAbstractionDemo": {
+    "example": "code-dev/oop-abstraction-demo",
+    "title": "ООП — абстракция",
+    "component": "oop-abstraction-demo"
+  },
+  "OopEncapsulationDemo": {
+    "example": "code-dev/oop-encapsulation-demo",
+    "title": "ООП — инкапсуляция",
+    "component": "oop-encapsulation-demo"
+  },
+  "OopInheritanceDemo": {
+    "example": "code-dev/oop-inheritance-demo",
+    "title": "ООП — наследование",
+    "component": "oop-inheritance-demo"
+  },
+  "OopPolymorphismDemo": {
+    "example": "code-dev/oop-polymorphism-demo",
+    "title": "ООП — полиморфизм",
+    "component": "oop-polymorphism-demo"
+  },
+  "DIPDemo": {
+    "example": "code-dev/dip-demo",
+    "title": "Dependency Inversion Principle",
+    "component": "dip-demo"
+  },
+  "DIDemo": {
+    "example": "code-dev/di-demo",
+    "title": "Dependency Injection",
+    "component": "di-demo"
+  },
+  "ORMDemo": {
+    "example": "code-dev/orm-demo",
+    "title": "ORM — объектно-реляционное отображение",
+    "component": "orm-demo"
+  },
+  "DesktopWindowPlay": {
+    "example": "code-dev/desktop-window-play",
+    "title": "Окно десктоп-приложения",
+    "component": "desktop-window-play"
+  },
+  "WebViewBridgePlay": {
+    "example": "code-dev/web-view-bridge-play",
+    "title": "WebView-мост",
+    "component": "web-view-bridge-play"
+  },
+  "GraphRepresentationPlay": {
+    "example": "code-dev/graph-representation-play",
+    "title": "Представление графа",
+    "component": "graph-representation-play"
+  },
+  "GitBranchMergePlay": {
+    "example": "code-dev/git-branch-merge-play",
+    "title": "Git — ветки и merge",
+    "component": "git-branch-merge-play"
+  },
+  "DevPrinciplesPlay": {
+    "example": "code-dev/dev-principles-play",
+    "title": "Принципы разработки",
+    "component": "dev-principles-play"
+  },
+  "EnvSecretsPlay": {
+    "example": "code-dev/env-secrets-play",
+    "title": "Env Secrets",
+    "component": "env-secrets-play"
+  },
+  "PackagePublishPlay": {
+    "example": "code-dev/package-publish-play",
+    "title": "Публикация пакета",
+    "component": "package-publish-play"
+  },
+  "PetProjectPlannerPlay": {
+    "example": "code-dev/pet-project-planner-play",
+    "title": "Планировщик pet-проекта",
+    "component": "pet-project-planner-play"
+  },
+  "DeveloperPortfolioPlay": {
+    "example": "code-dev/developer-portfolio-play",
+    "title": "Портфолио разработчика",
+    "component": "developer-portfolio-play"
+  },
+  "CleanArchitectureLayersPlay": {
+    "example": "code-dev/clean-architecture-layers-play",
+    "title": "Слои чистой архитектуры",
+    "component": "clean-architecture-layers-play"
+  },
+  "GarbageCollectorDemo": {
+    "example": "code-dev/garbage-collector-demo",
+    "title": "Сборщик мусора",
+    "component": "garbage-collector-demo"
+  },
+  "ParallelSpeedupLab": {
+    "example": "code-dev/parallel-speedup-lab",
+    "title": "Ускорение параллельных вычислений",
+    "component": "parallel-speedup-lab"
+  },
+  "RooflinePlay": {
+    "example": "code-dev/roofline-play",
+    "title": "Roofline-модель",
+    "component": "roofline-play"
+  },
+  "JavaScriptRuntimePlay": {
+    "example": "languages/java-script-runtime-play",
+    "title": "JavaScript Runtime",
+    "component": "java-script-runtime-play"
+  },
+  "LexicalScopeVisualizer": {
+    "example": "languages/lexical-scope-visualizer",
+    "title": "Лексическая область видимости",
+    "component": "lexical-scope-visualizer"
+  },
+  "JsEcosystemPlay": {
+    "example": "languages/js-ecosystem-play",
+    "title": "Экосистема JavaScript",
+    "component": "js-ecosystem-play"
+  },
+  "NodeDatabasePlay": {
+    "example": "languages/node-database-play",
+    "title": "Node.js и базы данных",
+    "component": "node-database-play"
+  },
+  "ReactTreeDemo": {
+    "example": "languages/react-tree-demo",
+    "title": "Дерево React-компонентов",
+    "component": "react-tree-demo"
+  },
+  "PythonEcosystemPlay": {
+    "example": "languages/python-ecosystem-play",
+    "title": "Экосистема Python",
+    "component": "python-ecosystem-play"
+  },
+  "PythonDatabasePlay": {
+    "example": "languages/python-database-play",
+    "title": "Python и базы данных",
+    "component": "python-database-play"
+  },
+  "JavaDatabasePlay": {
+    "example": "languages/java-database-play",
+    "title": "Java и базы данных",
+    "component": "java-database-play"
+  },
+  "DotNetEcosystemPlay": {
+    "example": "languages/dot-net-ecosystem-play",
+    "title": "Экосистема .NET",
+    "component": "dot-net-ecosystem-play"
+  },
+  "AdoDataAccessPlay": {
+    "example": "languages/ado-data-access-play",
+    "title": "ADO.NET — доступ к данным",
+    "component": "ado-data-access-play"
+  },
+  "DotNetApiExplorerPlay": {
+    "example": "languages/dot-net-api-explorer-play",
+    "title": ".NET API Explorer",
+    "component": "dot-net-api-explorer-play"
+  },
+  "FsharpLanguageRefExplorerPlay": {
+    "example": "languages/fsharp-language-ref-explorer-play",
+    "title": "Справочник F#",
+    "component": "fsharp-language-ref-explorer-play"
+  },
+  "CsharpDatabasePlay": {
+    "example": "languages/csharp-database-play",
+    "title": "C# и базы данных",
+    "component": "csharp-database-play"
+  },
+  "AspNetArchitecturePlay": {
+    "example": "languages/asp-net-architecture-play",
+    "title": "Архитектура ASP.NET",
+    "component": "asp-net-architecture-play"
+  },
+  "CsharpLanguageRefExplorerPlay": {
+    "example": "languages/csharp-language-ref-explorer-play",
+    "title": "Справочник C#",
+    "component": "csharp-language-ref-explorer-play"
+  },
+  "CppEcosystemPlay": {
+    "example": "languages/cpp-ecosystem-play",
+    "title": "Экосистема C++",
+    "component": "cpp-ecosystem-play"
+  },
+  "CppDatabasePlay": {
+    "example": "languages/cpp-database-play",
+    "title": "C++ и базы данных",
+    "component": "cpp-database-play"
+  },
+  "PhpEcosystemPlay": {
+    "example": "languages/php-ecosystem-play",
+    "title": "Экосистема PHP",
+    "component": "php-ecosystem-play"
+  },
+  "PhpDatabasePlay": {
+    "example": "languages/php-database-play",
+    "title": "PHP и базы данных",
+    "component": "php-database-play"
+  },
+  "KotlinEcosystemPlay": {
+    "example": "languages/kotlin-ecosystem-play",
+    "title": "Экосистема Kotlin",
+    "component": "kotlin-ecosystem-play"
+  },
+  "KotlinDatabasePlay": {
+    "example": "languages/kotlin-database-play",
+    "title": "Kotlin и базы данных",
+    "component": "kotlin-database-play"
+  },
+  "GoEcosystemPlay": {
+    "example": "languages/go-ecosystem-play",
+    "title": "Экосистема Go",
+    "component": "go-ecosystem-play"
+  },
+  "GoDatabasePlay": {
+    "example": "languages/go-database-play",
+    "title": "Go и базы данных",
+    "component": "go-database-play"
+  },
+  "RubyEcosystemPlay": {
+    "example": "languages/ruby-ecosystem-play",
+    "title": "Экосистема Ruby",
+    "component": "ruby-ecosystem-play"
+  },
+  "RubyDatabasePlay": {
+    "example": "languages/ruby-database-play",
+    "title": "Ruby и базы данных",
+    "component": "ruby-database-play"
+  },
+  "GroovyEcosystemPlay": {
+    "example": "languages/groovy-ecosystem-play",
+    "title": "Экосистема Groovy",
+    "component": "groovy-ecosystem-play"
+  },
+  "GroovyDatabasePlay": {
+    "example": "languages/groovy-database-play",
+    "title": "Groovy и базы данных",
+    "component": "groovy-database-play"
+  },
+  "JobDslPlayground": {
+    "example": "languages/job-dsl-playground",
+    "title": "Job DSL Playground",
+    "component": "job-dsl-playground"
+  },
+  "RustEcosystemPlay": {
+    "example": "languages/rust-ecosystem-play",
+    "title": "Экосистема Rust",
+    "component": "rust-ecosystem-play"
+  },
+  "RustDatabasePlay": {
+    "example": "languages/rust-database-play",
+    "title": "Rust и базы данных",
+    "component": "rust-database-play"
+  },
+  "SwiftEcosystemPlay": {
+    "example": "languages/swift-ecosystem-play",
+    "title": "Экосистема Swift",
+    "component": "swift-ecosystem-play"
+  },
+  "SwiftDatabasePlay": {
+    "example": "languages/swift-database-play",
+    "title": "Swift и базы данных",
+    "component": "swift-database-play"
+  },
+  "LuaEcosystemPlay": {
+    "example": "languages/lua-ecosystem-play",
+    "title": "Экосистема Lua",
+    "component": "lua-ecosystem-play"
+  },
+  "AssemblerEcosystemPlay": {
+    "example": "languages/assembler-ecosystem-play",
+    "title": "Экосистема Assembler",
+    "component": "assembler-ecosystem-play"
+  },
+  "CEcosystemPlay": {
+    "example": "languages/c-ecosystem-play",
+    "title": "Экосистема C",
+    "component": "c-ecosystem-play"
+  },
+  "CobolEcosystemPlay": {
+    "example": "languages/cobol-ecosystem-play",
+    "title": "Экосистема COBOL",
+    "component": "cobol-ecosystem-play"
+  },
+  "FortranEcosystemPlay": {
+    "example": "languages/fortran-ecosystem-play",
+    "title": "Экосистема Fortran",
+    "component": "fortran-ecosystem-play"
+  },
+  "LispEcosystemPlay": {
+    "example": "languages/lisp-ecosystem-play",
+    "title": "Экосистема Lisp",
+    "component": "lisp-ecosystem-play"
+  },
+  "PascalEcosystemPlay": {
+    "example": "languages/pascal-ecosystem-play",
+    "title": "Экосистема Pascal",
+    "component": "pascal-ecosystem-play"
+  },
+  "VbArchitecturePlay": {
+    "example": "languages/vb-architecture-play",
+    "title": "Архитектура Visual Basic",
+    "component": "vb-architecture-play"
+  },
+  "HaskellEcosystemPlay": {
+    "example": "languages/haskell-ecosystem-play",
+    "title": "Экосистема Haskell",
+    "component": "haskell-ecosystem-play"
+  },
+  "ScalaEcosystemPlay": {
+    "example": "languages/scala-ecosystem-play",
+    "title": "Экосистема Scala",
+    "component": "scala-ecosystem-play"
+  },
+  "ElixirEcosystemPlay": {
+    "example": "languages/elixir-ecosystem-play",
+    "title": "Экосистема Elixir",
+    "component": "elixir-ecosystem-play"
+  },
+  "ZigEcosystemPlay": {
+    "example": "languages/zig-ecosystem-play",
+    "title": "Экосистема Zig",
+    "component": "zig-ecosystem-play"
+  },
+  "NimEcosystemPlay": {
+    "example": "languages/nim-ecosystem-play",
+    "title": "Экосистема Nim",
+    "component": "nim-ecosystem-play"
+  },
+  "DartEcosystemPlay": {
+    "example": "languages/dart-ecosystem-play",
+    "title": "Экосистема Dart",
+    "component": "dart-ecosystem-play"
+  },
+  "REcosystemPlay": {
+    "example": "languages/r-ecosystem-play",
+    "title": "Экосистема R",
+    "component": "r-ecosystem-play"
+  },
+  "JuliaEcosystemPlay": {
+    "example": "languages/julia-ecosystem-play",
+    "title": "Экосистема Julia",
+    "component": "julia-ecosystem-play"
+  },
+  "BashEcosystemPlay": {
+    "example": "languages/bash-ecosystem-play",
+    "title": "Экосистема Bash",
+    "component": "bash-ecosystem-play"
+  },
+  "PowerShellShellPlay": {
+    "example": "languages/power-shell-shell-play",
+    "title": "PowerShell Shell",
+    "component": "power-shell-shell-play"
+  },
+  "PowerShellEcosystemPlay": {
+    "example": "languages/power-shell-ecosystem-play",
+    "title": "Экосистема PowerShell",
+    "component": "power-shell-ecosystem-play"
+  },
+  "OneCPlatformEmulator": {
+    "example": "languages/one-c-platform-emulator",
+    "title": "Эмулятор платформы 1С",
+    "component": "one-c-platform-emulator"
+  },
+  "OneCEcosystemPlay": {
+    "example": "languages/one-c-ecosystem-play",
+    "title": "Экосистема 1С",
+    "component": "one-c-ecosystem-play"
+  },
+  "OneCDatabasePlay": {
+    "example": "languages/one-c-database-play",
+    "title": "1С и базы данных",
+    "component": "one-c-database-play"
+  },
+  "TrainTestSplitDemo": {
+    "example": "ai/train-test-split-demo",
+    "title": "Train / Test split",
+    "component": "train-test-split-demo"
+  },
+  "BackpropStepPlay": {
+    "example": "ai/backprop-step-play",
+    "title": "Backprop по шагам",
+    "component": "backprop-step-play"
+  },
+  "SoftwareLifecycleDemo": {
+    "example": "project/software-lifecycle-demo",
+    "title": "Жизненный цикл ПО",
+    "component": "software-lifecycle-demo"
+  },
+  "CicdDemo": {
+    "example": "project/cicd-demo",
+    "title": "CI/CD пайплайн",
+    "component": "cicd-demo"
+  },
+  "RequirementsAnalysisDemo": {
+    "example": "project/requirements-analysis-demo",
+    "title": "Анализ требований",
+    "component": "requirements-analysis-demo"
+  },
+  "BusinessAnalystRoleDemo": {
+    "example": "project/business-analyst-role-demo",
+    "title": "Роль бизнес-аналитика",
+    "component": "business-analyst-role-demo"
+  },
+  "SystemAnalystRoleDemo": {
+    "example": "project/system-analyst-role-demo",
+    "title": "Роль системного аналитика",
+    "component": "system-analyst-role-demo"
+  },
+  "SystemDiscoveryDemo": {
+    "example": "project/system-discovery-demo",
+    "title": "Исследование системы",
+    "component": "system-discovery-demo"
+  },
+  "ConfluenceWikiDemo": {
+    "example": "project/confluence-wiki-demo",
+    "title": "Confluence / Wiki",
+    "component": "confluence-wiki-demo"
+  },
+  "DiagramStudio": {
+    "example": "project/diagram-studio",
+    "title": "Студия диаграмм",
+    "component": "diagram-studio"
+  },
+  "FigmaPrototypeStudio": {
+    "example": "project/figma-prototype-studio",
+    "title": "Прототип в Figma",
+    "component": "figma-prototype-studio"
+  },
+  "AnalyticsSectionHub": {
+    "example": "project/analytics-section-hub",
+    "title": "Аналитика — хаб раздела",
+    "component": "analytics-section-hub"
+  },
+  "UnitTestPytestPlay": {
+    "example": "project/unit-test-pytest-play",
+    "title": "Unit-тесты (pytest)",
+    "component": "unit-test-pytest-play"
+  },
+  "IntegrationApiTestPlay": {
+    "example": "project/integration-api-test-play",
+    "title": "API-интеграционные тесты",
+    "component": "integration-api-test-play"
+  },
+  "UiRegistrationTestPlay": {
+    "example": "project/ui-registration-test-play",
+    "title": "UI-тест регистрации",
+    "component": "ui-registration-test-play"
+  },
+  "LoadTestSimulatorPlay": {
+    "example": "project/load-test-simulator-play",
+    "title": "Симулятор нагрузочного тестирования",
+    "component": "load-test-simulator-play"
+  },
+  "TestingLifecyclePlay": {
+    "example": "project/testing-lifecycle-play",
+    "title": "Жизненный цикл тестирования",
+    "component": "testing-lifecycle-play"
+  },
+  "TestAutomationRoiPlay": {
+    "example": "project/test-automation-roi-play",
+    "title": "ROI автоматизации тестов",
+    "component": "test-automation-roi-play"
+  },
+  "IntegrationFlowPlay": {
+    "example": "project/integration-flow-play",
+    "title": "Поток интеграционного тестирования",
+    "component": "integration-flow-play"
+  },
+  "TestingSectionHub": {
+    "example": "project/testing-section-hub",
+    "title": "Тестирование — хаб раздела",
+    "component": "testing-section-hub"
+  },
+  "ArchitectureDiagramStudio": {
+    "example": "project/architecture-diagram-studio",
+    "title": "Студия архитектурных диаграмм",
+    "component": "architecture-diagram-studio"
+  },
+  "OopClassArchetypesDemo": {
+    "example": "project/oop-class-archetypes-demo",
+    "title": "ООП — архетипы классов",
+    "component": "oop-class-archetypes-demo"
+  },
+  "ScalingDemo": {
+    "example": "project/scaling-demo",
+    "title": "Масштабирование",
+    "component": "scaling-demo"
+  },
+  "GangOfFourCatalog": {
+    "example": "project/gang-of-four-catalog",
+    "title": "Каталог GoF",
+    "component": "gang-of-four-catalog"
+  },
+  "DomainModelPlay": {
+    "example": "project/domain-model-play",
+    "title": "Доменная модель",
+    "component": "domain-model-play"
+  },
+  "DocumentationArchitecturePlay": {
+    "example": "project/documentation-architecture-play",
+    "title": "Архитектура документации",
+    "component": "documentation-architecture-play"
+  },
+  "PseudoDocumentEditor": {
+    "example": "project/pseudo-document-editor",
+    "title": "Редактор псевдодокумента",
+    "component": "pseudo-document-editor"
+  },
+  "Timer": {
+    "example": "project/timer",
+    "title": "Таймер",
+    "component": "timer"
+  },
+  "JiraTaskTrackerDemo": {
+    "example": "project/jira-task-tracker-demo",
+    "title": "Jira — трекер задач",
+    "component": "jira-task-tracker-demo"
+  },
+  "NamingConventionPlay": {
+    "example": "project/naming-convention-play",
+    "title": "Соглашения об именовании",
+    "component": "naming-convention-play"
+  },
+  "CyclomaticComplexityPlay": {
+    "example": "project/cyclomatic-complexity-play",
+    "title": "Цикломатическая сложность",
+    "component": "cyclomatic-complexity-play"
+  },
+  "LowNoCodeDemo": {
+    "example": "infra-security/low-no-code-demo",
+    "title": "Low-code / No-code",
+    "component": "low-no-code-demo"
+  },
+  "LowCodeRolloutPlay": {
+    "example": "infra-security/low-code-rollout-play",
+    "title": "Rollout low-code",
+    "component": "low-code-rollout-play"
+  },
+  "CodeSafetyPlay": {
+    "example": "infra-security/code-safety-play",
+    "title": "Безопасность кода",
+    "component": "code-safety-play"
+  },
+  "CodeProtectionPlay": {
+    "example": "infra-security/code-protection-play",
+    "title": "Защита кода",
+    "component": "code-protection-play"
+  },
+  "GitFlowPlay": {
+    "example": "infra-security/git-flow-play",
+    "title": "Git Flow",
+    "component": "git-flow-play"
+  },
+  "GitInternalsPlay": {
+    "example": "infra-security/git-internals-play",
+    "title": "Внутреннее устройство Git",
+    "component": "git-internals-play"
+  },
+  "GitCommandsPlay": {
+    "example": "infra-security/git-commands-play",
+    "title": "Команды Git",
+    "component": "git-commands-play"
+  },
+  "GitFlagsPlay": {
+    "example": "infra-security/git-flags-play",
+    "title": "Флаги Git",
+    "component": "git-flags-play"
+  },
+  "GitSvnComparePlay": {
+    "example": "infra-security/git-svn-compare-play",
+    "title": "Git vs SVN",
+    "component": "git-svn-compare-play"
+  },
+  "DeployStrategiesPlay": {
+    "example": "infra-security/deploy-strategies-play",
+    "title": "Стратегии деплоя",
+    "component": "deploy-strategies-play"
+  },
+  "PipelineLifecyclePlay": {
+    "example": "infra-security/pipeline-lifecycle-play",
+    "title": "Жизненный цикл пайплайна",
+    "component": "pipeline-lifecycle-play"
+  },
+  "AzureReposPlay": {
+    "example": "infra-security/azure-repos-play",
+    "title": "Azure Repos",
+    "component": "azure-repos-play"
+  },
+  "DevOpsToolsStackPlay": {
+    "example": "infra-security/dev-ops-tools-stack-play",
+    "title": "Стек инструментов DevOps",
+    "component": "dev-ops-tools-stack-play"
+  },
+  "DevOpsRoleComparePlay": {
+    "example": "infra-security/dev-ops-role-compare-play",
+    "title": "Роли DevOps",
+    "component": "dev-ops-role-compare-play"
+  },
+  "TerraformPlanPlay": {
+    "example": "infra-security/terraform-plan-play",
+    "title": "Terraform plan",
+    "component": "terraform-plan-play"
+  },
+  "PulumiIacPlay": {
+    "example": "infra-security/pulumi-iac-play",
+    "title": "Pulumi IaC",
+    "component": "pulumi-iac-play"
+  },
+  "CicdAuthFlowPlay": {
+    "example": "infra-security/cicd-auth-flow-play",
+    "title": "Аутентификация в CI/CD",
+    "component": "cicd-auth-flow-play"
+  },
+  "SreMetricsPlay": {
+    "example": "infra-security/sre-metrics-play",
+    "title": "SRE-метрики",
+    "component": "sre-metrics-play"
+  },
+  "GitHubActionsWorkflowPlay": {
+    "example": "infra-security/git-hub-actions-workflow-play",
+    "title": "GitHub Actions workflow",
+    "component": "git-hub-actions-workflow-play"
+  },
+  "GitLabCiPipelinePlay": {
+    "example": "infra-security/git-lab-ci-pipeline-play",
+    "title": "GitLab CI pipeline",
+    "component": "git-lab-ci-pipeline-play"
+  },
+  "WebhooksDeliveryPlay": {
+    "example": "infra-security/webhooks-delivery-play",
+    "title": "Доставка webhooks",
+    "component": "webhooks-delivery-play"
+  },
+  "DebPackageExplorerPlay": {
+    "example": "infra-security/deb-package-explorer-play",
+    "title": "Структура .deb-пакета",
+    "component": "deb-package-explorer-play"
+  },
+  "IacLifecyclePlay": {
+    "example": "infra-security/iac-lifecycle-play",
+    "title": "Жизненный цикл IaC",
+    "component": "iac-lifecycle-play"
+  },
+  "AnsibleRunPlay": {
+    "example": "infra-security/ansible-run-play",
+    "title": "Ansible — запуск playbook",
+    "component": "ansible-run-play"
+  },
+  "ServiceMeshTrafficPlay": {
+    "example": "infra-security/service-mesh-traffic-play",
+    "title": "Service Mesh — трафик",
+    "component": "service-mesh-traffic-play"
+  },
+  "GoMicroservicePlay": {
+    "example": "infra-security/go-microservice-play",
+    "title": "Go-микросервис",
+    "component": "go-microservice-play"
+  },
+  "ApiDesignPlay": {
+    "example": "infra-security/api-design-play",
+    "title": "Проектирование API",
+    "component": "api-design-play"
+  },
+  "DevOpsCheatSheetPlay": {
+    "example": "infra-security/dev-ops-cheat-sheet-play",
+    "title": "DevOps — шпаргалка",
+    "component": "dev-ops-cheat-sheet-play"
+  },
+  "CiaTriadPlay": {
+    "example": "infra-security/cia-triad-play",
+    "title": "Триада CIA",
+    "component": "cia-triad-play"
+  },
+  "OwaspTop10ExplorerPlay": {
+    "example": "infra-security/owasp-top10-explorer-play",
+    "title": "OWASP Top 10",
+    "component": "owasp-top10-explorer-play"
+  },
+  "AuditLogCorrelationPlay": {
+    "example": "infra-security/audit-log-correlation-play",
+    "title": "Корреляция audit-логов",
+    "component": "audit-log-correlation-play"
+  },
+  "DockerHardeningPlay": {
+    "example": "infra-security/docker-hardening-play",
+    "title": "Hardening Docker",
+    "component": "docker-hardening-play"
+  },
+  "ThreatHuntChecklistPlay": {
+    "example": "infra-security/threat-hunt-checklist-play",
+    "title": "Чеклист threat hunting",
+    "component": "threat-hunt-checklist-play"
+  },
+  "OrderDeskIntegrationPlay": {
+    "example": "infra-security/order-desk-integration-play",
+    "title": "Order Desk — REST и WebSocket",
+    "component": "order-desk-integration-play"
+  },
+  "GameIndustryEcosystemDemo": {
+    "example": "spinoff/game-industry-ecosystem-demo",
+    "title": "Экосистема игровой индустрии",
+    "component": "game-industry-ecosystem-demo"
+  },
+  "GameFranchisePlay": {
+    "example": "spinoff/game-franchise-play",
+    "title": "Игровая франшиза",
+    "component": "game-franchise-play"
+  },
+  "GameStudiesHub": {
+    "example": "spinoff/game-studies-hub",
+    "title": "Игроведение — навигатор",
+    "component": "game-studies-hub"
+  },
+  "GameIndustryHub": {
+    "example": "spinoff/game-industry-hub",
+    "title": "Игровая индустрия — навигатор",
+    "component": "game-industry-hub"
+  },
+  "GameDevPipelineDemo": {
+    "example": "spinoff/game-dev-pipeline-demo",
+    "title": "Пайплайн разработки игр",
+    "component": "game-dev-pipeline-demo"
+  },
+  "GameDevRoadmapPlay": {
+    "example": "spinoff/game-dev-roadmap-play",
+    "title": "Дорожная карта геймдева",
+    "component": "game-dev-roadmap-play"
+  },
+  "GameDevTeamPlay": {
+    "example": "spinoff/game-dev-team-play",
+    "title": "Команда разработки игр",
+    "component": "game-dev-team-play"
+  },
+  "GameDevStudioDemo": {
+    "example": "spinoff/game-dev-studio-demo",
+    "title": "Игровая студия",
+    "component": "game-dev-studio-demo"
+  },
+  "GameLanguagesPlay": {
+    "example": "spinoff/game-languages-play",
+    "title": "Языки в геймдеве",
+    "component": "game-languages-play"
+  },
+  "GameModelingPlay": {
+    "example": "spinoff/game-modeling-play",
+    "title": "3D-моделирование для игр",
+    "component": "game-modeling-play"
+  },
+  "GameTexturesPlay": {
+    "example": "spinoff/game-textures-play",
+    "title": "Текстуры в играх",
+    "component": "game-textures-play"
+  },
+  "GameDesignMdaPlay": {
+    "example": "spinoff/game-design-mda-play",
+    "title": "MDA — механики, динамика, эстетика",
+    "component": "game-design-mda-play"
+  },
+  "GamePcPlatformPlay": {
+    "example": "spinoff/game-pc-platform-play",
+    "title": "Платформа PC",
+    "component": "game-pc-platform-play"
+  },
+  "GamePlayStationPlatformPlay": {
+    "example": "spinoff/game-play-station-platform-play",
+    "title": "Платформа PlayStation",
+    "component": "game-play-station-platform-play"
+  },
+  "GameNintendoPlatformPlay": {
+    "example": "spinoff/game-nintendo-platform-play",
+    "title": "Платформа Nintendo",
+    "component": "game-nintendo-platform-play"
+  },
+  "GameXboxPlatformPlay": {
+    "example": "spinoff/game-xbox-platform-play",
+    "title": "Платформа Xbox",
+    "component": "game-xbox-platform-play"
+  },
+  "GameMobilePlay": {
+    "example": "spinoff/game-mobile-play",
+    "title": "Мобильная разработка игр",
+    "component": "game-mobile-play"
+  },
+  "GameOptimizationPlay": {
+    "example": "spinoff/game-optimization-play",
+    "title": "Оптимизация игр",
+    "component": "game-optimization-play"
+  },
+  "GameQaPlay": {
+    "example": "spinoff/game-qa-play",
+    "title": "QA в играх",
+    "component": "game-qa-play"
+  },
+  "GameDevHub": {
+    "example": "spinoff/game-dev-hub",
+    "title": "Разработка игр — навигатор",
+    "component": "game-dev-hub"
+  },
+  "BlockchainChainPlay": {
+    "example": "spinoff/blockchain-chain-play",
+    "title": "Блокчейн — цепочка блоков",
+    "component": "blockchain-chain-play"
+  },
+  "CryptoTransactionPlay": {
+    "example": "spinoff/crypto-transaction-play",
+    "title": "Криптотранзакция",
+    "component": "crypto-transaction-play"
+  },
+  "CryptoVolatilityPlay": {
+    "example": "spinoff/crypto-volatility-play",
+    "title": "Волатильность криптовалют",
+    "component": "crypto-volatility-play"
+  },
+  "VerticalSoftwareExplorerPlay": {
+    "example": "spinoff/vertical-software-explorer-play",
+    "title": "Отраслевое ПО — обзор",
+    "component": "vertical-software-explorer-play"
+  },
+  "AdobeProductPlay": {
+    "example": "spinoff/adobe-product-play",
+    "title": "Adobe — продуктовая линейка",
+    "component": "adobe-product-play"
+  },
+  "AutodeskProductPlay": {
+    "example": "spinoff/autodesk-product-play",
+    "title": "Autodesk — продукты",
+    "component": "autodesk-product-play"
+  },
+  "ThreeDGraphicsPlay": {
+    "example": "spinoff/three-d-graphics-play",
+    "title": "3D-графика",
+    "component": "three-d-graphics-play"
+  },
+  "BlenderWorkspacePlay": {
+    "example": "spinoff/blender-workspace-play",
+    "title": "Рабочее пространство Blender",
+    "component": "blender-workspace-play"
+  },
+  "ForumImageboardPlay": {
+    "example": "spinoff/forum-imageboard-play",
+    "title": "Форум и имиджборд",
+    "component": "forum-imageboard-play"
+  },
+  "InternetCultureTimelinePlay": {
+    "example": "spinoff/internet-culture-timeline-play",
+    "title": "Хронология интернет-культуры",
+    "component": "internet-culture-timeline-play"
+  },
+  "CreatorRolesPlay": {
+    "example": "spinoff/creator-roles-play",
+    "title": "Роли создателей контента",
+    "component": "creator-roles-play"
+  },
+  "NetiquettePlay": {
+    "example": "spinoff/netiquette-play",
+    "title": "Нетикет",
+    "component": "netiquette-play"
+  },
+  "CommunityCoordinationPlay": {
+    "example": "spinoff/community-coordination-play",
+    "title": "Координация сообщества",
+    "component": "community-coordination-play"
+  },
+  "AttentionManipulationPlay": {
+    "example": "spinoff/attention-manipulation-play",
+    "title": "Манипуляции вниманием",
+    "component": "attention-manipulation-play"
+  },
+  "MemeLifecyclePlay": {
+    "example": "spinoff/meme-lifecycle-play",
+    "title": "Жизненный цикл мема",
+    "component": "meme-lifecycle-play"
+  },
+  "CrossContextMemePlay": {
+    "example": "spinoff/cross-context-meme-play",
+    "title": "Мем в разных контекстах",
+    "component": "cross-context-meme-play"
+  },
+  "DeveloperExamPlay": {
+    "example": "lab/developer-exam-play",
+    "title": "Интерактивный экзамен разработчика",
+    "component": "developer-exam-play"
+  },
+  "RandomGameGenerator": {
+    "example": "tools-games/random-game-generator",
+    "title": "Генератор случайной игры",
+    "component": "random-game-generator"
+  },
+  "DataLeakScenarioPlay": {
+    "example": "infra-security/data-leak-scenario-play",
+    "title": "Путь утечки данных",
+    "component": "data-leak-scenario-play"
+  }
+}

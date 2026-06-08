@@ -1,0 +1,13 @@
+{
+  "title": "Жизненный цикл потока",
+  "description": "Интерактивное демо «Жизненный цикл потока» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "thread-lifecycle-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-05-asinhronnost/2",
+  "order": 27
+}

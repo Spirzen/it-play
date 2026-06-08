@@ -1,0 +1,12 @@
+{
+  "title": "Obs Stream Studio",
+  "description": "Интерактивное демо «Obs Stream Studio» — раздел Инструменты · Мультимedia.",
+  "category": "tools-multimedia",
+  "categoryTitle": "Инструменты · Мультимedia",
+  "component": "obs-stream-studio-play",
+  "tags": [
+    "toolsmultimedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/multimedia/5",
+  "order": 81
+}

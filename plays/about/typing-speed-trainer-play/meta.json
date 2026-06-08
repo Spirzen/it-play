@@ -1,0 +1,12 @@
+{
+  "title": "Typing Speed Trainer",
+  "description": "Интерактивное демо «Typing Speed Trainer» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "typing-speed-trainer-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 5
+}

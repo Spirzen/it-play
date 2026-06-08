@@ -1,0 +1,12 @@
+{
+  "title": "Antivirus Detection",
+  "description": "Интерактивное демо «Antivirus Detection» — раздел Инструменты · Безопасность.",
+  "category": "tools-security",
+  "categoryTitle": "Инструменты · Безопасность",
+  "component": "antivirus-detection-play",
+  "tags": [
+    "toolssecurity"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/security/1",
+  "order": 88
+}

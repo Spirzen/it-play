@@ -1,0 +1,13 @@
+{
+  "title": "Search Pipeline",
+  "description": "Интерактивное демо «Search Pipeline» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "search-pipeline-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-21-poisk-informatsii/1",
+  "order": 36
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Http Request Analyzer",
+  "description": "Интерактивное демо «Http Request Analyzer» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "http-request-analyzer",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 13
+}

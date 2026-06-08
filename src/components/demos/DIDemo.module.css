@@ -1,0 +1,257 @@
+.root {
+  --di-accent: var(--ifm-color-primary);
+  --di-flow: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-surface-color));
+}
+
+.headerBand {
+  padding: 0.85rem 1rem;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(135deg, #3d2c6e 0%, #1e3a5f 100%);
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.05rem, 3.5vw, 1.3rem);
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.body {
+  padding: 1rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: var(--ifm-background-surface-color);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: var(--di-flow);
+  border: 1px dashed var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.flowNode {
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  min-width: 72px;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.flowNodeActive {
+  border-color: var(--di-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--di-accent) 25%, transparent);
+  transform: scale(1.04);
+}
+
+.flowUser {
+  border-color: #2c974b;
+  background: color-mix(in srgb, #2c974b 12%, var(--ifm-background-surface-color));
+}
+
+.flowService {
+  border-color: var(--di-accent);
+}
+
+.flowEmail {
+  border-color: #ed6c02;
+}
+
+.flowArrow {
+  color: var(--ifm-color-content-secondary);
+  font-size: 1rem;
+}
+
+.typeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+}
+
+.typeCard {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.typeCard:hover {
+  border-color: var(--di-accent);
+}
+
+.typeCardActive {
+  border-color: var(--di-accent);
+  background: color-mix(in srgb, var(--di-accent) 12%, var(--ifm-background-surface-color));
+}
+
+.typeCardAnti {
+  border-left: 3px solid var(--demo-error, #c62828);
+}
+
+.typeName {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.typeDesc {
+  font-size: 0.7rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.badgeGood {
+  composes: badge;
+  background: color-mix(in srgb, #2e7d32 20%, transparent);
+  color: #2e7d32;
+}
+
+.badgeBad {
+  composes: badge;
+  background: color-mix(in srgb, #c62828 18%, transparent);
+  color: #c62828;
+}
+
+.panel {
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+}
+
+.sectionLabel {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.45rem;
+}
+
+.emailRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.emailChip {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.emailChipActive {
+  border-color: var(--di-accent);
+  background: color-mix(in srgb, var(--di-accent) 15%, transparent);
+  font-weight: 600;
+}
+
+.statusPulse {
+  animation: diPulse 0.6s ease;
+}
+
+@keyframes diPulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mailPreview {
+  margin-top: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  background: var(--ifm-code-background);
+  border-left: 3px solid #ed6c02;
+  word-break: break-word;
+}
+
+.mailMock {
+  border-left-color: #7b68ee;
+}
+
+.codeBlock {
+  margin: 0.5rem 0 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  overflow-x: auto;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.containerBox {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--demo-border);
+}
+
+.singletonHint {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.35rem;
+}

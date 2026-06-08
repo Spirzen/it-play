@@ -1,0 +1,74 @@
+.root {
+  max-width: min(920px, 100%);
+}
+
+.urlBar {
+  padding: 0.55rem 0.65rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  word-break: break-all;
+  margin: 0.5rem 0;
+}
+
+.headerLine {
+  font-size: 0.72rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.5rem;
+}
+
+.table {
+  width: 100%;
+  font-size: 0.78rem;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+}
+
+.good {
+  color: #2e7d32;
+}
+
+.bad {
+  color: #c62828;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.chip {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+}
+
+.chipActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  font-weight: 600;
+}
+
+.json {
+  margin: 0;
+  padding: 0.55rem;
+  font-size: 0.68rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  white-space: pre-wrap;
+  max-height: 160px;
+  overflow: auto;
+}

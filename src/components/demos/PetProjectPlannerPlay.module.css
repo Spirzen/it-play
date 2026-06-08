@@ -1,0 +1,25 @@
+.goal {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+}
+
+.checklist {
+  margin: 0.65rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.progress {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}

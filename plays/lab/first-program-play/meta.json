@@ -1,0 +1,12 @@
+{
+  "title": "Первая программа",
+  "description": "Интерактивное демо «Первая программа» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "first-program-play",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/1146",
+  "order": 12
+}

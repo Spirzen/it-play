@@ -1,0 +1,57 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.item {
+  padding: 0.5rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.item:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.itemActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.08);
+  box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.12);
+}
+
+.rank {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.title {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
+  line-height: 1.25;
+}
+
+.detail {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  margin: 0;
+}
+
+.fix {
+  margin-top: 0.55rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+}

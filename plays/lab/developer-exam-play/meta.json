@@ -1,0 +1,10 @@
+{
+  "title": "Интерактивный экзамен разработчика",
+  "description": "Самопроверка по вопросам статьи: тренировка, экзамен на время и спринт.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "developer-exam-play",
+  "tags": ["lab", "exam", "quiz"],
+  "encyclopediaUrl": "https://spirzen.ru/lab/exams/intro",
+  "order": 15
+}

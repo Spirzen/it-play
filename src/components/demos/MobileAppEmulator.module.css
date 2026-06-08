@@ -1,0 +1,317 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
+}
+
+.phone {
+  width: min(320px, 100%);
+  aspect-ratio: 9 / 19.5;
+  max-height: min(640px, 85vh);
+  background: #1c1c1e;
+  border-radius: 2.2rem;
+  padding: 0.55rem;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25),
+    0 0 0 2px #3a3a3c,
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  position: relative;
+}
+
+.notch {
+  position: absolute;
+  top: 0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28%;
+  height: 1.35rem;
+  background: #000;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--app-bg, #f2f2f7);
+  color: var(--app-fg, #1c1c1e);
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.screenDark {
+  --app-bg: #000;
+  --app-fg: #f5f5f7;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.1rem 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.appHeader {
+  padding: 0.35rem 1rem 0.65rem;
+  flex-shrink: 0;
+}
+
+.appTitle {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--app-accent, #007aff);
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 1rem 0.75rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.counter {
+  text-align: center;
+  padding: 1.25rem 0;
+}
+
+.counterValue {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--app-accent, #007aff);
+  line-height: 1;
+}
+
+.counterHint {
+  font-size: 0.75rem;
+  color: var(--app-muted, #8e8e93);
+  margin-top: 0.5rem;
+}
+
+.btnRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.btnPrimary:active,
+.btnDanger:active,
+.btnGhost:active {
+  transform: scale(0.96);
+}
+
+.btnPrimary {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  touch-action: manipulation;
+  background: var(--app-accent, #007aff);
+  color: #fff;
+}
+
+.btnDanger {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  touch-action: manipulation;
+  background: #ff3b30;
+  color: #fff;
+}
+
+.btnGhost {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  touch-action: manipulation;
+  background: var(--app-chip-bg, #e5e5ea);
+  color: var(--app-fg, #1c1c1e);
+}
+
+.screenDark .btnGhost {
+  --app-chip-bg: #2c2c2e;
+}
+
+.todoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  background: var(--app-card, #fff);
+  border: 1px solid var(--app-border, rgba(0, 0, 0, 0.06));
+}
+
+.screenDark .todoItem {
+  --app-card: #1c1c1e;
+  --app-border: #2c2c2e;
+}
+
+.todoCheck {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--app-accent, #007aff);
+  flex-shrink: 0;
+}
+
+.todoText {
+  flex: 1;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.todoDone {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.todoDel {
+  border: none;
+  background: transparent;
+  color: var(--app-muted, #8e8e93);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.15rem;
+}
+
+.addRow {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.addInput {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--app-border, #d1d1d6);
+  background: var(--app-card, #fff);
+  color: inherit;
+  font-size: 0.85rem;
+}
+
+.learnCard {
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: var(--app-card, #fff);
+  border: 1px solid var(--app-border, rgba(0, 0, 0, 0.06));
+  margin-bottom: 0.5rem;
+}
+
+.learnCard h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+}
+
+.learnCard p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--app-muted, #8e8e93);
+}
+
+.aboutText {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--app-muted, #8e8e93);
+}
+
+.aboutText ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.tabBar {
+  display: flex;
+  border-top: 1px solid var(--app-border, #e5e5ea);
+  background: var(--app-bar, #fff);
+  flex-shrink: 0;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.screenDark .tabBar {
+  --app-bar: #1c1c1e;
+  --app-border: #2c2c2e;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.45rem 0.2rem 0.55rem;
+  border: none;
+  background: transparent;
+  font-size: 0.62rem;
+  color: var(--app-muted, #8e8e93);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  touch-action: manipulation;
+}
+
+.tabIcon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.tabActive {
+  color: var(--app-accent, #007aff);
+}
+
+.homeIndicator {
+  width: 36%;
+  height: 4px;
+  background: var(--app-fg, #1c1c1e);
+  opacity: 0.25;
+  border-radius: 999px;
+  margin: 0.35rem auto 0.5rem;
+  flex-shrink: 0;
+}
+
+.hint {
+  max-width: 360px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--demo-muted);
+  text-align: center;
+}

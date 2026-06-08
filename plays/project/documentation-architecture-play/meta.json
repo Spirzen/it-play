@@ -1,0 +1,13 @@
+{
+  "title": "Архитектура документации",
+  "description": "Интерактивное демо «Архитектура документации» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "documentation-architecture-play",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1002",
+  "order": 24
+}

@@ -1,0 +1,438 @@
+.shell {
+  max-width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.tab {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.pipeline {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.pipeStep {
+  flex: 1 1 4.5rem;
+  min-width: 4rem;
+  padding: 0.4rem 0.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.pipeStepActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.pipeStepDone {
+  background: color-mix(in srgb, var(--ifm-color-success, #10b981) 15%, transparent);
+}
+
+.panel {
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.panelTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.5rem 0;
+}
+
+.chip {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  background: var(--ifm-color-emphasis-200);
+  font-weight: 600;
+}
+
+.checkList {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+}
+
+.engineGrid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .engineGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.engineCard {
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  cursor: pointer;
+  text-align: left;
+  background: var(--ifm-background-surface-color);
+}
+
+.engineCardActive {
+  border-color: var(--eng-color, var(--ifm-color-primary));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--eng-color) 20%, transparent);
+}
+
+.compList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.compItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  cursor: pointer;
+}
+
+.compItemOn {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.compDot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  margin-top: 0.25rem;
+  background: var(--ifm-color-emphasis-400);
+  flex-shrink: 0;
+}
+
+.compDotOn {
+  background: var(--ifm-color-primary);
+}
+
+.archSvg {
+  width: 100%;
+  max-height: 200px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+}
+
+.archNode {
+  fill: var(--ifm-background-surface-color);
+  stroke: var(--ifm-color-emphasis-400);
+  stroke-width: 1.2;
+}
+
+.archNodeActive {
+  stroke: var(--ifm-color-primary);
+  stroke-width: 2;
+}
+
+.archLabel {
+  font-size: 5px;
+  font-weight: 700;
+  fill: var(--ifm-font-color-base);
+}
+
+.archEdge {
+  stroke: var(--ifm-color-emphasis-400);
+  stroke-width: 0.8;
+  fill: none;
+}
+
+.archEdgeActive {
+  stroke: var(--ifm-color-primary);
+  stroke-width: 1.4;
+}
+
+.mdaRing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45rem;
+}
+
+.mdaCard {
+  padding: 0.55rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.mdaCardActive {
+  border-color: var(--mda-color);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--mda-color) 25%, transparent);
+}
+
+.hubGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.hubCard {
+  display: block;
+  padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  text-decoration: none;
+  color: inherit;
+}
+
+.hubCard:hover {
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.hubTitle {
+  margin: 0;
+}
+
+.slider {
+  width: 100%;
+  margin: 0.5rem 0;
+  accent-color: var(--ifm-color-primary);
+}
+
+.barTrack {
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+.budgetRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.35rem 0;
+  font-size: 0.78rem;
+}
+
+.budgetLabel {
+  flex: 0 0 7.5rem;
+  font-weight: 600;
+}
+
+.budgetTrack {
+  flex: 1;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.budgetFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.budgetMs {
+  flex: 0 0 3rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-color-content-secondary);
+}
+
+.meterPair {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.65rem 0;
+}
+
+.meterHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.compareGrid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .compareGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.langCard {
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  cursor: pointer;
+  text-align: left;
+  background: var(--ifm-background-surface-color);
+}
+
+.langCardActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+.statBar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.25rem 0;
+  font-size: 0.72rem;
+}
+
+.statBarTrack {
+  flex: 1;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.statBarFill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--ifm-color-primary);
+}
+
+.previewCanvas {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  display: block;
+}
+
+.bugList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.bugCard {
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  cursor: grab;
+  text-align: left;
+  font-size: 0.8rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.bugCardDone {
+  opacity: 0.55;
+  border-style: dashed;
+}
+
+.sevGrid {
+  display: grid;
+  gap: 0.4rem;
+}
+
+@media (min-width: 560px) {
+  .sevGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sevBucket {
+  min-height: 4.5rem;
+  padding: 0.45rem;
+  border-radius: 8px;
+  border: 2px dashed var(--ifm-color-emphasis-400);
+  font-size: 0.72rem;
+}
+
+.sevBucketActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+.fpsGauge {
+  font-size: 2rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  margin: 0.25rem 0;
+}
+
+.fpsOk {
+  color: var(--ifm-color-success, #10b981);
+}
+
+.fpsWarn {
+  color: var(--ifm-color-warning, #f59e0b);
+}
+
+.fpsBad {
+  color: var(--ifm-color-danger);
+}
+
+.handoffList {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.handoffItem {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.82rem;
+}
+
+.handoffItem:last-child {
+  border-bottom: none;
+}

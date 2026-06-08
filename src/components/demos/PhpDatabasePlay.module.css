@@ -1,0 +1,97 @@
+.formLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+@media (min-width: 720px) {
+  .formLayout {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+}
+
+.demoForm {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.formHint {
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0 0 0.65rem;
+  line-height: 1.4;
+}
+
+.errorList {
+  margin: 0.35rem 0 0.5rem;
+  padding-left: 1.1rem;
+  color: var(--ifm-color-danger);
+  font-size: 0.82rem;
+}
+
+.successMsg {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-success);
+  font-weight: 600;
+}
+
+.stackCompact {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.15rem;
+}
+
+.miniLayer {
+  text-align: center;
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: var(--ifm-background-surface-color);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.miniLayerOn {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.miniArrow {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-500);
+  line-height: 1;
+}
+
+.miniArrowPulse {
+  color: var(--ifm-color-primary);
+  animation: phpDbPulse 0.9s ease infinite;
+}
+
+@keyframes phpDbPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.unsafeCard {
+  border-color: color-mix(in srgb, var(--ifm-color-danger) 55%, var(--ifm-color-emphasis-300));
+}
+
+.unsafeCard pre {
+  color: var(--ifm-color-danger);
+}

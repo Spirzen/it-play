@@ -1,0 +1,13 @@
+{
+  "title": "Privacy Consent",
+  "description": "Интерактивное демо «Privacy Consent» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "privacy-consent-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-035-bazovaya-informatika/7",
+  "order": 3
+}

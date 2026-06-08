@@ -1,0 +1,13 @@
+{
+  "title": "Git — ветки и merge",
+  "description": "Интерактивное демо «Git — ветки и merge» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "git-branch-merge-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/113",
+  "order": 49
+}

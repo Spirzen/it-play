@@ -1,0 +1,13 @@
+{
+  "title": "XAML — разметка",
+  "description": "Интерактивное демо «XAML — разметка» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "xaml-layout-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6",
+  "order": 20
+}

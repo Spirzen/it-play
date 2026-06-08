@@ -1,0 +1,13 @@
+{
+  "title": "Rabbit MQ Simulation",
+  "description": "Интерактивное демо «Rabbit MQ Simulation» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "rabbit-mq-simulation",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122",
+  "order": 46
+}

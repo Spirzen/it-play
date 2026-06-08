@@ -1,0 +1,292 @@
+/** Сценарии демо "Ошибки и исключения" для статьи 4-06/111 */
+
+export const SCENARIO_IDS = ['handled', 'unhandled', 'errorCode'];
+
+export const SCENARIOS = {
+  handled: {
+    id: 'handled',
+    label: 'Обработанное исключение',
+    short: 'try / catch / finally',
+    language: 'Python',
+    lines: [
+      {id: 'def', num: 1, parts: [{t: 'kw', v: 'def'}, {t: 'fn', v: ' process_file'}, {t: 'p', v: '(path):'}]},
+      {id: 'try', num: 2, indent: 1, parts: [{t: 'kw', v: 'try'}, {t: 'p', v: ':'}]},
+      {id: 'open', num: 3, indent: 2, parts: [{t: 'v', v: 'file'}, {t: 'p', v: ' = '}, {t: 'fn', v: 'open'}, {t: 'p', v: '(path)'}]},
+      {id: 'work', num: 4, indent: 2, parts: [{t: 'comment', v: '# чтение файла…'}]},
+      {id: 'except', num: 5, indent: 1, parts: [{t: 'kw', v: 'except'}, {t: 'p', v: ' FileNotFoundError as ex:'}]},
+      {id: 'catchBody', num: 6, indent: 2, parts: [{t: 'fn', v: 'print'}, {t: 'p', v: '(f"Файл не найден: {ex}")'}]},
+      {id: 'finally', num: 7, indent: 1, parts: [{t: 'kw', v: 'finally'}, {t: 'p', v: ':'}]},
+      {id: 'close', num: 8, indent: 2, parts: [{t: 'kw', v: 'if'}, {t: 'p', v: ' file: file.close()'}]},
+    ],
+    steps: [
+      {
+        highlight: null,
+        stack: [{name: 'main()', status: 'active'}],
+        exception: null,
+        console: [],
+        desc: 'Программа в main() вызывает process_file("missing.txt").',
+        outcome: null,
+      },
+      {
+        highlight: 'def',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'process_file(path)', status: 'active'},
+        ],
+        exception: null,
+        console: [],
+        desc: 'На стеке появился фрейм process_file — вход в функцию.',
+        outcome: null,
+      },
+      {
+        highlight: 'open',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'process_file(path)', status: 'active'},
+          {name: 'open(path)', status: 'active'},
+        ],
+        exception: null,
+        console: [],
+        desc: 'Внутри try вызывается open — файла нет, среда готовит исключение.',
+        outcome: null,
+      },
+      {
+        highlight: 'open',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'process_file(path)', status: 'unwinding'},
+          {name: 'open(path)', status: 'popped'},
+        ],
+        exception: {
+          type: 'FileNotFoundError',
+          message: '[Errno 2] No such file: missing.txt',
+          fields: [{k: 'filename', v: 'missing.txt'}],
+        },
+        console: [],
+        desc: 'Создан объект исключения. Стек начинает раскручиваться снизу вверх.',
+        outcome: null,
+      },
+      {
+        highlight: 'except',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'process_file(path)', status: 'active'},
+        ],
+        exception: {
+          type: 'FileNotFoundError',
+          message: '[Errno 2] No such file: missing.txt',
+          fields: [{k: 'filename', v: 'missing.txt'}],
+          handled: true,
+        },
+        console: [],
+        desc: 'На уровне process_file найден подходящий except — управление переходит в обработчик.',
+        outcome: null,
+      },
+      {
+        highlight: 'catchBody',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'process_file(path)', status: 'active'},
+        ],
+        exception: null,
+        console: [{type: 'info', text: 'Файл не найден: [Errno 2] No such file: missing.txt'}],
+        desc: 'Выполняется блок catch: пользователь видит сообщение, программа не падает.',
+        outcome: null,
+      },
+      {
+        highlight: 'close',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'process_file(path)', status: 'active'},
+        ],
+        exception: null,
+        console: [{type: 'info', text: 'Файл не найден: [Errno 2] No such file: missing.txt'}],
+        desc: 'Блок finally выполняется всегда — здесь закрывают ресурсы (file был None).',
+        outcome: null,
+      },
+      {
+        highlight: null,
+        stack: [{name: 'main()', status: 'active'}],
+        exception: null,
+        console: [{type: 'info', text: 'Файл не найден: [Errno 2] No such file: missing.txt'}],
+        desc: 'Фрейм process_file снят со стека. main() продолжает работу.',
+        outcome: 'ok',
+      },
+    ],
+  },
+  unhandled: {
+    id: 'unhandled',
+    label: 'Необработанное исключение',
+    short: 'нет подходящего catch',
+    language: 'Python',
+    lines: [
+      {id: 'def', num: 1, parts: [{t: 'kw', v: 'def'}, {t: 'fn', v: ' load_config'}, {t: 'p', v: '():'}]},
+      {id: 'open', num: 2, indent: 1, parts: [{t: 'kw', v: 'return'}, {t: 'p', v: ' '}, {t: 'fn', v: 'open'}, {t: 'p', v: '("config.txt")'}]},
+      {id: 'main', num: 4, parts: [{t: 'fn', v: 'load_config'}, {t: 'p', v: '()'}]},
+    ],
+    steps: [
+      {
+        highlight: null,
+        stack: [{name: 'main()', status: 'active'}],
+        exception: null,
+        console: [],
+        desc: 'main() вызывает load_config() без try/except.',
+        outcome: null,
+      },
+      {
+        highlight: 'def',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'load_config()', status: 'active'},
+        ],
+        exception: null,
+        console: [],
+        desc: 'Управление в load_config — обработчиков ошибок нет.',
+        outcome: null,
+      },
+      {
+        highlight: 'open',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'load_config()', status: 'active'},
+          {name: 'open(path)', status: 'active'},
+        ],
+        exception: null,
+        console: [],
+        desc: 'open() не находит файл и создаёт FileNotFoundError.',
+        outcome: null,
+      },
+      {
+        highlight: 'open',
+        stack: [
+          {name: 'main()', status: 'unwinding'},
+          {name: 'load_config()', status: 'popped'},
+          {name: 'open(path)', status: 'popped'},
+        ],
+        exception: {
+          type: 'FileNotFoundError',
+          message: '[Errno 2] No such file: config.txt',
+          fields: [{k: 'filename', v: 'config.txt'}],
+        },
+        console: [],
+        desc: 'Стек раскручивается: в load_config() нет catch — исключение идёт выше.',
+        outcome: null,
+      },
+      {
+        highlight: 'main',
+        stack: [{name: 'main()', status: 'popped'}],
+        exception: {
+          type: 'FileNotFoundError',
+          message: '[Errno 2] No such file: config.txt',
+          fields: [{k: 'filename', v: 'config.txt'}],
+          unhandled: true,
+        },
+        console: [],
+        desc: 'В main() тоже нет обработчика — среда вызывает глобальный обработчик.',
+        outcome: null,
+      },
+      {
+        highlight: null,
+        stack: [],
+        exception: null,
+        console: [
+          {type: 'trace', text: 'Traceback (most recent call last):'},
+          {type: 'trace', text: '  File "app.py", line 4, in main'},
+          {type: 'trace', text: '    load_config()'},
+          {type: 'trace', text: '  File "app.py", line 2, in load_config'},
+          {type: 'trace', text: '    return open("config.txt")'},
+          {type: 'error', text: 'FileNotFoundError: [Errno 2] No such file: config.txt'},
+        ],
+        desc: 'Печатается трассировка (stack trace), процесс завершается с ненулевым кодом.',
+        outcome: 'crash',
+      },
+    ],
+  },
+  errorCode: {
+    id: 'errorCode',
+    label: 'Код ошибки (Go)',
+    short: 'return err, без раскрутки',
+    language: 'Go',
+    lines: [
+      {id: 'fn', num: 1, parts: [{t: 'kw', v: 'func'}, {t: 'fn', v: ' readFile'}, {t: 'p', v: '(path string) ([]byte, error) {'}]},
+      {id: 'read', num: 2, indent: 1, parts: [{t: 'v', v: 'data'}, {t: 'p', v: ', err := '}, {t: 'fn', v: 'os.ReadFile'}, {t: 'p', v: '(path)'}]},
+      {id: 'retErr', num: 3, indent: 1, parts: [{t: 'kw', v: 'if'}, {t: 'p', v: ' err != nil { return nil, err }'}]},
+      {id: 'retOk', num: 4, indent: 1, parts: [{t: 'kw', v: 'return'}, {t: 'p', v: ' data, nil'}]},
+      {id: 'call', num: 6, parts: [{t: 'v', v: 'content'}, {t: 'p', v: ', err := '}, {t: 'fn', v: 'readFile'}, {t: 'p', v: '("config.txt")'}]},
+      {id: 'check', num: 7, parts: [{t: 'kw', v: 'if'}, {t: 'p', v: ' err != nil { log.Printf("Ошибка: %v", err) }'}]},
+    ],
+    steps: [
+      {
+        highlight: null,
+        stack: [{name: 'main()', status: 'active'}],
+        exception: null,
+        errorValue: null,
+        console: [],
+        desc: 'В Go ошибка — обычное возвращаемое значение, а не "всплывающий" объект.',
+        outcome: null,
+      },
+      {
+        highlight: 'call',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'readFile(path)', status: 'active'},
+        ],
+        exception: null,
+        errorValue: null,
+        console: [],
+        desc: 'main вызывает readFile — на стеке два фрейма, как при обычном вызове.',
+        outcome: null,
+      },
+      {
+        highlight: 'read',
+        stack: [
+          {name: 'main()', status: 'waiting'},
+          {name: 'readFile(path)', status: 'active'},
+        ],
+        exception: null,
+        errorValue: {
+          type: 'error',
+          message: 'open config.txt: no such file or directory',
+          note: 'Возврат (nil, err) — стек не раскручивается',
+        },
+        console: [],
+        desc: 'os.ReadFile вернул err != nil. Функция готовит пару (nil, err).',
+        outcome: null,
+      },
+      {
+        highlight: 'retErr',
+        stack: [{name: 'main()', status: 'active'}],
+        exception: null,
+        errorValue: {
+          type: 'error',
+          message: 'open config.txt: no such file or directory',
+        },
+        console: [],
+        desc: 'readFile завершилась обычным return — фрейм снят со стека штатно.',
+        outcome: null,
+      },
+      {
+        highlight: 'check',
+        stack: [{name: 'main()', status: 'active'}],
+        exception: null,
+        errorValue: null,
+        console: [{type: 'warn', text: 'Ошибка чтения: open config.txt: no such file or directory'}],
+        desc: 'Вызывающий код явно проверяет err и решает, что делать дальше.',
+        outcome: null,
+      },
+      {
+        highlight: null,
+        stack: [{name: 'main()', status: 'active'}],
+        exception: null,
+        errorValue: null,
+        console: [{type: 'warn', text: 'Ошибка чтения: open config.txt: no such file or directory'}],
+        desc: 'Программа продолжает работу — аварийного завершения не было.',
+        outcome: 'ok',
+      },
+    ],
+  },
+};
+
+export function getScenario(id) {
+  return SCENARIOS[id] ?? SCENARIOS.handled;
+}

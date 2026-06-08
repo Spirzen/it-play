@@ -1,0 +1,368 @@
+.root {
+  max-width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.tab {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.panel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  background: var(--ifm-background-surface-color);
+  margin-bottom: 0.75rem;
+}
+
+.panelTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ifm-color-content-secondary);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 560px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dataCol {
+  border-left: 3px solid #1565c0;
+  padding-left: 0.65rem;
+}
+
+.infoCol {
+  border-left: 3px solid #2e7d32;
+  padding-left: 0.65rem;
+}
+
+.labelData {
+  color: #1565c0;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.labelInfo {
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.mono {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  word-break: break-all;
+}
+
+.byteTape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.5rem 0;
+}
+
+.byteCell {
+  min-width: 2.1rem;
+  padding: 0.2rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  text-align: center;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.byteCellHot {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-color));
+  transform: scale(1.06);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+@media (max-width: 520px) {
+  .grid4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.modCard {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: var(--ifm-background-surface-color);
+}
+
+.modCard:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.modCardActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-surface-color));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent);
+}
+
+.modIcon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.modName {
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.typeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.typeChip {
+  padding: 0.3rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ifm-background-color);
+  transition: all 0.2s ease;
+}
+
+.typeChipActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-background-color));
+  color: var(--ifm-color-primary);
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.statBox {
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  text-align: center;
+}
+
+.statVal {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+}
+
+.statLbl {
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.flowRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.65rem 0;
+}
+
+.flowNode {
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  background: var(--ifm-background-surface-color);
+}
+
+.flowNodeActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--ifm-color-primary) 28%, transparent);
+}
+
+.flowArrow {
+  color: var(--ifm-color-content-secondary);
+  font-size: 1rem;
+}
+
+.fileTape {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+.fileCell {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: var(--ifm-background-color);
+  transition: all 0.25s ease;
+}
+
+.fileCellRead {
+  background: color-mix(in srgb, #2e7d32 18%, var(--ifm-background-color));
+  border-color: #2e7d32;
+}
+
+.fileCellPtr {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.pointerBadge {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.cacheStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+}
+
+.cacheLevel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.cacheLevelHit {
+  border-color: #2e7d32;
+  background: color-mix(in srgb, #2e7d32 12%, var(--ifm-background-surface-color));
+}
+
+.cacheLevelMiss {
+  opacity: 0.55;
+}
+
+.metaList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.metaItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--ifm-color-emphasis-200);
+  font-size: 0.82rem;
+}
+
+.metaKey {
+  color: var(--ifm-color-content-secondary);
+  flex-shrink: 0;
+}
+
+.metaVal {
+  font-weight: 600;
+  text-align: right;
+  word-break: break-word;
+}
+
+.log {
+  max-height: 5.5rem;
+  overflow-y: auto;
+  margin: 0.5rem 0 0;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.logLine {
+  margin: 0;
+  color: var(--ifm-color-content-secondary);
+}
+
+.logLine:last-child {
+  color: var(--ifm-color-content);
+  font-weight: 600;
+}

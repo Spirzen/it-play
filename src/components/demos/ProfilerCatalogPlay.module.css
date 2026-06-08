@@ -1,0 +1,100 @@
+.root {
+  width: 100%;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 560px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.item {
+  text-align: left;
+  padding: 0.3rem 0.45rem;
+  font-size: 0.76rem;
+  font-family: inherit;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+}
+
+.itemActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.18));
+  font-weight: 600;
+}
+
+.sliderRow {
+  margin: 0.65rem 0;
+  font-size: 0.82rem;
+}
+
+.sliderRow input {
+  width: 100%;
+  margin-top: 0.35rem;
+}
+
+.meters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: 0.65rem;
+  font-size: 0.8rem;
+}
+
+.bar {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin: 0.25rem 0;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--ifm-color-danger);
+  transition: width 0.35s ease;
+}
+
+.barFillMem {
+  height: 100%;
+  background: var(--ifm-color-info);
+  transition: width 0.35s ease;
+}
+
+.flame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: flex-end;
+  min-height: 48px;
+}
+
+.flameBar {
+  padding: 0.2rem 0.35rem;
+  font-size: 0.68rem;
+  font-family: var(--ifm-font-family-monospace);
+  background: linear-gradient(180deg, #f59e0b, #d97706);
+  color: #1a1a1a;
+  border-radius: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.35s ease;
+}

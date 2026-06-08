@@ -1,0 +1,45 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.35rem;
+  height: 140px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.bar {
+  width: 1.6rem;
+  min-height: 4px;
+  border-radius: 4px 4px 0 0;
+  background: var(--ifm-color-primary);
+  transition: height 0.25s ease, background 0.2s ease;
+}
+
+.barCompare {
+  outline: 2px solid #ed6c02;
+}
+
+.barSwap {
+  background: var(--ifm-color-danger);
+}
+
+.status {
+  margin: 0.65rem 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+}

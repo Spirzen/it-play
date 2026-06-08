@@ -1,0 +1,12 @@
+{
+  "title": "Io Devices",
+  "description": "Интерактивное демо «Io Devices» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "io-devices-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 6
+}

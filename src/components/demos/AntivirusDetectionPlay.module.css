@@ -1,0 +1,42 @@
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.verdict {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  margin: 0 0 0.65rem;
+  line-height: 1.45;
+}
+
+.verdictClean {
+  background: rgba(46, 125, 82, 0.12);
+  border: 1px solid #2e7d52;
+}
+
+.verdictWarn {
+  background: rgba(237, 108, 2, 0.12);
+  border: 1px solid #ed6c02;
+}
+
+.verdictBad {
+  background: rgba(211, 47, 47, 0.12);
+  border: 1px solid #d32f2f;
+}
+
+.log {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  max-height: 8rem;
+  overflow: auto;
+  margin: 0;
+  white-space: pre-wrap;
+}

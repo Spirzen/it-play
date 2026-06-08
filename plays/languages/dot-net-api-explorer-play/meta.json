@@ -1,0 +1,13 @@
+{
+  "title": ".NET API Explorer",
+  "description": "Интерактивное демо «.NET API Explorer» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "dot-net-api-explorer-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-04-platforma-dotnet/183",
+  "order": 11
+}

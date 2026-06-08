@@ -1,0 +1,13 @@
+{
+  "title": "Job DSL Playground",
+  "description": "Интерактивное демо «Job DSL Playground» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "job-dsl-playground",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-12-groovy/25",
+  "order": 28
+}

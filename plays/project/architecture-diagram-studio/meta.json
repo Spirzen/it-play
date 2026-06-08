@@ -1,0 +1,13 @@
+{
+  "title": "Студия архитектурных диаграмм",
+  "description": "Интерактивное демо «Студия архитектурных диаграмм» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "architecture-diagram-studio",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1",
+  "order": 19
+}

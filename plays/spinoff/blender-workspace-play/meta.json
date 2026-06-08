@@ -1,0 +1,13 @@
+{
+  "title": "Рабочее пространство Blender",
+  "description": "Интерактивное демо «Рабочее пространство Blender» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "blender-workspace-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/131",
+  "order": 28
+}

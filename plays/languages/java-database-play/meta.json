@@ -1,0 +1,13 @@
+{
+  "title": "Java и базы данных",
+  "description": "Интерактивное демо «Java и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "java-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-03-java/22",
+  "order": 8
+}

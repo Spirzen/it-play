@@ -1,0 +1,12 @@
+{
+  "title": "Linter Live",
+  "description": "Интерактивное демо «Linter Live» — раздел Инструменты · Тестирование.",
+  "category": "tools-testing",
+  "categoryTitle": "Инструменты · Тестирование",
+  "component": "linter-live-play",
+  "tags": [
+    "toolstesting"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/testing/3",
+  "order": 101
+}

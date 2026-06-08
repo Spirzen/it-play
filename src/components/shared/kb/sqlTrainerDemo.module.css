@@ -1,0 +1,222 @@
+.accentSelect {
+  --sql-accent: var(--ifm-color-primary);
+}
+
+.accentInsert {
+  --sql-accent: #2e7d32;
+}
+
+.accentUpdate {
+  --sql-accent: #ed6c02;
+}
+
+.accentDelete {
+  --sql-accent: #c62828;
+}
+
+.accentJoin {
+  --sql-accent: #7c3aed;
+}
+
+.headerAccent {
+  border-left: 4px solid var(--sql-accent, var(--ifm-color-primary));
+  padding-left: 0.75rem;
+}
+
+.cmdBadge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+  background: color-mix(in srgb, var(--sql-accent, var(--ifm-color-primary)) 15%, transparent);
+  color: var(--sql-accent, var(--ifm-color-primary));
+  margin-right: 0.35rem;
+}
+
+.statsBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.85rem;
+  margin-bottom: var(--demo-gap, 1rem);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.statValue {
+  font-weight: 600;
+  color: var(--ifm-color-content);
+}
+
+.statHighlight {
+  font-weight: 600;
+  color: var(--sql-accent, var(--ifm-color-primary));
+}
+
+.queryArea {
+  font-family: var(--ifm-font-family-monospace);
+  min-height: 3.25rem;
+  line-height: 1.5;
+  font-size: 0.85rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.75rem 0 1rem;
+}
+
+.tableSection {
+  margin-top: 1rem;
+}
+
+.tableCaption {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.rowHighlight {
+  background: color-mix(in srgb, var(--sql-accent, var(--ifm-color-primary)) 12%, transparent);
+}
+
+.rowDeleted {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+
+.nullCell {
+  color: var(--demo-warning, #ed6c02);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.confirmPanel {
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid var(--demo-warning, #ed6c02);
+  background: rgba(237, 108, 2, 0.08);
+}
+
+.confirmActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.hint {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.55;
+}
+
+.hint code {
+  font-size: 0.78rem;
+}
+
+.joinSchema {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 0.78rem;
+  font-family: var(--ifm-font-family-monospace);
+  line-height: 1.6;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.resultCard {
+  padding: 0.75rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.cardRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--demo-border);
+  font-size: 0.82rem;
+}
+
+.cardRow:last-child {
+  border-bottom: none;
+}
+
+.cardLabel {
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+}
+
+.cardValue {
+  text-align: right;
+  word-break: break-word;
+}
+
+.schemaPanel {
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.schemaTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.schemaTab {
+  padding: 0.3rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: transparent;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+}
+
+.schemaTab:hover {
+  border-color: var(--sql-accent, var(--ifm-color-primary));
+  color: var(--ifm-color-content);
+}
+
+.schemaTabActive {
+  border-color: var(--sql-accent, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--sql-accent, var(--ifm-color-primary)) 12%, transparent);
+  color: var(--sql-accent, var(--ifm-color-primary));
+}

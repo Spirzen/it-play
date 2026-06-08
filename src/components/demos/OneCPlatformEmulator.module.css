@@ -1,0 +1,253 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) 1fr;
+  min-height: 280px;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nav {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+  background: color-mix(in srgb, var(--app-accent, #d4a017) 6%, var(--ifm-background-surface-color));
+  padding: 0.35rem 0;
+  overflow: auto;
+  max-height: 360px;
+}
+
+.navSection {
+  margin-bottom: 0.35rem;
+}
+
+.navSectionTitle {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.navItem {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.32rem 0.55rem 0.32rem 0.85rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  color: var(--ifm-font-color-base);
+}
+
+.navItem:hover {
+  background: color-mix(in srgb, var(--app-accent) 12%, transparent);
+}
+
+.navItemActive {
+  background: color-mix(in srgb, var(--app-accent) 22%, transparent);
+  font-weight: 600;
+  border-left: 3px solid var(--app-accent);
+  padding-left: calc(0.85rem - 3px);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.toolbarRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.content {
+  flex: 1;
+  padding: 0.55rem;
+  overflow: auto;
+}
+
+.listTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.76rem;
+}
+
+.listTable th,
+.listTable td {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.35rem 0.45rem;
+  text-align: left;
+}
+
+.listTable th {
+  background: var(--ifm-background-surface-color);
+  font-weight: 600;
+}
+
+.listTable tbody tr:hover {
+  background: color-mix(in srgb, var(--app-accent) 8%, transparent);
+}
+
+.docForm {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.docHeader {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.4rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.15rem;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.28rem 0.4rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.78rem;
+  background: var(--ifm-background-color);
+}
+
+.reportBox {
+  padding: 0.75rem;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.reportBox h5 {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+}
+
+.messages {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  max-height: 110px;
+  overflow: auto;
+  font-size: 0.72rem;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.msgLine {
+  padding: 0.2rem 0.45rem;
+  border-bottom: 1px solid #333;
+}
+
+.msgSuccess {
+  color: #4ec9b0;
+}
+
+.msgWarn {
+  color: #dcdcaa;
+}
+
+.configLayout {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) 1fr;
+  min-height: 300px;
+}
+
+@media (max-width: 640px) {
+  .configLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metaTree {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.35rem 0;
+  font-size: 0.74rem;
+  overflow: auto;
+}
+
+.metaGroup {
+  margin-bottom: 0.25rem;
+}
+
+.metaGroupTitle {
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+  color: var(--ifm-color-content-secondary);
+}
+
+.metaLeaf {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.22rem 0.5rem 0.22rem 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.74rem;
+}
+
+.metaLeaf:hover,
+.metaLeafActive {
+  background: color-mix(in srgb, var(--app-accent) 18%, transparent);
+}
+
+.editorPane {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.editorToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.codeArea {
+  flex: 1;
+  min-height: 160px;
+  width: 100%;
+  resize: vertical;
+  padding: 0.5rem;
+  border: none;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  line-height: 1.45;
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.modeBar {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.modeBtnActive {
+  background: color-mix(in srgb, var(--app-accent) 22%, transparent) !important;
+  border-color: var(--app-accent) !important;
+  font-weight: 600;
+}

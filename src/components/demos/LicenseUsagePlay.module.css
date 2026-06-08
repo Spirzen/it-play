@@ -1,0 +1,202 @@
+.root {
+  margin: 1.25rem 0;
+}
+
+.licenseBanner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(
+    120deg,
+    color-mix(in srgb, #cc7a00 14%, var(--ifm-background-surface-color)),
+    var(--ifm-background-surface-color)
+  );
+  border: 1px solid color-mix(in srgb, #cc7a00 35%, var(--ifm-color-emphasis-300));
+}
+
+.ccLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 1rem;
+  background: #000;
+  color: #fff;
+}
+
+html[data-theme='dark'] .ccLogo {
+  background: #f5f5f5;
+  color: #111;
+}
+
+.ccSub {
+  margin: 0.15rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.ccBadges {
+  display: flex;
+  gap: 0.35rem;
+  margin-left: auto;
+}
+
+.ccBadge {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  background: var(--ifm-color-emphasis-200);
+  cursor: help;
+}
+
+.scenarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.scenarioBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 0.55rem 0.65rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: left;
+  color: inherit;
+  transition: border-color 0.15s, transform 0.1s;
+}
+
+.scenarioBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.scenarioBtnActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-primary) 20%, transparent);
+}
+
+.scenarioIcon {
+  font-size: 1.25rem;
+}
+
+.verdictPanel {
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin-bottom: 1rem;
+}
+
+.verdictBadge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.verdictAllow {
+  background: color-mix(in srgb, #2e7d32 22%, transparent);
+  color: #1b5e20;
+}
+
+.verdictContact {
+  background: color-mix(in srgb, #ed6c02 22%, transparent);
+  color: #e65100;
+}
+
+.verdictDeny {
+  background: color-mix(in srgb, #c62828 22%, transparent);
+  color: #b71c1c;
+}
+
+html[data-theme='dark'] .verdictAllow {
+  color: #81c784;
+}
+
+html[data-theme='dark'] .verdictContact {
+  color: #ffb74d;
+}
+
+html[data-theme='dark'] .verdictDeny {
+  color: #ef9a9a;
+}
+
+.verdictText {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.reqList {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+}
+
+.contactHint {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+}
+
+.matrix {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 560px) {
+  .matrix {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.matrixCol {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.82rem;
+}
+
+.matrixTitle {
+  margin: 0 0 0.4rem;
+  font-size: 0.8rem;
+}
+
+.matrixCol ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.citationPre {
+  margin: 0 0 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  background: var(--ifm-code-background);
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

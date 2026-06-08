@@ -1,0 +1,13 @@
+{
+  "title": "Жанры игр — обзор",
+  "description": "Интерактивное демо «Жанры игр — обзор» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "game-genre-toys-hub",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-18-kompyuternye-igry/2",
+  "order": 28
+}

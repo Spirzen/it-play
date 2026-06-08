@@ -1,0 +1,193 @@
+.lead {
+  margin: 0 0 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.card h5 {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+}
+
+.badge {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-color-emphasis-100);
+}
+
+.badgeGood {
+  composes: badge;
+  border-color: var(--ifm-color-success);
+  color: var(--ifm-color-success-dark);
+}
+
+.compareTable {
+  width: 100%;
+  font-size: 0.82rem;
+  border-collapse: collapse;
+}
+
+.compareTable th,
+.compareTable td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  text-align: left;
+  vertical-align: top;
+}
+
+.compareTable th {
+  width: 38%;
+  color: var(--ifm-color-content-secondary);
+  font-weight: 500;
+}
+
+.meter {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin: 0.35rem 0 0.5rem;
+}
+
+.meterFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.25s ease;
+}
+
+.search {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin-bottom: 0.65rem;
+  font-family: inherit;
+}
+
+.toolList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.toolList li {
+  padding: 0.45rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.84rem;
+  border: 1px solid transparent;
+}
+
+.toolList li:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.toolActive {
+  background: rgba(var(--ifm-color-primary-rgb), 0.1);
+  border-color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.canvas {
+  position: relative;
+  min-height: 160px;
+  border-radius: 8px;
+  border: 2px dashed var(--ifm-color-emphasis-400);
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-emphasis-100) 0%,
+    var(--ifm-background-surface-color) 50%
+  );
+  overflow: hidden;
+}
+
+.captureRegion {
+  position: absolute;
+  border: 2px solid var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.08);
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.15);
+  cursor: move;
+}
+
+.annot {
+  position: absolute;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  background: #ffeb3b;
+  color: #333;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.workflowSteps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.step {
+  flex: 1;
+  min-width: 100px;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.stepActive {
+  composes: step;
+  border-color: var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.12);
+  font-weight: 600;
+}
+
+.stepDone {
+  composes: step;
+  opacity: 0.65;
+}
+
+.codeSample {
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.78rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
+  overflow-x: auto;
+}

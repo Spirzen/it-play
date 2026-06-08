@@ -1,0 +1,13 @@
+{
+  "title": "CI/CD пайплайн",
+  "description": "Интерактивное демо «CI/CD пайплайн» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "cicd-demo",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1",
+  "order": 2
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Эмулятор BIOS",
+  "description": "Интерактивное демо «Эмулятор BIOS» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "bio-semulator",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/6",
+  "order": 8
+}

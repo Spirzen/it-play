@@ -1,0 +1,244 @@
+.root {
+  max-width: min(640px, 100%);
+  margin: 0 auto;
+}
+
+.modeTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.modeTab {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modeTab:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.modeTabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.layers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+}
+
+.layer {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.5rem 0.6rem 0.6rem;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.25s ease;
+}
+
+.layerActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+}
+
+.layerHead {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.layerNodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.nodeBtn {
+  padding: 0.3rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nodeBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.nodeBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-background-color));
+  color: var(--ifm-color-primary);
+}
+
+.detailCard {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-background-surface-color));
+  margin-bottom: 0.75rem;
+}
+
+.detailTitle {
+  margin: 0 0 0.3rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.detailBody {
+  margin: 0 0 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.detailWarn {
+  margin: 0;
+  font-size: 0.74rem;
+  color: #c62828;
+  font-weight: 600;
+}
+
+.deps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+}
+
+.depChip {
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.loopCanvas {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  margin-bottom: 0.65rem;
+}
+
+.loopControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin-bottom: 0.65rem;
+}
+
+.toggleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.styleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+}
+
+.styleCard {
+  padding: 0.55rem 0.6rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.styleCard:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.styleCardActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+}
+
+.styleIcon {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.styleLabel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: block;
+}
+
+.styleSummary {
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.15rem;
+  display: block;
+}
+
+.prosCons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.74rem;
+}
+
+.prosCons h5 {
+  margin: 0 0 0.3rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.prosCons ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.4;
+}
+
+.fit {
+  margin: 0.65rem 0 0;
+  font-size: 0.76rem;
+  color: var(--ifm-color-content-secondary);
+  text-align: center;
+}
+
+.footer {
+  margin-top: 0.5rem;
+  font-size: 0.74rem;
+  line-height: 1.4;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .prosCons {
+    grid-template-columns: 1fr;
+  }
+}

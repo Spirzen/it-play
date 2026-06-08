@@ -1,0 +1,13 @@
+{
+  "title": "Мем в разных контекстах",
+  "description": "Интерактивное демо «Мем в разных контекстах» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "cross-context-meme-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-10-internet-kultura/117",
+  "order": 36
+}

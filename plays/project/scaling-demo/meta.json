@@ -1,0 +1,13 @@
+{
+  "title": "Масштабирование",
+  "description": "Интерактивное демо «Масштабирование» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "scaling-demo",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2112",
+  "order": 21
+}

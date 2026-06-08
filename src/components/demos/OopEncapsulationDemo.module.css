@@ -1,0 +1,220 @@
+.tabRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tabBtn {
+  flex: 1 1 auto;
+  min-width: 5.5rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.tabBtnActive {
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.45;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.classCard {
+  border: 2px dashed var(--ifm-color-primary);
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+.classCardExternal {
+  border: 2px dashed #5c6bc0;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, #5c6bc0 6%, transparent);
+}
+
+.classTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.classTitleExternal {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #3949ab;
+}
+
+.sectionLabel {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.memberRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+}
+
+.badgePublic {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, #2e7d32 15%, transparent);
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+.badgePrivate {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, #c62828 12%, transparent);
+  color: #b71c1c;
+  font-weight: 600;
+}
+
+.arrowBetween {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--demo-muted);
+  margin: 0.35rem 0;
+}
+
+.methodBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.65rem 0;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.formRow label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+}
+
+.statePanel {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.stateTitle {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--demo-muted);
+}
+
+.stateRow {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.2rem 0;
+}
+
+.locked {
+  font-style: italic;
+  opacity: 0.65;
+}
+
+.errorBox {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #c62828;
+  background: color-mix(in srgb, #c62828 8%, transparent);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  color: #b71c1c;
+}
+
+.successBox {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #2e7d32;
+  background: color-mix(in srgb, #2e7d32 8%, transparent);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  color: #1b5e20;
+}
+
+.outputBox {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+}
+
+.log {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 7rem;
+  overflow-y: auto;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+}
+
+.log li {
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed var(--demo-border);
+}
+
+.log li:last-child {
+  border-bottom: none;
+}

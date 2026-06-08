@@ -1,0 +1,12 @@
+{
+  "title": "Network Stack Explorer",
+  "description": "Интерактивное демо «Network Stack Explorer» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "network-stack-explorer-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 12
+}

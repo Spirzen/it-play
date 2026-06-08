@@ -1,0 +1,13 @@
+{
+  "title": "Безопасность кода",
+  "description": "Интерактивное демо «Безопасность кода» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "code-safety-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1",
+  "order": 3
+}

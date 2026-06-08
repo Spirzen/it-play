@@ -1,0 +1,13 @@
+{
+  "title": "Autodesk — продукты",
+  "description": "Интерактивное демо «Autodesk — продукты» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "autodesk-product-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-06-otraslevoe-po/112",
+  "order": 26
+}

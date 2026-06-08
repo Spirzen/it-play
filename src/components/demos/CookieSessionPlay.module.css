@@ -1,0 +1,92 @@
+.root {
+  max-width: min(500px, 100%);
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.tab {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.zone {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.zoneActive {
+  border-color: var(--ifm-color-primary);
+}
+
+.tracker {
+  border-style: dashed;
+  font-size: 0.8rem;
+}
+
+.jar {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  word-break: break-all;
+}
+
+.httpLine {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.panel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+}
+
+.panel p {
+  margin: 0.35rem 0 0;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.4;
+}
+
+.mono {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem !important;
+}
+
+.controls {
+  display: flex;
+  gap: 0.45rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

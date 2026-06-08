@@ -1,0 +1,279 @@
+.root {
+  --pse-accent: #1565c0;
+  --pse-sln: #6a1b9a;
+  --pse-proj: #2e7d32;
+  --pse-folder: #e65100;
+  --pse-file: #546e7a;
+  --pse-tree-bg: #1e1e1e;
+  --pse-tree-fg: #cccccc;
+  --pse-tree-hover: #2a2d2e;
+  --pse-tree-active: #094771;
+}
+
+.headerBand {
+  padding: 0.85rem 1rem;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 45%, #1565c0 100%);
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.05rem, 3.5vw, 1.3rem);
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.92;
+}
+
+.body {
+  padding: 1rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: var(--ifm-background-surface-color);
+}
+
+.modeBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.modeBtn {
+  flex: 1 1 auto;
+  min-width: 88px;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.modeBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.modeBtnActive {
+  border-color: var(--pse-accent);
+  background: color-mix(in srgb, var(--pse-accent) 14%, var(--ifm-background-surface-color));
+  color: var(--pse-accent);
+}
+
+.workspaceBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--pse-accent) 8%, var(--ifm-background-color));
+  border: 1px solid var(--demo-border);
+  font-size: 0.82rem;
+}
+
+.workspaceLabel {
+  opacity: 0.75;
+  font-weight: 600;
+}
+
+.workspacePath {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.summary {
+  margin: 0 0 0.85rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--ifm-font-color-secondary);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 0.65rem;
+  min-height: 280px;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+}
+
+.treePanel {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #333;
+  background: var(--pse-tree-bg);
+  color: var(--pse-tree-fg);
+  display: flex;
+  flex-direction: column;
+}
+
+.treeToolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #252526;
+  border-bottom: 1px solid #333;
+}
+
+.treeScroll {
+  flex: 1;
+  overflow: auto;
+  padding: 0.35rem 0;
+  max-height: 320px;
+}
+
+.treeList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.treeItem {
+  margin: 0;
+}
+
+.treeDir {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  user-select: none;
+}
+
+.treeDirIcon {
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.treeBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.22rem 0.5rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: var(--pse-tree-fg);
+  font-size: 0.8rem;
+  font-family: var(--ifm-font-family-monospace);
+  text-align: left;
+  cursor: pointer;
+}
+
+.treeBtn:hover {
+  background: var(--pse-tree-hover);
+}
+
+.treeBtnActive {
+  background: var(--pse-tree-active);
+  color: #fff;
+}
+
+.fileIconSln {
+  color: #c586c0;
+}
+
+.fileIconProj {
+  color: #4ec9b0;
+}
+
+.fileIconConfig {
+  color: #9cdcfe;
+}
+
+.fileIconCode {
+  color: #dcdcaa;
+}
+
+.detailPanel {
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.detailHeader {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--demo-border);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.detailBody {
+  padding: 0.75rem;
+  flex: 1;
+}
+
+.detailRole {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--pse-accent) 18%, transparent);
+  color: var(--pse-accent);
+}
+
+.detailHint {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.detailPlaceholder {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--ifm-font-color-secondary);
+  line-height: 1.5;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--demo-border);
+  font-size: 0.75rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}

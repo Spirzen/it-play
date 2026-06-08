@@ -1,0 +1,12 @@
+{
+  "title": "CSS-анимации",
+  "description": "Интерактивное демо «CSS-анимации» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "css-transition-play",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/1116",
+  "order": 7
+}

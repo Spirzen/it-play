@@ -1,0 +1,13 @@
+{
+  "title": "Memcached Shell",
+  "description": "Интерактивное демо «Memcached Shell» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "memcached-shell-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-06-nosql/8111",
+  "order": 28
+}

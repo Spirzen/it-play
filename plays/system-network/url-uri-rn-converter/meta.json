@@ -1,0 +1,13 @@
+{
+  "title": "Конвертер URL / URI / URN",
+  "description": "Интерактивное демо «Конвертер URL / URI / URN» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "url-uri-rn-converter",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-03-set-i-internet/3",
+  "order": 10
+}

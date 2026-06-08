@@ -1,0 +1,33 @@
+.editor {
+  margin: 0.65rem 0;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  min-height: 10rem;
+}
+
+.codeUser,
+.codeGhost,
+.codeAccepted {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.codeGhost {
+  color: #6a9955;
+  opacity: 0.85;
+}
+
+.codeAccepted {
+  color: #9cdcfe;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}

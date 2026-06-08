@@ -1,0 +1,38 @@
+.root {
+  margin: 1.25rem 0;
+}
+
+.editorWrap {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fffcf8;
+}
+
+@media (max-width: 996px) {
+  .editorWrap {
+    border-radius: 8px;
+  }
+
+  .editorWrap :global(.palette) {
+    width: 148px;
+    padding: 10px 8px;
+  }
+
+  .editorWrap :global(.properties) {
+    display: none;
+  }
+
+  .editorWrap :global(.toolbar) {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 56px;
+    padding: 8px 12px;
+  }
+
+  .editorWrap :global(.toolbar-title) {
+    min-width: 120px;
+    max-width: 100%;
+    flex: 1 1 140px;
+  }
+}

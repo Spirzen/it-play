@@ -1,0 +1,429 @@
+.root {
+  --prog-accent: #0078d4;
+}
+
+.explorer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 0.65rem;
+  min-height: 220px;
+}
+
+@media (max-width: 640px) {
+  .explorer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tree {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  font-size: 0.78rem;
+}
+
+.treeItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  transition: background 0.15s ease;
+}
+
+.treeItem:hover {
+  background: color-mix(in srgb, var(--prog-accent) 10%, transparent);
+}
+
+.treeItemActive {
+  background: color-mix(in srgb, var(--prog-accent) 18%, transparent);
+  font-weight: 600;
+}
+
+.ext {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  opacity: 0.75;
+}
+
+.detail {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, var(--prog-accent) 6%, var(--ifm-background-surface-color));
+}
+
+.detailTitle {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.detailRole {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.detail p {
+  margin: 0 0 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  padding: 0.15rem 0.45rem;
+  font-size: 0.68rem;
+  border-radius: 4px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.serviceBadge {
+  margin-left: auto;
+  font-size: 0.62rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+[data-theme='dark'] .serviceBadge {
+  background: #1b3d1f;
+  color: #a5d6a7;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.mono {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+}
+
+/* —— Config stack —— */
+.priorityLadder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.priorityStep {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.priorityStep:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.priorityStepActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+}
+
+.priorityRank {
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--ifm-color-primary);
+}
+
+.resolved {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  font-size: 0.82rem;
+}
+
+[data-theme='dark'] .resolved {
+  background: #1b3320;
+  border-color: #2e7d32;
+}
+
+.formatGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.formatBtn {
+  padding: 0.4rem 0.55rem;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.formatBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  font-weight: 600;
+}
+
+.codeBlock {
+  margin: 0;
+  padding: 0.55rem 0.65rem;
+  font-size: 0.7rem;
+  line-height: 1.45;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  overflow: auto;
+  max-height: 200px;
+}
+
+/* —— Archive explorer —— */
+.archiveLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+@media (max-width: 700px) {
+  .archiveLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filePick {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.fileRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.76rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.fileRow:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.fileRowSelected {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.ratioBar {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin: 0.35rem 0;
+}
+
+.ratioFill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  transition: width 0.35s ease;
+}
+
+.zipTree {
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  line-height: 1.5;
+  padding: 0.5rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 6px;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+/* —— OS interaction —— */
+.flowRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0.75rem 0;
+}
+
+.flowBox {
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  min-width: 5.5rem;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.flowBoxActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.flowArrow {
+  font-size: 1.1rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.memGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 520px) {
+  .memGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.memSeg {
+  padding: 0.4rem;
+  border-radius: 6px;
+  font-size: 0.68rem;
+  text-align: center;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.memSegActive {
+  border-color: #c62828;
+  background: color-mix(in srgb, #c62828 12%, transparent);
+}
+
+.stateTrack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.65rem;
+}
+
+.stateChip {
+  padding: 0.28rem 0.55rem;
+  font-size: 0.72rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.stateChipActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+  font-weight: 600;
+}
+
+/* —— Lifecycle —— */
+.versionDisplay {
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-family: var(--ifm-font-family-monospace);
+  margin: 0.5rem 0;
+  color: var(--ifm-color-primary);
+}
+
+.installSteps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.installStep {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  font-size: 0.78rem;
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+
+.installStepDone {
+  opacity: 1;
+}
+
+.installStepCurrent {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.stepNum {
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.installStepDone .stepNum,
+.installStepCurrent .stepNum {
+  background: var(--ifm-color-primary);
+  color: #fff;
+}
+
+.computeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-family: var(--ifm-font-family-monospace);
+  margin: 0.5rem 0;
+}
+
+.computeResult {
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  background: #e3f2fd;
+  font-weight: 700;
+}
+
+[data-theme='dark'] .computeResult {
+  background: #0d2137;
+}

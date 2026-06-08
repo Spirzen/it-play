@@ -1,0 +1,12 @@
+{
+  "title": "Office Suite Compare",
+  "description": "Интерактивное демо «Office Suite Compare» — раздел Инструменты · Разное.",
+  "category": "tools-misc",
+  "categoryTitle": "Инструменты · Разное",
+  "component": "office-suite-compare-play",
+  "tags": [
+    "toolsmisc"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/misc/1",
+  "order": 70
+}

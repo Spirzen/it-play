@@ -1,0 +1,13 @@
+{
+  "title": "Groovy и базы данных",
+  "description": "Интерактивное демо «Groovy и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "groovy-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-12-groovy/19",
+  "order": 27
+}

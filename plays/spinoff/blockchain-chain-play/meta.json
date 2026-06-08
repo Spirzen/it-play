@@ -1,0 +1,13 @@
+{
+  "title": "Блокчейн — цепочка блоков",
+  "description": "Интерактивное демо «Блокчейн — цепочка блоков» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "blockchain-chain-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1",
+  "order": 21
+}

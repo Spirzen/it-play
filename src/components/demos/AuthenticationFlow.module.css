@@ -1,0 +1,91 @@
+.flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+.flowVertical {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.stepNode {
+  min-width: 88px;
+  padding: 0.55rem 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.75rem;
+  transition: all 0.25s ease;
+}
+
+.stepNodeDone {
+  border-color: var(--ifm-color-success);
+  background: color-mix(in srgb, var(--ifm-color-success) 10%, transparent);
+}
+
+.stepNodeCurrent {
+  border-color: var(--ifm-color-warning);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-warning) 25%, transparent);
+  transform: scale(1.04);
+}
+
+.stepIcon {
+  font-size: 1.25rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.arrow {
+  color: var(--demo-muted);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.clientBadge {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.panel {
+  margin-top: 1rem;
+}
+
+.actionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .actionsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+}
+
+.actionCard {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}

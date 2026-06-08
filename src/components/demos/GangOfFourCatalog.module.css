@@ -1,0 +1,67 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.55rem;
+}
+
+.tab {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  text-align: center;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.diagram {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.node {
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border: 1px solid var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.arrow {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.msg {
+  margin: 0.55rem 0 0;
+  font-size: 0.78rem;
+  text-align: center;
+  font-family: var(--ifm-font-family-monospace);
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Навигатор интересов",
+  "description": "Интерактивное демо «Навигатор интересов» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "interest-navigator-game-v2-play",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/roadmap/7",
+  "order": 17
+}

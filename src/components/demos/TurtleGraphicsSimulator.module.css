@@ -1,0 +1,149 @@
+.root {
+  max-width: min(980px, 100%);
+  margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stage {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-color)),
+    var(--ifm-background-surface-color)
+  );
+  overflow: hidden;
+  min-height: 320px;
+}
+
+.stageSvg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.gridLine {
+  stroke: var(--ifm-color-emphasis-200);
+  stroke-width: 0.5;
+  opacity: 0.55;
+}
+
+.axisLine {
+  stroke: var(--ifm-color-emphasis-400);
+  stroke-width: 1;
+  opacity: 0.75;
+}
+
+.pathLine {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fillRegion {
+  opacity: 0.45;
+  stroke: none;
+}
+
+.turtleIcon {
+  transition: transform 0.35s ease;
+}
+
+.turtleBody {
+  fill: var(--ifm-color-primary);
+  stroke: #fff;
+  stroke-width: 1.2;
+}
+
+.turtleHidden {
+  opacity: 0;
+}
+
+.turtlePulse {
+  filter: drop-shadow(0 0 8px var(--ifm-color-primary));
+}
+
+.coordsBadge {
+  position: absolute;
+  left: 0.65rem;
+  bottom: 0.65rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  background: color-mix(in srgb, var(--ifm-background-color) 88%, transparent);
+  border: 1px solid var(--demo-border);
+  color: var(--demo-muted);
+  line-height: 1.45;
+}
+
+.coordsBadge strong {
+  color: var(--ifm-color-content);
+}
+
+.cmdGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.cmdChip {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  border-radius: 6px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-code-background);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.cmdChip:hover {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight);
+}
+
+.cmdChip:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.log {
+  max-height: 140px;
+  overflow-y: auto;
+  font-size: 0.78rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.logEntry {
+  padding: 0.15rem 0;
+  color: var(--demo-muted);
+}
+
+.logEntryActive {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.penUp {
+  color: var(--demo-warning);
+}
+
+.penDown {
+  color: var(--demo-success);
+}

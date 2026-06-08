@@ -1,0 +1,66 @@
+.root {
+  max-width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.node {
+  flex: 1;
+  min-width: 130px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.nodeDone {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 50%, transparent);
+}
+
+.nodeActive {
+  outline: 2px solid var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.num {
+  display: inline-block;
+  margin-right: 0.35rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.detail {
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  margin-bottom: 0.65rem;
+}
+
+.detail h5 {
+  margin: 0 0 0.35rem;
+}
+
+.detail p {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+}
+
+.ctx {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}

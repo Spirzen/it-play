@@ -1,0 +1,12 @@
+{
+  "title": "Dbms Architecture",
+  "description": "Интерактивное демо «Dbms Architecture» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "dbms-architecture-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/1",
+  "order": 37
+}

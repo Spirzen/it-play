@@ -1,0 +1,54 @@
+.previewFrame {
+  width: 100%;
+  min-height: 10rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+[data-theme='dark'] .previewFrame {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepItem {
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+}
+
+.stepActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.2));
+}
+
+.stepDone {
+  opacity: 0.75;
+}
+
+.tabPanels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.xsltBlock {
+  margin: 0;
+  max-height: 14rem;
+  overflow: auto;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  white-space: pre;
+}

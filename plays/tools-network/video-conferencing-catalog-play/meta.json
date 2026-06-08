@@ -1,0 +1,12 @@
+{
+  "title": "Video Conferencing Catalog",
+  "description": "Интерактивное демо «Video Conferencing Catalog» — раздел Инструменты · Сеть.",
+  "category": "tools-network",
+  "categoryTitle": "Инструменты · Сеть",
+  "component": "video-conferencing-catalog-play",
+  "tags": [
+    "toolsnetwork"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/network/3",
+  "order": 86
+}

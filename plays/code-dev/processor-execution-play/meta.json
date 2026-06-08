@@ -1,0 +1,13 @@
+{
+  "title": "Выполнение на процессоре",
+  "description": "Интерактивное демо «Выполнение на процессоре» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "processor-execution-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-03-vypolnenie-koda/3",
+  "order": 17
+}

@@ -1,0 +1,323 @@
+.root {
+  --as-accent: #06b6d4;
+  --as-accent-2: #a855f7;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-height: 0;
+}
+
+:global(.it-demo--fullscreen) .root {
+  flex: 1;
+  min-height: 0;
+}
+
+:global(.it-demo--fullscreen) .canvasWrap {
+  flex: 1;
+  min-height: min(72vh, 720px);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.toolbarSpacer {
+  flex: 1;
+  min-width: 0.5rem;
+}
+
+.toolbarSep {
+  width: 1px;
+  height: 1.25rem;
+  background: var(--ifm-color-emphasis-300);
+  margin: 0 0.15rem;
+}
+
+.toolBtn {
+  padding: 0.35rem 0.7rem;
+  font-size: 0.78rem;
+  font-family: inherit;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+}
+
+.toolBtnOn {
+  color: #fff;
+  background: var(--as-accent);
+  border-color: transparent;
+  font-weight: 600;
+}
+
+.toolBtnDanger {
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+.select {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  font-family: inherit;
+  max-width: 100%;
+}
+
+.canvasWrap {
+  position: relative;
+  min-height: 420px;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background:
+    radial-gradient(circle at 1px 1px, var(--ifm-color-emphasis-200) 1px, transparent 0) 0 0 / 18px 18px,
+    linear-gradient(160deg, rgba(6, 182, 212, 0.04), rgba(168, 85, 247, 0.05));
+  overflow: hidden;
+  cursor: default;
+}
+
+.canvasWrapConnect {
+  cursor: crosshair;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+}
+
+.canvasHint {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  text-align: center;
+  pointer-events: none;
+  max-width: 280px;
+}
+
+.svgLayer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.edgeGroup {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.edgeHit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 16;
+}
+
+.edgeVisible {
+  pointer-events: none;
+  transition: stroke-width 0.12s ease, opacity 0.12s ease;
+}
+
+.edgeGroup:hover .edgeVisible {
+  stroke-width: 3;
+  opacity: 0.92;
+}
+
+.edgeGroup:focus-visible {
+  outline: none;
+}
+
+.edgeGroup:focus-visible .edgeVisible {
+  stroke-width: 3;
+  filter: drop-shadow(0 0 4px rgba(6, 182, 212, 0.6));
+}
+
+.edgeLabel {
+  font-size: 9px;
+  fill: var(--ifm-color-content-secondary);
+}
+
+.classCard {
+  position: absolute;
+  border-radius: 8px;
+  border: 2px solid var(--as-accent);
+  background: var(--ifm-background-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  user-select: none;
+  touch-action: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.classCardInterface {
+  border-color: var(--as-accent-2);
+  border-style: dashed;
+}
+
+.classCardSelected {
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.35);
+}
+
+.classHead {
+  padding: 0.35rem 0.45rem;
+  font-weight: 700;
+  font-size: 0.78rem;
+  background: linear-gradient(90deg, rgba(6, 182, 212, 0.15), rgba(168, 85, 247, 0.12));
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.classBody {
+  padding: 0.3rem 0.45rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.65rem;
+  line-height: 1.35;
+  color: var(--ifm-color-content-secondary);
+  flex: 1;
+  overflow: hidden;
+}
+
+.editBar {
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.editBarHead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.editName {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.editName input {
+  width: 10rem;
+  padding: 0.28rem 0.4rem;
+  font-size: 0.78rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: inherit;
+}
+
+.editCheck {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.editInline {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.editInline input {
+  width: 6rem;
+  padding: 0.28rem 0.4rem;
+  font-size: 0.78rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: inherit;
+}
+
+.memberList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.memberEmpty {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.memberRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.memberKind {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--ifm-color-content-secondary);
+  min-width: 4.5rem;
+}
+
+.memberInput {
+  flex: 1;
+  min-width: 5rem;
+  max-width: 10rem;
+  padding: 0.25rem 0.4rem;
+  font-size: 0.76rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.memberRemove {
+  padding: 0.15rem 0.45rem;
+  font-size: 1rem;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  color: #b91c1c;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.memberRemove:hover {
+  background: #fee2e2;
+}
+
+.codeBox {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  max-height: 140px;
+  overflow: auto;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  white-space: pre;
+}
+
+.hint {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.15rem 0 0;
+}

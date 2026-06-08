@@ -1,0 +1,74 @@
+.root {
+  max-width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.dot {
+  position: relative;
+  flex: 1;
+  min-width: 120px;
+  padding: 0.5rem 0.35rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  cursor: pointer;
+  text-align: left;
+}
+
+.dotActive {
+  background: color-mix(in srgb, hsl(var(--era-hue, 220) 60% 50%) 18%, transparent);
+  outline: 2px solid var(--ifm-color-primary);
+}
+
+.dotLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.card {
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: color-mix(in srgb, hsl(var(--era-hue, 220) 55% 45%) 6%, var(--ifm-background-surface-color));
+}
+
+.card h5 {
+  margin: 0.15rem 0 0.5rem;
+}
+
+.years {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.card dl {
+  margin: 0;
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+}
+
+.card dt {
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: var(--ifm-color-primary);
+}
+
+.card dd {
+  margin: 0.1rem 0 0;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}

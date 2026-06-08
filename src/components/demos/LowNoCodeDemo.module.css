@@ -1,0 +1,327 @@
+.root {
+  max-width: min(1000px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.15rem, 4vw, 1.5rem);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--demo-muted);
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--demo-border);
+  padding-bottom: 0.5rem;
+}
+
+.compareRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .compareRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.compareCard {
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.compareLow {
+  border-left: 3px solid #3498db;
+}
+
+.compareNo {
+  border-left: 3px solid #9b59b6;
+}
+
+.lowGrid {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(220px, 1fr) minmax(200px, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .lowGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.exampleCard {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    transform 0.15s;
+  margin-bottom: 0.5rem;
+}
+
+.exampleCard:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateX(3px);
+}
+
+.exampleName {
+  font-weight: 700;
+  font-size: 0.88rem;
+  margin-bottom: 0.35rem;
+}
+
+.exampleSnippet {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  background: var(--ifm-code-background);
+  padding: 0.45rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.editor {
+  min-height: 10rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  width: 100%;
+}
+
+.previewPanel {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 12rem;
+  background: var(--ifm-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.previewLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--demo-muted);
+  margin-bottom: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.previewEmpty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--demo-muted);
+  font-size: 0.82rem;
+  padding: 1rem;
+}
+
+.previewBtn {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.previewTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.previewTable th,
+.previewTable td {
+  border: 1px solid var(--demo-border);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+}
+
+.previewTable th {
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+  user-select: none;
+}
+
+.chartBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.35rem;
+  height: 8rem;
+  padding-top: 0.5rem;
+}
+
+.chartCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.chartBar {
+  width: 100%;
+  max-width: 2.5rem;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, #3498db, #2980b9);
+  transition: height 0.3s ease;
+}
+
+.chartLabel {
+  font-size: 0.65rem;
+  color: var(--demo-muted);
+}
+
+.resultOk {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  background: color-mix(in srgb, #2e7d32 12%, transparent);
+  border: 1px solid color-mix(in srgb, #2e7d32 35%, transparent);
+  color: var(--demo-success);
+}
+
+.resultErr {
+  composes: resultOk;
+  background: color-mix(in srgb, #c62828 10%, transparent);
+  border-color: color-mix(in srgb, #c62828 35%, transparent);
+  color: var(--demo-error);
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.paletteItem {
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  border: 1px dashed var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  color: var(--ifm-color-primary);
+  font-size: 0.8rem;
+  cursor: grab;
+  user-select: none;
+}
+
+.canvas {
+  position: relative;
+  min-height: 22rem;
+  border-radius: 10px;
+  border: 2px dashed var(--demo-border);
+  background-color: var(--ifm-background-color);
+  background-image:
+    linear-gradient(var(--demo-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--demo-border) 1px, transparent 1px);
+  background-size: 20px 20px;
+  transition: border-color 0.2s;
+}
+
+.canvasDrag {
+  border-color: var(--ifm-color-primary);
+  background-color: color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-background-color));
+}
+
+.canvasItem {
+  position: absolute;
+  cursor: grab;
+  padding: 2px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  touch-action: none;
+}
+
+.canvasItemSelected {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent);
+}
+
+.propsPanel {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.82rem;
+}
+
+.propsRow {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.propsRow label {
+  min-width: 4rem;
+  color: var(--demo-muted);
+  font-size: 0.75rem;
+}
+
+.canvasActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  justify-content: center;
+}
+
+.infoBox {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  border-left: 4px solid var(--ifm-color-primary);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.fact {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, #f1c40f 18%, transparent);
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.45;
+}
+
+.mobileTip {
+  font-size: 0.78rem;
+  color: var(--demo-warning);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}

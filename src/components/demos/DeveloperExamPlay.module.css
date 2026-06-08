@@ -1,0 +1,412 @@
+.root {
+  --exam-accent: var(--ifm-color-primary);
+  --exam-know: #22c55e;
+  --exam-partial: #f59e0b;
+  --exam-unknown: #ef4444;
+  --exam-skip: var(--ifm-color-emphasis-500);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.poolBadge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--demo-muted);
+}
+
+.levelBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid color-mix(in srgb, var(--exam-accent) 45%, transparent);
+  background: color-mix(in srgb, var(--exam-accent) 14%, transparent);
+  color: var(--exam-accent);
+}
+
+.timer {
+  margin-left: auto;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.timerUrgent {
+  color: var(--exam-unknown);
+  animation: examPulse 1s ease-in-out infinite;
+}
+
+@keyframes examPulse {
+  50% {
+    opacity: 0.65;
+  }
+}
+
+.progressWrap {
+  margin-bottom: 1rem;
+}
+
+.progressMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  margin-bottom: 0.35rem;
+}
+
+.progressBar {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    var(--exam-accent),
+    color-mix(in srgb, var(--exam-accent) 55%, #fff)
+  );
+  transition: width 0.35s ease;
+}
+
+.modeTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.questionCard {
+  position: relative;
+  min-height: clamp(5rem, 18vw, 7rem);
+  padding: clamp(1rem, 3vw, 1.35rem);
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  box-shadow: 0 4px 24px color-mix(in srgb, var(--exam-accent) 8%, transparent);
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease;
+}
+
+.questionCardFading {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.questionNum {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--demo-muted);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border);
+}
+
+.questionText {
+  margin: 0;
+  font-size: clamp(1rem, 2.6vw, 1.15rem);
+  font-weight: 600;
+  line-height: 1.55;
+  padding-right: 3rem;
+}
+
+.sectionLabel {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--exam-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ratingRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 520px) {
+  .ratingRow {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.ratingBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.65rem 0.4rem;
+  border-radius: 10px;
+  border: 2px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition:
+    border-color 0.15s,
+    background 0.15s,
+    transform 0.12s;
+}
+
+.ratingBtn:hover {
+  transform: translateY(-2px);
+}
+
+.ratingBtnKnow {
+  border-color: color-mix(in srgb, var(--exam-know) 50%, transparent);
+}
+
+.ratingBtnKnowActive,
+.ratingBtnKnow:hover {
+  background: color-mix(in srgb, var(--exam-know) 18%, transparent);
+  border-color: var(--exam-know);
+}
+
+.ratingBtnPartial {
+  border-color: color-mix(in srgb, var(--exam-partial) 50%, transparent);
+}
+
+.ratingBtnPartialActive,
+.ratingBtnPartial:hover {
+  background: color-mix(in srgb, var(--exam-partial) 18%, transparent);
+  border-color: var(--exam-partial);
+}
+
+.ratingBtnUnknown {
+  border-color: color-mix(in srgb, var(--exam-unknown) 50%, transparent);
+}
+
+.ratingBtnUnknownActive,
+.ratingBtnUnknown:hover {
+  background: color-mix(in srgb, var(--exam-unknown) 18%, transparent);
+  border-color: var(--exam-unknown);
+}
+
+.ratingBtnSkip {
+  border-color: color-mix(in srgb, var(--exam-skip) 35%, transparent);
+}
+
+.ratingBtnSkipActive {
+  background: color-mix(in srgb, var(--exam-skip) 12%, transparent);
+}
+
+.ratingIcon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.navRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.statBox {
+  text-align: center;
+  padding: 0.55rem 0.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-code-background);
+  font-size: 0.75rem;
+}
+
+.statBox strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.15rem;
+}
+
+.statKnow strong {
+  color: var(--exam-know);
+}
+
+.statPartial strong {
+  color: var(--exam-partial);
+}
+
+.statUnknown strong {
+  color: var(--exam-unknown);
+}
+
+.sectionChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  max-height: 5.5rem;
+  overflow-y: auto;
+  padding: 0.15rem 0;
+}
+
+.sectionChip {
+  padding: 0.25rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border);
+  background: transparent;
+  cursor: pointer;
+  color: var(--demo-muted);
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.sectionChipActive {
+  background: color-mix(in srgb, var(--exam-accent) 20%, transparent);
+  border-color: var(--exam-accent);
+  color: var(--exam-accent);
+}
+
+.sectionChipDone {
+  border-color: color-mix(in srgb, var(--exam-know) 40%, transparent);
+}
+
+.hubModes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+  margin: 1rem 0;
+}
+
+@media (min-width: 560px) {
+  .hubModes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hubModeCard {
+  text-align: left;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s,
+    transform 0.12s;
+}
+
+.hubModeCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--exam-accent);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--exam-accent) 12%, transparent);
+}
+
+.hubModeTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hubModeDesc {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--demo-muted);
+  line-height: 1.45;
+}
+
+.resultsRing {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 800;
+  border: 6px solid var(--ifm-color-emphasis-200);
+  background: color-mix(in srgb, var(--exam-accent) 8%, transparent);
+}
+
+.resultsScore {
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--exam-accent);
+}
+
+.resultsLabel {
+  font-size: 0.72rem;
+  color: var(--demo-muted);
+  margin-top: 0.2rem;
+}
+
+.resultsPass {
+  border-color: var(--exam-know);
+}
+
+.resultsFail {
+  border-color: var(--exam-unknown);
+}
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.filterChip {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border);
+  background: transparent;
+  cursor: pointer;
+}
+
+.filterChipActive {
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: #fff;
+}
+
+.bookmarkActive {
+  color: var(--exam-partial);
+}
+
+.footnote {
+  margin: 0.75rem 0 0;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+  font-style: italic;
+  line-height: 1.45;
+}

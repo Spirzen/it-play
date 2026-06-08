@@ -1,0 +1,65 @@
+.root {
+  margin: 0.5rem 0;
+}
+
+.rowBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.col {
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  overflow: hidden;
+}
+
+.colHead {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.colJs .colHead {
+  background: color-mix(in srgb, #f7df1e 35%, transparent);
+}
+
+.colPy .colHead {
+  background: color-mix(in srgb, #3776ab 25%, transparent);
+  color: var(--ifm-font-color-base);
+}
+
+.colPhp .colHead {
+  background: color-mix(in srgb, #777bb4 30%, transparent);
+}
+
+.col pre {
+  margin: 0;
+  padding: 0.45rem 0.5rem;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-height: 4.5rem;
+  background: var(--ifm-code-background);
+}
+
+.hint {
+  margin: 0.45rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-700);
+}

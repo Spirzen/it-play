@@ -1,0 +1,32 @@
+.root {
+  margin: 1.25rem 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.item {
+  margin: 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.link {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.desc {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}

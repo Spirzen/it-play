@@ -1,0 +1,12 @@
+{
+  "title": "Web App Architecture",
+  "description": "Интерактивное демо «Web App Architecture» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "web-app-architecture-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 11
+}

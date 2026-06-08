@@ -1,0 +1,221 @@
+.tabRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tabBtn {
+  flex: 1 1 auto;
+  min-width: 4.5rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.tabBtnActive {
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.45;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.classCard {
+  border: 2px dashed var(--ifm-color-primary);
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+.classTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.sectionLabel {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.fieldRow,
+.methodRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+}
+
+.fieldType {
+  color: var(--demo-muted);
+  font-size: 0.7rem;
+}
+
+.emptyValue {
+  font-style: italic;
+  opacity: 0.55;
+}
+
+.memoryZone {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 0.65rem;
+  min-height: 8rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.memoryTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--demo-muted);
+}
+
+.objectCard {
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  padding: 0.55rem 0.65rem;
+  margin-bottom: 0.45rem;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.objectCard:last-child {
+  margin-bottom: 0;
+}
+
+.objectCardSelected {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.objectVar {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.objectMeta {
+  font-size: 0.68rem;
+  color: var(--demo-muted);
+  margin-bottom: 0.35rem;
+}
+
+.attrGrid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.attrGrid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.formRow label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+}
+
+.presetRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.chip {
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.methodBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.65rem 0;
+}
+
+.log {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 7rem;
+  overflow-y: auto;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+}
+
+.log li {
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed var(--demo-border);
+}
+
+.log li:last-child {
+  border-bottom: none;
+}
+
+.refArrow {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--demo-muted);
+  margin: 0.25rem 0;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "SOLID",
+  "description": "Интерактивное демо «SOLID» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "solid-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113",
+  "order": 37
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Анализ требований",
+  "description": "Интерактивное демо «Анализ требований» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "requirements-analysis-demo",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-04-analitika/111",
+  "order": 3
+}

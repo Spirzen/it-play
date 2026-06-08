@@ -1,0 +1,13 @@
+{
+  "title": "Доменная модель",
+  "description": "Интерактивное демо «Доменная модель» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "domain-model-play",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/116",
+  "order": 23
+}

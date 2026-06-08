@@ -1,0 +1,13 @@
+{
+  "title": "Business Finance",
+  "description": "Интерактивное демо «Business Finance» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "business-finance-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112",
+  "order": 53
+}

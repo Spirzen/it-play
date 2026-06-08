@@ -1,0 +1,13 @@
+{
+  "title": "It Business Model",
+  "description": "Интерактивное демо «It Business Model» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "it-business-model-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/2",
+  "order": 55
+}

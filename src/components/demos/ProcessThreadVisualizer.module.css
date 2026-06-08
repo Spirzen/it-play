@@ -1,0 +1,215 @@
+.root {
+  max-width: min(960px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.15rem, 4vw, 1.5rem);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.modeBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.panel {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.panelHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.panelTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.badge {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.badgeSeq {
+  background: color-mix(in srgb, #3498db 18%, transparent);
+  color: #2980b9;
+}
+
+.badgePar {
+  background: color-mix(in srgb, #27ae60 18%, transparent);
+  color: #1e8449;
+}
+
+.cpuCore {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.65rem;
+}
+
+.core {
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  padding: 0.65rem;
+  background: var(--ifm-background-color);
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.coreActive {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-color));
+}
+
+.coreName {
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.corePulse {
+  font-size: 0.72rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.bar {
+  height: 26px;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  transition: width 0.12s ease;
+  min-width: 0;
+}
+
+.barMeta {
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.timeline {
+  display: flex;
+  gap: 2px;
+  height: 28px;
+  margin-top: 0.75rem;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.timelineSeg {
+  flex: 1;
+  min-width: 2px;
+  opacity: 0.25;
+  transition: opacity 0.1s ease;
+}
+
+.timelineSegLit {
+  opacity: 1;
+}
+
+.stats {
+  margin-top: 0.85rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-surface-color));
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.compareGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.compareCard {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  text-align: center;
+}
+
+.compareValue {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.compareLabel {
+  font-size: 0.75rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.speedup {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--demo-success, #27ae60);
+  background: color-mix(in srgb, var(--demo-success, #27ae60) 10%, transparent);
+  font-size: 0.88rem;
+}
+
+.hint {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  border-radius: 8px;
+  border-left: 4px solid #f39c12;
+  background: color-mix(in srgb, #f39c12 10%, transparent);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.dimmed {
+  opacity: 0.45;
+  pointer-events: none;
+}

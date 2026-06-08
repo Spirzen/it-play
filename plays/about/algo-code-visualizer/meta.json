@@ -1,0 +1,12 @@
+{
+  "title": "Algo Code Visualizer",
+  "description": "Интерактивное демо «Algo Code Visualizer» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "algo-code-visualizer",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 16
+}

@@ -1,0 +1,103 @@
+.root {
+  max-width: min(920px, 100%);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 720px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.workerRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.workerHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.queue {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  min-height: 1.6rem;
+}
+
+.chip {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.chipIo {
+  border-color: #5c6bc0;
+  background: color-mix(in srgb, #5c6bc0 15%, transparent);
+}
+
+.chipBusy {
+  animation: pulse 0.8s ease infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.mwLane {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.5rem 0;
+}
+
+.mwStep {
+  padding: 0.35rem 0.55rem;
+  font-size: 0.72rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.mwOk {
+  border-color: #2e7d32;
+  background: color-mix(in srgb, #2e7d32 12%, transparent);
+}
+
+.mwFail {
+  border-color: #c62828;
+  background: color-mix(in srgb, #c62828 12%, transparent);
+}
+
+.mono {
+  margin: 0.5rem 0 0;
+  padding: 0.55rem;
+  font-size: 0.68rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  white-space: pre-wrap;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.78rem;
+  margin-top: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+}

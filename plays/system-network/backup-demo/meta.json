@@ -1,0 +1,13 @@
+{
+  "title": "Резервное копирование",
+  "description": "Интерактивное демо «Резервное копирование» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "backup-demo",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91",
+  "order": 24
+}

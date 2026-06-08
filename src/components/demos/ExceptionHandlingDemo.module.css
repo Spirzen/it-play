@@ -1,0 +1,208 @@
+.scenarioBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.scenarioBtn {
+  font-size: 0.78rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.scenarioBtn:hover:not(:disabled) {
+  border-color: var(--ifm-color-primary);
+}
+
+.scenarioBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  font-weight: 600;
+}
+
+.scenarioBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.exceptionCard {
+  border-radius: 8px;
+  border: 1px solid #c62828;
+  background: color-mix(in srgb, #ffebee 55%, var(--ifm-background-surface-color));
+  padding: 0.65rem 0.75rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+}
+
+.exceptionCardHandled {
+  border-color: #1565c0;
+  background: color-mix(in srgb, #e3f2fd 50%, var(--ifm-background-surface-color));
+}
+
+.exceptionType {
+  font-weight: 700;
+  color: #b71c1c;
+  margin-bottom: 0.35rem;
+}
+
+.exceptionTypeHandled {
+  color: #0d47a1;
+}
+
+.exceptionField {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.2rem;
+  color: var(--ifm-font-color-base);
+}
+
+.exceptionFieldKey {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.errorValueCard {
+  border-radius: 8px;
+  border: 1px dashed #2e7d32;
+  background: color-mix(in srgb, #e8f5e9 45%, var(--ifm-background-surface-color));
+  padding: 0.65rem 0.75rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+}
+
+.errorValueNote {
+  margin-top: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--demo-muted);
+  font-family: system-ui, sans-serif;
+}
+
+.stackFrame {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  margin-bottom: 0.35rem;
+}
+
+.stackActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.stackUnwinding {
+  border-color: #ef6c00;
+  background: color-mix(in srgb, #fff3e0 40%, transparent);
+  animation: pulse 0.9s ease-in-out infinite;
+}
+
+.stackWaiting {
+  opacity: 0.65;
+}
+
+.stackPopped {
+  opacity: 0.35;
+  text-decoration: line-through;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.console {
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  padding: 0.55rem 0.65rem;
+  min-height: 5.5rem;
+  max-height: 9rem;
+  overflow-y: auto;
+}
+
+.consoleEmpty {
+  color: #858585;
+  font-style: italic;
+}
+
+.consoleInfo {
+  color: #4fc3f7;
+}
+
+.consoleWarn {
+  color: #ffb74d;
+}
+
+.consoleTrace {
+  color: #9cdcfe;
+}
+
+.consoleError {
+  color: #f48771;
+  font-weight: 600;
+}
+
+.crashBanner {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #c62828;
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  color: #b71c1c;
+}
+
+[data-theme='dark'] .crashBanner {
+  background: linear-gradient(135deg, #4a1515 0%, #6d1f1f 100%);
+  color: #ffcdd2;
+}
+
+.crashTitle {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem;
+}
+
+.crashSub {
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.outcomeOk {
+  margin-top: 0.65rem;
+}
+
+.emptyHint {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--demo-muted);
+}

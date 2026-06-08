@@ -1,0 +1,13 @@
+{
+  "title": "Go и базы данных",
+  "description": "Интерактивное демо «Go и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "go-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-10-go/20",
+  "order": 23
+}

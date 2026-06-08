@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Elixir",
+  "description": "Интерактивное демо «Экосистема Elixir» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "elixir-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-19-elixir/3",
+  "order": 43
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Сравнение синтаксиса языков",
+  "description": "Интерактивное демо «Сравнение синтаксиса языков» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "syntax-compare-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-02-python/intro",
+  "order": 54
+}

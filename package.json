@@ -31,8 +31,14 @@
     "@astrojs/react": "^4.2.1",
     "astro": "^5.10.0",
     "clsx": "^2.1.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "konva": "^10.3.0",
+    "qrcode": "^1.5.4",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-konva": "^19.2.4",
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.2",

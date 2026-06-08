@@ -1,0 +1,13 @@
+{
+  "title": "System Requirements Compare",
+  "description": "Интерактивное демо «System Requirements Compare» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "system-requirements-compare-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-02-platformy/312",
+  "order": 8
+}

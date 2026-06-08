@@ -1,0 +1,112 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  gap: 0;
+  min-height: 200px;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.screen {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.visual {
+  flex: 1;
+  min-height: 100px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  transition: filter 0.3s;
+}
+
+.visualPlaying {
+  filter: brightness(1.08);
+}
+
+.visual em {
+  opacity: 0.75;
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.controls button {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+}
+
+.playBtn {
+  background: #ff8800 !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.seek {
+  flex: 1;
+  min-width: 100px;
+}
+
+.vol {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+}
+
+.vol input {
+  width: 72px;
+}
+
+.playlist {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.playlist button {
+  width: 100%;
+  text-align: left;
+  padding: 0.4rem 0.45rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.72rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.plActive {
+  background: color-mix(in srgb, #ff8800 16%, transparent) !important;
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}

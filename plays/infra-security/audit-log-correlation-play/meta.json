@@ -1,0 +1,13 @@
+{
+  "title": "Корреляция audit-логов",
+  "description": "Интерактивное демо «Корреляция audit-логов» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "audit-log-correlation-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/114",
+  "order": 31
+}

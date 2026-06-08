@@ -1,0 +1,13 @@
+{
+  "title": "Promise и async/await",
+  "description": "Интерактивное демо «Promise и async/await» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "promise-async-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-05-asinhronnost/2",
+  "order": 29
+}

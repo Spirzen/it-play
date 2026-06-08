@@ -1,0 +1,13 @@
+{
+  "title": "Dependency Inversion Principle",
+  "description": "Интерактивное демо «Dependency Inversion Principle» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "dip-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-09-zavisimosti/11",
+  "order": 43
+}

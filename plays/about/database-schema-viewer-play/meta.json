@@ -1,0 +1,12 @@
+{
+  "title": "Database Schema Viewer",
+  "description": "Интерактивное демо «Database Schema Viewer» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "database-schema-viewer-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 28
+}

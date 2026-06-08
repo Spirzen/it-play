@@ -1,0 +1,13 @@
+{
+  "title": "Структура .deb-пакета",
+  "description": "Интерактивное демо «Структура .deb-пакета» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "deb-package-explorer-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/214",
+  "order": 22
+}

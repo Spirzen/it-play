@@ -1,0 +1,60 @@
+.wrap {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.scroller {
+  --zoom-viewport-max-h: min(42vh, 280px);
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: var(--zoom-viewport-max-h);
+  min-height: 160px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  border-radius: 8px;
+  background: repeating-conic-gradient(#e8e8e8 0% 25%, #f5f5f5 0% 50%) 50% / 16px 16px;
+  padding: 1rem;
+  touch-action: pan-x pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+
+[data-theme='dark'] .scroller {
+  background: repeating-conic-gradient(#2a2a2a 0% 25%, #1e1e1e 0% 50%) 50% / 16px 16px;
+}
+
+.scrollerPannable {
+  cursor: grab;
+}
+
+.scrollerPannable:active {
+  cursor: grabbing;
+}
+
+.scroller:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.72rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  line-height: 1.35;
+}
+
+@media (max-width: 720px) {
+  .scroller {
+    --zoom-viewport-max-h: min(38vh, 220px);
+    min-height: 140px;
+    padding: 0.65rem;
+  }
+}

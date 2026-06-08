@@ -1,0 +1,13 @@
+{
+  "title": "Игровая франшиза",
+  "description": "Интерактивное демо «Игровая франшиза» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-franchise-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/1",
+  "order": 2
+}

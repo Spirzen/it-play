@@ -1,0 +1,13 @@
+{
+  "title": "Neural Network Demo",
+  "description": "Интерактивное демо «Neural Network Demo» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "neural-network-demo",
+  "tags": [
+    "ai",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-03-neyroseti/1",
+  "order": 3
+}

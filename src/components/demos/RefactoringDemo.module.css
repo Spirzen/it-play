@@ -1,0 +1,271 @@
+.root {
+  --rf-bad: #c62828;
+  --rf-warn: #e65100;
+  --rf-ok: #2e7d32;
+  --rf-accent: #1565c0;
+}
+
+.headerBand {
+  padding: 0.85rem 1rem;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(135deg, #1b2838 0%, #2d4a3e 55%, #1a3a4a 100%);
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.05rem, 3.5vw, 1.3rem);
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.body {
+  padding: 1rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: var(--ifm-background-surface-color);
+}
+
+.stepBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.stepBtn {
+  flex: 1 1 auto;
+  min-width: 72px;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.stepBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.stepBtnActive {
+  border-color: var(--rf-accent);
+  background: color-mix(in srgb, var(--rf-accent) 12%, var(--ifm-background-surface-color));
+  color: var(--rf-accent);
+}
+
+.stepBtnDone {
+  border-color: color-mix(in srgb, var(--rf-ok) 50%, var(--demo-border));
+}
+
+.navRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.techniqueBadge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--rf-accent) 14%, transparent);
+  color: var(--rf-accent);
+  border: 1px solid color-mix(in srgb, var(--rf-accent) 35%, transparent);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.metricCard {
+  padding: 0.5rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  text-align: center;
+}
+
+.metricValue {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.metricValueBad {
+  color: var(--rf-bad);
+}
+
+.metricValueOk {
+  color: var(--rf-ok);
+}
+
+.metricLabel {
+  font-size: 0.62rem;
+  color: var(--ifm-color-content-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
+  gap: 0.75rem;
+  min-height: 280px;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.treePanel {
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  overflow: auto;
+  max-height: 340px;
+}
+
+.treeTitle {
+  margin: 0;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+  border-bottom: 1px solid var(--demo-border);
+}
+
+.treeList {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem 0;
+}
+
+.treeItem {
+  margin: 0;
+}
+
+.treeBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.3rem 0.5rem 0.3rem 0.65rem;
+  border: none;
+  background: transparent;
+  font-size: 0.78rem;
+  font-family: var(--ifm-font-family-monospace);
+  text-align: left;
+  cursor: pointer;
+  color: var(--ifm-font-color-base);
+}
+
+.treeBtn:hover {
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.treeBtnActive {
+  background: color-mix(in srgb, var(--rf-accent) 14%, transparent);
+  color: var(--rf-accent);
+  font-weight: 600;
+}
+
+.treeDir {
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  padding: 0.25rem 0.5rem 0.25rem 0.65rem;
+  font-size: 0.76rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.codePanel {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.45rem 0.65rem;
+  background: #1e1e1e;
+  color: #ccc;
+  font-size: 0.75rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.codePre {
+  flex: 1;
+  margin: 0;
+  padding: 0.75rem;
+  overflow: auto;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: var(--ifm-font-family-monospace);
+  white-space: pre;
+}
+
+.insight {
+  margin-top: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--rf-accent);
+  background: color-mix(in srgb, var(--rf-accent) 8%, var(--ifm-background-color));
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.smellRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.smellTag {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--rf-warn) 15%, var(--ifm-background-surface-color));
+  border: 1px solid color-mix(in srgb, var(--rf-warn) 40%, transparent);
+  color: var(--rf-warn);
+}
+
+.smellTagClear {
+  background: color-mix(in srgb, var(--rf-ok) 12%, var(--ifm-background-surface-color));
+  border-color: color-mix(in srgb, var(--rf-ok) 35%, transparent);
+  color: var(--rf-ok);
+}
+
+.playRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}

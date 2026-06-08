@@ -1,0 +1,13 @@
+{
+  "title": "Домашняя сеть",
+  "description": "Интерактивное демо «Домашняя сеть» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "home-network-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61",
+  "order": 22
+}

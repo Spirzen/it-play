@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Swift",
+  "description": "Интерактивное демо «Экосистема Swift» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "swift-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-14-swift/10",
+  "order": 31
+}

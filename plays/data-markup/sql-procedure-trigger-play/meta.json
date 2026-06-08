@@ -1,0 +1,13 @@
+{
+  "title": "SQL процедуры и триггеры",
+  "description": "Интерактивное демо «SQL процедуры и триггеры» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "sql-procedure-trigger-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-07-sql/88",
+  "order": 37
+}

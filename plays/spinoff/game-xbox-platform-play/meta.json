@@ -1,0 +1,13 @@
+{
+  "title": "Платформа Xbox",
+  "description": "Интерактивное демо «Платформа Xbox» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-xbox-platform-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/121",
+  "order": 16
+}

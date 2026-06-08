@@ -1,0 +1,82 @@
+.root {
+  max-width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.appRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.appBtn {
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.appBtnActive {
+  border-color: var(--ifm-color-primary);
+  font-weight: 600;
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+}
+
+.sliders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.sliders label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+}
+
+.table {
+  width: 100%;
+  font-size: 0.78rem;
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+}
+
+.table th,
+.table td {
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  text-align: left;
+}
+
+.verdicts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.badge {
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.badge_fail {
+  background: color-mix(in srgb, #c62828 18%, transparent);
+}
+.badge_rec {
+  background: color-mix(in srgb, #f9a825 20%, transparent);
+}
+.badge_optimal {
+  background: color-mix(in srgb, #2e7d32 18%, transparent);
+}
+
+@media (max-width: 560px) {
+  .sliders {
+    grid-template-columns: 1fr;
+  }
+}

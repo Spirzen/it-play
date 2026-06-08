@@ -1,0 +1,86 @@
+.root {
+  --bc-valid: #2e7d52;
+  --bc-broken: #c62828;
+  --bc-link: #5c6bc0;
+}
+
+.chain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.block {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  min-width: 7.5rem;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.blockValid {
+  border-color: var(--bc-valid);
+}
+
+.blockBroken {
+  border-color: var(--bc-broken);
+  box-shadow: 0 0 0 2px rgba(198, 40, 40, 0.15);
+}
+
+.blockGenesis {
+  border-style: dashed;
+}
+
+.blockIndex {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin: 0 0 0.25rem;
+}
+
+.blockData {
+  font-size: 0.8rem;
+  margin: 0 0 0.35rem;
+}
+
+.blockHash {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  word-break: break-all;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+}
+
+.arrow {
+  color: var(--bc-link);
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.log {
+  font-size: 0.82rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  margin: 0.5rem 0 0;
+}
+
+.logOk {
+  border-left: 3px solid var(--bc-valid);
+}
+
+.logErr {
+  border-left: 3px solid var(--bc-broken);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Волатильность криптовалют",
+  "description": "Интерактивное демо «Волатильность криптовалют» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "crypto-volatility-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/11",
+  "order": 23
+}

@@ -1,0 +1,246 @@
+.tabRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tabBtn {
+  flex: 1 1 auto;
+  min-width: 5rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.tabBtnActive {
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.45;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.baseCard {
+  border: 2px dashed var(--ifm-color-primary);
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+.childCard {
+  border: 2px solid #2e7d32;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, #2e7d32 6%, transparent);
+}
+
+.cardTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.baseTitle {
+  color: var(--ifm-color-primary);
+}
+
+.childTitle {
+  color: #2e7d32;
+}
+
+.sectionLabel {
+  margin: 0.45rem 0 0.2rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.memberRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+}
+
+.inheritedBadge {
+  font-size: 0.62rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  color: var(--ifm-color-primary-dark, #1565c0);
+  white-space: nowrap;
+}
+
+.newBadge {
+  font-size: 0.62rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, #2e7d32 18%, transparent);
+  color: #1b5e20;
+  white-space: nowrap;
+}
+
+.overrideBadge {
+  font-size: 0.62rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, #e65100 18%, transparent);
+  color: #bf360c;
+  white-space: nowrap;
+}
+
+.hierarchyArrow {
+  text-align: center;
+  margin: 0.4rem 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.statePanel {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.stateTitle {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.stateRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  font-size: 0.8rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.methodBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.55rem;
+}
+
+.formRow {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.55rem 0;
+}
+
+.formRow label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.outputBox {
+  margin-top: 0.55rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  background: color-mix(in srgb, #2e7d32 12%, transparent);
+  border: 1px solid color-mix(in srgb, #2e7d32 35%, transparent);
+}
+
+.compareGrid {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.compareCard {
+  border-radius: 10px;
+  padding: 0.65rem;
+  border: 1px solid var(--demo-border);
+}
+
+.compareParent {
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.compareChild {
+  background: color-mix(in srgb, #e65100 8%, transparent);
+  border-color: color-mix(in srgb, #e65100 40%, var(--demo-border));
+}
+
+.ifaceCard {
+  border: 2px dashed #5c6bc0;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, #5c6bc0 6%, transparent);
+}
+
+.ifaceTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #3949ab;
+}
+
+.multiParents {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.parentMini {
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8rem;
+}
+
+.flowSteps {
+  margin: 0.55rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.flowSteps li {
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.log {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-800);
+}

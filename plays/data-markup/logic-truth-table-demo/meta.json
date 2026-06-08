@@ -1,0 +1,13 @@
+{
+  "title": "Таблицы истинности",
+  "description": "Интерактивное демо «Таблицы истинности» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "logic-truth-table-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/31",
+  "order": 10
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Kotlin",
+  "description": "Интерактивное демо «Экосистема Kotlin» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "kotlin-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-09-kotlin/10",
+  "order": 20
+}

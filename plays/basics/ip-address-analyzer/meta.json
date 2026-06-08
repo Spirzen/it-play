@@ -1,0 +1,13 @@
+{
+  "title": "Анализатор IP-адреса",
+  "description": "Интерактивное демо «Анализатор IP-адреса» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "ip-address-analyzer",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-035-bazovaya-informatika/6",
+  "order": 2
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Push-уведомления",
+  "description": "Интерактивное демо «Push-уведомления» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "push-notification-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/117",
+  "order": 19
+}

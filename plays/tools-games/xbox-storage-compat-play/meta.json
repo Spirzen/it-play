@@ -1,0 +1,12 @@
+{
+  "title": "Xbox Storage Compat",
+  "description": "Интерактивное демо «Xbox Storage Compat» — раздел Инструменты · Игры.",
+  "category": "tools-games",
+  "categoryTitle": "Инструменты · Игры",
+  "component": "xbox-storage-compat-play",
+  "tags": [
+    "toolsgames"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/games/1111",
+  "order": 67
+}

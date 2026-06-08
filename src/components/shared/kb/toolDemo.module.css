@@ -1,0 +1,239 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: var(--demo-gap, 1rem);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chip {
+  padding: 0.3rem 0.65rem;
+  font-size: 0.78rem;
+  font-family: inherit;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.chip:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.chipActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.2));
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.mono {
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.textareaMono {
+  composes: mono;
+  min-height: 7rem;
+  line-height: 1.5;
+}
+
+.outputPanel {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.outputReadonly {
+  composes: mono;
+  width: 100%;
+  min-height: 7rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  color: var(--ifm-pre-color);
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.arrowCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-content-secondary);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+@media (max-width: 996px) {
+  .arrowCol {
+    transform: rotate(90deg);
+    padding: 0.25rem 0;
+  }
+}
+
+.hexLine {
+  composes: mono;
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+  word-break: break-all;
+}
+
+.kbd {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  border: 1px solid var(--demo-border);
+  border-radius: 4px;
+  background: var(--ifm-background-surface-color);
+}
+
+.resultHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.valueMono {
+  composes: mono;
+  color: var(--ifm-color-primary);
+  word-break: break-all;
+}
+
+.sectionTitle {
+  margin: 0;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--demo-border);
+}
+
+.methodBadge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.methodGet {
+  background: rgba(46, 125, 50, 0.15);
+  color: #2e7d32;
+}
+
+.methodPost {
+  background: rgba(25, 118, 210, 0.15);
+  color: #1976d2;
+}
+
+.methodPut {
+  background: rgba(237, 108, 2, 0.15);
+  color: #ed6c02;
+}
+
+.methodDelete {
+  background: rgba(198, 40, 40, 0.12);
+  color: #c62828;
+}
+
+.methodDefault {
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content);
+  border: 1px solid var(--demo-border);
+}
+
+.subnetBar {
+  margin: 1rem 0;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid var(--demo-border);
+}
+
+.subnetNetwork {
+  background: var(--ifm-color-primary);
+  opacity: 0.85;
+}
+
+.subnetHost {
+  background: color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.subnetBroadcast {
+  background: #ed6c02;
+  opacity: 0.7;
+}
+
+.uriDiagram {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 0.75rem 0 1rem;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.uriPart {
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content-secondary);
+}
+
+.uriPartActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.soapLine {
+  display: block;
+  padding: 0.1rem 0.35rem;
+  margin: 0.05rem 0;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.soapLineActive {
+  background: var(--demo-highlight);
+  box-shadow: inset 3px 0 0 var(--ifm-color-primary);
+}
+
+.soapTag {
+  color: #7ee787;
+}
+
+.soapAttr {
+  color: #79c0ff;
+}
+
+.soapText {
+  color: #e6edf3;
+}

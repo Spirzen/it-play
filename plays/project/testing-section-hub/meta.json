@@ -1,0 +1,13 @@
+{
+  "title": "Тестирование — хаб раздела",
+  "description": "Интерактивное демо «Тестирование — хаб раздела» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "testing-section-hub",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-05-testirovanie/intro",
+  "order": 18
+}

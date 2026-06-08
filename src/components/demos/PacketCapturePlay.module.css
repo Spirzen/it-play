@@ -1,0 +1,103 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+  align-items: center;
+}
+
+.filterInput {
+  flex: 1;
+  min-width: 12rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.tableWrap {
+  overflow: auto;
+  max-height: 14rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+  background: var(--ifm-color-emphasis-100);
+  text-align: left;
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.table td {
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  white-space: nowrap;
+}
+
+.rowActive {
+  background: rgba(21, 101, 192, 0.12);
+}
+
+.protoTcp {
+  color: #1565c0;
+}
+
+.protoUdp {
+  color: #00838f;
+}
+
+.protoDns {
+  color: #6a1b9a;
+}
+
+.protoHttp {
+  color: #e65100;
+}
+
+.protoTls {
+  color: #2e7d32;
+}
+
+.detail {
+  margin-top: 0.65rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.detail pre {
+  margin: 0.45rem 0 0;
+  font-size: 0.76rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  overflow: auto;
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}

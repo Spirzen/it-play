@@ -1,0 +1,74 @@
+.root {
+  max-width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.chip {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.chipActive {
+  border-color: var(--chip, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--chip, var(--ifm-color-primary)) 14%, transparent);
+  font-weight: 700;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.5rem;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 140px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  margin-bottom: 0.65rem;
+}
+
+.bar {
+  flex: 1;
+  min-width: 3px;
+  border-radius: 2px 2px 0 0;
+  transition: height 0.2s ease;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.65rem;
+}
+
+.up {
+  color: #16a34a;
+}
+
+.down {
+  color: #dc2626;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Разработка игр — навигатор",
+  "description": "Интерактивное демо «Разработка игр — навигатор» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-dev-hub",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro",
+  "order": 20
+}

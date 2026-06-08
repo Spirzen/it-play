@@ -1,0 +1,63 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.tree {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.rootNode {
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  padding: 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+}
+
+.childRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+}
+
+.branch {
+  flex: 1;
+  min-width: 140px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+}
+
+.leaf {
+  margin-top: 0.4rem;
+  padding: 0.3rem;
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  font-size: 0.72rem;
+}
+
+.log {
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.log li {
+  padding: 0.2rem 0;
+  border-bottom: 1px dashed var(--ifm-color-emphasis-200);
+}
+
+.empty {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  font-style: italic;
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Data Analytics Pipeline",
+  "description": "Интерактивное демо «Data Analytics Pipeline» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "data-analytics-pipeline-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/6",
+  "order": 46
+}

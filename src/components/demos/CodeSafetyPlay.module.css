@@ -1,0 +1,72 @@
+.root {
+  max-width: min(820px, 100%);
+  margin: 0 auto 1.25rem;
+}
+
+.scenarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.scenarioBtn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.74rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+}
+
+.scenarioBtnOn {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  font-weight: 600;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
+.toolCard {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+}
+
+.toolCard div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.toolCard span:last-child {
+  font-size: 0.7rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.toolIcon {
+  font-size: 1.25rem;
+}
+
+.toolOk {
+  border-color: color-mix(in srgb, #2e7d32 40%, transparent);
+  background: color-mix(in srgb, #2e7d32 8%, transparent);
+}
+
+.toolFail {
+  opacity: 0.55;
+}
+
+.tip {
+  margin: 0.75rem 0 0;
+  font-size: 0.76rem;
+  color: var(--ifm-color-content-secondary);
+}

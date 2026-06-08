@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Nim",
+  "description": "Интерактивное демо «Экосистема Nim» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "nim-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-21-nim/3",
+  "order": 45
+}

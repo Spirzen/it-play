@@ -1,0 +1,95 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.tab {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.techCard {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.techIcon {
+  font-size: 1.5rem;
+}
+
+.techCard p {
+  margin: 0.15rem 0 0;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.nodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.node {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.nodeActive {
+  border-color: var(--ifm-color-primary);
+}
+
+.signal {
+  text-align: center;
+  font-size: 0.82rem;
+  margin: 0 0 0.75rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.panel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+}
+
+.panel p {
+  margin: 0.35rem 0 0;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.4;
+}
+
+.controls {
+  display: flex;
+  gap: 0.45rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ERD — диаграмма сущностей",
+  "description": "Интерактивное демо «ERD — диаграмма сущностей» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "erd-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11",
+  "order": 21
+}

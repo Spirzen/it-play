@@ -1,0 +1,12 @@
+{
+  "title": "Protocol Catalog",
+  "description": "Интерактивное демо «Protocol Catalog» — раздел Инструменты · Сеть.",
+  "category": "tools-network",
+  "categoryTitle": "Инструменты · Сеть",
+  "component": "protocol-catalog-play",
+  "tags": [
+    "toolsnetwork"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/network/4",
+  "order": 87
+}

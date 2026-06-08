@@ -1,0 +1,103 @@
+.root {
+  max-width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.hierarchy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+}
+
+.hRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  font: inherit;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.hRowActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  font-weight: 600;
+}
+
+.ticks {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stackViz {
+  margin-top: 0.75rem;
+}
+
+.stackGrow {
+  font-size: 0.68rem;
+  text-align: right;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.frameCell {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.frameHighlight {
+  border-color: #1565c0;
+  background: color-mix(in srgb, #1565c0 12%, transparent);
+}
+
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.zone {
+  padding: 0.55rem;
+  text-align: center;
+  font-size: 0.72rem;
+  border-radius: 6px;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  opacity: 0.45;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.zoneActive {
+  opacity: 1;
+  border-style: solid;
+  border-color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.callLabel {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.stepCounter {
+  font-size: 0.78rem;
+  align-self: center;
+}

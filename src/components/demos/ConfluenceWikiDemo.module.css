@@ -1,0 +1,177 @@
+.app {
+  display: grid;
+  grid-template-columns: 180px 1fr 200px;
+  min-height: 360px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left {
+  padding: 0.5rem;
+  background: var(--ifm-color-emphasis-100);
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.spaceSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  margin-bottom: 0.5rem;
+}
+
+.spaceSelect select {
+  font-family: inherit;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+.createPage {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.35rem;
+  border-radius: 6px;
+  border: 1px dashed var(--ifm-color-primary);
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+}
+
+.treeItem {
+  text-align: left;
+  padding: 0.3rem 0.4rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+
+.treeActive {
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-background);
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.pageHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pageHead h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.actions button {
+  margin-left: 0.35rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.72rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  margin: 0.35rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.body {
+  flex: 1;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  resize: vertical;
+}
+
+.history {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.comments {
+  padding: 0.5rem;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.comments h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+.comment {
+  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  background: var(--ifm-background-color);
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.comment p {
+  margin: 0.25rem 0;
+}
+
+.resolve {
+  font-size: 0.68rem;
+  padding: 0.15rem 0.4rem;
+  border: none;
+  background: #10b981;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comments textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.post {
+  width: 100%;
+  padding: 0.35rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+}

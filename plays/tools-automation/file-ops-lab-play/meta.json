@@ -1,0 +1,12 @@
+{
+  "title": "File Ops Lab",
+  "description": "Интерактивное демо «File Ops Lab» — раздел Инструменты · Автоматизация.",
+  "category": "tools-automation",
+  "categoryTitle": "Инструменты · Автоматизация",
+  "component": "file-ops-lab-play",
+  "tags": [
+    "toolsautomation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/automation/2",
+  "order": 33
+}

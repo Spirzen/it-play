@@ -1,0 +1,100 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.progress {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  margin-bottom: 0.65rem;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--ifm-color-primary);
+  transition: width 0.2s;
+}
+
+.field {
+  margin-bottom: 0.65rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.fieldError {
+  color: #c62828;
+  font-size: 0.72rem;
+  margin-top: 0.2rem;
+}
+
+.scale {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.scaleBtn {
+  min-width: 2rem;
+  padding: 0.35rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.scaleActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-background);
+}
+
+.checkRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+}
+
+.preview {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  white-space: pre-wrap;
+  max-height: 280px;
+  overflow: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}

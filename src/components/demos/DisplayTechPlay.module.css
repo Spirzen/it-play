@@ -1,0 +1,261 @@
+.root {
+  max-width: min(880px, 100%);
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.tab {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(200px, 1.1fr) minmax(180px, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* —— Превью панели —— */
+.panelPreview {
+  border-radius: 12px;
+  border: 2px solid var(--ifm-color-emphasis-400);
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  position: relative;
+  background: #000;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+}
+
+.panelScene {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: filter 0.35s ease;
+}
+
+.panelSceneOffAxis {
+  filter: brightness(1.15) saturate(0.7);
+}
+
+.panelGradient {
+  width: 70%;
+  height: 55%;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6, #a855f7, #f43f5e);
+}
+
+.panelBacklight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 40%, rgba(255, 255, 255, 0.08), transparent 55%);
+  pointer-events: none;
+}
+
+.panelGlow {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+.ipsGlow {
+  box-shadow: inset 0 0 60px rgba(255, 200, 100, 0.12);
+}
+
+.badgeRow {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #e2e8f0;
+}
+
+/* —— Пиксели —— */
+.pixelGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2px;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.pixel {
+  aspect-ratio: 1;
+  border-radius: 1px;
+  background: var(--ifm-color-emphasis-300);
+}
+
+.pixelR {
+  background: #ef4444;
+}
+.pixelG {
+  background: #22c55e;
+}
+.pixelB {
+  background: #3b82f6;
+}
+.pixelOff {
+  background: #0a0a0a;
+}
+
+/* —— Метрики —— */
+.specList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.specList li {
+  font-size: 0.8rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.4;
+}
+
+.specList li strong {
+  color: var(--ifm-color-content);
+}
+
+.specList li:last-child {
+  border-bottom: none;
+}
+
+/* —— Разрешение —— */
+.resSlider {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.resStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.resBox {
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.resVal {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.resLbl {
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.scalePreview {
+  margin-top: 0.75rem;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* —— Интерфейсы —— */
+.portRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.portBtn {
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.portBtnActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.pipe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+}
+
+.pipeNode {
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background: var(--ifm-color-emphasis-200);
+  font-weight: 600;
+}
+
+.pipeArrow {
+  color: var(--ifm-color-content-secondary);
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}

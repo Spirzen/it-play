@@ -1,0 +1,129 @@
+.root {
+  max-width: min(980px, 100%);
+  margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(160px, 200px) minmax(0, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blockList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.blockBtn {
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.blockBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.blockBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  font-weight: 600;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+}
+
+.panelHead {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.panelHeadScratch {
+  background: color-mix(in srgb, #ffbf00 22%, var(--ifm-background-surface-color));
+  color: #8a6200;
+}
+
+.panelHeadPython {
+  background: color-mix(in srgb, #3776ab 18%, var(--ifm-background-surface-color));
+  color: #1a4a72;
+}
+
+[data-theme='dark'] .panelHeadScratch {
+  color: #ffd966;
+}
+
+[data-theme='dark'] .panelHeadPython {
+  color: #7eb8e8;
+}
+
+.panelBody {
+  padding: 0.75rem;
+  margin: 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-height: 5rem;
+  background: var(--demo-code-bg, var(--ifm-code-background));
+  color: var(--demo-code-fg, var(--ifm-pre-color));
+}
+
+.note {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.programLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .programLayout {
+    grid-template-columns: 1fr;
+  }
+}

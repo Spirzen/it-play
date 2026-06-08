@@ -1,0 +1,13 @@
+{
+  "title": "Криптотранзакция",
+  "description": "Интерактивное демо «Криптотранзакция» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "crypto-transaction-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/11",
+  "order": 22
+}

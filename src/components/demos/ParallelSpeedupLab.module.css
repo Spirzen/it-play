@@ -1,0 +1,101 @@
+.root {
+  display: grid;
+  gap: 1rem;
+}
+
+.header {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.controls {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.control {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 0.85rem;
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 92%, var(--ifm-color-primary) 8%);
+}
+
+.card h4 {
+  margin: 0 0 0.35rem;
+}
+
+.metric {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.bars {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 0.65rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.track {
+  height: 12px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.serial {
+  background: #ff7b7b;
+  height: 100%;
+}
+
+.parallel {
+  background: #4fcb8a;
+  height: 100%;
+}
+
+.verdict {
+  border-left: 4px solid var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+  padding: 0.7rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .barRow {
+    grid-template-columns: 1fr;
+  }
+}

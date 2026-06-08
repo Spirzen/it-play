@@ -1,0 +1,13 @@
+{
+  "title": "Org Hierarchy",
+  "description": "Интерактивное демо «Org Hierarchy» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "org-hierarchy-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5",
+  "order": 41
+}

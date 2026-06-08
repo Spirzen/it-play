@@ -1,0 +1,204 @@
+.root {
+  max-width: min(640px, 100%);
+  margin: 0 auto;
+}
+
+.stageFrame {
+  position: relative;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 0.75rem 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color)) 0%,
+    var(--ifm-background-surface-color) 40%
+  );
+}
+
+.stageLabel {
+  position: absolute;
+  top: -0.55rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.1rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(6px, 2vw, 10px);
+  margin: 0 auto;
+  max-width: 440px;
+}
+
+.node {
+  min-height: 3.4rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  padding: 0.25rem 0.15rem;
+  font-size: clamp(9px, 2.4vw, 10px);
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--ifm-color-content);
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.nodeOff {
+  opacity: 0.4;
+  filter: grayscale(0.6);
+}
+
+.nodeLit {
+  opacity: 1;
+  filter: none;
+}
+
+.nodeSpotlight {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-background-surface-color));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+  transform: scale(1.03);
+  z-index: 2;
+}
+
+.nodeRole {
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.nodeIcon {
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.span4 {
+  grid-column: 1 / -1;
+}
+
+.actProgress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+}
+
+.actDot {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-content-secondary);
+  transition: all 0.25s ease;
+}
+
+.actDotDone {
+  border-color: var(--demo-success, #2e7d32);
+  background: color-mix(in srgb, var(--demo-success, #2e7d32) 15%, transparent);
+  color: var(--demo-success, #2e7d32);
+}
+
+.actDotActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  color: var(--ifm-color-primary);
+  transform: scale(1.1);
+}
+
+.narration {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.narrationBlock {
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.narrationSpectacle {
+  background: color-mix(in srgb, #7b1fa2 8%, var(--ifm-background-surface-color));
+  border-color: color-mix(in srgb, #7b1fa2 25%, transparent);
+}
+
+.narrationReality {
+  background: color-mix(in srgb, #1565c0 8%, var(--ifm-background-surface-color));
+  border-color: color-mix(in srgb, #1565c0 25%, transparent);
+}
+
+.narrationLabel {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.log {
+  margin-top: 0.75rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px dashed var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  max-height: 5.5rem;
+  overflow-y: auto;
+  font-size: 0.76rem;
+  font-family: var(--ifm-font-family-monospace);
+  text-align: left;
+}
+
+.logLine {
+  margin: 0.12rem 0;
+  color: var(--ifm-color-content-secondary);
+}
+
+.logLine:last-child {
+  color: var(--ifm-color-content);
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 0.65rem;
+  font-size: 0.74rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}

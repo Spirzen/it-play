@@ -1,0 +1,107 @@
+.shell {
+  --wm-accent: #00838f;
+  --wm-border: var(--demo-border, var(--ifm-color-emphasis-300));
+  --wm-muted: var(--demo-muted, var(--ifm-color-content-secondary));
+  font-size: 0.85rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat {
+  padding: 0.65rem;
+  border: 1px solid var(--wm-border);
+  border-radius: 8px;
+  text-align: center;
+  background: var(--ifm-background-surface-color);
+}
+
+.statLabel {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--wm-muted);
+  font-weight: 700;
+}
+
+.statValue {
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--wm-accent);
+}
+
+.statSub {
+  font-size: 0.68rem;
+  color: var(--wm-muted);
+}
+
+.sliderRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.slider {
+  flex: 1;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 100px;
+  padding: 0.5rem;
+  border: 1px solid var(--wm-border);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.bar {
+  flex: 1;
+  min-width: 4px;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(to top, var(--wm-accent), rgba(0, 131, 143, 0.4));
+  transition: height 0.3s ease;
+}
+
+.barSlow {
+  background: linear-gradient(to top, #c62828, rgba(198, 40, 40, 0.4));
+}
+
+.legend {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.72rem;
+  color: var(--wm-muted);
+  margin-top: 0.35rem;
+}
+
+.btn {
+  padding: 0.4rem 0.85rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--wm-accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 0.72rem;
+  color: var(--wm-muted);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}

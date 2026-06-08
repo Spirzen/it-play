@@ -1,0 +1,12 @@
+{
+  "title": "Code Style",
+  "description": "Интерактивное демо «Code Style» — раздел Инструменты · Тестирование.",
+  "category": "tools-testing",
+  "categoryTitle": "Инструменты · Тестирование",
+  "component": "code-style-play",
+  "tags": [
+    "toolstesting"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/testing/3",
+  "order": 102
+}

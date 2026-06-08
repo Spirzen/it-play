@@ -1,0 +1,12 @@
+{
+  "title": "Archive Format Explorer",
+  "description": "Интерактивное демо «Archive Format Explorer» — раздел Инструменты · Автоматизация.",
+  "category": "tools-automation",
+  "categoryTitle": "Инструменты · Автоматизация",
+  "component": "archive-format-explorer-play",
+  "tags": [
+    "toolsautomation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/automation/2",
+  "order": 34
+}

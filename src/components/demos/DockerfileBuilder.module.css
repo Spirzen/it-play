@@ -1,0 +1,138 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: var(--demo-gap, 1rem);
+  align-items: start;
+}
+
+@media (max-width: 996px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.instructionCard {
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border-left-width: 4px;
+  background: var(--ifm-background-surface-color);
+  animation: dfSlideIn 0.25s ease;
+}
+
+@keyframes dfSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.instructionHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.typeTag {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.instructionActions {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  justify-content: flex-end;
+}
+
+.previewLine {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  border-left: 3px solid transparent;
+  transition: background 0.2s ease;
+}
+
+.previewLineActive {
+  background: var(--demo-highlight);
+  border-left-color: var(--ifm-color-primary);
+}
+
+.lineNum {
+  flex-shrink: 0;
+  width: 1.75rem;
+  text-align: right;
+  color: var(--demo-muted);
+  user-select: none;
+}
+
+.layers {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  min-height: 4rem;
+}
+
+.layer {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  border: 1px solid var(--demo-border);
+  animation: dfSlideIn 0.3s ease;
+}
+
+.layerLatest {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight);
+}
+
+.hintBox {
+  font-size: 0.8rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color);
+  margin-bottom: 0.75rem;
+}
+
+.refGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.refCard {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  border-left-width: 3px;
+  font-size: 0.78rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.refExample {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  color: var(--demo-muted);
+  word-break: break-word;
+}
+
+.instructionList {
+  max-height: min(420px, 50vh);
+  overflow-y: auto;
+}

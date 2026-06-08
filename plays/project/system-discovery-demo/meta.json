@@ -1,0 +1,13 @@
+{
+  "title": "Исследование системы",
+  "description": "Интерактивное демо «Исследование системы» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "system-discovery-demo",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-04-analitika/115",
+  "order": 6
+}

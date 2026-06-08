@@ -1,0 +1,13 @@
+{
+  "title": "Поведение программы",
+  "description": "Интерактивное демо «Поведение программы» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "program-behavior-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-19-programma/113",
+  "order": 32
+}

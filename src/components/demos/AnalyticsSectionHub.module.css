@@ -1,0 +1,98 @@
+.chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.72rem;
+  text-align: left;
+}
+
+.step strong {
+  font-size: 0.78rem;
+}
+
+.step span {
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(123, 104, 238, 0.12);
+}
+
+.arrow {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.85rem;
+}
+
+.hint {
+  font-size: 0.82rem;
+  margin-bottom: 0.75rem;
+}
+
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.roleBtn {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.78rem;
+}
+
+.roleActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(123, 104, 238, 0.12);
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+}
+
+.path,
+.tips {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+}
+
+.path li {
+  margin-bottom: 0.3rem;
+}
+
+.tips li {
+  margin-bottom: 0.25rem;
+}

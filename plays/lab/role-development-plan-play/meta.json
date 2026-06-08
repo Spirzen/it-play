@@ -1,0 +1,12 @@
+{
+  "title": "План развития",
+  "description": "Интерактивное демо «План развития» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "role-development-plan-play",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/roadmap/1",
+  "order": 16
+}

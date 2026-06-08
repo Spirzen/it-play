@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Bash",
+  "description": "Интерактивное демо «Экосистема Bash» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "bash-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-25-bash/11",
+  "order": 49
+}

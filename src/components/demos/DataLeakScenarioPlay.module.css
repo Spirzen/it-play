@@ -1,0 +1,59 @@
+.path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.75rem 0;
+  font-size: 0.82rem;
+}
+
+.hop {
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.hopDanger {
+  background: rgba(211, 47, 47, 0.12);
+  border-color: #d32f2f;
+  font-weight: 600;
+}
+
+.arrow {
+  color: var(--ifm-color-emphasis-600);
+  font-weight: 700;
+}
+
+.types {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.typeBtn {
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  text-align: left;
+  color: inherit;
+}
+
+.typeBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.08);
+}
+
+.detail {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+}

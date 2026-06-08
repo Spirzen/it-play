@@ -1,0 +1,43 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.dot {
+  cursor: pointer;
+  fill: var(--ifm-color-emphasis-400);
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+.dotTrain {
+  fill: #1e88e5;
+}
+
+.dotTest {
+  fill: #fb8c00;
+}
+
+.legend {
+  margin: 0.55rem 0 0.25rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.76rem;
+  text-align: center;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}

@@ -1,0 +1,61 @@
+.objectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.objectNode {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.45rem 0.55rem;
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+.objectNodeActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent);
+  transform: scale(1.03);
+}
+
+.objectNodeLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
+}
+
+.objectNodeRole {
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.2rem 0 0;
+}
+
+.paradigmBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.paradigmBtn {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paradigmBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}

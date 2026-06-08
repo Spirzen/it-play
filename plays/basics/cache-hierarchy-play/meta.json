@@ -1,0 +1,13 @@
+{
+  "title": "Cache Hierarchy",
+  "description": "Интерактивное демо «Cache Hierarchy» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "cache-hierarchy-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/3",
+  "order": 19
+}

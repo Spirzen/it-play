@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Lua",
+  "description": "Интерактивное демо «Экосистема Lua» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "lua-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-15-lua-i-luau/11",
+  "order": 33
+}

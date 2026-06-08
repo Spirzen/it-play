@@ -1,0 +1,13 @@
+{
+  "title": "SQL VIEW",
+  "description": "Интерактивное демо «SQL VIEW» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "sql-view-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-07-sql/8",
+  "order": 36
+}

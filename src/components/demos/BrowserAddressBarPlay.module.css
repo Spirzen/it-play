@@ -1,0 +1,324 @@
+.root {
+  max-width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.browser {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.5rem 0.65rem;
+  background: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.navBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  user-select: none;
+}
+
+.navBtnSpin {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.omniboxRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.65rem;
+  background: var(--ifm-color-emphasis-50);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.lock {
+  flex-shrink: 0;
+  width: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.45;
+}
+
+.lockSecure {
+  opacity: 1;
+}
+
+.lockInsecure {
+  opacity: 1;
+  filter: hue-rotate(-30deg);
+}
+
+.omniboxWrap {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.omnibox {
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  border-radius: 20px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  background: var(--ifm-background-color);
+  font-size: 0.9rem;
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-font-color-base);
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.omnibox:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.suggestions {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.25rem 0;
+  list-style: none;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.suggestionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.4rem 0.65rem;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.suggestionBtn:hover,
+.suggestionActive {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.suggestionText {
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.suggestionMeta {
+  font-size: 0.72rem;
+  color: var(--ifm-color-emphasis-600);
+  white-space: nowrap;
+}
+
+.page {
+  min-height: 100px;
+  padding: 1rem 1.1rem;
+  transition: background 0.2s ease;
+}
+
+.pageLoading {
+  opacity: 0.7;
+}
+
+.pageDanger {
+  background: color-mix(in srgb, #e74c3c 8%, var(--ifm-background-surface-color));
+}
+
+.pageTitle {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.pageBody {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.45;
+}
+
+.pagePlaceholder {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+  padding: 1.25rem 0;
+}
+
+.analysis {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+.analysisBadge {
+  margin: 0 0 0.75rem;
+}
+
+.partsBlock {
+  margin-bottom: 0.75rem;
+}
+
+.partsTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.urlBreakdown {
+  margin: 0 0 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  word-break: break-all;
+}
+
+.urlPart {
+  border-radius: 3px;
+  padding: 0.05rem 0.1rem;
+}
+
+.urlPart_scheme {
+  color: #0d6efd;
+  background: color-mix(in srgb, #0d6efd 12%, transparent);
+}
+
+.urlPart_host {
+  color: #198754;
+  font-weight: 600;
+  background: color-mix(in srgb, #198754 12%, transparent);
+}
+
+.urlPart_port {
+  color: #6f42c1;
+  background: color-mix(in srgb, #6f42c1 12%, transparent);
+}
+
+.urlPart_pathname {
+  color: #fd7e14;
+  background: color-mix(in srgb, #fd7e14 12%, transparent);
+}
+
+.urlPart_search {
+  color: #dc3545;
+  background: color-mix(in srgb, #dc3545 12%, transparent);
+}
+
+.urlPart_hash {
+  color: #6c757d;
+  background: color-mix(in srgb, #6c757d 15%, transparent);
+}
+
+.urlPart_userinfo {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+.urlPartHidden {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+.partsLegend {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+}
+
+.partsLegend li {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.partsLegend code {
+  font-size: 0.78rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.legendSwatch {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.warning {
+  margin-top: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  background: color-mix(in srgb, #e74c3c 12%, var(--ifm-background-surface-color));
+  border: 1px solid color-mix(in srgb, #e74c3c 35%, transparent);
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.examplesLabel {
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-right: 0.15rem;
+}
+
+.hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  line-height: 1.45;
+}
+
+.hint kbd {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  background: var(--ifm-color-emphasis-100);
+}

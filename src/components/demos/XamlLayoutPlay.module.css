@@ -1,0 +1,132 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rangeVal {
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  margin-top: 0.25rem;
+}
+
+.windowChrome {
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.65rem;
+  background: linear-gradient(180deg, #e8e8ee 0%, #d8d8e0 100%);
+  border-bottom: 1px solid #c8c8d0;
+}
+
+.traffic {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.traffic:nth-child(1) {
+  background: #ff5f57;
+}
+
+.traffic:nth-child(2) {
+  background: #febc2e;
+}
+
+.traffic:nth-child(3) {
+  background: #28c840;
+}
+
+.windowTitle {
+  flex: 1;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 0.5rem;
+}
+
+.client {
+  min-height: 11rem;
+  padding: 1rem;
+  background: #f8f9fc;
+  display: flex;
+  flex-direction: column;
+}
+
+.clientCenter {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.clientStack {
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.clientGrid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0.75rem;
+}
+
+.gridHeader {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.previewText {
+  margin: 0;
+  color: #222;
+  line-height: 1.4;
+}
+
+.previewBtn {
+  margin-top: 0.75rem;
+  padding: 0.45rem 1rem;
+  font-size: 0.88rem;
+  border: 1px solid #7b68ee;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #9b8cff 0%, #7b68ee 100%);
+  color: #fff;
+  cursor: default;
+  align-self: flex-start;
+}
+
+.clientCenter .previewBtn {
+  align-self: center;
+}
+
+.xamlBlock {
+  margin: 0;
+  padding: 0.65rem 0.75rem;
+  max-height: 12rem;
+  overflow: auto;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  white-space: pre;
+  background: var(--ifm-code-background);
+  color: var(--ifm-pre-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  font-family: var(--ifm-font-family-monospace);
+}

@@ -1,0 +1,13 @@
+{
+  "title": "CSS Box Model",
+  "description": "Интерактивное демо «CSS Box Model» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "box-model-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-10-css/112",
+  "order": 41
+}

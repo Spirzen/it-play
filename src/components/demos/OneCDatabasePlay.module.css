@@ -1,0 +1,170 @@
+.accentBar {
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #d4a017, #f0c040);
+  margin-bottom: 0.65rem;
+}
+
+.objectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.objectCard {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.objectCard:hover {
+  border-color: #d4a017;
+}
+
+.objectCardActive {
+  border-color: #d4a017;
+  box-shadow: 0 0 0 1px color-mix(in srgb, #d4a017 35%, transparent);
+}
+
+.objectIcon {
+  font-size: 1.35rem;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.objectTitle {
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin: 0 0 0.15rem;
+}
+
+.objectRole {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.metaDetail {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.65rem;
+  background: color-mix(in srgb, #d4a017 6%, var(--ifm-background-surface-color));
+}
+
+.metaFields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.4rem 0 0.5rem;
+}
+
+.metaChip {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  font-weight: 600;
+}
+
+.storageToggle {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.storageBtn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.storageBtnActive {
+  border-color: #d4a017;
+  background: color-mix(in srgb, #d4a017 14%, var(--ifm-background-surface-color));
+  color: #8a6914;
+}
+
+[data-theme='dark'] .storageBtnActive {
+  color: #f0c040;
+}
+
+.stockTable {
+  margin-top: 0.65rem;
+}
+
+.txTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.txStep {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.txStepOn {
+  border-color: #d4a017;
+  box-shadow: 0 0 0 1px color-mix(in srgb, #d4a017 25%, transparent);
+}
+
+.txStepDone {
+  border-color: color-mix(in srgb, #2e7d32 50%, var(--ifm-color-emphasis-300));
+}
+
+.txStepRollback {
+  border-color: color-mix(in srgb, #c62828 45%, var(--ifm-color-emphasis-300));
+}
+
+.txNum {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.lockBadge {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  margin-left: 0.35rem;
+  background: color-mix(in srgb, #c62828 12%, transparent);
+  color: #c62828;
+  font-weight: 600;
+}
+
+.lockBadgeOk {
+  background: color-mix(in srgb, #2e7d32 12%, transparent);
+  color: #2e7d32;
+}

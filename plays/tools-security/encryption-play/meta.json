@@ -1,0 +1,12 @@
+{
+  "title": "Encryption",
+  "description": "Интерактивное демо «Encryption» — раздел Инструменты · Безопасность.",
+  "category": "tools-security",
+  "categoryTitle": "Инструменты · Безопасность",
+  "component": "encryption-play",
+  "tags": [
+    "toolssecurity"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/security/3",
+  "order": 90
+}

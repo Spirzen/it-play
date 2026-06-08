@@ -1,0 +1,321 @@
+.root {
+  max-width: min(920px, 100%);
+  margin: 0 auto 1.25rem;
+}
+
+.expr {
+  margin: 0.65rem 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: #ce9178;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.human {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 720px) {
+  .fieldGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.field label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.field select {
+  width: 100%;
+  font-size: 0.72rem;
+  padding: 0.35rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+}
+
+.platformRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.platformBtn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.72rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+}
+
+.platformActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  font-weight: 600;
+}
+
+.platformNote {
+  font-size: 0.78rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.tab {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.76rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  font-weight: 600;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.diffPane {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow: auto;
+  font-family: var(--ifm-font-family-monospace);
+  background: var(--ifm-code-background);
+}
+
+.lineSame {
+  color: var(--ifm-color-content-secondary);
+}
+
+.lineAdd {
+  background: color-mix(in srgb, #2ea043 18%, transparent);
+  color: #1a7f37;
+}
+
+.lineDel {
+  background: color-mix(in srgb, #cf222e 15%, transparent);
+  color: #a40e26;
+}
+
+.fileList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 180px;
+  overflow: auto;
+}
+
+.fileItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.35rem 0.45rem;
+  font-size: 0.74rem;
+  border-bottom: 1px dashed var(--ifm-color-emphasis-200);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.treeBtn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.3rem 0.4rem;
+  margin: 0.1rem 0;
+  font-size: 0.72rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.treeBtn:hover {
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.batchRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.affected {
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.scaffoldTree {
+  margin: 0.5rem 0 0;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.72rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.hookFlow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.65rem 0;
+}
+
+.hookStep {
+  padding: 0.45rem 0.6rem;
+  font-size: 0.74rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  opacity: 0.45;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.hookStepDone {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  transform: scale(1.02);
+}
+
+.hookArrow {
+  opacity: 0.4;
+  font-size: 0.8rem;
+}
+
+.watchLog {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #4ec9b0;
+  font-family: var(--ifm-font-family-monospace);
+  min-height: 4rem;
+}
+
+.layerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .layerGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.layerCard {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.76rem;
+}
+
+.layerCard strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.layerCard ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.makeGraph {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.makeNode {
+  padding: 0.4rem 0.55rem;
+  font-size: 0.72rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  cursor: pointer;
+}
+
+.makeActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  font-weight: 600;
+}
+
+.fieldGrid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 520px) {
+  .fieldGrid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.verdictBox {
+  padding: 0.75rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.88rem;
+}
+
+.verdictOk {
+  border-color: #059669;
+  background: color-mix(in srgb, #059669 12%, transparent);
+}
+
+.verdictBad {
+  border-color: #dc2626;
+  background: color-mix(in srgb, #dc2626 10%, transparent);
+}
+
+.verdictWarn {
+  border-color: #d97706;
+  background: color-mix(in srgb, #d97706 10%, transparent);
+}

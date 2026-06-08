@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Haskell",
+  "description": "Интерактивное демо «Экосистема Haskell» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "haskell-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-17-haskell/3",
+  "order": 41
+}

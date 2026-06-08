@@ -1,0 +1,13 @@
+{
+  "title": "Cookie и сессии",
+  "description": "Интерактивное демо «Cookie и сессии» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "cookie-session-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-03-set-i-internet/7",
+  "order": 15
+}

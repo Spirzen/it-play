@@ -1,0 +1,13 @@
+{
+  "title": "Последовательность загрузки",
+  "description": "Интерактивное демо «Последовательность загрузки» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "computer-boot-sequence",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1",
+  "order": 6
+}

@@ -1,0 +1,292 @@
+.root {
+  max-width: min(980px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.05rem, 3.5vw, 1.35rem);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  line-height: 1.45;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  overflow: hidden;
+}
+
+.panelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, var(--ifm-color-emphasis-200) 35%, transparent);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.langBadge {
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  color: var(--ifm-color-primary);
+  font-size: 0.72rem;
+}
+
+.codeBlock {
+  margin: 0;
+  padding: 0.75rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  line-height: 1.55;
+  overflow-x: auto;
+  background: var(--ifm-code-background);
+}
+
+.codeLine {
+  display: block;
+  padding: 0 0.35rem;
+  border-radius: 4px;
+  white-space: pre;
+}
+
+.codeLineHi {
+  background: color-mix(in srgb, #f39c12 22%, transparent);
+  box-shadow: inset 3px 0 0 #f39c12;
+}
+
+.codeLineDim {
+  opacity: 0.45;
+}
+
+.vizBody {
+  padding: 0.85rem;
+}
+
+.stepTitle {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.stepMeta {
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  margin-bottom: 0.75rem;
+}
+
+.entityRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.entity {
+  flex: 1 1 140px;
+  border-radius: 8px;
+  border: 2px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  padding: 0.55rem 0.65rem;
+  background: var(--ifm-background-color);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    opacity 0.2s;
+}
+
+.entityActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.entityIdle {
+  opacity: 0.55;
+}
+
+.entityRole {
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.entityMem {
+  font-size: 0.7rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  line-height: 1.4;
+}
+
+.memList,
+.ipcList {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+.sectionLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  margin: 0.65rem 0 0.35rem;
+}
+
+.noteBox {
+  margin-top: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.noteOs {
+  border-left: 3px solid #3498db;
+  background: color-mix(in srgb, #3498db 10%, transparent);
+}
+
+.noteCode {
+  border-left: 3px solid #27ae60;
+  background: color-mix(in srgb, #27ae60 10%, transparent);
+}
+
+.runtimeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .runtimeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.runtimeCol {
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  padding: 0.5rem;
+  min-height: 72px;
+  background: var(--ifm-background-color);
+}
+
+.runtimeColTitle {
+  margin: 0 0 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.queueList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.queueItem {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.35rem;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.queueItemActive {
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  font-weight: 600;
+}
+
+.webApiBox {
+  margin-top: 0.35rem;
+  font-size: 0.68rem;
+  padding: 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, #e67e22 14%, transparent);
+  color: var(--ifm-font-color-base);
+}
+
+.consoleRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.consoleLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.consoleChip {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-color);
+}
+
+.progress {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.progressDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-300);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.progressDotDone {
+  background: var(--ifm-color-primary);
+}
+
+.progressDotCurrent {
+  background: #f39c12;
+  transform: scale(1.25);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.stepCounter {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  margin-bottom: 0.65rem;
+}

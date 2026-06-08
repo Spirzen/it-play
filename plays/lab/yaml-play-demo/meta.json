@@ -1,0 +1,12 @@
+{
+  "title": "YAML-манифесты",
+  "description": "Интерактивное демо «YAML-манифесты» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "yaml-play-demo",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/11115",
+  "order": 6
+}

@@ -1,0 +1,346 @@
+.root {
+  --css-html: #e44d26;
+  --css-cssom: #264de4;
+  --css-render: #0d9488;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.82rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.tab:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-color));
+  font-weight: 600;
+}
+
+.layout {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .layoutSplit {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.pipeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pipelineStep {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  opacity: 0.45;
+  transition: opacity 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.pipelineStepOn {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.pipelineDot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  margin-top: 0.35rem;
+  flex-shrink: 0;
+  background: var(--ifm-color-emphasis-400);
+}
+
+.pipelineStepOn .pipelineDot {
+  background: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent);
+}
+
+.pipelineLabel {
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.pipelineDetail {
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.2rem 0 0;
+}
+
+.flowDiagram {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0.75rem 0;
+  padding: 0.65rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--css-cssom) 6%, var(--ifm-background-surface-color));
+  border: 1px dashed color-mix(in srgb, var(--css-cssom) 30%, transparent);
+}
+
+.flowBox {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+  color: #fff;
+  opacity: 0.35;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.flowBoxOn {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.flowHtml {
+  background: var(--css-html);
+}
+
+.flowDom {
+  background: #c73e1d;
+}
+
+.flowCss {
+  background: var(--css-cssom);
+}
+
+.flowCssom {
+  background: #1a3aa8;
+}
+
+.flowRender {
+  background: var(--css-render);
+}
+
+.flowArrow {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.9rem;
+}
+
+.preview {
+  border: 2px solid var(--css-html);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  min-height: 10rem;
+  background: var(--ifm-background-color);
+  transition: filter 0.25s;
+}
+
+.previewUnstyled {
+  filter: grayscale(0.85) contrast(0.95);
+}
+
+.previewUnstyled * {
+  all: revert;
+  font-family: serif !important;
+}
+
+.previewSelected {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.previewCard {
+  max-width: 22rem;
+}
+
+.previewTitle {
+  margin: 0;
+}
+
+.previewLead {
+  margin: 0.5rem 0 0.75rem;
+}
+
+.previewBtn {
+  font-size: 0.95rem;
+}
+
+.treePanel {
+  max-height: 14rem;
+  overflow: auto;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 0.35rem 0.25rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+}
+
+.treeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.35rem;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.treeRowSelectable {
+  cursor: pointer;
+}
+
+.treeRowSelectable:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.treeRowHit {
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  font-weight: 600;
+}
+
+.sourceToggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+}
+
+.sourceToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  cursor: pointer;
+  user-select: none;
+}
+
+.sourceToggleOn {
+  font-weight: 600;
+}
+
+.sourceDot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+}
+
+.miniHtml {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  overflow: auto;
+  max-height: 13rem;
+  white-space: pre;
+  margin: 0;
+}
+
+.miniHtmlLine {
+  display: block;
+}
+
+.miniHtmlHot {
+  background: color-mix(in srgb, var(--css-html) 22%, transparent);
+  margin: 0 -0.35rem;
+  padding: 0 0.35rem;
+  border-radius: 3px;
+}
+
+.stylesPanel {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  max-height: 16rem;
+  overflow-y: auto;
+}
+
+.styleRule {
+  padding: 0.45rem 0.55rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-100);
+}
+
+.styleRuleOff {
+  opacity: 0.55;
+}
+
+.styleRuleOff .styleProp {
+  text-decoration: line-through;
+  color: var(--ifm-color-content-secondary);
+}
+
+.styleMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.styleBadge {
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.styleProp {
+  color: var(--ifm-color-primary);
+}
+
+.codeLine {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  overflow-x: auto;
+  margin: 0.5rem 0 0;
+  white-space: pre-wrap;
+}
+
+.computedBlock {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--css-render) 10%, var(--ifm-code-background));
+  border: 1px solid color-mix(in srgb, var(--css-render) 35%, transparent);
+  white-space: pre-wrap;
+  margin-top: 0.5rem;
+}
+
+.playRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}

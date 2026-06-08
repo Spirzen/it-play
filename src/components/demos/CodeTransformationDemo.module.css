@@ -1,0 +1,131 @@
+.langRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--demo-border);
+}
+
+.pipeline {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  padding: 0.25rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pipelineStep {
+  flex: 1;
+  min-width: 7rem;
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  border: 2px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+  font-family: inherit;
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+}
+
+.pipelineStep:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.pipelineStep:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.pipelineStepActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  transform: scale(1.02);
+  z-index: 1;
+}
+
+.pipelineArrow {
+  display: flex;
+  align-items: center;
+  padding: 0 0.15rem;
+  color: var(--demo-muted);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.codeWindow {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.codeTitleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  font-size: 0.75rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.codeTitleBar span:last-child {
+  opacity: 0.75;
+  font-size: 0.68rem;
+}
+
+.codePre {
+  margin: 0;
+  padding: 1rem;
+  max-height: 22rem;
+  overflow: auto;
+  font-size: 0.72rem;
+  line-height: 1.55;
+  font-family: var(--ifm-font-family-monospace);
+  background: var(--ifm-code-background);
+  color: var(--ifm-pre-color);
+  white-space: pre;
+}
+
+.insight {
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+.compareTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.compareTable th,
+.compareTable td {
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--demo-border);
+  text-align: left;
+}
+
+.compareTable th {
+  background: var(--ifm-background-surface-color);
+  font-weight: 600;
+}
+
+.colHighlight {
+  background: var(--demo-highlight);
+}

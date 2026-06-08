@@ -1,0 +1,13 @@
+{
+  "title": "Редактор псевдодокумента",
+  "description": "Интерактивное демо «Редактор псевдодокумента» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "pseudo-document-editor",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1005",
+  "order": 25
+}

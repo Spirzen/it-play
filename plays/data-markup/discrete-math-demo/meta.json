@@ -1,0 +1,13 @@
+{
+  "title": "Дискретная математика",
+  "description": "Интерактивное демо «Дискретная математика» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "discrete-math-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/32",
+  "order": 11
+}

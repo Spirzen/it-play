@@ -1,0 +1,12 @@
+{
+  "title": "Cloud Storage Compare",
+  "description": "Интерактивное демо «Cloud Storage Compare» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "cloud-storage-compare-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/4",
+  "order": 43
+}

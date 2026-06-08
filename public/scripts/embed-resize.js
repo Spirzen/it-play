@@ -11,16 +11,39 @@
     'http://127.0.0.1:3001',
   ];
 
+  var lastPosted = 0;
+  var rafId = 0;
+
+  function hideLoadingMask() {
+    var mask = document.getElementById('embed-loading');
+    if (mask) mask.hidden = true;
+  }
+
   function measureHeight() {
     var root = document.querySelector('.embed-main');
     if (root) {
-      return Math.ceil(root.getBoundingClientRect().height);
+      var rect = root.getBoundingClientRect();
+      return Math.ceil(
+        Math.max(root.scrollHeight, root.offsetHeight, rect.height, root.clientHeight),
+      );
     }
-    return Math.ceil(document.documentElement.offsetHeight);
+    return Math.ceil(
+      Math.max(
+        document.documentElement.scrollHeight,
+        document.documentElement.offsetHeight,
+        document.body.scrollHeight,
+      ),
+    );
   }
 
-  function postHeight() {
+  function postHeightNow() {
+    rafId = 0;
     var height = Math.max(measureHeight(), 120);
+    if (Math.abs(height - lastPosted) < 2) {
+      return;
+    }
+    lastPosted = height;
+    hideLoadingMask();
     if (window.parent && window.parent !== window) {
       allowed.forEach(function (origin) {
         try {
@@ -32,12 +55,19 @@
     }
   }
 
-  window.addEventListener('load', postHeight);
-  window.addEventListener('resize', postHeight);
-  if (typeof ResizeObserver !== 'undefined') {
-    new ResizeObserver(postHeight).observe(document.body);
+  function schedulePostHeight() {
+    if (rafId) return;
+    rafId = requestAnimationFrame(postHeightNow);
   }
-  [0, 80, 160, 320, 600, 1200].forEach(function (ms) {
-    setTimeout(postHeight, ms);
+
+  window.addEventListener('load', schedulePostHeight);
+  window.addEventListener('resize', schedulePostHeight);
+  if (typeof ResizeObserver !== 'undefined') {
+    var root = document.querySelector('.embed-main');
+    var observeTarget = root || document.body;
+    new ResizeObserver(schedulePostHeight).observe(observeTarget);
+  }
+  [0, 120, 400, 1000].forEach(function (ms) {
+    setTimeout(schedulePostHeight, ms);
   });
 })();

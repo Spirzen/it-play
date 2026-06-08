@@ -1,0 +1,13 @@
+{
+  "title": "Причинно-следственный анализ",
+  "description": "Интерактивное демо «Причинно-следственный анализ» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "causal-analysis-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-11-analiz-dannyh/422",
+  "order": 49
+}

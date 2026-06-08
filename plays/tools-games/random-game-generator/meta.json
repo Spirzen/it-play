@@ -1,0 +1,10 @@
+{
+  "title": "Генератор случайной игры",
+  "description": "Жанровые фильтры и случайный выбор из каталога игр на странице.",
+  "category": "tools-games",
+  "categoryTitle": "Инструменты · игры",
+  "component": "random-game-generator",
+  "tags": ["games", "catalog", "random"],
+  "encyclopediaUrl": "https://spirzen.ru/tools/games/4",
+  "order": 1
+}

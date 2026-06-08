@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Dart",
+  "description": "Интерактивное демо «Экосистема Dart» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "dart-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-22-dart/3",
+  "order": 46
+}

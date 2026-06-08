@@ -1,0 +1,13 @@
+{
+  "title": "3D-графика",
+  "description": "Интерактивное демо «3D-графика» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "three-d-graphics-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/13",
+  "order": 27
+}

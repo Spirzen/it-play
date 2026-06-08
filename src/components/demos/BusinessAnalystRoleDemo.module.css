@@ -1,0 +1,121 @@
+.phases {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.phase {
+  flex: 1;
+  padding: 0.45rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+.phaseActive {
+  background: #8b5cf6;
+  color: #fff;
+  border-color: transparent;
+}
+
+.tasks {
+  margin: 0 0 0.75rem;
+  padding-left: 1.2rem;
+  font-size: 0.82rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+}
+
+.matrix {
+  position: relative;
+  height: 160px;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 6px;
+}
+
+.dot {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  padding: 0.2rem 0.4rem;
+  font-size: 0.65rem;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.axisX,
+.axisY {
+  position: absolute;
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.axisX {
+  bottom: 4px;
+  right: 8px;
+}
+
+.axisY {
+  top: 4px;
+  left: 8px;
+}
+
+.card label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.card textarea {
+  font-family: inherit;
+  font-size: 0.78rem;
+  padding: 0.35rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.btn {
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.out {
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  white-space: pre-wrap;
+  background: var(--ifm-code-background);
+  padding: 0.5rem;
+  border-radius: 6px;
+}

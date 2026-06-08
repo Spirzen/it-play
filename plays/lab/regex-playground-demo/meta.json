@@ -1,0 +1,12 @@
+{
+  "title": "Regex Playground",
+  "description": "Интерактивное демо «Regex Playground» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "regex-playground-demo",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/615",
+  "order": 15
+}

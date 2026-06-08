@@ -1,0 +1,13 @@
+{
+  "title": "Ruby и базы данных",
+  "description": "Интерактивное демо «Ruby и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "ruby-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-11-ruby/16",
+  "order": 25
+}

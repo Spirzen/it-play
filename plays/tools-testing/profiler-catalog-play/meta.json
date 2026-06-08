@@ -1,0 +1,12 @@
+{
+  "title": "Profiler Catalog",
+  "description": "Интерактивное демо «Profiler Catalog» — раздел Инструменты · Тестирование.",
+  "category": "tools-testing",
+  "categoryTitle": "Инструменты · Тестирование",
+  "component": "profiler-catalog-play",
+  "tags": [
+    "toolstesting"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/testing/2",
+  "order": 100
+}

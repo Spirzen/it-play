@@ -1,0 +1,97 @@
+.modeTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.modeTab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-toc-border-color);
+  background: transparent;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.modeTabActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.12);
+  font-weight: 600;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.78rem;
+}
+
+.pipeNode {
+  padding: 0.3rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-toc-border-color);
+  cursor: pointer;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.pipeNodeActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.1);
+  font-weight: 700;
+}
+
+.pipeArrow {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.sqlBox {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  margin-bottom: 0.65rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.tableWrap {
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 8px;
+  overflow: auto;
+  max-height: 240px;
+  font-size: 0.74rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.table th,
+.table td {
+  padding: 0.3rem 0.45rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  text-align: left;
+}
+
+.table th {
+  background: var(--ifm-emphasis-100);
+  position: sticky;
+  top: 0;
+}
+
+.treeRow {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.2rem 0;
+}
+
+.treeLevel {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.72rem;
+}

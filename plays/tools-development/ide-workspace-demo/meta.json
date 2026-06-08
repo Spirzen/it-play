@@ -1,0 +1,12 @@
+{
+  "title": "IDE Workspace Demo",
+  "description": "Интерактивное демо «IDE Workspace Demo» — раздел Инструменты · Разработка.",
+  "category": "tools-development",
+  "categoryTitle": "Инструменты · Разработка",
+  "component": "ide-workspace-demo",
+  "tags": [
+    "toolsdevelopment"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/development/1",
+  "order": 47
+}

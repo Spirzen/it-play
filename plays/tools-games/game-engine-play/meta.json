@@ -1,0 +1,12 @@
+{
+  "title": "Game Engine",
+  "description": "Интерактивное демо «Game Engine» — раздел Инструменты · Игры.",
+  "category": "tools-games",
+  "categoryTitle": "Инструменты · Игры",
+  "component": "game-engine-play",
+  "tags": [
+    "toolsgames"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/games/1",
+  "order": 66
+}

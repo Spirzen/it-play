@@ -1,0 +1,13 @@
+{
+  "title": "Kotlin и базы данных",
+  "description": "Интерактивное демо «Kotlin и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "kotlin-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-09-kotlin/18",
+  "order": 21
+}

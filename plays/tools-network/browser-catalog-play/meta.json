@@ -1,0 +1,12 @@
+{
+  "title": "Browser Catalog",
+  "description": "Интерактивное демо «Browser Catalog» — раздел Инструменты · Сеть.",
+  "category": "tools-network",
+  "categoryTitle": "Инструменты · Сеть",
+  "component": "browser-catalog-play",
+  "tags": [
+    "toolsnetwork"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/network/1",
+  "order": 83
+}

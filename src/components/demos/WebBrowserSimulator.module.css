@@ -1,0 +1,84 @@
+.tabs {
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.35rem 0.45rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.tabActive {
+  background: var(--ifm-background-color);
+  font-weight: 600;
+}
+
+.url {
+  flex: 1;
+  min-width: 140px;
+  padding: 0.28rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.75rem;
+}
+
+.page {
+  padding: 1rem 1.1rem;
+  min-height: 180px;
+}
+
+.page h3 {
+  margin: 0 0 0.5rem;
+}
+
+.searchMeta {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.78rem;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.5rem;
+}
+
+.result span {
+  color: #1a7f37;
+  font-size: 0.72rem;
+}
+
+.settings {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 1rem;
+}
+
+.actions button {
+  padding: 0.28rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-size: 0.72rem;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}

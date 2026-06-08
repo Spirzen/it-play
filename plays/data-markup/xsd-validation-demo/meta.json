@@ -1,0 +1,13 @@
+{
+  "title": "XSD — валидация XML",
+  "description": "Интерактивное демо «XSD — валидация XML» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "xsd-validation-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2",
+  "order": 15
+}

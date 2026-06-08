@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема C++",
+  "description": "Интерактивное демо «Экосистема C++» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "cpp-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-06-cpp/10",
+  "order": 16
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Жизненный цикл процесса",
+  "description": "Интерактивное демо «Жизненный цикл процесса» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "process-lifecycle-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-05-asinhronnost/2",
+  "order": 28
+}

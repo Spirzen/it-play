@@ -1,0 +1,13 @@
+{
+  "title": "Search Query Lab",
+  "description": "Интерактивное демо «Search Query Lab» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "search-query-lab",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-21-poisk-informatsii/3",
+  "order": 38
+}

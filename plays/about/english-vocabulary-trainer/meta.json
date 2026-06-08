@@ -1,0 +1,12 @@
+{
+  "title": "English Vocabulary Trainer",
+  "description": "Интерактивное демо «English Vocabulary Trainer» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "english-vocabulary-trainer",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 26
+}

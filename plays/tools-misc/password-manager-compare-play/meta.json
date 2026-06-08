@@ -1,0 +1,12 @@
+{
+  "title": "Password Manager Compare",
+  "description": "Интерактивное демо «Password Manager Compare» — раздел Инструменты · Разное.",
+  "category": "tools-misc",
+  "categoryTitle": "Инструменты · Разное",
+  "component": "password-manager-compare-play",
+  "tags": [
+    "toolsmisc"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/misc/2",
+  "order": 72
+}

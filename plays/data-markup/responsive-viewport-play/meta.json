@@ -1,0 +1,13 @@
+{
+  "title": "Адаптивный viewport",
+  "description": "Интерактивное демо «Адаптивный viewport» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "responsive-viewport-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-10-css/7",
+  "order": 43
+}

@@ -1,0 +1,207 @@
+.networkCanvas {
+  position: relative;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border);
+  border-radius: 12px;
+  padding: 1rem 0.5rem;
+  margin-bottom: var(--demo-gap, 1rem);
+  overflow-x: auto;
+}
+
+.svgWrap {
+  width: 100%;
+  min-width: 280px;
+  max-width: 520px;
+  margin: 0 auto;
+  display: block;
+}
+
+.svgEdge {
+  fill: none;
+  stroke: var(--demo-border);
+  stroke-width: 1.2;
+  opacity: 0.55;
+  transition:
+    stroke 0.25s ease,
+    opacity 0.25s ease,
+    stroke-width 0.25s ease;
+}
+
+.svgEdgeActive {
+  stroke: var(--ifm-color-primary);
+  opacity: 0.95;
+  stroke-width: 2;
+  animation: nnPulse 0.8s ease infinite;
+}
+
+@keyframes nnPulse {
+  0%,
+  100% {
+    stroke-opacity: 0.7;
+  }
+  50% {
+    stroke-opacity: 1;
+  }
+}
+
+.neuronNode {
+  cursor: default;
+}
+
+.neuronCircle {
+  fill: var(--ifm-background-color);
+  stroke: var(--demo-border);
+  stroke-width: 2;
+  transition:
+    stroke 0.25s ease,
+    fill 0.25s ease;
+}
+
+.neuronCircleInput {
+  stroke: #2563eb;
+}
+
+.neuronCircleHidden {
+  stroke: #7c3aed;
+}
+
+.neuronCircleOutput {
+  stroke: #059669;
+}
+
+.neuronCircleActive {
+  stroke: #f59e0b;
+  fill: color-mix(in srgb, #f59e0b 18%, var(--ifm-background-color));
+  filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.45));
+}
+
+.neuronLabel {
+  font-size: 4px;
+  fill: var(--ifm-color-content-secondary);
+  font-family: var(--ifm-font-family-base);
+  pointer-events: none;
+}
+
+.neuronValue {
+  font-size: 3.8px;
+  fill: var(--ifm-color-content);
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+  pointer-events: none;
+}
+
+.controlsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--demo-gap, 1rem);
+  margin-bottom: var(--demo-gap, 1rem);
+}
+
+.controlPanel {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 0.85rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.controlPanelTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 0.65rem;
+  color: var(--ifm-color-primary);
+}
+
+.weightRow {
+  margin-bottom: 0.65rem;
+}
+
+.weightLabel {
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+  margin-bottom: 0.25rem;
+}
+
+.weightSliders {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.weightSliders input {
+  flex: 1;
+  min-width: 4rem;
+}
+
+.progressBar {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--demo-border);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--ifm-color-primary);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.signalEntry {
+  padding: 0.55rem 0.65rem;
+  margin-bottom: 0.45rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--demo-border);
+  font-size: 0.8rem;
+  animation: nnSlideIn 0.28s ease;
+}
+
+@keyframes nnSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.signalInput {
+  border-left-color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.signalHidden {
+  border-left-color: #7c3aed;
+  background: rgba(124, 58, 237, 0.08);
+}
+
+.signalActivation {
+  border-left-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.signalOutput {
+  border-left-color: #059669;
+  background: rgba(5, 150, 105, 0.08);
+}
+
+.signalData {
+  margin-top: 0.25rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  color: var(--demo-muted);
+}
+
+.outputHero {
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, #059669 12%, transparent);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--demo-success, #2e7d32);
+}

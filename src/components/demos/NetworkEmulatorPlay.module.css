@@ -1,0 +1,180 @@
+.lane {
+  display: grid;
+  grid-template-columns: minmax(4.5rem, 1fr) minmax(0, 3fr) minmax(4.5rem, 1fr);
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0.75rem;
+  padding: 1rem 0.75rem;
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.host {
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+.host strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.host span {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.72rem;
+}
+
+.track {
+  position: relative;
+  height: 3.5rem;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(21, 101, 192, 0.08) 0%,
+    rgba(21, 101, 192, 0.02) 45%,
+    rgba(46, 125, 50, 0.02) 55%,
+    rgba(46, 125, 50, 0.08) 100%
+  );
+  overflow: hidden;
+}
+
+.trackLine {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  right: 8%;
+  height: 2px;
+  background: var(--ifm-color-emphasis-300);
+  transform: translateY(-50%);
+}
+
+.packet {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+  min-width: 2.1rem;
+  padding: 0.2rem 0.35rem;
+  border-radius: 6px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+  border: 1px solid transparent;
+  transition: left linear, opacity 0.25s ease, background 0.2s ease;
+  z-index: 2;
+}
+
+.packetFlight {
+  background: #1565c0;
+  color: #fff;
+  border-color: #0d47a1;
+}
+
+.packetReturn {
+  background: #2e7d32;
+  color: #fff;
+  border-color: #1b5e20;
+}
+
+.packetLost {
+  background: #c62828;
+  color: #fff;
+  border-color: #b71c1c;
+  opacity: 0.85;
+}
+
+.packetRetransmit {
+  background: #ef6c00;
+  color: #fff;
+  border-color: #e65100;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.statCard {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+}
+
+.statLabel {
+  font-size: 0.7rem;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.15rem;
+}
+
+.statValue {
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.statValueGood {
+  color: #2e7d32;
+}
+
+.statValueWarn {
+  color: #ef6c00;
+}
+
+.statValueBad {
+  color: #c62828;
+}
+
+.log {
+  max-height: 9rem;
+  overflow: auto;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  font-size: 0.76rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.logRow {
+  display: grid;
+  grid-template-columns: 3.2rem 3.5rem 1fr;
+  gap: 0.35rem;
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.logRow:last-child {
+  border-bottom: none;
+}
+
+.logOk {
+  color: #2e7d32;
+}
+
+.logLost {
+  color: #c62828;
+}
+
+.logRetry {
+  color: #ef6c00;
+}
+
+.sliders {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.sliderRow {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr 3rem;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.82rem;
+}
+
+.sliderRow input[type='range'] {
+  width: 100%;
+}

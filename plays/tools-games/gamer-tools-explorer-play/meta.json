@@ -1,0 +1,12 @@
+{
+  "title": "Gamer Tools Explorer",
+  "description": "Интерактивное демо «Gamer Tools Explorer» — раздел Инструменты · Игры.",
+  "category": "tools-games",
+  "categoryTitle": "Инструменты · Игры",
+  "component": "gamer-tools-explorer-play",
+  "tags": [
+    "toolsgames"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/games/2",
+  "order": 68
+}

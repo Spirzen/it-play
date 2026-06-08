@@ -1,0 +1,13 @@
+{
+  "title": "Симулятор веб-атак",
+  "description": "Интерактивное демо «Симулятор веб-атак» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "web-attack-simulator-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111",
+  "order": 33
+}

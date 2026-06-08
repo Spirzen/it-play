@@ -1,0 +1,322 @@
+.root {
+  max-width: min(580px, 100%);
+  margin: 0 auto;
+}
+
+.scenarioTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.scenarioTab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scenarioTab:hover:not(:disabled) {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.scenarioTab:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.scenarioTabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.scenarioHint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+}
+
+.sqlChip {
+  display: block;
+  margin-top: 0.35rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  background: var(--ifm-code-background);
+  color: var(--ifm-color-content);
+  text-align: left;
+  word-break: break-word;
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.tier {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem 0.65rem;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tierActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.tierHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.tierIcon {
+  font-size: 1.1rem;
+}
+
+.tierLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ifm-color-content);
+}
+
+.tierShort {
+  margin-left: auto;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.tierNodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 0.4rem;
+}
+
+.node {
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0.72;
+}
+
+.nodeActive {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-color));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent);
+  transform: scale(1.02);
+}
+
+.nodeName {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.nodeRole {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.65rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+
+.connectorLine {
+  display: block;
+  width: 3px;
+  height: 1.1rem;
+  border-radius: 2px;
+  background: var(--ifm-color-emphasis-300);
+  transition: background 0.25s ease;
+}
+
+.connectorPulseDown {
+  background: linear-gradient(
+    180deg,
+    var(--ifm-color-emphasis-300) 0%,
+    var(--ifm-color-primary) 50%,
+    var(--ifm-color-emphasis-300) 100%
+  );
+  animation: pulseDown 0.9s ease-in-out infinite;
+}
+
+.connectorPulseUp {
+  background: linear-gradient(
+    0deg,
+    var(--ifm-color-emphasis-300) 0%,
+    var(--demo-success, #2e7d32) 50%,
+    var(--ifm-color-emphasis-300) 100%
+  );
+  animation: pulseUp 0.9s ease-in-out infinite;
+}
+
+@keyframes pulseDown {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseUp {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.connectorLabel {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.cycleDiagram {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cycleNode {
+  padding: 0.65rem 0.55rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+  opacity: 0.72;
+  transition: all 0.3s ease;
+}
+
+.cycleNodeActive {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.cycleIcon {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+}
+
+.cycleName {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.cycleRole {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.68rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.stepCard {
+  margin-bottom: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+}
+
+.stepBadge {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-primary);
+}
+
+.stepTitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.stepDetail {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.stepDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-300);
+  transition: all 0.25s ease;
+}
+
+.stepDotDone {
+  background: color-mix(in srgb, var(--ifm-color-primary) 50%, var(--ifm-color-emphasis-300));
+}
+
+.stepDotCurrent {
+  background: var(--ifm-color-primary);
+  transform: scale(1.35);
+}
+
+.footer {
+  margin-top: 0.75rem;
+  font-size: 0.74rem;
+  line-height: 1.4;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}

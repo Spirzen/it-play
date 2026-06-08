@@ -1,0 +1,12 @@
+{
+  "title": "Flex и Grid",
+  "description": "Интерактивное демо «Flex и Grid» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "flex-grid-play",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/110",
+  "order": 3
+}

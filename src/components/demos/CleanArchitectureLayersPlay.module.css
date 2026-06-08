@@ -1,0 +1,55 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 0.65rem;
+}
+
+.layer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+}
+
+.layerActive {
+  font-weight: 700;
+}
+
+.dirs {
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.desc {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+}
+
+.check {
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+}
+
+.verdict {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.ok {
+  color: #1b5e20;
+}
+
+.bad {
+  color: #b71c1c;
+}

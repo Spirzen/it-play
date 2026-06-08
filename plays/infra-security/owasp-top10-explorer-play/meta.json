@@ -1,0 +1,13 @@
+{
+  "title": "OWASP Top 10",
+  "description": "Интерактивное демо «OWASP Top 10» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "owasp-top10-explorer-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1",
+  "order": 30
+}

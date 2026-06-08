@@ -1,0 +1,13 @@
+{
+  "title": "Data Governance",
+  "description": "Интерактивное демо «Data Governance» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "data-governance-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/111",
+  "order": 22
+}

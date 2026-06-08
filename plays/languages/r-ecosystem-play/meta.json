@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема R",
+  "description": "Интерактивное демо «Экосистема R» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "r-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-23-r/3",
+  "order": 47
+}

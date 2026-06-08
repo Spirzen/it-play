@@ -1,0 +1,74 @@
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tree {
+  font-size: 0.82rem;
+  font-family: var(--ifm-font-family-monospace);
+  line-height: 1.55;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+}
+
+.treeActive {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.docGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.docCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.docDim {
+  opacity: 0.35;
+}
+
+.docMatch {
+  border-color: #13aa52;
+  box-shadow: 0 0 0 2px rgba(19, 170, 82, 0.15);
+}
+
+.filterBox {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  margin: 0.5rem 0 0.65rem;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  margin-top: 0.5rem;
+}
+
+.badge {
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: rgba(19, 170, 82, 0.12);
+  color: #0d7a3a;
+}

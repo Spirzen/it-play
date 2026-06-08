@@ -1,0 +1,12 @@
+{
+  "title": "Scratch → Python",
+  "description": "Интерактивное демо «Scratch → Python» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "scratch-python-table",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/1127",
+  "order": 8
+}

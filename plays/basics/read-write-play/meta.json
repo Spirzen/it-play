@@ -1,0 +1,13 @@
+{
+  "title": "Read Write",
+  "description": "Интерактивное демо «Read Write» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "read-write-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/2",
+  "order": 18
+}

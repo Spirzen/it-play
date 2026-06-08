@@ -1,0 +1,13 @@
+{
+  "title": "Игровая индустрия — навигатор",
+  "description": "Интерактивное демо «Игровая индустрия — навигатор» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-industry-hub",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro",
+  "order": 4
+}

@@ -1,0 +1,664 @@
+.root {
+  --test-unit: #10b981;
+  --test-integration: #3b82f6;
+  --test-e2e: #ef4444;
+  --test-accept: #8b5cf6;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.statCard {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+}
+
+.statValue {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.statValuePass {
+  composes: statValue;
+  color: var(--test-unit);
+}
+
+.statValueFail {
+  composes: statValue;
+  color: var(--demo-error, #c62828);
+}
+
+.statValueInfo {
+  composes: statValue;
+  color: var(--ifm-color-primary);
+}
+
+.statLabel {
+  margin: 0.2rem 0 0;
+  font-size: 0.68rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.panel {
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* —— Пирамида —— */
+.pyramidWrap {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px dashed var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+}
+
+.pyramidTitle {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.pyramidLayer {
+  width: var(--layer-width, 90%);
+  padding: 0.65rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+  color: #fff;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.pyramidLayer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.pyramidLayerActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow:
+    0 0 0 2px var(--demo-highlight, rgba(123, 104, 238, 0.25)),
+    0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.pyramidHint {
+  margin: 0.85rem 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.levelGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--demo-gap, 1rem);
+}
+
+.levelCard {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.levelCardActive {
+  composes: levelCard;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px var(--demo-highlight, rgba(123, 104, 238, 0.2));
+}
+
+.levelIcon {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.levelName {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.levelDesc {
+  margin: 0 0 0.65rem;
+  font-size: 0.85rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}
+
+.levelMeta {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.levelExample {
+  margin-top: 0.65rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+/* —— Типы —— */
+.typeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.typeCard {
+  padding: 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+}
+
+.typeIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.typeName {
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.typeDesc {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.boundaryPanel {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  margin-bottom: 1.25rem;
+}
+
+.boundaryTitle {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.boundarySlider {
+  width: 100%;
+  margin: 0.5rem 0;
+  accent-color: var(--ifm-color-primary);
+}
+
+.boundaryResult {
+  margin: 0.65rem 0 0;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.boundaryValid {
+  composes: boundaryResult;
+  background: color-mix(in srgb, var(--test-unit) 15%, transparent);
+  color: var(--test-unit);
+}
+
+.boundaryInvalid {
+  composes: boundaryResult;
+  background: color-mix(in srgb, var(--demo-error, #c62828) 12%, transparent);
+  color: var(--demo-error, #c62828);
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.techCard {
+  padding: 0.85rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+}
+
+.techName {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ifm-color-primary);
+}
+
+.techDesc {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+}
+
+.techExample {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+/* —— Test cases —— */
+.suiteToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ciPipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+}
+
+.ciStage {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.ciStageActive {
+  composes: ciStage;
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.2));
+  animation: pulse 0.8s ease infinite;
+}
+
+.ciStageDone {
+  composes: ciStage;
+  border-color: var(--test-unit);
+  color: var(--test-unit);
+}
+
+.ciStageFail {
+  composes: ciStage;
+  border-color: var(--demo-error, #c62828);
+  color: var(--demo-error, #c62828);
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.65;
+  }
+}
+
+.ciArrow {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.testGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--demo-gap, 1rem);
+}
+
+.testCard {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+}
+
+.testCardPass {
+  composes: testCard;
+  border-color: var(--test-unit);
+}
+
+.testCardFail {
+  composes: testCard;
+  border-color: var(--demo-error, #c62828);
+}
+
+.testCardRunning {
+  composes: testCard;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px var(--demo-highlight, rgba(123, 104, 238, 0.2));
+}
+
+.testHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.testName {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.testBadge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badgeFunctional {
+  composes: testBadge;
+  background: color-mix(in srgb, var(--test-integration) 18%, transparent);
+  color: var(--test-integration);
+}
+
+.badgeLoad {
+  composes: testBadge;
+  background: color-mix(in srgb, var(--demo-warning, #ed6c02) 18%, transparent);
+  color: var(--demo-warning, #ed6c02);
+}
+
+.stepList {
+  margin: 0 0 0.65rem;
+  padding-left: 1.25rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.stepDone {
+  color: var(--test-unit);
+}
+
+.stepCurrent {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.stepPending {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.console {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  max-height: 8rem;
+  overflow-y: auto;
+}
+
+.consoleLine {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.consolePass {
+  color: var(--test-unit);
+}
+
+.consoleFail {
+  color: var(--demo-error, #c62828);
+}
+
+/* —— Баги —— */
+.lifecycle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.lifecycleStage {
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.lifecycleStageActive {
+  composes: lifecycleStage;
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.2));
+  color: var(--ifm-color-primary);
+}
+
+.bugList {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.bugCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.bugCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.bugCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.bugTitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.bugId {
+  margin: 0.2rem 0 0;
+  font-size: 0.75rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.bugTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.bugTag {
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.bugHint {
+  margin: 0.75rem 0 0;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}
+
+/* —— Метрики —— */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--demo-gap, 1rem);
+  margin-bottom: 1.25rem;
+}
+
+.metricCard {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+}
+
+.donut {
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 0 auto 0.65rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.metricBig {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  margin-top: 0.65rem;
+  border-radius: 3px;
+  background: var(--demo-border, var(--ifm-color-emphasis-300));
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.qualityList {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.qualityRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+}
+
+.qualityName {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.qualityValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.qualityDesc {
+  width: 100%;
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.bestPractices {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+}
+
+.bestTitle {
+  margin: 0 0 0.65rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ifm-color-primary);
+}
+
+.bestList {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.35rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема JavaScript",
+  "description": "Интерактивное демо «Экосистема JavaScript» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "js-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-01-javascript/25",
+  "order": 3
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Outlook Mail",
+  "description": "Интерактивное демо «Outlook Mail» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "outlook-mail-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3",
+  "order": 40
+}

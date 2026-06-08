@@ -1,0 +1,82 @@
+.canvasWrap {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 1.1;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  margin: 0.65rem 0;
+}
+
+.dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s;
+}
+
+.dot:hover {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+.dotQuery {
+  width: 16px;
+  height: 16px;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.35);
+}
+
+.dotNeighbor {
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.5);
+}
+
+.label {
+  position: absolute;
+  font-size: 0.68rem;
+  transform: translate(-50%, 14px);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+}
+
+.resultRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0.45rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.groupRoyal {
+  background: #7b1fa2;
+}
+.groupFruit {
+  background: #2e7d32;
+}
+.groupTransport {
+  background: #1565c0;
+}

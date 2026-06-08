@@ -1,0 +1,13 @@
+{
+  "title": "Линейные структуры данных",
+  "description": "Интерактивное демо «Линейные структуры данных» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "data-structure-linear",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-02-struktury-dannyh/1",
+  "order": 6
+}

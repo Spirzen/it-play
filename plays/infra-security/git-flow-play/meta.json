@@ -1,0 +1,13 @@
+{
+  "title": "Git Flow",
+  "description": "Интерактивное демо «Git Flow» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "git-flow-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1111",
+  "order": 5
+}

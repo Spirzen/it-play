@@ -1,0 +1,13 @@
+{
+  "title": "Swagger API Explorer",
+  "description": "Интерактивное демо «Swagger API Explorer» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "swagger-api-explorer",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117",
+  "order": 43
+}

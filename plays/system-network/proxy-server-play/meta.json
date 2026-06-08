@@ -1,0 +1,13 @@
+{
+  "title": "Прокси-сервер",
+  "description": "Интерактивное демо «Прокси-сервер» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "proxy-server-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-03-set-i-internet/614",
+  "order": 14
+}

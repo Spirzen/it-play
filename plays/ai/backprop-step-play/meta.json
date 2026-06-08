@@ -1,0 +1,13 @@
+{
+  "title": "Backprop по шагам",
+  "description": "Интерактивное демо «Backprop по шагам» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "backprop-step-play",
+  "tags": [
+    "ai",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-03-neyroseti/1",
+  "order": 2
+}

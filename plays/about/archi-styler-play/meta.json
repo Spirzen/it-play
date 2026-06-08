@@ -1,0 +1,12 @@
+{
+  "title": "Archi Styler",
+  "description": "Интерактивное демо «Archi Styler» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "archi-styler-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 27
+}

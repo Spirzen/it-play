@@ -1,0 +1,12 @@
+{
+  "title": "Bash Shell",
+  "description": "Интерактивное демо «Bash Shell» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "bash-shell-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 18
+}

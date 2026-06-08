@@ -1,0 +1,12 @@
+{
+  "title": "Network Traffic Monitor Demo",
+  "description": "Интерактивное демо «Network Traffic Monitor Demo» — раздел Инструменты · Разработка.",
+  "category": "tools-development",
+  "categoryTitle": "Инструменты · Разработка",
+  "component": "network-traffic-monitor-demo",
+  "tags": [
+    "toolsdevelopment"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/development/2",
+  "order": 51
+}

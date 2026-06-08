@@ -1,0 +1,170 @@
+.root {
+  --gis-map-bg: #e8f4ea;
+  --gis-grid: rgba(0, 0, 0, 0.06);
+  --gis-query: rgba(123, 104, 238, 0.35);
+  --gis-query-stroke: var(--ifm-color-primary);
+  --gis-rtree: rgba(237, 108, 2, 0.25);
+  --gis-rtree-stroke: #ed6c02;
+  --gis-hit: rgba(46, 125, 50, 0.45);
+}
+
+[data-theme='dark'] .root {
+  --gis-map-bg: #1a2e22;
+  --gis-grid: rgba(255, 255, 255, 0.06);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.mapWrap {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  overflow: hidden;
+  background: var(--gis-map-bg);
+  touch-action: none;
+  user-select: none;
+}
+
+.mapSvg {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: crosshair;
+}
+
+.mapSvgView {
+  cursor: default;
+}
+
+.sidePanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: 0.82rem;
+}
+
+.panelBlock {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+}
+
+.panelTitle {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.layerRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.layerSwatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.attrList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.attrList li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px dashed var(--demo-border, var(--ifm-color-emphasis-200));
+}
+
+.attrList li:last-child {
+  border-bottom: none;
+}
+
+.attrKey {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.queryLog {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 7rem;
+  overflow-y: auto;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.queryLog li {
+  padding: 0.15rem 0;
+}
+
+.queryLogHit {
+  color: var(--demo-success, #2e7d32);
+  font-weight: 600;
+}
+
+.queryLogSkip {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.8rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  line-height: 1.45;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legendBox {
+  width: 14px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+}

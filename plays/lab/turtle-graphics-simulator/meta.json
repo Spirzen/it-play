@@ -1,0 +1,12 @@
+{
+  "title": "Turtle Graphics",
+  "description": "Интерактивное демо «Turtle Graphics» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "turtle-graphics-simulator",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/111",
+  "order": 4
+}

@@ -1,0 +1,12 @@
+{
+  "title": "HTML Playground",
+  "description": "Интерактивное демо «HTML Playground» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "html-playground",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 14
+}

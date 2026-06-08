@@ -1,0 +1,299 @@
+.root {
+  max-width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.tab {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.panel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.panelAccent {
+  border-left: 4px solid var(--accent, var(--ifm-color-primary));
+}
+
+.releaseTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.releaseMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.badgeMuted {
+  background: var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-content);
+}
+
+.slider {
+  width: 100%;
+  margin: 0.5rem 0 0.75rem;
+  accent-color: var(--ifm-color-primary);
+}
+
+.timelineTicks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.25rem;
+}
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.filterBtn {
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: transparent;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.filterBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.chipActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-background-color));
+  color: var(--ifm-color-primary);
+}
+
+.loreGrid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.loreCard {
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  cursor: pointer;
+  text-align: left;
+  background: var(--ifm-background-color);
+  transition: border-color 0.15s ease;
+}
+
+.loreCardActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.provinceTrack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.provinceStep {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.65rem;
+  align-items: start;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.provinceStepActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.lootBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.lootBtn {
+  flex: 1 1 5.5rem;
+  min-width: 5rem;
+  padding: 0.5rem 0.4rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.lootBtnActive {
+  border-color: #fff;
+  box-shadow: 0 0 0 2px var(--ifm-background-color), 0 0 0 4px currentColor;
+}
+
+.weaponEra {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.weaponList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.weaponTag {
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--accent) 18%, var(--ifm-background-surface-color));
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Hub */
+.hubFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+  align-items: center;
+}
+
+.hubGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 0.55rem;
+  max-height: 22rem;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.franchiseCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.franchiseCard:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.franchiseIcon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.franchiseTitle {
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.franchiseMeta {
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.randomRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+  border: 1px dashed var(--ifm-color-emphasis-400);
+}
+
+.randomTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}

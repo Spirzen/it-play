@@ -1,0 +1,13 @@
+{
+  "title": "Встраиваемые системы",
+  "description": "Интерактивное демо «Встраиваемые системы» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "embedded-system-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-10-zhelezo/112",
+  "order": 53
+}

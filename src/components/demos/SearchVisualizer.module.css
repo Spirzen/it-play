@@ -1,0 +1,61 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-bottom: 0.55rem;
+}
+
+.control {
+  display: block;
+  margin-bottom: 0.55rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+}
+
+.cell {
+  min-width: 2.2rem;
+  padding: 0.45rem 0.35rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.cellActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+.cellRange {
+  border-color: #ed6c02;
+  background: color-mix(in srgb, #ed6c02 12%, transparent);
+}
+
+.cellFound {
+  border-color: var(--demo-success, #2e7d32);
+  background: color-mix(in srgb, #2e7d32 20%, transparent);
+}
+
+.status {
+  margin: 0.6rem 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 0.45rem;
+  justify-content: center;
+}

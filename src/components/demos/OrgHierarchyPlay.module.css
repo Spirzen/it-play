@@ -1,0 +1,161 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.chip {
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.72rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.chipActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-background);
+}
+
+.treeWrap {
+  padding: 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  overflow-x: auto;
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 280px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.connector {
+  width: 2px;
+  height: 14px;
+  background: var(--ifm-color-emphasis-400);
+}
+
+.node {
+  min-width: 118px;
+  max-width: 150px;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.node strong {
+  display: block;
+  font-size: 0.78rem;
+}
+
+.node small {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.65rem;
+}
+
+.nodeActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.levelStrategic {
+  border-color: #7b1fa2;
+  background: color-mix(in srgb, #7b1fa2 8%, var(--ifm-background-color));
+}
+
+.levelTactical {
+  border-color: #1976d2;
+  background: color-mix(in srgb, #1976d2 8%, var(--ifm-background-color));
+}
+
+.levelOperational {
+  border-color: #2e7d32;
+  background: color-mix(in srgb, #2e7d32 8%, var(--ifm-background-color));
+}
+
+.levelCustomer {
+  border-color: #ef6c00;
+  background: color-mix(in srgb, #ef6c00 10%, var(--ifm-background-color));
+}
+
+.panel {
+  padding: 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.78rem;
+}
+
+.panel h5 {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+}
+
+.panel p {
+  margin: 0 0 0.4rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.scenario {
+  margin-top: 0.55rem;
+  padding: 0.45rem;
+  border-radius: 6px;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  font-size: 0.72rem;
+}
+
+.scenarioWarn {
+  border-color: #c62828;
+  background: color-mix(in srgb, #c62828 8%, var(--ifm-background-color));
+  color: #b71c1c;
+}
+
+.scenarioOk {
+  border-color: #2e7d32;
+  background: color-mix(in srgb, #2e7d32 8%, var(--ifm-background-color));
+}

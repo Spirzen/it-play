@@ -1,0 +1,13 @@
+{
+  "title": "Справочник C#",
+  "description": "Интерактивное демо «Справочник C#» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "csharp-language-ref-explorer-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-05-csharp/472",
+  "order": 15
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Cron Schedule",
+  "description": "Интерактивное демо «Cron Schedule» — раздел Инструменты · Автоматизация.",
+  "category": "tools-automation",
+  "categoryTitle": "Инструменты · Автоматизация",
+  "component": "cron-schedule-play",
+  "tags": [
+    "toolsautomation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/automation/1",
+  "order": 32
+}

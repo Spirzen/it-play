@@ -1,0 +1,12 @@
+{
+  "title": "License Usage",
+  "description": "Интерактивное демо «License Usage» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "license-usage-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/license",
+  "order": 30
+}

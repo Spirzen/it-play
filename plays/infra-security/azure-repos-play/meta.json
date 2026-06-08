@@ -1,0 +1,13 @@
+{
+  "title": "Azure Repos",
+  "description": "Интерактивное демо «Azure Repos» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "azure-repos-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/15",
+  "order": 12
+}

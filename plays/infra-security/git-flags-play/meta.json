@@ -1,0 +1,13 @@
+{
+  "title": "Флаги Git",
+  "description": "Интерактивное демо «Флаги Git» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "git-flags-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/115",
+  "order": 8
+}

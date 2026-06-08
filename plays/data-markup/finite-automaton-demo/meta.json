@@ -1,0 +1,13 @@
+{
+  "title": "Конечный автомат",
+  "description": "Интерактивное демо «Конечный автомат» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "finite-automaton-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/44",
+  "order": 14
+}

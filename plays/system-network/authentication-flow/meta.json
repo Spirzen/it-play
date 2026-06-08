@@ -1,0 +1,13 @@
+{
+  "title": "Поток аутентификации",
+  "description": "Интерактивное демо «Поток аутентификации» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "authentication-flow",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111",
+  "order": 32
+}

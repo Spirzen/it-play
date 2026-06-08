@@ -1,0 +1,13 @@
+{
+  "title": "Линейное программирование",
+  "description": "Интерактивное демо «Линейное программирование» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "linear-programming-playground",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/1",
+  "order": 52
+}

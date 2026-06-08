@@ -1,0 +1,13 @@
+{
+  "title": "English Word Randomizer",
+  "description": "Интерактивное демо «English Word Randomizer» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "english-word-randomizer",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2",
+  "order": 56
+}

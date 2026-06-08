@@ -1,0 +1,13 @@
+{
+  "title": "Архитектура фон Неймана",
+  "description": "Интерактивное демо «Архитектура фон Неймана» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "von-neumann-architecture-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-10-zhelezo/11",
+  "order": 52
+}

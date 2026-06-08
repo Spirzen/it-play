@@ -1,0 +1,287 @@
+.root {
+  max-width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+.root :global(.it-demo__body) {
+  position: relative;
+}
+
+.pipeline {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem 0.15rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.25rem 2.5rem;
+}
+
+.actor {
+  flex: 0 1 5.5rem;
+  min-width: 4.8rem;
+  padding: 0.4rem 0.35rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0.68;
+}
+
+.actorActive {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.actorIcon {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.actorName {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ifm-color-content);
+}
+
+.actorRole {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.58rem;
+  line-height: 1.2;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.link {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 0.1rem;
+}
+
+.linkArrow {
+  display: block;
+  width: 0.85rem;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--ifm-color-emphasis-300);
+  position: relative;
+  transition: background 0.25s ease;
+}
+
+.linkArrow::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 4px solid transparent;
+  border-left: 5px solid var(--ifm-color-emphasis-300);
+  transition: border-left-color 0.25s ease;
+}
+
+.linkPulse {
+  background: var(--ifm-color-primary);
+  animation: linkFlow 0.85s ease-in-out infinite;
+}
+
+.linkPulse::after {
+  border-left-color: var(--ifm-color-primary);
+}
+
+@keyframes linkFlow {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.toast {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 11rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--ifm-color-emphasis-500) 35%, transparent);
+  opacity: 0;
+  transform: translateY(-6px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.toastVisible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.toastSite {
+  display: block;
+  font-size: 0.58rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.15rem;
+}
+
+.toastTitle {
+  display: block;
+  font-size: 0.78rem;
+  margin-bottom: 0.1rem;
+}
+
+.toastBody {
+  display: block;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--ifm-color-content-secondary);
+}
+
+.permOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background: color-mix(in srgb, var(--ifm-background-color) 55%, transparent);
+  border-radius: inherit;
+}
+
+.permDialog {
+  width: min(100%, 16rem);
+  padding: 0.75rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--ifm-color-emphasis-500) 40%, transparent);
+}
+
+.permTitle {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.permHint {
+  margin: 0 0 0.65rem;
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.permActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
+.stepCard {
+  margin-bottom: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+}
+
+.stepBadge {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-primary);
+}
+
+.stepTitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.stepDetail {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.stepDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-300);
+  transition: all 0.25s ease;
+}
+
+.stepDotDone {
+  background: color-mix(in srgb, var(--ifm-color-primary) 50%, var(--ifm-color-emphasis-300));
+}
+
+.stepDotCurrent {
+  background: var(--ifm-color-primary);
+  transform: scale(1.35);
+}
+
+.footer {
+  margin-top: 0.75rem;
+  font-size: 0.74rem;
+  line-height: 1.4;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .actor {
+    flex: 0 1 4.6rem;
+    min-width: 4.2rem;
+  }
+
+  .linkArrow {
+    width: 0.55rem;
+  }
+
+  .toast {
+    position: static;
+    max-width: 100%;
+    margin-top: 0.5rem;
+    opacity: 0;
+  }
+
+  .toastVisible {
+    opacity: 1;
+  }
+
+  .pipeline {
+    padding-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема PHP",
+  "description": "Интерактивное демо «Экосистема PHP» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "php-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-07-php/10",
+  "order": 18
+}

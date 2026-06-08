@@ -1,0 +1,41 @@
+.root {
+  max-width: min(820px, 100%);
+  margin: 0 auto 1.25rem;
+}
+
+.pre {
+  margin: 0.5rem 0;
+  padding: 0.65rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  background: var(--ifm-code-background);
+  white-space: pre-wrap;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.binaryBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0.65rem 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+}
+
+.log {
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  background: var(--ifm-code-background);
+}

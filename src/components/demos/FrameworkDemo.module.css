@@ -1,0 +1,389 @@
+.root {
+  --fw-accent: #1565c0;
+  --fw-framework: #6a1b9a;
+  --fw-yours: #2e7d32;
+  --fw-lib: #ef6c00;
+}
+
+.headerBand {
+  padding: 0.85rem 1rem;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(135deg, #0d47a1 0%, #283593 45%, #4a148c 100%);
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.05rem, 3.5vw, 1.3rem);
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.body {
+  padding: 1rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: var(--ifm-background-surface-color);
+}
+
+.modeBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.modeBtn {
+  flex: 1 1 140px;
+  padding: 0.55rem 0.75rem;
+  border: 2px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.modeBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.modeBtnActiveLib {
+  border-color: var(--fw-lib);
+  background: color-mix(in srgb, var(--fw-lib) 10%, var(--ifm-background-surface-color));
+  color: var(--fw-lib);
+}
+
+.modeBtnActiveFw {
+  border-color: var(--fw-framework);
+  background: color-mix(in srgb, var(--fw-framework) 10%, var(--ifm-background-surface-color));
+  color: var(--fw-framework);
+}
+
+.hint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+.iocBanner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem 0.55rem;
+  margin-bottom: 0.85rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.78rem;
+}
+
+.iocLabel {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: 0.15rem;
+  color: var(--fw-accent);
+}
+
+.iocNode {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 2px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  font-weight: 600;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+}
+
+.iocNodeMain {
+  border-color: var(--fw-yours);
+  color: var(--fw-yours);
+}
+
+.iocNodeLib {
+  border-color: var(--fw-lib);
+  color: var(--fw-lib);
+}
+
+.iocNodeFw {
+  border-color: var(--fw-framework);
+  color: var(--fw-framework);
+}
+
+.iocArrow {
+  opacity: 0.65;
+  font-weight: 700;
+}
+
+.stepBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.stepChip {
+  flex: 1 1 72px;
+  min-width: 64px;
+  padding: 0.4rem 0.45rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.stepChip:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.stepChipActive {
+  border-color: var(--fw-accent);
+  background: color-mix(in srgb, var(--fw-accent) 12%, var(--ifm-background-surface-color));
+  color: var(--fw-accent);
+}
+
+.stepChipDone {
+  border-color: color-mix(in srgb, var(--fw-accent) 40%, var(--demo-border));
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  overflow: hidden;
+}
+
+.panelHead {
+  padding: 0.45rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--demo-border);
+}
+
+.panelBody {
+  padding: 0.65rem;
+}
+
+.fileList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.fileItem {
+  margin: 0.2rem 0;
+}
+
+.fileRow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.3rem 0.4rem;
+  border-radius: 6px;
+}
+
+.fileRowHighlight {
+  background: color-mix(in srgb, var(--fw-accent) 14%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--fw-accent) 35%, transparent);
+}
+
+.fileIconFw {
+  color: var(--fw-framework);
+}
+
+.fileIconYours {
+  color: var(--fw-yours);
+}
+
+.fileIconConfig {
+  color: var(--fw-accent);
+}
+
+.fileChildren {
+  margin: 0.15rem 0 0.15rem 1.1rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.74rem;
+  opacity: 0.85;
+}
+
+.fwCard {
+  margin-top: 0.65rem;
+  padding: 0.55rem;
+  border-radius: 6px;
+  border: 1px dashed var(--fw-framework);
+  background: color-mix(in srgb, var(--fw-framework) 6%, var(--ifm-background-color));
+  font-size: 0.78rem;
+}
+
+.fwCardTitle {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--fw-framework);
+}
+
+.provideRow {
+  margin: 0.2rem 0;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.provideRow:last-child {
+  border-bottom: none;
+}
+
+.provideName {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 600;
+  color: var(--fw-accent);
+}
+
+.codeBlock {
+  margin: 0;
+  padding: 0.65rem;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  overflow-x: auto;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 0 0 8px 8px;
+  white-space: pre;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.terminal {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  background: #0d1117;
+  color: #7ee787;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.terminalLineMuted {
+  color: #8b949e;
+}
+
+.descBlock {
+  margin-top: 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.insight {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  background: color-mix(in srgb, var(--fw-accent) 8%, var(--ifm-background-color));
+  border-left: 3px solid var(--fw-accent);
+}
+
+.requestFlow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px dashed var(--demo-border);
+  font-size: 0.75rem;
+}
+
+.requestNode {
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border);
+  font-weight: 600;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.requestNodeActive {
+  border-color: var(--fw-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--fw-accent) 30%, transparent);
+}
+
+.requestNodeYours {
+  border-color: var(--fw-yours);
+  background: color-mix(in srgb, var(--fw-yours) 10%, transparent);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.output {
+  flex: 1 1 100%;
+  margin-top: 0.35rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 6px;
+  background: #0d1117;
+  color: #79c0ff;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  min-height: 3.5rem;
+  white-space: pre-wrap;
+}
+
+.inputRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.inputRow label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.inputRow input {
+  flex: 1 1 120px;
+  min-width: 100px;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 6px;
+  font-size: 0.85rem;
+}

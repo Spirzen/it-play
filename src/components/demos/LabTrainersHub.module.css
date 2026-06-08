@@ -1,0 +1,109 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.categoryRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.categoryBtn {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-family: inherit;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.categoryBtn:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.categoryBtn:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ifm-color-primary) 45%, transparent);
+  outline-offset: 2px;
+}
+
+.categoryBtnActive {
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-background);
+  border-color: transparent;
+}
+
+.categoryBtnActive:hover {
+  color: var(--ifm-color-primary-contrast-background);
+}
+
+.trainerRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.trainerBtn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: inherit;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.trainerBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.trainerBtn:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ifm-color-primary) 45%, transparent);
+  outline-offset: 2px;
+}
+
+.trainerBtnActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px var(--ifm-color-primary);
+}
+
+.panel {
+  min-height: 120px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.panel :global(.it-demo) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.articleLink {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+@media screen and (max-width: 480px) {
+  .categoryBtn,
+  .trainerBtn {
+    font-size: 0.74rem;
+  }
+}

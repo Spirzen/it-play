@@ -1,0 +1,13 @@
+{
+  "title": "Обзор языков программирования",
+  "description": "Интерактивное демо «Обзор языков программирования» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "language-intro-hub",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-24-osnovnye-yazyki/1",
+  "order": 43
+}

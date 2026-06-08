@@ -1,0 +1,224 @@
+.root {
+  max-width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+.scenarioTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.scenarioTab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+}
+
+.scenarioTab:hover:not(:disabled) {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.scenarioTab:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.scenarioTabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.scenarioHint {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.4;
+}
+
+.toolbarLabel {
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.zone {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+  text-align: center;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+.zoneActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent);
+}
+
+.zoneDim {
+  opacity: 0.45;
+}
+
+.zoneClient {
+  border-color: color-mix(in srgb, #1565c0 35%, var(--ifm-color-emphasis-300));
+}
+
+.zoneEdge {
+  border-color: color-mix(in srgb, #6a1b9a 35%, var(--ifm-color-emphasis-300));
+}
+
+.zoneOrigin {
+  border-color: color-mix(in srgb, #2e7d32 35%, var(--ifm-color-emphasis-300));
+}
+
+.zoneTitle {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.zoneSub {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.15rem;
+}
+
+.arrowRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 1.4rem;
+}
+
+.arrow {
+  font-size: 1rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.cacheBadge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.badge_HIT {
+  background: color-mix(in srgb, #2e7d32 18%, transparent);
+  color: #1b5e20;
+}
+
+.badge_MISS {
+  background: color-mix(in srgb, #f57c00 18%, transparent);
+  color: #e65100;
+}
+
+.badge_REVALIDATED {
+  background: color-mix(in srgb, #1976d2 18%, transparent);
+  color: #0d47a1;
+}
+
+.badge_BYPASS {
+  background: color-mix(in srgb, #c62828 15%, transparent);
+  color: #b71c1c;
+}
+
+.stepPanel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.85rem;
+  background: color-mix(in srgb, var(--ifm-color-primary) 4%, var(--ifm-background-surface-color));
+}
+
+.stepPhase {
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.stepTitle {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.stepDetail,
+.stepLog,
+.latency {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.latency {
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-primary);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.simPanel {
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.simTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.simRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.45rem;
+}
+
+.simResult {
+  margin: 0.5rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.footer {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+  text-align: center;
+}

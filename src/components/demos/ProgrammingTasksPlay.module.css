@@ -1,0 +1,66 @@
+.root {
+  max-width: min(800px, 100%);
+  margin: 0 auto;
+}
+
+.catBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.catBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  font-size: 0.75rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.catBtnActive {
+  font-weight: 600;
+}
+
+.subTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.card {
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left-width: 4px;
+  background: var(--ifm-background-surface-color);
+}
+
+.cardTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.example {
+  margin: 0 0 0.65rem;
+  font-size: 0.82rem;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chip {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+}

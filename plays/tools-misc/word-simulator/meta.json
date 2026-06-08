@@ -1,0 +1,12 @@
+{
+  "title": "Word Simulator",
+  "description": "Интерактивное демо «Word Simulator» — раздел Инструменты · Разное.",
+  "category": "tools-misc",
+  "categoryTitle": "Инструменты · Разное",
+  "component": "word-simulator",
+  "tags": [
+    "toolsmisc"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/misc/1",
+  "order": 71
+}

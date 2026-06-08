@@ -1,0 +1,73 @@
+.ring {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
+}
+
+.node {
+  min-width: 88px;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  text-align: center;
+  font-size: 0.82rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.nodeHit {
+  border-color: #6a1b9a;
+  background: rgba(106, 27, 154, 0.1);
+}
+
+.partitionBox {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  max-height: 140px;
+  overflow-y: auto;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.45rem;
+}
+
+.rowLine {
+  padding: 0.2rem 0;
+  border-bottom: 1px dashed var(--ifm-color-emphasis-200);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.2rem;
+  font-size: 0.82rem;
+  margin: 0.65rem 0;
+}
+
+.planBanner {
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.planGood {
+  background: rgba(106, 27, 154, 0.1);
+  color: #6a1b9a;
+  border: 1px solid rgba(106, 27, 154, 0.35);
+}
+
+.planBad {
+  background: rgba(198, 40, 40, 0.1);
+  color: #c62828;
+  border: 1px solid rgba(198, 40, 40, 0.35);
+}
+
+.cqlBox {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  margin-bottom: 0.65rem;
+}

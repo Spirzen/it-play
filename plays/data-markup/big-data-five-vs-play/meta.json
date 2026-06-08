@@ -1,0 +1,13 @@
+{
+  "title": "Big Data — 5V",
+  "description": "Интерактивное демо «Big Data — 5V» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "big-data-five-vs-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-11-analiz-dannyh/11",
+  "order": 45
+}

@@ -1,0 +1,237 @@
+.root {
+  --dip-switch: #4a6fa5;
+  --dip-iface: #9b59b6;
+}
+
+.headerBand {
+  padding: 0.85rem 1rem;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(135deg, #1a3a4a 0%, #2d1f4e 100%);
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.05rem, 3.5vw, 1.3rem);
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.body {
+  padding: 1rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: var(--ifm-background-surface-color);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.diagram {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.archBox {
+  width: 100%;
+  max-width: 280px;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid var(--demo-border);
+  transition:
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.archBoxActive {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+}
+
+.archSwitch {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--dip-switch) 25%, transparent), var(--ifm-background-surface-color));
+  border-color: var(--dip-switch);
+}
+
+.archIface {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--dip-iface) 20%, transparent), var(--ifm-background-surface-color));
+  border-color: var(--dip-iface);
+}
+
+.archDimmed {
+  opacity: 0.45;
+}
+
+.archLabel {
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.archArrow {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.deviceRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.deviceChip {
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.deviceChipActive {
+  border-color: var(--chip-accent, var(--ifm-color-primary));
+  box-shadow: inset 3px 0 0 var(--chip-accent, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--chip-accent, var(--ifm-color-primary)) 12%, transparent);
+}
+
+.modeToggle {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.modeBtn {
+  flex: 1;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.modeBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.modeBtnBadActive {
+  border-color: #c62828;
+  background: color-mix(in srgb, #c62828 12%, transparent);
+  color: #c62828;
+}
+
+.stage {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  margin-bottom: 0.85rem;
+  transition: background 0.35s ease;
+}
+
+.stageOn {
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-background-color));
+  box-shadow: 0 0 24px color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+.deviceIcon {
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  transition: transform 0.25s ease;
+}
+
+.deviceIconOn {
+  transform: scale(1.08);
+  animation: dipGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes dipGlow {
+  from {
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--glow-color, gold) 40%, transparent));
+  }
+  to {
+    filter: drop-shadow(0 0 14px color-mix(in srgb, var(--glow-color, gold) 70%, transparent));
+  }
+}
+
+.deviceName {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.statusLine {
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.25rem;
+}
+
+.benefitList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.85rem;
+}
+
+.benefit {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--demo-border);
+  font-size: 0.8rem;
+}
+
+.benefit strong {
+  display: block;
+  font-size: 0.82rem;
+}
+
+.codeBlock {
+  margin: 0.5rem 0 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  line-height: 1.45;
+  overflow-x: auto;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border);
+  white-space: pre-wrap;
+}

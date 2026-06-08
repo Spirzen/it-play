@@ -1,0 +1,13 @@
+{
+  "title": "Mobile App Emulator",
+  "description": "Интерактивное демо «Mobile App Emulator» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "mobile-app-emulator",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-19-programma/3",
+  "order": 34
+}

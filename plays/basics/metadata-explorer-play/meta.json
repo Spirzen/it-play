@@ -1,0 +1,13 @@
+{
+  "title": "Metadata Explorer",
+  "description": "Интерактивное демо «Metadata Explorer» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "metadata-explorer-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-09-dannye-i-informatsiya/5",
+  "order": 17
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Установка операционной системы",
+  "description": "Интерактивное демо «Установка операционной системы» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "os-install-flow-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2",
+  "order": 20
+}

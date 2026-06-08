@@ -1,0 +1,13 @@
+{
+  "title": "Форум и имиджборд",
+  "description": "Интерактивное демо «Форум и имиджборд» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "forum-imageboard-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-10-internet-kultura/11",
+  "order": 29
+}

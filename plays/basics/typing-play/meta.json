@@ -1,0 +1,13 @@
+{
+  "title": "Typing",
+  "description": "Интерактивное демо «Typing» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "typing-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-09-dannye-i-informatsiya/4",
+  "order": 16
+}

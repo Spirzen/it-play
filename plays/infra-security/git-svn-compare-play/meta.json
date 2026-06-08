@@ -1,0 +1,13 @@
+{
+  "title": "Git vs SVN",
+  "description": "Интерактивное демо «Git vs SVN» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "git-svn-compare-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/116",
+  "order": 9
+}

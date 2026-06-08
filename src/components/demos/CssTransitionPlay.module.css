@@ -1,0 +1,60 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.control {
+  display: block;
+  margin-bottom: 0.55rem;
+}
+
+.control input {
+  width: 100%;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.demoBtn {
+  padding: 0.65rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground, #fff);
+  transform: scale(1) rotate(0deg);
+}
+
+.demoBtn:hover,
+.demoBtnHover {
+  transform: scale(1.08) rotate(0deg);
+  background: color-mix(in srgb, var(--ifm-color-primary) 80%, #000);
+}
+
+.demoBtnClick {
+  transform: scale(1.05) rotate(8deg);
+}
+
+.code {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.68rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  overflow-x: auto;
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.74rem;
+  text-align: center;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}

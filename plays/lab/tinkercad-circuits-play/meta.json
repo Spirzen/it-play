@@ -1,0 +1,12 @@
+{
+  "title": "Tinkercad Circuits",
+  "description": "Интерактивное демо «Tinkercad Circuits» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "tinkercad-circuits-play",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/1135",
+  "order": 9
+}

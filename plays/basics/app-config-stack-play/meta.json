@@ -1,0 +1,13 @@
+{
+  "title": "Стек конфигурации приложения",
+  "description": "Интерактивное демо «Стек конфигурации приложения» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "app-config-stack-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/3",
+  "order": 35
+}

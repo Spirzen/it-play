@@ -1,0 +1,13 @@
+{
+  "title": "Хронология интернет-культуры",
+  "description": "Интерактивное демо «Хронология интернет-культуры» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "internet-culture-timeline-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-10-internet-kultura/111",
+  "order": 30
+}

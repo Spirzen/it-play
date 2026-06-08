@@ -1,0 +1,12 @@
+{
+  "title": "Infra Diagram Studio",
+  "description": "Интерактивное демо «Infra Diagram Studio» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "infra-diagram-studio",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 23
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Unit Testing Aaa",
+  "description": "Интерактивное демо «Unit Testing Aaa» — раздел Инструменты · Тестирование.",
+  "category": "tools-testing",
+  "categoryTitle": "Инструменты · Тестирование",
+  "component": "unit-testing-aaa-play",
+  "tags": [
+    "toolstesting"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/testing/1",
+  "order": 97
+}

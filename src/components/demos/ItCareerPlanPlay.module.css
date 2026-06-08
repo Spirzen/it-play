@@ -1,0 +1,98 @@
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.radar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.axisRow {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr 2.2rem;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+}
+
+.axisRow input[type='range'] {
+  width: 100%;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.roleCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-toc-border-color);
+  font-size: 0.88rem;
+}
+
+.roleCardActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary-contrast-background);
+}
+
+.fit {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.gaps {
+  margin-top: 0.75rem;
+}
+
+.gapItem {
+  font-size: 0.84rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--ifm-toc-border-color);
+}
+
+.plan {
+  margin-top: 0.65rem;
+}
+
+.planStep {
+  padding: 0.5rem 0.65rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  border-left: 3px solid var(--ifm-color-primary);
+  font-size: 0.86rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.chip {
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-toc-border-color);
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: transparent;
+}
+
+.chipOn {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary-contrast-background);
+}

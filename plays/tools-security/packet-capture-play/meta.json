@@ -1,0 +1,12 @@
+{
+  "title": "Packet Capture",
+  "description": "Интерактивное демо «Packet Capture» — раздел Инструменты · Безопасность.",
+  "category": "tools-security",
+  "categoryTitle": "Инструменты · Безопасность",
+  "component": "packet-capture-play",
+  "tags": [
+    "toolssecurity"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/security/4",
+  "order": 91
+}

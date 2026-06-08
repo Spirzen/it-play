@@ -1,0 +1,93 @@
+.root {
+  max-width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pre {
+  margin: 0.35rem 0 0;
+  padding: 0.65rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  background: var(--ifm-code-background);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.badgeBad,
+.badgeGood {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.badgeBad {
+  background: color-mix(in srgb, #c62828 18%, transparent);
+  color: #b71c1c;
+}
+
+.badgeGood {
+  background: color-mix(in srgb, #2e7d32 18%, transparent);
+  color: #1b5e20;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0 0.35rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.stepRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.stepRow code {
+  font-size: 0.78rem;
+}
+
+.stepRow span {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepRowActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}

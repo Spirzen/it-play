@@ -1,0 +1,13 @@
+{
+  "title": "Data Information",
+  "description": "Интерактивное демо «Data Information» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "data-information-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-09-dannye-i-informatsiya/1",
+  "order": 14
+}

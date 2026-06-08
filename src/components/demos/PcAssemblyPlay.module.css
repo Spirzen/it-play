@@ -1,0 +1,204 @@
+.root {
+  max-width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+.progressBar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin-bottom: 0.35rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--ifm-color-primary);
+  transition: width 0.35s ease;
+}
+
+.progressText {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0 0 0.85rem;
+}
+
+.case {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background: color-mix(in srgb, var(--ifm-color-emphasis-100) 50%, transparent);
+}
+
+.caseLabel {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'psu psu psu'
+    'mb mb mb'
+    'cpu cooler ram'
+    'gpu gpu m2';
+  gap: 0.4rem;
+}
+
+.slot {
+  border: 2px dashed var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 0.72rem;
+  opacity: 0.5;
+  transition: opacity 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.slot_psu {
+  grid-area: psu;
+}
+.slot_mb {
+  grid-area: mb;
+}
+.slot_cpu {
+  grid-area: cpu;
+}
+.slot_cooler {
+  grid-area: cooler;
+}
+.slot_ram {
+  grid-area: ram;
+}
+.slot_gpu {
+  grid-area: gpu;
+}
+.slot_m2 {
+  grid-area: m2;
+}
+
+.slotDone {
+  opacity: 1;
+  border-style: solid;
+  border-color: #2e7d32;
+  background: color-mix(in srgb, #2e7d32 10%, transparent);
+}
+
+.slotNext {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  animation: pulse 1.2s ease infinite;
+}
+
+@keyframes pulse {
+  50% {
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+  }
+}
+
+.slotIcon {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.slotName {
+  display: block;
+  margin-top: 0.15rem;
+  font-weight: 600;
+}
+
+.cables {
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.stepNum {
+  font-size: 0.72rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.stepTitle {
+  margin: 0.25rem 0 0.35rem;
+  font-size: 1rem;
+}
+
+.stepHint {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.85rem;
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.35rem 0.5rem;
+  border: none;
+  background: transparent;
+  font-size: 0.78rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: inherit;
+}
+
+.checkItem:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.checkDone {
+  color: #2e7d32;
+}
+
+.checkCurrent {
+  font-weight: 700;
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.checkMark {
+  width: 1.25rem;
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+}
+
+.doneMsg {
+  margin: 0.75rem 0 0;
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, #2e7d32 12%, transparent);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+}

@@ -1,0 +1,111 @@
+.layout {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  min-height: 240px;
+}
+
+@media (max-width: 560px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacts {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact {
+  text-align: left;
+  padding: 0.45rem 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.contact span {
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.contactActive {
+  background: color-mix(in srgb, #5b6abf 14%, transparent);
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+}
+
+.messages {
+  flex: 1;
+  padding: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.bubble {
+  align-self: flex-start;
+  max-width: 85%;
+  padding: 0.45rem 0.6rem;
+  border-radius: 12px 12px 12px 4px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.bubbleMe {
+  align-self: flex-end;
+  border-radius: 12px 12px 4px 12px;
+  background: color-mix(in srgb, #5b6abf 18%, var(--ifm-background-color));
+}
+
+.bubble p {
+  margin: 0;
+}
+
+.bubble time {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.2rem;
+}
+
+.compose {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.compose input {
+  flex: 1;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.compose button {
+  padding: 0.4rem 0.65rem;
+  border-radius: 8px;
+  border: none;
+  background: #5b6abf;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}

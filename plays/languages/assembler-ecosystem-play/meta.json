@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Assembler",
+  "description": "Интерактивное демо «Экосистема Assembler» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "assembler-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-16-starye-yazyki/assembler/3",
+  "order": 34
+}

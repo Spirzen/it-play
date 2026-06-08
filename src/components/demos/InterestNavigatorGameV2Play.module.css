@@ -1,0 +1,104 @@
+.root {
+  --interest-accent: rgba(123, 104, 238, 0.14);
+  --interest-accent-strong: rgba(123, 104, 238, 0.26);
+}
+
+.panel {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--ifm-card-background-color) 92%, var(--ifm-color-primary) 8%),
+    var(--ifm-card-background-color)
+  );
+  box-shadow: 0 8px 24px rgba(123, 104, 238, 0.08);
+}
+
+.toolbar {
+  padding: 0.55rem 0.75rem;
+  border: 1px dashed color-mix(in srgb, var(--ifm-color-emphasis-300) 75%, var(--ifm-color-primary) 25%);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 84%, var(--ifm-color-primary) 16%);
+}
+
+.root button {
+  font-family: var(--ifm-font-family-base);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background-color 0.16s ease;
+}
+
+.root button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(123, 104, 238, 0.18);
+  border-color: var(--interest-accent-strong) !important;
+}
+
+.root button:focus-visible,
+.root a:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ifm-color-primary) 70%, white 30%);
+  outline-offset: 2px;
+}
+
+.root details {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 90%, var(--ifm-color-primary) 10%);
+  padding: 0.2rem 0.35rem;
+}
+
+.root summary {
+  padding: 0.35rem 0.15rem;
+}
+
+.choiceCard {
+  transition: transform 0.16s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.choiceCard:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(123, 104, 238, 0.12);
+}
+
+.choiceCardActive {
+  box-shadow: 0 10px 24px rgba(123, 104, 238, 0.16);
+}
+
+[data-theme='dark'] .panel {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.26);
+}
+
+.starRating {
+  user-select: none;
+}
+
+.starButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starGlyph {
+  color: #eab308;
+}
+
+.starButton:hover,
+.starButton:focus-visible {
+  background: #fef3c7 !important;
+  border-color: #facc15 !important;
+}
+
+[data-theme='dark'] .starButton:hover,
+[data-theme='dark'] .starButton:focus-visible {
+  background: rgba(234, 179, 8, 0.2) !important;
+  border-color: #facc15 !important;
+}
+
+.signalChip {
+  opacity: 0.85;
+  filter: saturate(0.78);
+}
+
+.openArticleLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.25rem;
+  line-height: 1.1;
+}

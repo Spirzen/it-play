@@ -1,0 +1,13 @@
+{
+  "title": "Remote Work Connect",
+  "description": "Интерактивное демо «Remote Work Connect» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "remote-work-connect-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-27-udalennaya-rabota/1",
+  "order": 50
+}

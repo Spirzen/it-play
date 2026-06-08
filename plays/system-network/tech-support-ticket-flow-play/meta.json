@@ -1,0 +1,13 @@
+{
+  "title": "Жизненный цикл тикета",
+  "description": "Интерактивное демо «Жизненный цикл тикета» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "tech-support-ticket-flow-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/113",
+  "order": 26
+}

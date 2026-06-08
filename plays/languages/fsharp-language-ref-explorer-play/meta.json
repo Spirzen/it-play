@@ -1,0 +1,13 @@
+{
+  "title": "Справочник F#",
+  "description": "Интерактивное демо «Справочник F#» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "fsharp-language-ref-explorer-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-04-platforma-dotnet/184",
+  "order": 12
+}

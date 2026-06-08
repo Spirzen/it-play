@@ -1,0 +1,48 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.control {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  min-height: 140px;
+  padding: 0.65rem;
+  gap: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.containerGrid {
+  min-height: 120px;
+}
+
+.box {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.74rem;
+  text-align: center;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}

@@ -1,0 +1,243 @@
+.root {
+  max-width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  color: var(--ifm-color-content);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.statusPanel {
+  min-height: 2.75rem;
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  font-size: 0.88rem;
+  text-align: center;
+  line-height: 1.45;
+}
+
+.statusHighlight {
+  font-weight: 700;
+}
+
+.bootSteps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.step {
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  color: var(--ifm-color-content-secondary);
+  transition: all 0.25s ease;
+}
+
+.stepDone {
+  border-color: var(--demo-success, #2e7d32);
+  color: var(--demo-success, #2e7d32);
+  background: color-mix(in srgb, var(--demo-success, #2e7d32) 12%, transparent);
+}
+
+.stepActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  font-weight: 600;
+}
+
+.diagram {
+  position: relative;
+  margin: 0 auto 1rem;
+  max-width: 400px;
+}
+
+.svgLayer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.flowPath {
+  fill: none;
+  stroke: var(--ifm-color-emphasis-400);
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+  opacity: 0.5;
+}
+
+.flowActive {
+  stroke: var(--ifm-color-primary);
+  opacity: 1;
+  stroke-dasharray: none;
+  animation: flowPulse 0.8s ease infinite alternate;
+}
+
+@keyframes flowPulse {
+  from {
+    stroke-opacity: 0.55;
+  }
+  to {
+    stroke-opacity: 1;
+  }
+}
+
+.packet {
+  fill: var(--ifm-color-primary);
+  filter: drop-shadow(0 0 4px var(--ifm-color-primary));
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(10px, 3vw, 18px);
+  position: relative;
+  z-index: 1;
+}
+
+.node {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  font-size: clamp(10px, 2.8vw, 11px);
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid #666;
+  background: #333;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nodeOff {
+  opacity: 0.35;
+  transform: scale(0.94);
+  border-color: #444;
+  background: #222;
+}
+
+.nodeActive {
+  border-color: #4caf50;
+  background: #2e7d32;
+  box-shadow: 0 0 14px rgba(76, 175, 80, 0.55);
+  transform: scale(1.04);
+}
+
+.nodeProcessing {
+  border-color: #ff9800;
+  background: #e65100;
+  box-shadow: 0 0 14px rgba(255, 152, 0, 0.55);
+}
+
+.nodeRunning {
+  border-color: #4caf50;
+  background: #1b5e20;
+}
+
+.nodeHidden {
+  visibility: hidden;
+}
+
+.nodeIcon {
+  font-size: clamp(1.1rem, 4vw, 1.45rem);
+}
+
+.fileBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  animation: filePulse 1s ease infinite;
+}
+
+.fileDisk {
+  background: #ff9800;
+}
+
+.fileRam {
+  background: #4caf50;
+}
+
+.fileCpu {
+  background: #ff9800;
+}
+
+@keyframes filePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.log {
+  margin-top: 0.5rem;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px dashed var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  max-height: 7rem;
+  overflow-y: auto;
+  font-size: 0.78rem;
+  font-family: var(--ifm-font-family-monospace);
+  text-align: left;
+}
+
+.logLine {
+  margin: 0.15rem 0;
+  color: var(--ifm-color-content-secondary);
+}
+
+.logLine:last-child {
+  color: var(--ifm-color-content);
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "C# и базы данных",
+  "description": "Интерактивное демо «C# и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "csharp-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-05-csharp/44",
+  "order": 13
+}

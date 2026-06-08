@@ -1,0 +1,13 @@
+{
+  "title": "Маршалинг данных",
+  "description": "Интерактивное демо «Маршалинг данных» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "marshaling-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/111",
+  "order": 1
+}

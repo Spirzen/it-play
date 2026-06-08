@@ -1,0 +1,12 @@
+{
+  "title": "Touch Typing Finger",
+  "description": "Интерактивное демо «Touch Typing Finger» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "touch-typing-finger-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 4
+}

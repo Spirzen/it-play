@@ -1,0 +1,13 @@
+{
+  "title": "Жизненный цикл мема",
+  "description": "Интерактивное демо «Жизненный цикл мема» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "meme-lifecycle-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-10-internet-kultura/116",
+  "order": 35
+}

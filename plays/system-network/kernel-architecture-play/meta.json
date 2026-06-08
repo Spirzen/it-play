@@ -1,0 +1,13 @@
+{
+  "title": "Архитектура ядра",
+  "description": "Интерактивное демо «Архитектура ядра» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "kernel-architecture-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/3",
+  "order": 4
+}

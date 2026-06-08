@@ -1,0 +1,94 @@
+.root {
+  width: 100%;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.protoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.protoBtn {
+  text-align: left;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.78rem;
+  font-family: inherit;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.protoBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.protoBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.18));
+  font-weight: 600;
+}
+
+.detail h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.detail p {
+  margin: 0 0 0.35rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.layerStack {
+  margin-top: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.layerRow {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr auto;
+  gap: 0.35rem;
+  align-items: center;
+  padding: 0.25rem 0.4rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  opacity: 0.55;
+}
+
+.layerRowActive {
+  opacity: 1;
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.15));
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.layerNum {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.layerEx {
+  font-size: 0.7rem;
+  color: var(--ifm-color-content-secondary);
+  text-align: right;
+}

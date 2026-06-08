@@ -71,16 +71,44 @@ html.embed-doc,
 html.embed-doc body.embed-body {
   height: auto;
   min-height: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   background: var(--embed-bg);
   color: var(--embed-fg);
   font-family: var(--embed-font);
 }
 
 .embed-main {
+  position: relative;
   padding: var(--embed-pad-y) var(--embed-pad-x);
   width: 100%;
-  overflow: hidden;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
   background: var(--embed-bg);
   color: var(--embed-fg);
+  -webkit-overflow-scrolling: touch;
+}
+
+.embed-loading {
+  display: grid;
+  place-items: center;
+  min-height: 160px;
+  padding: 1.25rem;
+  color: var(--embed-muted);
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px dashed var(--embed-border);
+  border-radius: var(--embed-radius);
+  background: var(--embed-surface);
+}
+
+.embed-loading[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 640px) {
+  .embed-main {
+    padding: 0;
+  }
 }

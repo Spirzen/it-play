@@ -1,0 +1,12 @@
+{
+  "title": "Multimedia Editors",
+  "description": "Интерактивное демо «Multimedia Editors» — раздел Инструменты · Мультимedia.",
+  "category": "tools-multimedia",
+  "categoryTitle": "Инструменты · Мультимedia",
+  "component": "multimedia-editors-play",
+  "tags": [
+    "toolsmultimedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/multimedia/1",
+  "order": 77
+}

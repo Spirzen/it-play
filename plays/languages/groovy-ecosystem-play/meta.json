@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Groovy",
+  "description": "Интерактивное демо «Экосистема Groovy» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "groovy-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-12-groovy/11",
+  "order": 26
+}

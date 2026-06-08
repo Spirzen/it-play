@@ -1,0 +1,12 @@
+{
+  "title": "Resource Metrics Demo",
+  "description": "Интерактивное демо «Resource Metrics Demo» — раздел Инструменты · Разработка.",
+  "category": "tools-development",
+  "categoryTitle": "Инструменты · Разработка",
+  "component": "resource-metrics-demo",
+  "tags": [
+    "toolsdevelopment"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/development/4",
+  "order": 55
+}

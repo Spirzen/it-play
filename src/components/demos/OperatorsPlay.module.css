@@ -1,0 +1,231 @@
+.root {
+  max-width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.diagram {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.65rem;
+  padding: 1rem 0.75rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: 1px dashed var(--demo-border, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, var(--ifm-color-primary) 4%, var(--ifm-background-surface-color));
+}
+
+.arrow {
+  font-size: 1.25rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  user-select: none;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 4.5rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.chipRole {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+  opacity: 0.85;
+}
+
+.chipValue {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.chipExpr {
+  font-size: 0.72rem;
+  color: var(--demo-muted);
+  margin-top: 0.2rem;
+}
+
+.operand {
+  background: color-mix(in srgb, #2196f3 14%, var(--ifm-background-surface-color));
+  border-color: #2196f3;
+  color: #1565c0;
+}
+
+[data-theme='dark'] .operand {
+  color: #90caf9;
+}
+
+.operator {
+  background: color-mix(in srgb, #9c27b0 14%, var(--ifm-background-surface-color));
+  border-color: #9c27b0;
+  color: #6a1b9a;
+  min-width: 3.5rem;
+}
+
+[data-theme='dark'] .operator {
+  color: #ce93d8;
+}
+
+.operation {
+  background: color-mix(in srgb, #2e7d32 14%, var(--ifm-background-surface-color));
+  border-color: #2e7d32;
+  color: #1b5e20;
+  min-width: 5rem;
+}
+
+[data-theme='dark'] .operation {
+  color: #a5d6a7;
+}
+
+.exprBar {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border);
+  margin-bottom: 0.75rem;
+}
+
+.exprPart {
+  padding: 0.1rem 0.15rem;
+  border-radius: 4px;
+}
+
+.exprOperand {
+  color: #1976d2;
+  background: color-mix(in srgb, #2196f3 18%, transparent);
+}
+
+.exprOperator {
+  color: #7b1fa2;
+  background: color-mix(in srgb, #9c27b0 18%, transparent);
+  font-weight: 700;
+}
+
+.exprResult {
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+.priorityExpr {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0.75rem 0;
+}
+
+.priorityHighlightMul {
+  background: color-mix(in srgb, #ff9800 25%, transparent);
+  border-radius: 4px;
+  padding: 0 0.2rem;
+}
+
+.priorityHighlightAdd {
+  background: color-mix(in srgb, #2196f3 22%, transparent);
+  border-radius: 4px;
+  padding: 0 0.2rem;
+}
+
+.priorityHighlightDone {
+  background: color-mix(in srgb, #2e7d32 22%, transparent);
+  border-radius: 4px;
+  padding: 0 0.2rem;
+}
+
+.stepList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.stepItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border);
+}
+
+.stepItemActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight);
+}
+
+.stepNum {
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--ifm-color-primary);
+  color: #fff;
+}
+
+.controlsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.control input[type='number'],
+.control select {
+  min-width: 4.5rem;
+}
+
+.compareBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 560px) {
+  .compareBox {
+    grid-template-columns: 1fr;
+  }
+}
+
+.compareCard {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  font-size: 0.82rem;
+}
+
+.compareCard strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--demo-muted);
+}

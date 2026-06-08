@@ -1,0 +1,13 @@
+{
+  "title": "История технологий — хаб",
+  "description": "Интерактивное демо «История технологий — хаб» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "tech-history-hub",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/intro",
+  "order": 5
+}

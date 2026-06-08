@@ -1,0 +1,594 @@
+.visualWrap {
+  margin: 0.75rem 0 1rem;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: #0d1117;
+}
+
+.visualLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #94a3b8;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* —— Steam —— */
+.steam {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 220px;
+  background: linear-gradient(135deg, #1b2838 0%, #171a21 100%);
+  color: #c7d5e0;
+  font-size: 0.78rem;
+}
+
+@media (min-width: 520px) {
+  .steam {
+    grid-template-columns: 11rem 1fr;
+  }
+}
+
+.steamSide {
+  background: #171a21;
+  border-right: 1px solid #2a475e;
+  padding: 0.5rem 0;
+}
+
+.steamNavBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  border: none;
+  background: transparent;
+  color: #acb2b8;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.76rem;
+}
+
+.steamNavBtn:hover {
+  background: #2a475e;
+  color: #fff;
+}
+
+.steamNavActive {
+  background: linear-gradient(90deg, #2a475e, transparent);
+  color: #66c0f4;
+}
+
+.steamMain {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.steamTop {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid #2a475e;
+  align-items: center;
+}
+
+.steamSearch {
+  flex: 1;
+  padding: 0.35rem 0.55rem;
+  border-radius: 3px;
+  border: 1px solid #2a475e;
+  background: #316282;
+  color: #fff;
+  font-size: 0.72rem;
+}
+
+.steamUser {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #66c0f4, #1b2838);
+}
+
+.steamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+  gap: 0.45rem;
+  padding: 0.65rem;
+  flex: 1;
+}
+
+.steamTile {
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  background: #2a475e;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.steamTile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.steamTileActive {
+  outline: 2px solid #66c0f4;
+  outline-offset: 2px;
+}
+
+.steamCover {
+  height: 4.2rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.35rem;
+  font-weight: 700;
+  font-size: 0.62rem;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.steamMeta {
+  padding: 0.3rem 0.4rem;
+  font-size: 0.65rem;
+  color: #8f98a0;
+}
+
+.steamAction {
+  margin: 0 0.65rem 0.65rem;
+  padding: 0.45rem 0.85rem;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #75b022, #588a1b);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.steamActionSecondary {
+  background: linear-gradient(180deg, #4c6b8a, #3d5a73);
+}
+
+.steamFooter {
+  padding: 0 0.65rem 0.55rem;
+  font-size: 0.68rem;
+  color: #8f98a0;
+}
+
+/* —— Xbox —— */
+.xboxStage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 1rem 1rem;
+  background: radial-gradient(ellipse at 50% 80%, #1a2e1a 0%, #0a0a0a 55%);
+  min-height: 240px;
+}
+
+.xboxToggle {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.xboxToggleBtn {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #2d5a2d;
+  background: rgba(16, 124, 16, 0.15);
+  color: #8fdf8f;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.xboxToggleActive {
+  background: #107c10;
+  color: #fff;
+  border-color: #107c10;
+}
+
+.xboxConsole {
+  position: relative;
+  transition: transform 0.35s ease, width 0.35s ease, height 0.35s ease;
+}
+
+.xboxSeriesX {
+  width: 7.5rem;
+  height: 11rem;
+}
+
+.xboxSeriesS {
+  width: 5.5rem;
+  height: 9.5rem;
+}
+
+.xboxBody {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  position: relative;
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.xboxBodyDark {
+  background: linear-gradient(145deg, #2a2a2a 0%, #0d0d0d 40%, #1a1a1a 100%);
+}
+
+.xboxBodyLight {
+  background: linear-gradient(145deg, #f5f5f5 0%, #d8d8d8 50%, #c8c8c8 100%);
+}
+
+.xboxVentTop {
+  position: absolute;
+  top: 0.35rem;
+  left: 12%;
+  right: 12%;
+  height: 1.1rem;
+  border-radius: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    #111 0,
+    #111 3px,
+    #333 3px,
+    #333 6px
+  );
+}
+
+.xboxVentSide {
+  position: absolute;
+  top: 25%;
+  right: 0.4rem;
+  width: 0.55rem;
+  height: 45%;
+  border-radius: 2px;
+  background: repeating-linear-gradient(
+    180deg,
+    #bbb 0,
+    #bbb 4px,
+    #999 4px,
+    #999 8px
+  );
+}
+
+.xboxLogo {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: #107c10;
+  box-shadow: 0 0 12px rgba(16, 124, 16, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.xboxDisc {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 2px solid #444;
+  background: radial-gradient(circle at 30% 30%, #555, #222);
+}
+
+.xboxPower {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #333;
+  box-shadow: 0 0 0 2px #555;
+}
+
+.xboxPowerOn {
+  background: #107c10;
+  box-shadow: 0 0 8px #107c10;
+}
+
+.xboxSpec {
+  margin-top: 0.85rem;
+  font-size: 0.72rem;
+  color: #8fdf8f;
+  text-align: center;
+}
+
+/* —— Nintendo Switch —— */
+.switchStage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 1rem;
+  background: radial-gradient(ellipse at 50% 30%, #2d1f3d 0%, #0f0f14 60%);
+  min-height: 240px;
+}
+
+.switchToggle {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.switchUnit {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  transition: transform 0.3s ease;
+}
+
+.switchDocked {
+  flex-direction: column;
+}
+
+.switchJoyL,
+.switchJoyR {
+  width: 1.35rem;
+  height: 5.5rem;
+  border-radius: 8px 2px 2px 8px;
+  flex-shrink: 0;
+}
+
+.switchJoyL {
+  background: linear-gradient(180deg, #2d2d2d, #1a1a1a);
+  border: 2px solid #3d3d3d;
+  box-shadow: inset -2px 0 0 #e60012;
+}
+
+.switchJoyR {
+  background: linear-gradient(180deg, #2d2d2d, #1a1a1a);
+  border: 2px solid #3d3d3d;
+  border-radius: 2px 8px 8px 2px;
+  box-shadow: inset 2px 0 0 #0070d1;
+}
+
+.switchScreen {
+  width: 9.5rem;
+  height: 5.5rem;
+  background: #1a1a1a;
+  border: 3px solid #2a2a2a;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.switchDocked .switchScreen {
+  width: 14rem;
+  height: 7.5rem;
+}
+
+.switchBezel {
+  position: absolute;
+  inset: 0.35rem;
+  border-radius: 2px;
+  background: linear-gradient(160deg, #1e3a5f 0%, #0d1b2a 50%, #415a77 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switchHome {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 4px;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+.switchHomeLit {
+  background: #e60012;
+  box-shadow: 0 0 6px #e60012;
+}
+
+.switchIcons {
+  display: flex;
+  gap: 0.65rem;
+  font-size: 1.1rem;
+}
+
+.switchDock {
+  margin-top: 0.75rem;
+  width: 10rem;
+  height: 0.55rem;
+  background: #333;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.switchDocked .switchDock {
+  opacity: 1;
+}
+
+.switchHint {
+  margin-top: 0.65rem;
+  font-size: 0.72rem;
+  color: #b8a0c8;
+  text-align: center;
+}
+
+/* —— PlayStation 5 —— */
+.ps5Stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem 1rem;
+  background: radial-gradient(ellipse at 50% 20%, #1a2a4a 0%, #0a0a12 65%);
+  min-height: 250px;
+}
+
+.ps5Console {
+  position: relative;
+  width: 6.5rem;
+  height: 13rem;
+  cursor: pointer;
+}
+
+.ps5WingL,
+.ps5WingR {
+  position: absolute;
+  top: 8%;
+  width: 1.4rem;
+  height: 84%;
+  background: linear-gradient(90deg, #e8e8e8, #f5f5f5 40%, #d0d0d0);
+  border-radius: 2px 40% 40% 2px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.ps5WingL {
+  left: 0;
+  transform: skewY(-3deg);
+  border-radius: 40% 2px 2px 40%;
+}
+
+.ps5WingR {
+  right: 0;
+  transform: skewY(3deg);
+}
+
+.ps5Center {
+  position: absolute;
+  left: 1.25rem;
+  right: 1.25rem;
+  top: 10%;
+  bottom: 8%;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.ps5Light {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.35rem;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 112, 210, 0.2) 15%,
+    rgba(0, 112, 210, 0.9) 50%,
+    rgba(0, 112, 210, 0.2) 85%,
+    transparent 100%
+  );
+  opacity: 0.35;
+  transition: opacity 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ps5LightOn {
+  opacity: 1;
+  box-shadow: 0 0 18px rgba(0, 112, 210, 0.85);
+}
+
+.ps5Stand {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.5rem;
+  height: 0.35rem;
+  background: #888;
+  border-radius: 2px;
+}
+
+.ps5Controller {
+  margin-top: 1.25rem;
+  width: 8rem;
+  height: 2.8rem;
+  background: linear-gradient(180deg, #f0f0f0, #d8d8d8);
+  border-radius: 2rem;
+  position: relative;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.ps5CtrlGripL,
+.ps5CtrlGripR {
+  position: absolute;
+  bottom: 0;
+  width: 1.6rem;
+  height: 1.8rem;
+  background: inherit;
+  border-radius: 0 0 50% 50%;
+}
+
+.ps5CtrlGripL {
+  left: 0.5rem;
+}
+
+.ps5CtrlGripR {
+  right: 0.5rem;
+}
+
+.ps5CtrlTouch {
+  position: absolute;
+  top: 0.45rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 0.9rem;
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.ps5Features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-top: 0.85rem;
+  max-width: 20rem;
+}
+
+.ps5Chip {
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  border: 1px solid #2a475e;
+  background: rgba(0, 112, 210, 0.15);
+  color: #7eb8ff;
+  cursor: pointer;
+}
+
+.ps5ChipOff {
+  opacity: 0.45;
+  background: transparent;
+  color: #64748b;
+}
+
+.ps5Hint {
+  margin-top: 0.55rem;
+  font-size: 0.72rem;
+  color: #7eb8ff;
+  text-align: center;
+}

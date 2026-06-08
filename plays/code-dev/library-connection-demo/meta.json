@@ -1,0 +1,13 @@
+{
+  "title": "Подключение библиотек",
+  "description": "Интерактивное демо «Подключение библиотек» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "library-connection-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/101",
+  "order": 21
+}

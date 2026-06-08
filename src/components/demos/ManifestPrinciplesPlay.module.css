@@ -1,0 +1,213 @@
+.root {
+  margin: 1.25rem 0;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.layout {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: minmax(200px, 0.42fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.principles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.principleBtn {
+  display: grid;
+  grid-template-columns: 2rem 1.75rem 1fr;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.55rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s;
+}
+
+.principleBtn:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateX(2px);
+}
+
+.principleBtnActive,
+.principleBtnTour {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+}
+
+.principleNum {
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--ifm-color-primary);
+}
+
+.principleEmoji {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.principleTitle {
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.detail {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-background-surface-color)),
+    var(--ifm-background-surface-color)
+  );
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.35rem;
+}
+
+.detailTitle {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+}
+
+.tagline {
+  margin: 0 0 0.65rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+  font-style: italic;
+}
+
+.detailText {
+  margin: 0 0 0.85rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.layerGrid {
+  display: grid;
+  gap: 0.45rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.layerCard {
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  opacity: 0.55;
+}
+
+.layerCardOn {
+  opacity: 1;
+  border-style: solid;
+  border-color: var(--layer-color, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--layer-color, #4a6cf7) 12%, transparent);
+}
+
+.layerLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.layerNodes {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+}
+
+.nodeOn {
+  color: inherit;
+}
+
+.nodeOff {
+  color: var(--ifm-color-content-secondary);
+}
+
+.audience {
+  margin-top: 0.85rem;
+}
+
+.audienceChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.audienceChip {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.flow {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.flowLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.45rem;
+}
+
+.flowTrack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.flowStep {
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: color-mix(in srgb, var(--layer-color, #4a6cf7) 18%, transparent);
+  border: 1px solid var(--layer-color, var(--ifm-color-primary));
+}
+
+.flowArrow {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.85rem;
+}
+
+.flowEnd {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ifm-color-success, #2e8b57);
+}

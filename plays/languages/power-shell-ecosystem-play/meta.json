@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема PowerShell",
+  "description": "Интерактивное демо «Экосистема PowerShell» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "power-shell-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-26-powershell/11",
+  "order": 51
+}

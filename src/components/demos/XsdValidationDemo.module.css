@@ -1,0 +1,93 @@
+.schemaBlock {
+  composes: mono from '../shared/kb/toolDemo.module.css';
+  margin: 0;
+  padding: 0.65rem 0.75rem;
+  max-height: 11rem;
+  overflow: auto;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  background: var(--ifm-code-background);
+  color: var(--ifm-pre-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  white-space: pre;
+}
+
+.issueList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.issueItem {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.issueOk {
+  background: rgba(46, 125, 50, 0.08);
+  border-color: rgba(46, 125, 50, 0.35);
+}
+
+.issueFail {
+  background: rgba(198, 40, 40, 0.06);
+  border-color: rgba(198, 40, 40, 0.35);
+}
+
+.issueIcon {
+  flex-shrink: 0;
+  font-weight: 700;
+  width: 1.1rem;
+  text-align: center;
+}
+
+.issueOk .issueIcon {
+  color: #2e7d32;
+}
+
+.issueFail .issueIcon {
+  color: #c62828;
+}
+
+.issueRule {
+  composes: mono from '../shared/kb/toolDemo.module.css';
+  display: block;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0.15rem;
+}
+
+.statusBanner {
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.statusValid {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.35);
+}
+
+.statusInvalid {
+  background: rgba(198, 40, 40, 0.1);
+  color: #c62828;
+  border: 1px solid rgba(198, 40, 40, 0.35);
+}
+
+.statusPending {
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content-secondary);
+  border: 1px dashed var(--demo-border, var(--ifm-color-emphasis-300));
+}

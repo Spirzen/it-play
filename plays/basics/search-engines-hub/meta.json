@@ -1,0 +1,13 @@
+{
+  "title": "Поисковые системы — хаб",
+  "description": "Интерактивное демо «Поисковые системы — хаб» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "search-engines-hub",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-21-poisk-informatsii/4",
+  "order": 39
+}

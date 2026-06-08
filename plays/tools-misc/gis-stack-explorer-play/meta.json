@@ -1,0 +1,12 @@
+{
+  "title": "Gis Stack Explorer",
+  "description": "Интерактивное демо «Gis Stack Explorer» — раздел Инструменты · Разное.",
+  "category": "tools-misc",
+  "categoryTitle": "Инструменты · Разное",
+  "component": "gis-stack-explorer-play",
+  "tags": [
+    "toolsmisc"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/misc/4",
+  "order": 74
+}

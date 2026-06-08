@@ -1,0 +1,106 @@
+.root {
+  max-width: min(900px, 100%);
+  margin: 0 auto 1.25rem;
+}
+
+.slider {
+  width: 100%;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.stageTitle {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+.deliverables {
+  margin: 0 0 0.75rem;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.mockApp {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+}
+
+.mockHeader {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+}
+
+.mockBody {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 0.5rem;
+  padding: 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .mockBody {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  padding: 0.55rem;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.panel input {
+  display: block;
+  width: 100%;
+  margin: 0.35rem 0;
+  padding: 0.3rem 0.45rem;
+  font-size: 0.72rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+}
+
+.panelOff {
+  opacity: 0.45;
+  font-style: italic;
+}
+
+.table {
+  width: 100%;
+  font-size: 0.68rem;
+  border-collapse: collapse;
+  margin-top: 0.35rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.2rem 0.35rem;
+}
+
+.mockFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.5rem 0.65rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.pill {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+  opacity: 0.5;
+}
+
+.pillOn {
+  opacity: 1;
+  background: color-mix(in srgb, #2e7d32 18%, transparent);
+  font-weight: 600;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Архитектура ASP.NET",
+  "description": "Интерактивное демо «Архитектура ASP.NET» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "asp-net-architecture-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-05-csharp/451",
+  "order": 14
+}

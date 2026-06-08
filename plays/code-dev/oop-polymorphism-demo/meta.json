@@ -1,0 +1,13 @@
+{
+  "title": "ООП — полиморфизм",
+  "description": "Интерактивное демо «ООП — полиморфизм» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "oop-polymorphism-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-08-oop/5",
+  "order": 42
+}

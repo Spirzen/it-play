@@ -1,0 +1,12 @@
+{
+  "title": "Hypervisor",
+  "description": "Интерактивное демо «Hypervisor» — раздел Инструменты · ОС и система.",
+  "category": "tools-system",
+  "categoryTitle": "Инструменты · ОС и система",
+  "component": "hypervisor-play",
+  "tags": [
+    "toolssystem"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/system/3",
+  "order": 93
+}

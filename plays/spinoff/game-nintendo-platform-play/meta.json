@@ -1,0 +1,13 @@
+{
+  "title": "Платформа Nintendo",
+  "description": "Интерактивное демо «Платформа Nintendo» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-nintendo-platform-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/120",
+  "order": 15
+}

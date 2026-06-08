@@ -1,0 +1,123 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.zone {
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  padding: 0.85rem;
+  background: var(--ifm-background-surface-color);
+  min-height: 10rem;
+}
+
+.zoneStack {
+  border-left: 3px solid #2196f3;
+}
+
+.zoneCpu {
+  border-left: 3px solid #9c27b0;
+}
+
+.zoneHeap {
+  border-left: 3px solid #ff9800;
+}
+
+.zoneTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  color: var(--demo-muted);
+}
+
+.pipeline {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pipeStage {
+  padding: 0.15rem 0.4rem;
+  font-size: 0.65rem;
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--demo-border);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.pipeStageOn {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.regRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.35rem;
+  padding: 0.35rem 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+}
+
+.phaseBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.phaseChip {
+  padding: 0.25rem 0.55rem;
+  font-size: 0.72rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  color: var(--demo-muted);
+}
+
+.phaseChipActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.phaseChipDone {
+  border-color: var(--demo-success, #2e7d32);
+  color: var(--demo-success, #2e7d32);
+}
+
+.stepCard {
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  margin-bottom: 1rem;
+}
+
+.stepCard h5 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+}
+
+.stepCard p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--demo-muted);
+  line-height: 1.5;
+}
+
+.stackFrameActive {
+  box-shadow: 0 0 0 2px var(--demo-highlight);
+  border-color: var(--ifm-color-primary) !important;
+}

@@ -1,0 +1,154 @@
+.track {
+  position: relative;
+  min-width: 3rem;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trackInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  width: 100%;
+}
+
+.trackLine {
+  width: 100%;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--demo-border, var(--ifm-color-emphasis-300));
+  position: relative;
+  overflow: visible;
+}
+
+.trackLineActive {
+  background: linear-gradient(
+    90deg,
+    var(--ifm-color-emphasis-300),
+    var(--ifm-color-primary)
+  );
+}
+
+.trackLineWaiting {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--flow-wait, #ed6c02) 30%, transparent),
+    var(--flow-wait, #ed6c02),
+    color-mix(in srgb, var(--flow-wait, #ed6c02) 30%, transparent)
+  );
+  animation: flowLineWait 1.2s ease-in-out infinite;
+}
+
+@keyframes flowLineWait {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.trackArrow {
+  font-size: 0.85rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  line-height: 1;
+}
+
+.packet {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--ifm-color-primary) 55%, transparent);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.packetVisible {
+  opacity: 1;
+  animation: flowPacketTravel var(--packet-duration, 1.2s) ease-in-out forwards;
+}
+
+.packetPaused {
+  left: 50%;
+  margin-left: -6px;
+  animation: flowPacketPulse 1s ease-in-out infinite;
+}
+
+.packetVisible.packetPaused {
+  animation: flowPacketPulse 1s ease-in-out infinite;
+}
+
+@keyframes flowPacketTravel {
+  0% {
+    left: 0;
+    transform: scale(0.85);
+  }
+  15% {
+    transform: scale(1.1);
+  }
+  100% {
+    left: calc(100% - 12px);
+    transform: scale(1);
+  }
+}
+
+@keyframes flowPacketPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 8px color-mix(in srgb, var(--flow-wait, #ed6c02) 50%, transparent);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--flow-wait, #ed6c02) 70%, transparent);
+  }
+}
+
+.packetReverse {
+  animation-name: flowPacketTravelReverse;
+}
+
+@keyframes flowPacketTravelReverse {
+  0% {
+    left: calc(100% - 12px);
+    transform: scale(0.85);
+  }
+  15% {
+    transform: scale(1.1);
+  }
+  100% {
+    left: 0;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .packetVisible {
+    animation: none;
+    left: calc(100% - 12px);
+    opacity: 1;
+  }
+
+  .packetPaused.packetVisible {
+    left: 50%;
+    margin-left: -6px;
+  }
+
+  .packetReverse.packetVisible {
+    left: 0;
+  }
+
+  .trackLineWaiting {
+    animation: none;
+    opacity: 1;
+  }
+}

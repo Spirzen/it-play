@@ -1,0 +1,13 @@
+{
+  "title": "DevOps — шпаргалка",
+  "description": "Интерактивное демо «DevOps — шпаргалка» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "dev-ops-cheat-sheet-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118",
+  "order": 28
+}

@@ -1,0 +1,164 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 1rem auto;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin-right: 0.25rem;
+}
+
+.canvasWrap {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0d1117;
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+.canvasLight {
+  background: #f8fafc;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.layerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.72rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+}
+
+.layerBtnOff {
+  opacity: 0.45;
+}
+
+.layerDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.cmdInput {
+  width: 100%;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin-bottom: 0.5rem;
+}
+
+.modStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+}
+
+.modRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  cursor: pointer;
+}
+
+.modRowActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+}
+
+.nodeGraph {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mayaNode {
+  padding: 0.45rem;
+  border-radius: 6px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  font-size: 0.68rem;
+  font-family: var(--ifm-font-family-monospace);
+  text-align: center;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.mayaNodeActive {
+  border-color: var(--ifm-color-primary);
+}
+
+.iceRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.sliderLabel {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.sliderLabel input {
+  width: 100%;
+}
+
+.hint {
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.35rem 0 0;
+}
+
+.legacyBadge {
+  display: inline-block;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  background: #6b7280;
+  color: #fff;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Test Doubles Compare",
+  "description": "Интерактивное демо «Test Doubles Compare» — раздел Инструменты · Тестирование.",
+  "category": "tools-testing",
+  "categoryTitle": "Инструменты · Тестирование",
+  "component": "test-doubles-compare-play",
+  "tags": [
+    "toolstesting"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/testing/1",
+  "order": 99
+}

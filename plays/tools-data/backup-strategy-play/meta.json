@@ -1,0 +1,12 @@
+{
+  "title": "Backup Strategy",
+  "description": "Интерактивное демо «Backup Strategy» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "backup-strategy-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/5",
+  "order": 44
+}

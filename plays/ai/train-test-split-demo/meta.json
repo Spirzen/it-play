@@ -1,0 +1,13 @@
+{
+  "title": "Train / Test split",
+  "description": "Интерактивное демо «Train / Test split» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "train-test-split-demo",
+  "tags": [
+    "ai",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1",
+  "order": 1
+}

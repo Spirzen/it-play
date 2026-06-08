@@ -1,0 +1,12 @@
+{
+  "title": "SQL-тренажёр",
+  "description": "Интерактивное демо «SQL-тренажёр» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "sql-trainer",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/1152",
+  "order": 14
+}

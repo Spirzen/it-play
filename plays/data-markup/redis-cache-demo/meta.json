@@ -1,0 +1,13 @@
+{
+  "title": "Redis — кэш и типы данных",
+  "description": "Интерактивное демо «Redis — кэш и типы данных» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "redis-cache-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-06-nosql/5",
+  "order": 24
+}

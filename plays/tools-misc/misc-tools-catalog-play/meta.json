@@ -1,0 +1,12 @@
+{
+  "title": "Misc Tools Catalog",
+  "description": "Интерактивное демо «Misc Tools Catalog» — раздел Инструменты · Разное.",
+  "category": "tools-misc",
+  "categoryTitle": "Инструменты · Разное",
+  "component": "misc-tools-catalog-play",
+  "tags": [
+    "toolsmisc"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/misc/6",
+  "order": 76
+}

@@ -1,0 +1,12 @@
+{
+  "title": "No Sql Models",
+  "description": "Интерактивное демо «No Sql Models» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "no-sql-models-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/2",
+  "order": 38
+}

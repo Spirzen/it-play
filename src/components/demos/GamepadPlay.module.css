@@ -1,0 +1,341 @@
+.root {
+  max-width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.2fr) minmax(200px, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* —— Геймпад —— */
+.padWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.gamepad {
+  position: relative;
+  width: 300px;
+  height: 168px;
+  border-radius: 48px 48px 56px 56px;
+  background: linear-gradient(
+    165deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-350, var(--ifm-color-emphasis-300)) 45%,
+    var(--ifm-color-emphasis-400) 100%
+  );
+  border: 2px solid var(--ifm-color-emphasis-500);
+  box-shadow:
+    inset 0 2px 6px rgba(255, 255, 255, 0.25),
+    0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.gamepadVibrate {
+  animation: padRumble 0.12s ease infinite;
+}
+
+@keyframes padRumble {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-1px, 0.5px);
+  }
+  75% {
+    transform: translate(1px, -0.5px);
+  }
+}
+
+.dpad {
+  position: absolute;
+  left: 36px;
+  top: 52px;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+.dpadBtn {
+  border: none;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-500);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.1s ease, transform 0.08s ease;
+}
+
+.dpadBtn:hover {
+  background: var(--ifm-color-emphasis-600);
+}
+
+.dpadBtnActive {
+  background: var(--ifm-color-primary);
+  transform: scale(0.92);
+}
+
+.dpadUp {
+  grid-column: 2;
+  grid-row: 1;
+}
+.dpadLeft {
+  grid-column: 1;
+  grid-row: 2;
+}
+.dpadCenter {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.dpadRight {
+  grid-column: 3;
+  grid-row: 2;
+}
+.dpadDown {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.stickZone {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ifm-color-emphasis-500) 40%, transparent);
+  border: 2px solid var(--ifm-color-emphasis-500);
+  touch-action: none;
+}
+
+.stickLeft {
+  left: 108px;
+  top: 48px;
+}
+
+.stickRight {
+  right: 108px;
+  top: 48px;
+}
+
+.stickCap {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--ifm-background-surface-color), var(--ifm-color-emphasis-300));
+  border: 2px solid var(--ifm-color-emphasis-500);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  transition: box-shadow 0.15s ease;
+}
+
+.stickCapActive {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+}
+
+.deadZone {
+  position: absolute;
+  inset: 50%;
+  width: 28%;
+  height: 28%;
+  margin: -14% 0 0 -14%;
+  border-radius: 50%;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.faceBtns {
+  position: absolute;
+  right: 28px;
+  top: 44px;
+  width: 88px;
+  height: 88px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+  transform: rotate(45deg);
+}
+
+.faceBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  font-size: 0.72rem;
+  font-weight: 800;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  color: #fff;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.faceBtn:active,
+.faceBtnActive {
+  transform: rotate(-45deg) scale(0.9);
+  filter: brightness(1.2);
+}
+
+.btnY {
+  grid-column: 2;
+  grid-row: 1;
+  background: #eab308;
+  margin: 0 auto;
+}
+.btnB {
+  grid-column: 2;
+  grid-row: 2;
+  background: #ef4444;
+  margin: 0 auto;
+}
+.btnX {
+  grid-column: 1;
+  grid-row: 2;
+  background: #3b82f6;
+  margin: auto 0;
+}
+.btnA {
+  grid-column: 1;
+  grid-row: 1;
+  background: #22c55e;
+  margin: auto 0;
+}
+
+.bumper {
+  position: absolute;
+  top: 14px;
+  width: 44px;
+  height: 18px;
+  border-radius: 8px 8px 4px 4px;
+  border: none;
+  background: var(--ifm-color-emphasis-500);
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+}
+
+.bumperActive {
+  background: var(--ifm-color-primary);
+  color: #fff;
+}
+
+.bumperL {
+  left: 52px;
+}
+.bumperR {
+  right: 52px;
+}
+
+.triggerRow {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+  justify-content: center;
+}
+
+.trigger {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.trigger input {
+  width: 100%;
+}
+
+/* —— Панель данных —— */
+.readout {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  line-height: 1.55;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.actionBox {
+  margin-top: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border-left: 3px solid var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.72rem;
+}
+
+.pipeStep {
+  padding: 0.2rem 0.45rem;
+  border-radius: 5px;
+  background: var(--ifm-color-emphasis-200);
+  font-weight: 600;
+}
+
+.pipeStepLit {
+  background: color-mix(in srgb, var(--ifm-color-primary) 20%, var(--ifm-color-emphasis-200));
+  color: var(--ifm-color-primary);
+}
+
+.pipeArrow {
+  color: var(--ifm-color-content-secondary);
+}
+
+.schemeTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.schemeTab {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--ifm-color-content-secondary);
+}
+
+.schemeTabActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.4;
+}

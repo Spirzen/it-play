@@ -1,0 +1,13 @@
+{
+  "title": "Low-code / No-code",
+  "description": "Интерактивное демо «Low-code / No-code» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "low-no-code-demo",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-02-low-code-no-code/1",
+  "order": 1
+}

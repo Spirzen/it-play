@@ -1,0 +1,279 @@
+.root {
+  --mg-entry: #1976d2;
+  --mg-domain: #388e3c;
+  --mg-infra: #f57c00;
+  --mg-shared: #7b1fa2;
+  --mg-violation: #c62828;
+  --mg-abstraction: #1565c0;
+  --mg-direct: var(--ifm-color-content-secondary);
+}
+
+.headerBand {
+  padding: 0.85rem 1rem;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #5c4d9e 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.05rem, 3.5vw, 1.25rem);
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  opacity: 0.92;
+}
+
+.body {
+  padding: 1rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: var(--ifm-background-surface-color);
+}
+
+.modeBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.modeBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.25s ease;
+}
+
+.modeBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.graphWrap {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  overflow: hidden;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+.edge {
+  fill: none;
+  stroke-width: 2;
+  transition: stroke 0.35s ease;
+}
+
+.edgeDirect {
+  stroke: var(--mg-direct);
+  stroke-dasharray: none;
+}
+
+.edgeAbstraction {
+  stroke: var(--mg-abstraction);
+  stroke-dasharray: 6 4;
+}
+
+.edgeViolation {
+  stroke: var(--mg-violation);
+  stroke-width: 2.5;
+  animation: mgPulse 1.2s ease-in-out infinite;
+}
+
+@keyframes mgPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.nodeG {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nodeG:hover {
+  transform: scale(1.03);
+}
+
+.nodeGActive circle {
+  stroke-width: 3;
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--node-color) 50%, transparent));
+}
+
+.nodeCircle {
+  stroke: var(--node-color);
+  stroke-width: 2;
+  fill: color-mix(in srgb, var(--node-color) 14%, var(--ifm-background-surface-color));
+}
+
+.nodeLabel {
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--ifm-font-color-base);
+  pointer-events: none;
+}
+
+.nodeIcon {
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legendLine {
+  width: 28px;
+  height: 0;
+  border-top: 2px solid var(--line-color);
+}
+
+.legendLineDash {
+  composes: legendLine;
+  border-top-style: dashed;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.65rem;
+}
+
+.card {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--card-accent);
+}
+
+.cardActive {
+  border-color: var(--card-accent);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--card-accent) 20%, transparent);
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.cardIcon {
+  font-size: 1.4rem;
+}
+
+.cardType {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--card-accent) 18%, transparent);
+  color: var(--card-accent);
+}
+
+.cardName {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.cardDesc {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.35;
+}
+
+.depTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.depTag {
+  font-size: 0.62rem;
+  font-weight: 600;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.depDirect {
+  background: var(--mg-direct);
+}
+
+.depAbstraction {
+  background: var(--mg-abstraction);
+}
+
+.depViolation {
+  background: var(--mg-violation);
+}
+
+.insight {
+  margin-top: 1rem;
+  animation: mgSlide 0.3s ease;
+}
+
+@keyframes mgSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hint {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}

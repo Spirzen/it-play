@@ -1,0 +1,12 @@
+{
+  "title": "Author Profile",
+  "description": "Интерактивное демо «Author Profile» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "author-profile-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/author",
+  "order": 1
+}

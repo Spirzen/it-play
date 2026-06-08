@@ -1,9 +1,12 @@
-import type {ReactNode} from 'react';
+import type {ComponentType, ElementType, ReactNode} from 'react';
 import clsx from 'clsx';
+import useDemoFullscreen from './useDemoFullscreen';
 
 type DemoShellProps = {
   children: ReactNode;
   className?: string;
+  as?: ElementType;
+  fullscreenable?: boolean;
 };
 
 type DemoCardProps = {
@@ -13,8 +16,45 @@ type DemoCardProps = {
   subtitle?: string;
 };
 
-export default function DemoShell({children, className}: DemoShellProps) {
-  return <div className={clsx('it-demo', className)}>{children}</div>;
+type FullscreenButtonProps = {
+  isFullscreen: boolean;
+  onToggle: () => void;
+  className?: string;
+};
+
+export function DemoFullscreenButton({isFullscreen, onToggle, className}: FullscreenButtonProps) {
+  return (
+    <button
+      type="button"
+      className={clsx('it-demo__fullscreen-btn', className)}
+      onClick={onToggle}
+      title={isFullscreen ? 'Выйти из полноэкранного режима (Esc)' : 'Открыть во весь экран'}
+      aria-pressed={isFullscreen}>
+      {isFullscreen ? '⊡ Окно' : '⛶'}
+    </button>
+  );
+}
+
+export default function DemoShell({
+  children,
+  className,
+  as: Tag = 'div',
+  fullscreenable = true,
+}: DemoShellProps) {
+  const {isFullscreen, toggleFullscreen, fullscreenClass} = useDemoFullscreen();
+
+  return (
+    <Tag className={clsx('it-demo', fullscreenClass, className)}>
+      {fullscreenable && (
+        <DemoFullscreenButton
+          isFullscreen={isFullscreen}
+          onToggle={toggleFullscreen}
+          className="it-demo__fullscreen-btn--shell"
+        />
+      )}
+      {children}
+    </Tag>
+  );
 }
 
 export function DemoCard({children, className, title, subtitle}: DemoCardProps) {

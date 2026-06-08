@@ -1,0 +1,12 @@
+{
+  "title": "Tech Articles Digest",
+  "description": "Интерактивное демо «Tech Articles Digest» — раздел Инструменты · Документация.",
+  "category": "tools-documentation",
+  "categoryTitle": "Инструменты · Документация",
+  "component": "tech-articles-digest-play",
+  "tags": [
+    "toolsdocumentation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/documentation/3",
+  "order": 61
+}

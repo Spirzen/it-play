@@ -1,0 +1,13 @@
+{
+  "title": "Софт пользователя — хаб",
+  "description": "Интерактивное демо «Софт пользователя — хаб» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "end-user-software-hub",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro",
+  "order": 23
+}

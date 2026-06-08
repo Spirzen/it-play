@@ -1,0 +1,13 @@
+{
+  "title": "Визуализация поиска",
+  "description": "Интерактивное демо «Визуализация поиска» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "search-visualizer",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-01-algoritmy/2",
+  "order": 1
+}

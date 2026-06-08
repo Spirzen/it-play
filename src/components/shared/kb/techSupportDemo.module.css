@@ -1,0 +1,192 @@
+.root {
+  max-width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.cardActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+}
+
+.cardIcon {
+  font-size: 1.15rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.cardLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.cardList {
+  margin: 0.35rem 0 0;
+  padding-left: 1rem;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: var(--ifm-color-content-secondary);
+}
+
+.meterRow {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr 2rem;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.74rem;
+}
+
+.meterTrack {
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.meterFill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--ifm-color-primary);
+  transition: width 0.35s ease;
+}
+
+.detailBox {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+  margin: 0.65rem 0;
+}
+
+.detailTitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.detailText {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.flowSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 0.75rem;
+}
+
+.flowStep {
+  display: flex;
+  gap: 0.55rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.flowStepActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+}
+
+.flowIcon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.flowBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.flowLabel {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.flowDetail {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.35;
+}
+
+.connector {
+  width: 2px;
+  height: 0.5rem;
+  margin-left: 1.15rem;
+  background: var(--ifm-color-emphasis-300);
+}
+
+.healthRing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.healthValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  line-height: 1;
+}
+
+.healthLabel {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.sliderRow {
+  margin-bottom: 0.5rem;
+}
+
+.sliderRow label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.76rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.sliderRow input[type='range'] {
+  width: 100%;
+}
+
+.footer {
+  margin-top: 0.65rem;
+  font-size: 0.74rem;
+  line-height: 1.4;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}

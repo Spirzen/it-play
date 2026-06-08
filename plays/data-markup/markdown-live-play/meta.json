@@ -1,0 +1,13 @@
+{
+  "title": "Markdown — live preview",
+  "description": "Интерактивное демо «Markdown — live preview» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "markdown-live-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5",
+  "order": 19
+}

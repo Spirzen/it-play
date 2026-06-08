@@ -1,0 +1,231 @@
+.scenarioRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.diagramWrap {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-color);
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.diagramInner {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: min(100%, 520px);
+  margin: 0 auto;
+}
+
+.diagramInnerMn {
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 720px;
+}
+
+.entityBox {
+  flex: 1 1 160px;
+  max-width: 220px;
+  min-width: 140px;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--ifm-code-background);
+  cursor: pointer;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.entityBox:hover {
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+.entityBoxActive {
+  box-shadow: 0 0 0 3px var(--demo-highlight, rgba(123, 104, 238, 0.35));
+}
+
+.entityBoxJunction {
+  border-color: var(--demo-warning, #ed6c02);
+  border-style: dashed;
+  max-width: 200px;
+}
+
+.entityHead {
+  padding: 0.45rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground, #fff);
+  letter-spacing: 0.02em;
+}
+
+.entityHeadJunction {
+  background: var(--demo-warning, #ed6c02);
+}
+
+.entitySub {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-top: 0.15rem;
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.35rem;
+  padding: 0.32rem 0.55rem;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  border-top: 1px solid var(--demo-border);
+  transition: background 0.15s ease;
+}
+
+.fieldRowHighlight {
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.2));
+}
+
+.fieldName {
+  font-weight: 500;
+}
+
+.fieldMeta {
+  font-size: 0.65rem;
+  color: var(--demo-muted);
+  white-space: nowrap;
+}
+
+.relationCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.25rem;
+  min-width: 72px;
+  flex-shrink: 0;
+}
+
+.relationColCompact {
+  min-width: 56px;
+}
+
+.cardStack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.cardMark {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.relationVerb {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--demo-muted);
+  padding: 0.2rem 0.35rem;
+  border-radius: 4px;
+  background: var(--ifm-background-surface-color);
+  border: 1px dashed var(--demo-border);
+  max-width: 88px;
+  line-height: 1.25;
+}
+
+.relationLine {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--ifm-color-primary), var(--demo-warning, #ed6c02));
+  border-radius: 1px;
+  margin: 0.2rem 0;
+}
+
+.mnBridge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+}
+
+.mnLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--demo-warning, #ed6c02);
+  letter-spacing: 0.04em;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.codePre {
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  overflow-x: auto;
+  font-family: var(--ifm-font-family-monospace);
+  background: var(--ifm-code-background);
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  white-space: pre;
+  max-height: 220px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--demo-border);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legendPk,
+.legendFk {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+}
+
+.legendPk {
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.legendFk {
+  background: color-mix(in srgb, var(--demo-warning, #ed6c02) 18%, transparent);
+  color: var(--demo-warning, #ed6c02);
+}

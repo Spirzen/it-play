@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Julia",
+  "description": "Интерактивное демо «Экосистема Julia» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "julia-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-24-julia/3",
+  "order": 48
+}

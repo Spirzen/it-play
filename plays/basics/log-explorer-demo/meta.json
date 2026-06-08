@@ -1,0 +1,13 @@
+{
+  "title": "Log Explorer",
+  "description": "Интерактивное демо «Log Explorer» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "log-explorer-demo",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6",
+  "order": 25
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Кодировки текста",
+  "description": "Интерактивное демо «Кодировки текста» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "text-encoder-converter",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-035-bazovaya-informatika/2",
+  "order": 1
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ETL/ELT — оркестрация",
+  "description": "Интерактивное демо «ETL/ELT — оркестрация» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "etl-elt-orchestration-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-11-analiz-dannyh/425",
+  "order": 51
+}

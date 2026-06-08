@@ -1,0 +1,12 @@
+{
+  "title": "File Manager Dual Pane",
+  "description": "Интерактивное демо «File Manager Dual Pane» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "file-manager-dual-pane-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/3",
+  "order": 42
+}

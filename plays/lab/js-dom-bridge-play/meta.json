@@ -1,0 +1,12 @@
+{
+  "title": "JavaScript DOM",
+  "description": "Интерактивное демо «JavaScript DOM» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "js-dom-bridge-play",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/1144",
+  "order": 11
+}

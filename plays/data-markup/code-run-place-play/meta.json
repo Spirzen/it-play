@@ -1,0 +1,13 @@
+{
+  "title": "Где выполняется код",
+  "description": "Интерактивное демо «Где выполняется код» — браузер, сервер и оба контекста.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "code-run-place-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-07-php/intro",
+  "order": 55
+}

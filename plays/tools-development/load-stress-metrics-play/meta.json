@@ -1,0 +1,12 @@
+{
+  "title": "Load Stress Metrics",
+  "description": "Интерактивное демо «Load Stress Metrics» — раздел Инструменты · Разработка.",
+  "category": "tools-development",
+  "categoryTitle": "Инструменты · Разработка",
+  "component": "load-stress-metrics-play",
+  "tags": [
+    "toolsdevelopment"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/development/4",
+  "order": 58
+}

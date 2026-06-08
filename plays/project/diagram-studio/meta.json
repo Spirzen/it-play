@@ -1,0 +1,13 @@
+{
+  "title": "Студия диаграмм",
+  "description": "Интерактивное демо «Студия диаграмм» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "diagram-studio",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-04-analitika/124",
+  "order": 8
+}

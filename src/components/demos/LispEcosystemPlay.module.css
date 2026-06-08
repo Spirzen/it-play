@@ -1,0 +1,369 @@
+.root {
+  --lisp-accent: #662d91;
+}
+
+.stackCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stackLayer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 0.75rem;
+  align-items: start;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.stackLayer:hover {
+  border-color: var(--layer-color, var(--lisp-accent));
+}
+
+.stackLayerActive {
+  border-color: var(--layer-color, var(--lisp-accent));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--layer-color, var(--lisp-accent)) 20%, transparent);
+}
+
+.stackIcon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.stackTag {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--layer-color, var(--lisp-accent));
+}
+
+.stackTitle {
+  margin: 0.1rem 0 0.2rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.stackItems {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.35;
+}
+
+.detailPanel {
+  margin-top: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, var(--layer-color, var(--lisp-accent)) 8%, var(--ifm-background-surface-color));
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.fwCompare {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.65rem;
+}
+
+@media (min-width: 520px) {
+  .fwCompare {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.fwCard {
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.fwCard strong {
+  color: var(--fw-color, var(--lisp-accent));
+}
+
+.graphWrap {
+  position: relative;
+  min-height: 250px;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, var(--ifm-color-primary) 4%, var(--ifm-background-surface-color));
+  overflow: hidden;
+}
+
+.graphSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.graphEdge {
+  stroke: var(--ifm-color-emphasis-400);
+  stroke-width: 1.5;
+  fill: none;
+  opacity: 0.7;
+}
+
+.graphEdgeLazy {
+  stroke-dasharray: 6 4;
+  stroke: #f59e0b;
+}
+
+.graphNodes {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.graphNode {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0.3rem 0.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--node-stroke, var(--ifm-color-emphasis-400));
+  background: var(--ifm-background-surface-color);
+  font-size: 0.65rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, box-shadow 0.2s;
+  max-width: 115px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.graphNodeOff {
+  opacity: 0.35;
+  text-decoration: line-through;
+}
+
+.graphNodeActive {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--node-stroke) 30%, transparent);
+}
+
+.graphLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.68rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  border: 2px solid var(--c);
+}
+
+.bundleBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.bundleChip {
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  background: color-mix(in srgb, var(--lisp-accent) 12%, transparent);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.explorer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 0.65rem;
+  min-height: 200px;
+}
+
+@media (max-width: 640px) {
+  .explorer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tree {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem;
+  max-height: 280px;
+  overflow: auto;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  font-size: 0.74rem;
+}
+
+.treeDir {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.35rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.treeBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.3rem 0.4rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.treeBtnActive {
+  background: color-mix(in srgb, var(--lisp-accent) 18%, transparent);
+  font-weight: 600;
+}
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.15rem;
+  margin-bottom: 0.65rem;
+}
+
+.flowStep {
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.flowStepActive {
+  border-color: var(--lisp-accent);
+  background: color-mix(in srgb, var(--lisp-accent) 14%, var(--ifm-background-surface-color));
+  color: var(--lisp-accent);
+}
+
+.flowArrow {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.75rem;
+}
+
+.mwStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+.mwLayer {
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  font-size: 0.72rem;
+  font-family: var(--ifm-font-family-monospace);
+  opacity: 0.45;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.mwLayerOn {
+  opacity: 1;
+  border-color: var(--lisp-accent);
+  background: color-mix(in srgb, var(--lisp-accent) 10%, var(--ifm-background-surface-color));
+  font-weight: 600;
+}
+
+.codeBlock {
+  margin: 0.5rem 0 0;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.7rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.modGrid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (min-width: 560px) {
+  .modGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.modCard {
+  padding: 0.6rem 0.65rem;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  text-align: left;
+}
+
+.modCardActive {
+  border-color: var(--mod-color);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--mod-color) 22%, transparent);
+}
+
+.modEra {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--mod-color);
+}
+
+.modLabel {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.toggleRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}

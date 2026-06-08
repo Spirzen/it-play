@@ -1,0 +1,12 @@
+{
+  "title": "Modeling Tools",
+  "description": "Интерактивное демо «Modeling Tools» — раздел Инструменты · Мультимedia.",
+  "category": "tools-multimedia",
+  "categoryTitle": "Инструменты · Мультимedia",
+  "component": "modeling-tools-play",
+  "tags": [
+    "toolsmultimedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/multimedia/2",
+  "order": 78
+}

@@ -1,14 +1,40 @@
 import type {ComponentType} from 'react';
-import BlockBuilder from '@/components/demos/BlockBuilder';
 
-const DEMO_MAP: Record<string, ComponentType> = {
-  'block-builder': BlockBuilder,
-};
+type DemoLoader = () => Promise<{default: ComponentType}>;
 
-export function getDemoComponent(componentId: string): ComponentType | undefined {
-  return DEMO_MAP[componentId];
+const demoModules = import.meta.glob<{default: ComponentType}>(
+  '../components/demos/**/*.{jsx,js,tsx,ts}',
+);
+
+function kebabToPascal(kebab: string): string {
+  return kebab
+    .split('-')
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join('');
+}
+
+function moduleBaseName(filePath: string): string {
+  const file = filePath.split('/').pop() ?? '';
+  return file.replace(/\.(jsx|js|tsx|ts)$/, '');
+}
+
+function findDemoLoader(componentId: string): DemoLoader | undefined {
+  const pascal = kebabToPascal(componentId);
+
+  for (const [filePath, loader] of Object.entries(demoModules)) {
+    const base = moduleBaseName(filePath);
+    if (base === componentId || base === pascal || base.toLowerCase() === componentId) {
+      return loader;
+    }
+  }
+
+  return undefined;
+}
+
+export function loadDemoComponent(componentId: string): DemoLoader | undefined {
+  return findDemoLoader(componentId);
 }
 
 export function listRegisteredDemos(): string[] {
-  return Object.keys(DEMO_MAP);
+  return Object.keys(demoModules).map(moduleBaseName);
 }

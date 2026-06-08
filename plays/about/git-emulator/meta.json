@@ -1,0 +1,12 @@
+{
+  "title": "Git Emulator",
+  "description": "Интерактивное демо «Git Emulator» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "git-emulator",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 17
+}

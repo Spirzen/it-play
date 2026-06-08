@@ -1,0 +1,13 @@
+{
+  "title": "Стек операционной системы",
+  "description": "Интерактивное демо «Стек операционной системы» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "os-stack-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/1",
+  "order": 1
+}

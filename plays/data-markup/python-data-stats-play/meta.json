@@ -1,0 +1,13 @@
+{
+  "title": "Python — описательная статистика",
+  "description": "Интерактивное демо «Python — описательная статистика» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "python-data-stats-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-11-analiz-dannyh/424",
+  "order": 50
+}

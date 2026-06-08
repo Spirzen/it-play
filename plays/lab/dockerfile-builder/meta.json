@@ -1,0 +1,12 @@
+{
+  "title": "Dockerfile Builder",
+  "description": "Интерактивное демо «Dockerfile Builder» — раздел Лаборатория.",
+  "category": "lab",
+  "categoryTitle": "Лаборатория",
+  "component": "dockerfile-builder",
+  "tags": [
+    "lab"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/lab/examples/11113",
+  "order": 5
+}

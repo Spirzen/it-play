@@ -1,0 +1,12 @@
+{
+  "title": "Testing Tools Catalog",
+  "description": "Интерактивное демо «Testing Tools Catalog» — раздел Инструменты · Тестирование.",
+  "category": "tools-testing",
+  "categoryTitle": "Инструменты · Тестирование",
+  "component": "testing-tools-catalog-play",
+  "tags": [
+    "toolstesting"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/testing/1",
+  "order": 95
+}

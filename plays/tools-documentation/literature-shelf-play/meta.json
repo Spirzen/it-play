@@ -1,0 +1,12 @@
+{
+  "title": "Literature Shelf",
+  "description": "Интерактивное демо «Literature Shelf» — раздел Инструменты · Документация.",
+  "category": "tools-documentation",
+  "categoryTitle": "Инструменты · Документация",
+  "component": "literature-shelf-play",
+  "tags": [
+    "toolsdocumentation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/documentation/1",
+  "order": 59
+}

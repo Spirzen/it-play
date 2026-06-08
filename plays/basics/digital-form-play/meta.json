@@ -1,0 +1,13 @@
+{
+  "title": "Digital Form",
+  "description": "Интерактивное демо «Digital Form» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "digital-form-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6",
+  "order": 42
+}

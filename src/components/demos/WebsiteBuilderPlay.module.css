@@ -1,0 +1,178 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  padding: 0.65rem;
+  min-height: 200px;
+}
+
+.panelTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+  margin: 0 0 0.5rem;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.paletteBtn {
+  padding: 0.35rem 0.55rem;
+  font-size: 0.76rem;
+  border-radius: 6px;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.canvas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-height: 140px;
+}
+
+.blockRow {
+  display: flex;
+  align-items: stretch;
+  gap: 0.35rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 0.4rem;
+  cursor: pointer;
+  background: var(--ifm-background-color);
+}
+
+.blockRowActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px var(--ifm-color-primary);
+}
+
+.blockPreview {
+  flex: 1;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.blockControls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.blockControls button {
+  padding: 0.15rem 0.35rem;
+  font-size: 0.7rem;
+  border: none;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.82rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.editor label {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.editor input,
+.editor textarea {
+  width: 100%;
+  margin-top: 0.2rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: inherit;
+  font-size: 0.82rem;
+}
+
+.previewFrame {
+  width: 100%;
+  min-height: 220px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.publish {
+  margin-top: 0.65rem;
+  font-size: 0.8rem;
+}
+
+.publishStep {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.publishStep:last-child {
+  border-bottom: none;
+}
+
+.publishNum {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  min-width: 1.2rem;
+}
+
+.codeBox {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  max-height: 120px;
+  overflow: auto;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  margin-top: 0.5rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.tab {
+  padding: 0.28rem 0.6rem;
+  font-size: 0.76rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(123, 104, 238, 0.15);
+  font-weight: 600;
+}

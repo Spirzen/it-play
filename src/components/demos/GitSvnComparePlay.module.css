@@ -1,0 +1,67 @@
+.root {
+  max-width: min(900px, 100%);
+  margin: 0 auto 1.25rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chip {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.72rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+}
+
+.chipActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  font-weight: 600;
+}
+
+.task {
+  margin: 0.65rem 0 0.35rem;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+.col {
+  padding: 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.colTitle {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+  color: var(--ifm-color-primary);
+}
+
+.col pre {
+  margin: 0;
+  font-size: 0.72rem;
+  white-space: pre-wrap;
+  background: var(--ifm-code-background);
+  padding: 0.45rem;
+  border-radius: 4px;
+}

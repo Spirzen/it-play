@@ -1,0 +1,13 @@
+{
+  "title": "Query Languages",
+  "description": "Интерактивное демо «Query Languages» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "query-languages-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-21-poisk-informatsii/2",
+  "order": 37
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Диагностика первого запуска ПК",
+  "description": "Интерактивное демо «Диагностика первого запуска ПК» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "pc-first-boot-diagnostic-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-10-zhelezo/1012",
+  "order": 51
+}

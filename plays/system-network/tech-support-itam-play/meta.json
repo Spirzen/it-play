@@ -1,0 +1,13 @@
+{
+  "title": "ITAM в поддержке",
+  "description": "Интерактивное демо «ITAM в поддержке» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "tech-support-itam-play",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/119",
+  "order": 31
+}

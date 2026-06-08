@@ -1,0 +1,13 @@
+{
+  "title": "3D-моделирование для игр",
+  "description": "Интерактивное демо «3D-моделирование для игр» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-modeling-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/115",
+  "order": 10
+}

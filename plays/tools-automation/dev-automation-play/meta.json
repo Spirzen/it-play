@@ -1,0 +1,12 @@
+{
+  "title": "Dev Automation",
+  "description": "Интерактивное демо «Dev Automation» — раздел Инструменты · Автоматизация.",
+  "category": "tools-automation",
+  "categoryTitle": "Инструменты · Автоматизация",
+  "component": "dev-automation-play",
+  "tags": [
+    "toolsautomation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/automation/3",
+  "order": 35
+}

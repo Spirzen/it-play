@@ -1,0 +1,13 @@
+{
+  "title": "Языки в геймдеве",
+  "description": "Интерактивное демо «Языки в геймдеве» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-languages-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/114",
+  "order": 9
+}

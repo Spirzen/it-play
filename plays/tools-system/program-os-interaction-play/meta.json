@@ -1,0 +1,12 @@
+{
+  "title": "Program Os Interaction",
+  "description": "Интерактивное демо «Program Os Interaction» — раздел Инструменты · ОС и система.",
+  "category": "tools-system",
+  "categoryTitle": "Инструменты · ОС и система",
+  "component": "program-os-interaction-play",
+  "tags": [
+    "toolssystem"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/system/1",
+  "order": 92
+}

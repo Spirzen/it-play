@@ -1,0 +1,12 @@
+{
+  "title": "Ai Coding Assistant",
+  "description": "Интерактивное демо «Ai Coding Assistant» — раздел Инструменты · Разработка.",
+  "category": "tools-development",
+  "categoryTitle": "Инструменты · Разработка",
+  "component": "ai-coding-assistant-play",
+  "tags": [
+    "toolsdevelopment"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/development/1",
+  "order": 48
+}

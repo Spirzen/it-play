@@ -1,0 +1,13 @@
+{
+  "title": "GIS — геоданные",
+  "description": "Интерактивное демо «GIS — геоданные» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "gis-demo",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-02-struktury-dannyh/12",
+  "order": 9
+}

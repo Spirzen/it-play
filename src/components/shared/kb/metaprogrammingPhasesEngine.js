@@ -1,0 +1,32 @@
+export const META_PHASES = [
+  {
+    id: 'write',
+    label: 'Написание (IDE)',
+    when: 'Редактор, без запуска программы',
+    examples: ['Сниппеты fori → цикл for', '"Создать геттеры/сеттеры"', 'Автодополнение по AST'],
+    input: 'class User { name }',
+    output: 'class User {\n  get name() { ... }\n  set name(v) { ... }\n}',
+    risk: 'Низкий: в артефакт сборки не попадает, если не сохранили',
+    color: '#1565c0',
+  },
+  {
+    id: 'compile',
+    label: 'Компиляция / трансляция',
+    when: 'До исполнения: макросы, source generators, transpile',
+    examples: ['Rust macro vec!', 'Lombok @Data', 'TypeScript → JavaScript'],
+    input: '#[derive(Debug)]\nstruct Point { x: i32, y: i32 }',
+    output: 'impl Debug for Point { fn fmt(...) { ... } }',
+    risk: 'Средний: ошибки ловит компилятор сгенерированного кода',
+    color: '#6a1b9a',
+  },
+  {
+    id: 'runtime',
+    label: 'Выполнение (runtime)',
+    when: 'Программа уже работает: рефлексия, eval, динамические прокси',
+    examples: ['Python getattr + setattr', 'Java Proxy', 'ORM lazy-load'],
+    input: 'obj.save()  // имя метода из строки',
+    output: 'Вызов реального save() или insert SQL',
+    risk: 'Высокий: сложнее статический анализ и отладка',
+    color: '#c62828',
+  },
+];

@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Go",
+  "description": "Интерактивное демо «Экосистема Go» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "go-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-10-go/111",
+  "order": 22
+}

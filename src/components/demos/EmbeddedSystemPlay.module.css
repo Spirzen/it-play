@@ -1,0 +1,394 @@
+.root {
+  max-width: min(640px, 100%);
+  margin: 0 auto;
+}
+
+.scenarioTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.scenarioTab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scenarioTab:hover:not(:disabled) {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.scenarioTab:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.scenarioTabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.scenarioHint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.zone {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem 0.65rem;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.zoneActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+.zoneHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.zoneIcon {
+  font-size: 1rem;
+}
+
+.zoneLabel {
+  color: var(--ifm-color-content);
+}
+
+.zoneMcu {
+  position: relative;
+}
+
+.mcuGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.45rem;
+}
+
+@media (min-width: 420px) {
+  .mcuGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.mcuBlock {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.4rem 0.3rem;
+  text-align: center;
+  min-height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  transition: all 0.25s ease;
+}
+
+.blockActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+}
+
+.blockTitle {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.blockRole {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.2;
+}
+
+.pcBadge {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.62rem;
+  color: var(--ifm-color-primary);
+  word-break: break-all;
+}
+
+.sleepBadge {
+  display: inline-block;
+  margin-top: 0.15rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: color-mix(in srgb, var(--ifm-color-warning) 25%, transparent);
+  color: var(--ifm-color-warning-dark, #e65100);
+}
+
+.cpuSleep {
+  opacity: 0.55;
+  filter: grayscale(0.4);
+}
+
+.flagBadge {
+  display: inline-block;
+  margin-top: 0.1rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--ifm-color-success);
+}
+
+.phaseChip {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.55rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.busRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+
+.busLine {
+  display: block;
+  width: 70%;
+  max-width: 12rem;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--ifm-color-emphasis-400);
+  transition: all 0.3s ease;
+}
+
+.busActive {
+  background: var(--ifm-color-primary);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--ifm-color-primary) 50%, transparent);
+  animation: busGlow 1s ease-in-out infinite;
+}
+
+@keyframes busGlow {
+  0%,
+  100% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.busLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.2rem;
+}
+
+.zoneRegs {
+  border-style: dashed;
+}
+
+.regList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.regRow {
+  display: grid;
+  grid-template-columns: 5.5rem 4.5rem 1fr;
+  gap: 0.35rem;
+  align-items: center;
+  padding: 0.25rem 0.35rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  border: 1px solid transparent;
+}
+
+@media (max-width: 400px) {
+  .regRow {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
+.regRowHighlight {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  font-weight: 600;
+}
+
+.regAddr {
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.regName {
+  font-weight: 700;
+  font-size: 0.68rem;
+}
+
+.regValue {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.65rem;
+  text-align: right;
+}
+
+.periphRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.45rem;
+}
+
+@media (min-width: 520px) {
+  .periphRow {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.zonePeriph {
+  padding: 0.45rem 0.5rem 0.55rem;
+}
+
+.uartLine {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.45rem 0.35rem;
+  text-align: center;
+  font-size: 0.75rem;
+  min-height: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  transition: all 0.25s ease;
+}
+
+.uartActive {
+  border-color: var(--ifm-color-info);
+  background: color-mix(in srgb, var(--ifm-color-info) 10%, transparent);
+}
+
+.uartTx {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.uartBits {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.62rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.gpioNode {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.5rem 0.35rem;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.gpioPressed {
+  border-color: var(--ifm-color-warning);
+  background: color-mix(in srgb, var(--ifm-color-warning) 18%, transparent);
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ifm-color-warning) 35%, transparent);
+}
+
+.ledNode {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.35rem auto;
+  border-radius: 50%;
+  border: 2px solid var(--ifm-color-emphasis-400);
+  background: color-mix(in srgb, var(--ifm-color-emphasis-500) 30%, #333);
+  transition: all 0.3s ease;
+}
+
+.ledOn {
+  border-color: #f9a825;
+  background: radial-gradient(circle at 35% 35%, #fff9c4, #fbc02d 55%, #f57f17);
+  box-shadow: 0 0 12px 4px color-mix(in srgb, #fbc02d 55%, transparent);
+}
+
+.stepPanel {
+  margin-bottom: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.stepPanel p {
+  margin: 0.35rem 0 0;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepLabel {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.2rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+}

@@ -1,0 +1,60 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.slider input {
+  width: 100%;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.stage {
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ifm-color-emphasis-200) 40%, transparent);
+}
+
+.marginLayer {
+  background: color-mix(in srgb, #ff9800 25%, transparent);
+  border: 1px dashed #e65100;
+}
+
+.box {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-style: solid;
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-color));
+  background-clip: padding-box;
+  box-shadow: inset 0 0 0 8px color-mix(in srgb, #4caf50 20%, transparent);
+}
+
+.formula {
+  margin: 0.75rem 0 0.35rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.74rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}

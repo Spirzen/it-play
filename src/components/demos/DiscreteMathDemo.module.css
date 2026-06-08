@@ -1,0 +1,143 @@
+.tabs {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: transparent;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.tabActive {
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground);
+  border-color: var(--ifm-color-primary);
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .setsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.textarea {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  resize: vertical;
+}
+
+.resultBox {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+}
+
+.opRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.opBtn {
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.opBtnActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.graphSvg {
+  width: 100%;
+  max-height: 220px;
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+}
+
+.node {
+  fill: var(--ifm-color-emphasis-200);
+  stroke: var(--demo-border);
+}
+
+.nodeActive {
+  fill: var(--ifm-color-primary-light);
+  stroke: var(--ifm-color-primary);
+}
+
+.nodeGoal {
+  fill: var(--ifm-color-success-contrast-background);
+  stroke: var(--ifm-color-success);
+}
+
+.edge {
+  stroke: var(--demo-muted);
+  stroke-width: 1.5;
+}
+
+.edgeActive {
+  stroke: var(--ifm-color-primary);
+  stroke-width: 2.5;
+}
+
+.label {
+  font-size: 9px;
+  fill: var(--ifm-font-color-base);
+}
+
+.stepPanel {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.note {
+  font-size: 0.78rem;
+  color: var(--demo-muted);
+  margin: 0;
+}

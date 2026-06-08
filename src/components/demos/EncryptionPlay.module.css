@@ -1,0 +1,404 @@
+.root {
+  max-width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+.scenarioTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.scenarioTab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scenarioTab:hover:not(:disabled) {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.scenarioTab:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.scenarioTabActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-background-surface-color));
+  color: var(--ifm-color-primary);
+}
+
+.scenarioHint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+}
+
+.diagram {
+  display: grid;
+  grid-template-columns: 1fr minmax(140px, 1.15fr) 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+  margin-bottom: 0.85rem;
+}
+
+@media (max-width: 520px) {
+  .diagram {
+    grid-template-columns: 1fr;
+  }
+}
+
+.zone {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.5rem 0.55rem 0.6rem;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoneActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+}
+
+.zoneClient {
+  border-color: color-mix(in srgb, #1565c0 35%, var(--ifm-color-emphasis-300));
+}
+
+.zoneServer {
+  border-color: color-mix(in srgb, #2e7d32 30%, var(--ifm-color-emphasis-300));
+}
+
+.zoneHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.zoneIcon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.zoneLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.keyBadge {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  background: color-mix(in srgb, #7b1fa2 14%, var(--ifm-background-surface-color));
+  border: 1px solid color-mix(in srgb, #7b1fa2 35%, transparent);
+  color: #7b1fa2;
+}
+
+[data-theme='dark'] .keyBadge {
+  color: #ce93d8;
+}
+
+.node {
+  padding: 0.4rem 0.45rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.nodeActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-color));
+}
+
+.nodeName {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.nodeRole {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.wireColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-height: 100%;
+}
+
+.wireBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.5rem 0.55rem;
+  border-radius: 10px;
+  border: 2px dashed var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.wireBoxActive {
+  border-style: solid;
+  border-color: var(--ifm-color-primary);
+}
+
+.wirePlain {
+  border-color: color-mix(in srgb, var(--ifm-color-danger) 45%, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, var(--ifm-color-danger) 6%, var(--ifm-background-color));
+}
+
+.wireCipher {
+  border-color: color-mix(in srgb, #2e7d32 45%, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, #2e7d32 6%, var(--ifm-background-color));
+}
+
+.wireKex {
+  border-color: color-mix(in srgb, #ed6c02 40%, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, #ed6c02 6%, var(--ifm-background-color));
+}
+
+.wireSecure {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 40%, var(--ifm-color-emphasis-300));
+}
+
+.wireLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.wirePayload {
+  display: block;
+  margin: 0;
+  padding: 0.35rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  word-break: break-word;
+  background: var(--ifm-code-background);
+  color: var(--ifm-code-color);
+}
+
+.wireEmpty {
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--ifm-color-content-secondary);
+}
+
+.wireTagDanger,
+.wireTagSafe,
+.wireTagKex {
+  align-self: flex-start;
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.wireTagDanger {
+  background: color-mix(in srgb, var(--ifm-color-danger) 18%, transparent);
+  color: var(--ifm-color-danger);
+}
+
+.wireTagSafe {
+  background: color-mix(in srgb, #2e7d32 18%, transparent);
+  color: #2e7d32;
+}
+
+.wireTagKex {
+  background: color-mix(in srgb, #ed6c02 18%, transparent);
+  color: #e65100;
+}
+
+.attacker {
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.attackerActive {
+  border-color: var(--ifm-color-danger);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ifm-color-danger) 20%, transparent);
+}
+
+.attackerBlind {
+  opacity: 0.75;
+  border-style: dashed;
+}
+
+.attackerIcon {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.attackerLabel {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+.attackerStatus {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.65rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.cipherPanel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+@media (max-width: 420px) {
+  .cipherPanel {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cipherCol {
+  min-width: 0;
+}
+
+.cipherHeading {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.cipherList {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.68rem;
+  font-family: var(--ifm-font-family-monospace);
+  line-height: 1.45;
+}
+
+.cipherChosen {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.stepCard {
+  margin-bottom: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+}
+
+.stepBadge {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-primary);
+}
+
+.stepTitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.stepDetail {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepLog {
+  margin: 0.4rem 0 0;
+  padding-top: 0.35rem;
+  border-top: 1px dashed var(--ifm-color-emphasis-200);
+  font-size: 0.76rem;
+  font-style: italic;
+  color: var(--ifm-color-content-secondary);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.stepDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-300);
+  transition: all 0.25s ease;
+}
+
+.stepDotDone {
+  background: color-mix(in srgb, var(--ifm-color-primary) 50%, var(--ifm-color-emphasis-300));
+}
+
+.stepDotCurrent {
+  background: var(--ifm-color-primary);
+  transform: scale(1.35);
+}
+
+.footer {
+  margin-top: 0.75rem;
+  font-size: 0.74rem;
+  line-height: 1.4;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+}

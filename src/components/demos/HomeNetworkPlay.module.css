@@ -1,0 +1,161 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.tab {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.tabActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.topology {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+.node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  opacity: 0.45;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.nodeActive {
+  opacity: 1;
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.nodeDim {
+  opacity: 0.2;
+  text-decoration: line-through;
+}
+
+.nodeIcon {
+  font-size: 1.2rem;
+}
+
+.nodeLabel {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.pos_0_1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.pos_1_1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.pos_2_0 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.pos_2_1 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.pos_2_2 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.pos_3_0 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.pos_3_1 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.pos_3_2 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.panel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.panelTitle {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.stepLabel {
+  margin: 0 0 0.25rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.detail {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.controls {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

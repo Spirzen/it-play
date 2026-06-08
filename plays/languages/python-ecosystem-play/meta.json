@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Python",
+  "description": "Интерактивное демо «Экосистема Python» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "python-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-02-python/121",
+  "order": 6
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Doc Hub Explorer",
+  "description": "Интерактивное демо «Doc Hub Explorer» — раздел Инструменты · Документация.",
+  "category": "tools-documentation",
+  "categoryTitle": "Инструменты · Документация",
+  "component": "doc-hub-explorer-play",
+  "tags": [
+    "toolsdocumentation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/documentation/2",
+  "order": 60
+}

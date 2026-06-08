@@ -1,0 +1,13 @@
+{
+  "title": "Hardening Docker",
+  "description": "Интерактивное демо «Hardening Docker» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "docker-hardening-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125",
+  "order": 32
+}

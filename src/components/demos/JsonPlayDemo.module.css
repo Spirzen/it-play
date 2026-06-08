@@ -1,0 +1,53 @@
+.statusBanner {
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 0.75rem;
+}
+
+.statusValid {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.35);
+}
+
+.statusInvalid {
+  background: rgba(198, 40, 40, 0.1);
+  color: #c62828;
+  border: 1px solid rgba(198, 40, 40, 0.35);
+}
+
+.treeWrap {
+  max-height: 16rem;
+  overflow: auto;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+}
+
+.treeTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.treeTable th,
+.treeTable td {
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  border-bottom: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.treeTable th {
+  background: var(--ifm-background-surface-color);
+  position: sticky;
+  top: 0;
+}
+
+.previewCell {
+  color: var(--ifm-color-content-secondary);
+  max-width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

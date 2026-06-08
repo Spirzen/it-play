@@ -1,0 +1,13 @@
+{
+  "title": "Gamepad",
+  "description": "Интерактивное демо «Gamepad» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "gamepad-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/714",
+  "order": 12
+}

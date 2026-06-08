@@ -1,0 +1,10 @@
+{
+  "title": "Путь утечки данных",
+  "description": "Интерактивная цепочка утечки: внешняя атака, инсайдер, случайная и APT.",
+  "category": "infra-security",
+  "categoryTitle": "Инфраструктура и безопасность",
+  "component": "data-leak-scenario-play",
+  "tags": ["security", "data-leak", "infosec"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/intro",
+  "order": 50
+}

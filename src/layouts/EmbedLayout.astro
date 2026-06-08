@@ -37,6 +37,9 @@ const {title} = Astro.props;
   </head>
   <body class="embed-body">
     <main class="embed-main">
+      <div id="embed-loading" class="embed-loading" aria-live="polite">
+        Компонент загружается…
+      </div>
       <slot />
     </main>
     <script is:inline src={sitePath('scripts/embed-resize.js')}></script>

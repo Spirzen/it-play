@@ -1,0 +1,232 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 1rem auto;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin-right: 0.25rem;
+}
+
+.canvasWrap {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0d1117;
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+.canvasLight {
+  background: #f8fafc;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.layerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.72rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+}
+
+.layerBtnOff {
+  opacity: 0.45;
+}
+
+.layerDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.sliderLabel {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.sliderLabel input {
+  width: 100%;
+}
+
+.hint {
+  font-size: 0.78rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.35rem 0 0;
+}
+
+.timeline {
+  background: #1e1e1e;
+  border-radius: 6px;
+  padding: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.playheadRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+}
+
+.splitPane {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  padding: 0.4rem;
+  min-height: 100px;
+  font-family: var(--ifm-font-family-monospace);
+  background: var(--ifm-background-surface-color);
+}
+
+.splitPane pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 0.68rem;
+}
+
+.previewBox {
+  background: #fff;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  padding: 0.5rem;
+  min-height: 80px;
+}
+
+.stockGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.35rem;
+}
+
+.stockCard {
+  padding: 0.45rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-align: left;
+  background: var(--ifm-background-surface-color);
+}
+
+.stockCardActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.flowSteps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.flowStep {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.72rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.flowStepDone {
+  background: color-mix(in srgb, #22c55e 20%, transparent);
+  border-color: #22c55e;
+}
+
+.waveform {
+  height: 48px;
+  background: #1e1e1e;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  padding: 4px 8px;
+  margin-bottom: 0.5rem;
+}
+
+.waveBar {
+  flex: 1;
+  background: #9900ff;
+  border-radius: 1px;
+  min-width: 3px;
+}
+
+.frameStrip {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding: 0.35rem 0;
+}
+
+.frameCell {
+  min-width: 36px;
+  height: 40px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 3px;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: var(--ifm-background-surface-color);
+}
+
+.frameCellActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+}
+
+.reframePreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #111;
+}
+
+.reframeInner {
+  background: linear-gradient(135deg, #4a5568, #2d3748);
+  position: relative;
+}
+
+.reframeSubject {
+  position: absolute;
+  width: 24%;
+  height: 40%;
+  left: 38%;
+  top: 30%;
+  border: 2px dashed #fbbf24;
+  border-radius: 4px;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Портфолио разработчика",
+  "description": "Интерактивное демо «Портфолио разработчика» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "developer-portfolio-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/115",
+  "order": 54
+}

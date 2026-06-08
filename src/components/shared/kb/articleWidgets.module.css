@@ -1,0 +1,286 @@
+.questionDisplay {
+  position: relative;
+  min-height: clamp(4rem, 12vw, 5.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(0.85rem, 3vw, 1.25rem);
+  margin-bottom: var(--demo-gap, 1rem);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-weight: 500;
+  line-height: 1.55;
+  word-break: break-word;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.questionDisplayFading {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.counter {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.footnote {
+  margin: 0.75rem 0 0;
+  font-size: 0.78rem;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  text-align: center;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+/* —— Игры —— */
+.gameResult {
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: var(--demo-gap, 1rem);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  border: 1px solid var(--demo-border);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  word-break: break-word;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.filterChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.filterChip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.filterChip:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.filterChipActive {
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.gameResultFading {
+  opacity: 0;
+  transform: scale(0.98);
+}
+
+.gamePlaceholder {
+  font-weight: 500;
+  color: var(--demo-muted);
+  font-size: 0.95rem;
+}
+
+.poolBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border);
+  color: var(--demo-muted);
+}
+
+.btnBlock {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+/* —— Домен —— */
+.domainDiagram {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 0 0 1rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+}
+
+.domainSegment {
+  padding: 0.4rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  color: var(--demo-muted);
+}
+
+.domainSegmentSub {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 40%, var(--demo-border));
+}
+
+.domainSegmentSld {
+  border-color: var(--ifm-color-primary);
+  background: var(--demo-highlight, rgba(123, 104, 238, 0.15));
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.domainSegmentTld {
+  border-color: color-mix(in srgb, var(--demo-warning, #ed6c02) 50%, var(--demo-border));
+  color: var(--demo-warning, #ed6c02);
+  font-weight: 600;
+}
+
+.domainDot {
+  align-self: center;
+  color: var(--demo-muted);
+  user-select: none;
+}
+
+.levelKind {
+  display: inline-block;
+  padding: 0.12rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+.levelKindSub {
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.levelKindSld {
+  background: color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.levelKindTld {
+  background: color-mix(in srgb, var(--demo-warning, #ed6c02) 18%, transparent);
+  color: var(--demo-warning, #ed6c02);
+}
+
+/* —— Словарь —— */
+.flashList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.flashCard {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.2s ease;
+}
+
+.flashCard[open] {
+  border-color: var(--ifm-color-primary);
+}
+
+.flashSummary {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  list-style: none;
+  user-select: none;
+  font-weight: 600;
+}
+
+.flashSummary::-webkit-details-marker {
+  display: none;
+}
+
+.flashTerm {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1rem;
+  color: var(--ifm-color-content);
+  word-break: break-word;
+  flex: 1;
+}
+
+.flashHint {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  background: var(--demo-highlight);
+  border: 1px solid var(--demo-border);
+}
+
+.flashCard[open] .flashHint {
+  transform: rotate(180deg);
+}
+
+.flashAnswer {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--demo-border);
+  background: var(--ifm-code-background);
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.5;
+  font-size: 0.92rem;
+  word-break: break-word;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 1rem;
+  color: var(--demo-muted);
+  font-size: 0.9rem;
+}

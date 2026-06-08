@@ -1,0 +1,105 @@
+.root {
+  --c-color: #1565c0;
+  --i-color: #6a1b9a;
+  --a-color: #2e7d32;
+}
+
+.triangleWrap {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 1rem;
+}
+
+.triangle {
+  position: relative;
+  width: min(280px, 100%);
+  aspect-ratio: 1.15;
+}
+
+.node {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+  min-width: 4.5rem;
+}
+
+.nodeActive {
+  transform: scale(1.06);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.nodeC {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: var(--c-color);
+  color: var(--c-color);
+}
+
+.nodeI {
+  bottom: 8%;
+  left: 0;
+  border-color: var(--i-color);
+  color: var(--i-color);
+}
+
+.nodeA {
+  bottom: 8%;
+  right: 0;
+  border-color: var(--a-color);
+  color: var(--a-color);
+}
+
+.nodeActive.nodeC,
+.nodeActive.nodeI,
+.nodeActive.nodeA {
+  transform: scale(1.06);
+}
+
+.nodeC.nodeActive {
+  transform: translateX(-50%) scale(1.06);
+}
+
+.sliders {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.sliderRow label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  margin-bottom: 0.25rem;
+}
+
+.sliderRow input[type='range'] {
+  width: 100%;
+  accent-color: var(--ifm-color-primary);
+}
+
+.feedback {
+  font-size: 0.84rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  border-left: 4px solid var(--ifm-color-primary);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.presetBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}

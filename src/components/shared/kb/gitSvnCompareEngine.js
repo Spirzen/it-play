@@ -1,0 +1,58 @@
+export const VCS_OPERATIONS = [
+  {
+    id: 'clone',
+    task: 'Получить копию репозитория',
+    git: 'git clone <URL>',
+    svn: 'svn checkout <URL>',
+    note: 'В Git полная история локально; в SVN — только рабочая копия + метаданные на сервере.',
+  },
+  {
+    id: 'update',
+    task: 'Подтянуть изменения',
+    git: 'git pull origin main',
+    svn: 'svn update',
+    note: 'git pull = fetch + merge; SVN всегда ходит на сервер.',
+  },
+  {
+    id: 'commit',
+    task: 'Отправить свои правки',
+    git: 'git push origin main',
+    svn: 'svn commit -m "message"',
+    note: 'В Git коммит локальный, push — отдельный шаг. В SVN commit сразу на сервер.',
+  },
+  {
+    id: 'branch',
+    task: 'Создать ветку',
+    git: 'git branch feature-x',
+    svn: 'svn copy <URL>/trunk <URL>/branches/feature-x',
+    note: 'Ветка Git — указатель; в SVN — копия каталога на сервере.',
+  },
+  {
+    id: 'switch',
+    task: 'Переключить ветку',
+    git: 'git checkout feature-x',
+    svn: 'svn switch <URL>/branches/feature-x',
+    note: 'Переключение в Git мгновенное; в SVN может занять время на больших деревьях.',
+  },
+  {
+    id: 'tag',
+    task: 'Поставить метку версии',
+    git: 'git tag v1.0.0',
+    svn: 'svn copy trunk tags/v1.0.0',
+    note: 'Тег Git — лёгкая ссылка; в SVN снова копия пути.',
+  },
+  {
+    id: 'revert',
+    task: 'Отменить локальные правки',
+    git: 'git restore <file>',
+    svn: 'svn revert <file>',
+    note: 'Оба откатывают незакоммиченные изменения в рабочей копии.',
+  },
+  {
+    id: 'merge',
+    task: 'Слить ветки',
+    git: 'git merge feature-x',
+    svn: 'svn merge <URL>/branches/feature-x',
+    note: 'Git merge работает с графом коммитов; SVN — трёхстороннее слияние файлов.',
+  },
+];

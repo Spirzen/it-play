@@ -1,0 +1,13 @@
+{
+  "title": "Игровая студия",
+  "description": "Интерактивное демо «Игровая студия» — раздел Энциклопедия · Спин-офф.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "game-dev-studio-demo",
+  "tags": [
+    "spinoff",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/113",
+  "order": 8
+}

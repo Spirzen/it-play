@@ -1,0 +1,13 @@
+{
+  "title": "Обработка исключений",
+  "description": "Интерактивное демо «Обработка исключений» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "exception-handling-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111",
+  "order": 31
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Mongo Db Explorer",
+  "description": "Интерактивное демо «Mongo Db Explorer» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "mongo-db-explorer-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/2",
+  "order": 39
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Bpmn Reference",
+  "description": "Интерактивное демо «Bpmn Reference» — раздел О проекте.",
+  "category": "about",
+  "categoryTitle": "О проекте",
+  "component": "bpmn-reference-play",
+  "tags": [
+    "about"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/about/interactive",
+  "order": 22
+}

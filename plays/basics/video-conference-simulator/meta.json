@@ -1,0 +1,13 @@
+{
+  "title": "Симулятор видеосвязи",
+  "description": "Интерактивное демо «Симулятор видеосвязи» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "video-conference-simulator",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/4",
+  "order": 21
+}

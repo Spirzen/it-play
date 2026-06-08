@@ -1,0 +1,177 @@
+.root {
+  max-width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.chip {
+  border: 1px solid var(--ifm-color-emphasis-400);
+  background: var(--ifm-background-surface-color);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.chipActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+}
+
+.swatch {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.board {
+  overflow-x: auto;
+  padding-bottom: 0.35rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.28rem;
+  margin-bottom: 0.28rem;
+  justify-content: center;
+}
+
+.key {
+  flex: 0 0 auto;
+  min-height: 2.35rem;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  color: #1a1a1a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  line-height: 1.1;
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.12s ease;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.keySub {
+  font-size: 0.62rem;
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+.keyHome {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+}
+
+.keyBump::after {
+  content: '·';
+  position: absolute;
+  margin-top: 1.1rem;
+  font-size: 0.55rem;
+  opacity: 0.65;
+}
+
+.keyActive {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.keyTarget {
+  animation: pulse 0.9s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--ifm-color-primary) 55%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+  }
+}
+
+.info {
+  margin-top: 0.85rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.85rem;
+}
+
+.infoTitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+}
+
+.drillBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+}
+
+.drillPrompt {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.drillStat {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.btn {
+  border: 1px solid var(--ifm-color-emphasis-400);
+  background: var(--ifm-background-surface-color);
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  border: 1px solid var(--ifm-color-primary);
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground, #fff);
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.hint {
+  margin-top: 0.65rem;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-700);
+}

@@ -1,0 +1,13 @@
+{
+  "title": "GitHub Actions workflow",
+  "description": "Интерактивное демо «GitHub Actions workflow» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "git-hub-actions-workflow-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/2112",
+  "order": 19
+}

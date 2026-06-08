@@ -1,0 +1,13 @@
+{
+  "title": "GitLab CI pipeline",
+  "description": "Интерактивное демо «GitLab CI pipeline» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "git-lab-ci-pipeline-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/2113",
+  "order": 20
+}

@@ -1,0 +1,13 @@
+{
+  "title": "API-интеграционные тесты",
+  "description": "Интерактивное демо «API-интеграционные тесты» — раздел Энциклопедия · Проект.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "integration-api-test-play",
+  "tags": [
+    "project",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-05-testirovanie/1012",
+  "order": 12
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Симуляция Kafka",
+  "description": "Интерактивное демо «Симуляция Kafka» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "kafka-simulation",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123",
+  "order": 47
+}

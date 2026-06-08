@@ -1,0 +1,97 @@
+.root {
+  max-width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+.window {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  box-shadow: 0 4px 12px color-mix(in srgb, #000 15%, transparent);
+}
+
+.windowMin {
+  max-height: 2rem;
+  overflow: hidden;
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  padding: 0.35rem 0.5rem;
+  background: linear-gradient(180deg, #5c6bc0, #3949ab);
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+
+.title {
+  flex: 1;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.buttons button {
+  width: 1.4rem;
+  height: 1.2rem;
+  border: none;
+  border-radius: 3px;
+  background: color-mix(in srgb, #fff 20%, transparent);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.menu li button {
+  padding: 0.3rem 0.55rem;
+  border: none;
+  background: transparent;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.menu li button:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.client {
+  min-height: 72px;
+  padding: 0.65rem;
+  font-size: 0.78rem;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+}
+
+.log {
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.65rem;
+  max-height: 5.5rem;
+  overflow-y: auto;
+}
+
+.log li {
+  padding: 0.2rem 0;
+  border-bottom: 1px dashed var(--ifm-color-emphasis-200);
+}
+
+.logEmpty {
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+  font-style: italic;
+}

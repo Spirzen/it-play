@@ -1,0 +1,618 @@
+.root {
+  max-width: min(780px, 100%);
+  margin: 0 auto;
+  --aspnet-accent: #68217a;
+}
+
+.accentBar {
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--aspnet-accent),
+    color-mix(in srgb, var(--aspnet-accent) 50%, #0ea5e9)
+  );
+  margin: 0 0 0.75rem;
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.tier {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem 0.65rem;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tierActive {
+  border-color: var(--aspnet-accent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--aspnet-accent) 28%, transparent);
+}
+
+.tierHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.tierIcon {
+  font-size: 1.1rem;
+}
+
+.tierLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.tierShort {
+  margin-left: auto;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.tierNodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 0.4rem;
+}
+
+.node {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.4rem 0.5rem;
+  background: var(--ifm-background-color);
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.nodeActive {
+  border-color: var(--aspnet-accent);
+  background: color-mix(in srgb, var(--aspnet-accent) 10%, var(--ifm-background-color));
+  transform: scale(1.02);
+}
+
+.nodeName {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.nodeRole {
+  display: block;
+  font-size: 0.64rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.15rem;
+}
+
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem 0;
+  min-height: 26px;
+}
+
+.connectorLine {
+  width: 2px;
+  flex: 1;
+  min-height: 16px;
+  background: var(--ifm-color-emphasis-400);
+  border-radius: 1px;
+}
+
+.connectorPulseDown {
+  background: linear-gradient(180deg, var(--aspnet-accent), var(--ifm-color-emphasis-400));
+  animation: aspnetPulseDown 0.9s ease infinite;
+}
+
+.connectorPulseUp {
+  background: linear-gradient(0deg, var(--aspnet-accent), var(--ifm-color-emphasis-400));
+  animation: aspnetPulseUp 0.9s ease infinite;
+}
+
+@keyframes aspnetPulseDown {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes aspnetPulseUp {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.scenarioTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.scenarioTab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scenarioTab:hover:not(:disabled) {
+  border-color: var(--aspnet-accent);
+  color: var(--aspnet-accent);
+}
+
+.scenarioTab:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.scenarioTabActive {
+  border-color: var(--aspnet-accent);
+  background: color-mix(in srgb, var(--aspnet-accent) 12%, var(--ifm-background-surface-color));
+  color: var(--aspnet-accent);
+}
+
+.scenarioHint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: color-mix(in srgb, var(--aspnet-accent) 6%, var(--ifm-background-surface-color));
+  margin-bottom: 0.75rem;
+}
+
+.stepBadge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--aspnet-accent);
+}
+
+.stepTitle {
+  margin: 0.25rem 0 0.15rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.stepDetail {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.stepDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.stepDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-300);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.stepDotDone {
+  background: color-mix(in srgb, var(--aspnet-accent) 50%, var(--ifm-color-emphasis-300));
+}
+
+.stepDotCurrent {
+  background: var(--aspnet-accent);
+  transform: scale(1.25);
+}
+
+.footer {
+  margin: 0.75rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+  text-align: center;
+}
+
+/* Evolution */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.eraCard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.55rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.eraCard:hover {
+  border-color: var(--aspnet-accent);
+}
+
+.eraCardActive {
+  border-color: var(--aspnet-accent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--aspnet-accent) 30%, transparent);
+}
+
+.eraCardLegacy {
+  opacity: 0.92;
+}
+
+.eraYear {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--aspnet-accent);
+  min-width: 2.5rem;
+}
+
+.eraName {
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.eraTag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+}
+
+.eraTraits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+}
+
+.eraTrait {
+  font-size: 0.64rem;
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--aspnet-accent) 10%, var(--ifm-background-color));
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.eraDetail {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--aspnet-accent);
+  background: color-mix(in srgb, var(--aspnet-accent) 6%, var(--ifm-background-surface-color));
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.toolChip {
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  text-align: center;
+}
+
+.toolLabel {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.toolRole {
+  display: block;
+  font-size: 0.64rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.1rem;
+}
+
+/* Solution tree */
+.solutionLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 560px) {
+  .solutionLayout {
+    grid-template-columns: 1fr 1.05fr;
+  }
+}
+
+.treePanel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.treeRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.35rem 0.45rem;
+  margin-bottom: 0.2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 0.74rem;
+  font-family: var(--ifm-font-family-monospace);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.treeRow:hover {
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+.treeRowActive {
+  border-color: var(--aspnet-accent);
+  background: color-mix(in srgb, var(--aspnet-accent) 8%, var(--ifm-background-color));
+}
+
+.treeIndent1 {
+  padding-left: 1rem;
+}
+
+.treeIndent2 {
+  padding-left: 1.75rem;
+}
+
+.treeRole {
+  margin-left: auto;
+  font-size: 0.62rem;
+  color: var(--ifm-color-content-secondary);
+  font-family: var(--ifm-font-family-base);
+}
+
+/* Packages */
+.packageLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  .packageLayout {
+    grid-template-columns: 1fr 1.1fr;
+  }
+}
+
+.projectBox {
+  border: 2px dashed var(--aspnet-accent);
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.projectBoxActive {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--aspnet-accent) 35%, transparent);
+}
+
+.projectTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.codePanel {
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.pkgList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.pkgChip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  font-size: 0.72rem;
+  transition: all 0.25s ease;
+}
+
+.pkgChipActive {
+  border-color: var(--aspnet-accent);
+  background: color-mix(in srgb, var(--aspnet-accent) 8%, var(--ifm-background-color));
+}
+
+.pkgName {
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.pkgVer {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.68rem;
+}
+
+.graphArea {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.graphTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+  margin: 0 0 0.5rem;
+}
+
+/* Models */
+.modelsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.modelCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.5rem 0.55rem;
+  background: var(--ifm-background-color);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modelCardActive {
+  border-color: var(--aspnet-accent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--aspnet-accent) 25%, transparent);
+}
+
+.modelName {
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.modelStack {
+  font-size: 0.65rem;
+  color: var(--aspnet-accent);
+  margin: 0.15rem 0 0.35rem;
+}
+
+.flowRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.35rem 0 0;
+}
+
+.flowStep {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.flowArrow {
+  font-size: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.modelDetail {
+  padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  border-left: 3px solid var(--aspnet-accent);
+  background: color-mix(in srgb, var(--aspnet-accent) 6%, var(--ifm-background-surface-color));
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.modelLink {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Middleware strip */
+.middlewareStrip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.mwChip {
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.68rem;
+  font-weight: 600;
+  background: var(--ifm-background-surface-color);
+  transition: all 0.25s ease;
+}
+
+.mwChipActive {
+  border-color: var(--aspnet-accent);
+  background: color-mix(in srgb, var(--aspnet-accent) 12%, var(--ifm-background-surface-color));
+  color: var(--aspnet-accent);
+}
+
+.mwOrder {
+  display: block;
+  font-size: 0.58rem;
+  color: var(--ifm-color-content-secondary);
+  font-weight: 700;
+}

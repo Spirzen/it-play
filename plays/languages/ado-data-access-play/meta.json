@@ -1,0 +1,13 @@
+{
+  "title": "ADO.NET — доступ к данным",
+  "description": "Интерактивное демо «ADO.NET — доступ к данным» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "ado-data-access-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-04-platforma-dotnet/171",
+  "order": 10
+}

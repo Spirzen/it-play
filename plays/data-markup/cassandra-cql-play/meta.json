@@ -1,0 +1,13 @@
+{
+  "title": "Cassandra CQL",
+  "description": "Интерактивное демо «Cassandra CQL» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "cassandra-cql-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-06-nosql/611",
+  "order": 25
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Экосистема Rust",
+  "description": "Интерактивное демо «Экосистема Rust» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "rust-ecosystem-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-13-rust/110",
+  "order": 29
+}

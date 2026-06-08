@@ -1,0 +1,12 @@
+{
+  "title": "Cassandra Partition",
+  "description": "Интерактивное демо «Cassandra Partition» — раздел Инструменты · Данные.",
+  "category": "tools-data",
+  "categoryTitle": "Инструменты · Данные",
+  "component": "cassandra-partition-play",
+  "tags": [
+    "toolsdata"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/data/2",
+  "order": 41
+}

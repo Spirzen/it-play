@@ -1,0 +1,13 @@
+{
+  "title": "Python и базы данных",
+  "description": "Интерактивное демо «Python и базы данных» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "python-database-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-02-python/30",
+  "order": 7
+}

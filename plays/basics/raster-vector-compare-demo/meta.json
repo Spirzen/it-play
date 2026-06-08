@@ -1,0 +1,13 @@
+{
+  "title": "Raster Vector Compare",
+  "description": "Интерактивное демо «Raster Vector Compare» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "raster-vector-compare-demo",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-16-grafika/2",
+  "order": 26
+}

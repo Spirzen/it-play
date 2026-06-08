@@ -1,0 +1,13 @@
+{
+  "title": "Стек инструментов DevOps",
+  "description": "Интерактивное демо «Стек инструментов DevOps» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "dev-ops-tools-stack-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/16",
+  "order": 13
+}

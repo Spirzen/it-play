@@ -1,0 +1,12 @@
+{
+  "title": "Audio Tools",
+  "description": "Интерактивное демо «Audio Tools» — раздел Инструменты · Мультимedia.",
+  "category": "tools-multimedia",
+  "categoryTitle": "Инструменты · Мультимedia",
+  "component": "audio-tools-play",
+  "tags": [
+    "toolsmultimedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/multimedia/4",
+  "order": 80
+}

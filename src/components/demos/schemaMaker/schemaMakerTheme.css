@@ -1,0 +1,40 @@
+.schema-maker-root {
+  --bg-app: #f5f3ef;
+  --bg-panel: #faf8f5;
+  --bg-canvas: #fffcf8;
+  --border: #e4dfd6;
+  --border-focus: #b8c4d8;
+  --text: #3d3d48;
+  --text-muted: #7a7885;
+  --accent: #8b9dc3;
+  --accent-hover: #7a8db5;
+  --accent-soft: #e8ecf4;
+  --rose: #c9a8a8;
+  --sage: #a8c4b4;
+  --lavender: #b8a8c4;
+  --peach: #d4c4a8;
+  --shadow: 0 2px 12px rgba(61, 61, 72, 0.06);
+  --shadow-lg: 0 8px 32px rgba(61, 61, 72, 0.1);
+  --radius: 10px;
+  --radius-sm: 6px;
+  --font: system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.schema-maker-root button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.schema-maker-root input,
+.schema-maker-root textarea,
+.schema-maker-root select {
+  font-family: inherit;
+  font-size: inherit;
+}

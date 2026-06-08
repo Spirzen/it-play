@@ -1,0 +1,245 @@
+.tabRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tabBtn {
+  flex: 1 1 auto;
+  min-width: 5rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.tabBtnActive {
+  color: #fff;
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.45;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.baseCard {
+  border: 2px dashed var(--ifm-color-primary);
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+.childCard {
+  border: 2px solid #7b1fa2;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: color-mix(in srgb, #7b1fa2 6%, transparent);
+}
+
+.cardTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.baseTitle {
+  color: var(--ifm-color-primary);
+}
+
+.childTitle {
+  color: #6a1b9a;
+}
+
+.sectionLabel {
+  margin: 0.45rem 0 0.2rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted, var(--ifm-color-content-secondary));
+}
+
+.memberRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+}
+
+.overrideBadge {
+  font-size: 0.62rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, #e65100 18%, transparent);
+  color: #bf360c;
+  white-space: nowrap;
+}
+
+.hierarchyArrow {
+  text-align: center;
+  margin: 0.4rem 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.implPicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.55rem;
+}
+
+.implBtn {
+  flex: 1 1 7rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.implBtnActive {
+  border-color: #7b1fa2;
+  background: color-mix(in srgb, #7b1fa2 10%, transparent);
+}
+
+.dispatchNote {
+  margin: 0.5rem 0 0;
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  background: color-mix(in srgb, #7b1fa2 10%, transparent);
+  border: 1px solid color-mix(in srgb, #7b1fa2 30%, transparent);
+}
+
+.methodBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.55rem;
+}
+
+.outputBox {
+  margin-top: 0.55rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  background: color-mix(in srgb, #7b1fa2 12%, transparent);
+  border: 1px solid color-mix(in srgb, #7b1fa2 35%, transparent);
+}
+
+.loopPanel {
+  margin-top: 0.75rem;
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.loopTitle {
+  margin: 0 0 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.loopSteps {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.loopSteps li {
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.typeTag {
+  display: inline-block;
+  font-size: 0.65rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: 4px;
+  margin-left: 0.25rem;
+  background: color-mix(in srgb, var(--ifm-color-primary) 15%, transparent);
+  color: var(--ifm-color-primary-dark, #1565c0);
+}
+
+.actualTypeTag {
+  background: color-mix(in srgb, #7b1fa2 18%, transparent);
+  color: #4a148c;
+}
+
+.overloadCard {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 0.65rem;
+  margin-bottom: 0.45rem;
+}
+
+.overloadCardActive {
+  border-color: #00838f;
+  background: color-mix(in srgb, #00838f 8%, transparent);
+}
+
+.overloadSig {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+  margin: 0.55rem 0;
+}
+
+.formRow label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.log {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-800);
+}

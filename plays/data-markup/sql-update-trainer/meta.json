@@ -1,0 +1,13 @@
+{
+  "title": "SQL UPDATE — тренажёр",
+  "description": "Интерактивное демо «SQL UPDATE — тренажёр» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "sql-update-trainer",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-07-sql/5",
+  "order": 33
+}

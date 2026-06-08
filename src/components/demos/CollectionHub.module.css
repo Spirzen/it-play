@@ -1,0 +1,65 @@
+.hub {
+  margin-top: 1rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.item {
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: var(--ifm-global-radius);
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  border: 1px solid transparent;
+}
+
+.link:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-200);
+  text-decoration: none;
+}
+
+.index {
+  flex-shrink: 0;
+  min-width: 1.75rem;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.title {
+  flex: 1;
+}
+
+.footer {
+  margin-top: 1rem;
+}
+
+.startLink {
+  font-weight: 600;
+}

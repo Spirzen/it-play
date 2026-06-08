@@ -1,0 +1,13 @@
+{
+  "title": "Модель запрос–ответ",
+  "description": "Интерактивное демо «Модель запрос–ответ» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "request-response-model",
+  "tags": [
+    "system-network",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/116",
+  "order": 42
+}

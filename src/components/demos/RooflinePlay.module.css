@@ -1,0 +1,122 @@
+.root {
+  display: grid;
+  gap: 1rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0.3rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.controls {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.control {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.kernelPanel {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 0.8rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.kernelList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.kernelBtn {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.kernelBtnActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.tip {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.metrics {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.metricCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.metricCard h4 {
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+}
+
+.metricValue {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.barWrap {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.track {
+  height: 12px;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.peak,
+.memory,
+.actual {
+  height: 100%;
+}
+
+.peak {
+  background: #8a6bff;
+}
+
+.memory {
+  background: #ff9c52;
+}
+
+.actual {
+  background: #4fcb8a;
+}
+
+@media (max-width: 760px) {
+  .barRow {
+    grid-template-columns: 1fr;
+  }
+}

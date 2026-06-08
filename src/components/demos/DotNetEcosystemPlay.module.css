@@ -1,0 +1,543 @@
+.root {
+  max-width: min(760px, 100%);
+  margin: 0 auto;
+  --dotnet-accent: #512bd4;
+}
+
+.accentBar {
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--dotnet-accent),
+    color-mix(in srgb, var(--dotnet-accent) 55%, #0ea5e9)
+  );
+  margin: 0 0 0.75rem;
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.tier {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem 0.65rem;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tierActive {
+  border-color: var(--dotnet-accent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--dotnet-accent) 28%, transparent);
+}
+
+.tierHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.tierIcon {
+  font-size: 1.1rem;
+}
+
+.tierLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.tierShort {
+  margin-left: auto;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.tierNodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.4rem;
+}
+
+.node {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.4rem 0.5rem;
+  background: var(--ifm-background-color);
+  text-align: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.node:hover {
+  border-color: var(--dotnet-accent);
+}
+
+.nodeActive {
+  border-color: var(--dotnet-accent);
+  background: color-mix(in srgb, var(--dotnet-accent) 10%, var(--ifm-background-color));
+  transform: scale(1.02);
+}
+
+.nodeName {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.nodeRole {
+  display: block;
+  font-size: 0.64rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.15rem;
+}
+
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem 0;
+  min-height: 28px;
+}
+
+.connectorLine {
+  width: 2px;
+  flex: 1;
+  min-height: 18px;
+  background: var(--ifm-color-emphasis-400);
+  border-radius: 1px;
+}
+
+.connectorPulseDown {
+  background: linear-gradient(180deg, var(--dotnet-accent), var(--ifm-color-emphasis-400));
+  animation: dotnetPulseDown 0.9s ease infinite;
+}
+
+.connectorPulseUp {
+  background: linear-gradient(0deg, var(--dotnet-accent), var(--ifm-color-emphasis-400));
+  animation: dotnetPulseUp 0.9s ease infinite;
+}
+
+@keyframes dotnetPulseDown {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes dotnetPulseUp {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.connectorLabel {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.15rem;
+}
+
+.runtimeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.scenarioTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
+}
+
+.scenarioTab {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scenarioTab:hover:not(:disabled) {
+  border-color: var(--dotnet-accent);
+  color: var(--dotnet-accent);
+}
+
+.scenarioTab:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.scenarioTabActive {
+  border-color: var(--dotnet-accent);
+  background: color-mix(in srgb, var(--dotnet-accent) 12%, var(--ifm-background-surface-color));
+  color: var(--dotnet-accent);
+}
+
+.scenarioHint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: color-mix(in srgb, var(--dotnet-accent) 6%, var(--ifm-background-surface-color));
+  margin-bottom: 0.75rem;
+}
+
+.stepBadge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--dotnet-accent);
+}
+
+.stepTitle {
+  margin: 0.25rem 0 0.15rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.stepDetail {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.stepDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.stepDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-300);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.stepDotDone {
+  background: color-mix(in srgb, var(--dotnet-accent) 50%, var(--ifm-color-emphasis-300));
+}
+
+.stepDotCurrent {
+  background: var(--dotnet-accent);
+  transform: scale(1.25);
+}
+
+.packageLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  .packageLayout {
+    grid-template-columns: 1fr 1.1fr;
+  }
+}
+
+.projectBox {
+  border: 2px dashed var(--dotnet-accent);
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.projectBoxActive {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--dotnet-accent) 35%, transparent);
+}
+
+.projectTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.pkgList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.pkgChip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  font-size: 0.72rem;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.pkgChipActive {
+  border-color: var(--dotnet-accent);
+  background: color-mix(in srgb, var(--dotnet-accent) 8%, var(--ifm-background-color));
+}
+
+.pkgName {
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.pkgVer {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.68rem;
+}
+
+.graphArea {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.55rem;
+  background: var(--ifm-background-surface-color);
+  min-height: 200px;
+}
+
+.graphTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+  margin: 0 0 0.5rem;
+}
+
+.nupkgTree {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.nupkgRow {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+  align-items: start;
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nupkgRow:hover,
+.nupkgRowActive {
+  border-color: var(--dotnet-accent);
+  background: color-mix(in srgb, var(--dotnet-accent) 6%, var(--ifm-background-color));
+}
+
+.nupkgFolder {
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--dotnet-accent);
+  white-space: nowrap;
+}
+
+.nupkgDesc {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.1rem 0 0;
+}
+
+.flowRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.flowNode {
+  padding: 0.45rem 0.65rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  text-align: center;
+  min-width: 88px;
+  transition: all 0.25s ease;
+}
+
+.flowNodeActive {
+  border-color: var(--dotnet-accent);
+  background: color-mix(in srgb, var(--dotnet-accent) 10%, var(--ifm-background-surface-color));
+}
+
+.flowArrow {
+  font-size: 1rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.flowNodeLabel {
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.flowNodeRole {
+  font-size: 0.64rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.appsHub {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 560px) {
+  .appsHub {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.categoryBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.categoryBtnActive {
+  border-color: var(--dotnet-accent);
+  background: color-mix(in srgb, var(--dotnet-accent) 10%, var(--ifm-background-surface-color));
+  color: var(--dotnet-accent);
+}
+
+.frameworkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.4rem;
+}
+
+.frameworkCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.45rem 0.5rem;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.frameworkCard:hover,
+.frameworkCardActive {
+  border-color: var(--dotnet-accent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--dotnet-accent) 25%, transparent);
+}
+
+.frameworkName {
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.frameworkStack {
+  font-size: 0.65rem;
+  color: var(--dotnet-accent);
+  margin: 0.15rem 0 0;
+}
+
+.frameworkDetail {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--dotnet-accent);
+  background: color-mix(in srgb, var(--dotnet-accent) 6%, var(--ifm-background-surface-color));
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.coreBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--dotnet-accent) 18%, transparent),
+    color-mix(in srgb, #0ea5e9 12%, transparent)
+  );
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.codePanel {
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  background: var(--ifm-code-background);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.footer {
+  margin: 0.75rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+  text-align: center;
+}

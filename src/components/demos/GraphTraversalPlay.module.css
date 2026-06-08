@@ -1,0 +1,88 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 1rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.svg {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.nodeCircle {
+  fill: var(--ifm-color-emphasis-100);
+  stroke: var(--ifm-color-emphasis-400);
+  stroke-width: 2;
+  cursor: pointer;
+  transition: fill 0.2s, stroke 0.2s;
+}
+
+.nodeActive {
+  fill: rgba(25, 118, 210, 0.2);
+  stroke: #1976d2;
+}
+
+.nodeVisited {
+  fill: rgba(46, 125, 50, 0.15);
+  stroke: #2e7d32;
+}
+
+.edgeLine {
+  stroke: var(--ifm-color-emphasis-400);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.edgeActive {
+  stroke: #1976d2;
+  stroke-width: 2.5;
+}
+
+.sidePanel {
+  font-size: 0.82rem;
+}
+
+.queryBox {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  padding: 0.45rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  margin: 0.5rem 0;
+  word-break: break-word;
+}
+
+.compare {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.compare span {
+  flex: 1;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+.graphWin {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+}
+
+.sqlCost {
+  background: rgba(198, 40, 40, 0.1);
+  color: #c62828;
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Мост HTML ↔ CSS",
+  "description": "Интерактивное демо «Мост HTML ↔ CSS» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "css-html-bridge-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-10-css/111",
+  "order": 40
+}

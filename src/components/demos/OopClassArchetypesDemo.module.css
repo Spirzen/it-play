@@ -1,0 +1,128 @@
+.tabs {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tabOn {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  border-color: transparent;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin: 0 0 0.25rem;
+}
+
+.card ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.chip {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+}
+
+.chipOn {
+  font-weight: 600;
+}
+
+.builder {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.builder label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+}
+
+.builder input {
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-family: inherit;
+}
+
+.gen {
+  padding: 0.45rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.78rem;
+}
+
+.preview {
+  grid-column: 1 / -1;
+  border: 2px solid;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.previewHead {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.preview code {
+  display: block;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.scenario {
+  margin-top: 0.65rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+}

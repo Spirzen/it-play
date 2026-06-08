@@ -1,0 +1,67 @@
+.root {
+  max-width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.focus {
+  margin: 0.5rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.code {
+  margin: 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  background: var(--ifm-code-background);
+  white-space: pre-wrap;
+  min-height: 12rem;
+}
+
+.trace {
+  padding: 0.65rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.steps {
+  margin: 0.35rem 0 0.65rem;
+  padding-left: 1.2rem;
+  font-size: 0.78rem;
+}
+
+.stepActive {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.stepDone {
+  opacity: 0.55;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.traits {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+}

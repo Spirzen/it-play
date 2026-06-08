@@ -1,0 +1,212 @@
+.root {
+  margin: 1.25rem 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #4a6cf7, #7b61ff);
+  box-shadow: 0 4px 14px color-mix(in srgb, #4a6cf7 35%, transparent);
+}
+
+.heroName {
+  margin: 0 0 0.2rem;
+  font-size: 1.1rem;
+}
+
+.heroTag {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 520px) {
+  .stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat {
+  text-align: center;
+  padding: 0.55rem 0.4rem;
+  border-radius: 10px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.statValue {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 0.68rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.roleChips,
+.interestChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.roleChip,
+.interestBtn {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: inherit;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.roleChipOn {
+  border-color: var(--role-color, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--role-color, #4a6cf7) 14%, transparent);
+}
+
+.interestBtnActive {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+}
+
+.roleSummary,
+.interestNote {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.skills {
+  margin-bottom: 1rem;
+}
+
+.skillRow {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr 2.25rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.skillLabel {
+  font-size: 0.78rem;
+}
+
+.skillBar {
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.skillFill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--ifm-color-primary), #7b61ff);
+  transition: width 0.35s ease;
+}
+
+.skillVal {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.supportGrid {
+  display: grid;
+  gap: 0.45rem;
+}
+
+@media (min-width: 560px) {
+  .supportGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.supportCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.8rem;
+}
+
+.supportLabel {
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.supportCode {
+  font-size: 0.72rem;
+  word-break: break-all;
+}
+
+.onlineTools {
+  margin-top: 0.75rem;
+}
+
+.onlineToolsList {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.onlineToolsList li {
+  margin-bottom: 0.45rem;
+}
+
+.onlineToolsDesc {
+  color: var(--ifm-color-content-secondary);
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 1rem 0 0.75rem;
+  font-size: 0.82rem;
+}
+
+.contactLink {
+  font-weight: 600;
+}
+
+.support {
+  margin-top: 0.5rem;
+}

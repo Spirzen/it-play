@@ -1,0 +1,13 @@
+{
+  "title": "Инъекция стилей",
+  "description": "Интерактивное демо «Инъекция стилей» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "style-injection-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-10-css/711",
+  "order": 44
+}

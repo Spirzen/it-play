@@ -1,0 +1,143 @@
+.root {
+  --orch-docker: #2496ed;
+  --orch-k8s: #326ce5;
+}
+
+.modeTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.host {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px dashed var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  min-height: 140px;
+}
+
+.hostLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted);
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.containerCard {
+  flex: 1 1 120px;
+  max-width: 160px;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 2px solid var(--orch-docker);
+  background: color-mix(in srgb, var(--orch-docker) 8%, transparent);
+  font-size: 0.78rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.containerCardEnter {
+  animation: cardIn 0.35s ease;
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.podGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+
+.pod {
+  padding: 0.55rem;
+  border-radius: 8px;
+  border: 2px solid var(--orch-k8s);
+  background: color-mix(in srgb, var(--orch-k8s) 8%, transparent);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.podPending {
+  opacity: 0.55;
+  border-style: dashed;
+}
+
+.controlPanel {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+}
+
+.sliderRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.sliderRow input[type='range'] {
+  flex: 1;
+  min-width: 140px;
+}
+
+.stepList {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepItem {
+  padding: 0.45rem 0.65rem;
+  margin-bottom: 0.35rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border-left: 3px solid transparent;
+  color: var(--ifm-color-content-secondary);
+}
+
+.stepItemActive {
+  border-left-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  color: var(--ifm-color-content);
+  font-weight: 600;
+}
+
+.stepItemDone {
+  border-left-color: var(--ifm-color-success);
+  opacity: 0.85;
+}
+
+.serviceBox {
+  margin-top: 0.75rem;
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--orch-k8s) 12%, transparent);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .containerCardEnter {
+    animation: none;
+  }
+}

@@ -1,0 +1,192 @@
+.layout {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 997px) {
+  .layout {
+    grid-template-columns: 1fr minmax(12rem, 16rem);
+  }
+}
+
+.chartWrap {
+  border: 1px solid var(--demo-border);
+  border-radius: 10px;
+  padding: 0.5rem 0.35rem 0.25rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.chartSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.axisLabel {
+  font-size: 9px;
+  fill: var(--demo-muted);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: var(--ifm-color-content-secondary);
+  background: none;
+  font: inherit;
+}
+
+.legendItemActive {
+  border-color: var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content);
+  font-weight: 600;
+}
+
+.legendItemMuted {
+  opacity: 0.45;
+}
+
+.legendDot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sliderRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sliderRow label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  min-width: 6rem;
+}
+
+.slider {
+  flex: 1;
+  min-width: 10rem;
+  accent-color: var(--ifm-color-primary);
+}
+
+.nValue {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.1rem;
+  font-weight: 700;
+  min-width: 3.5rem;
+  text-align: right;
+}
+
+.sidePanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.metricCard {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+}
+
+.metricCardAccent {
+  border-left: 3px solid var(--metric-accent, var(--ifm-color-primary));
+}
+
+.metricLabel {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--demo-muted);
+  margin-bottom: 0.2rem;
+}
+
+.metricValue {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.metricSub {
+  font-size: 0.75rem;
+  color: var(--demo-muted);
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.table th,
+.table td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--demo-border);
+  text-align: left;
+}
+
+.table th {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--demo-muted);
+  font-weight: 600;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.rowHighlight td {
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  font-weight: 600;
+}
+
+.codeSnippet {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  color: var(--ifm-pre-color);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.hint {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  border-left: 3px solid var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-surface-color));
+}
+
+.nMarker {
+  stroke: var(--ifm-color-primary);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 3;
+  opacity: 0.85;
+}

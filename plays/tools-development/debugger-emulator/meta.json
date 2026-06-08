@@ -1,0 +1,12 @@
+{
+  "title": "Debugger Emulator",
+  "description": "Интерактивное демо «Debugger Emulator» — раздел Инструменты · Разработка.",
+  "category": "tools-development",
+  "categoryTitle": "Инструменты · Разработка",
+  "component": "debugger-emulator",
+  "tags": [
+    "toolsdevelopment"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/development/4",
+  "order": 54
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Microsoft Learn Explorer",
+  "description": "Интерактивное демо «Microsoft Learn Explorer» — раздел Инструменты · Документация.",
+  "category": "tools-documentation",
+  "categoryTitle": "Инструменты · Документация",
+  "component": "microsoft-learn-explorer-play",
+  "tags": [
+    "toolsdocumentation"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/documentation/6",
+  "order": 63
+}

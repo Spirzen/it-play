@@ -1,0 +1,144 @@
+.sqlBox {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  background: var(--ifm-code-background);
+  margin-bottom: 0.75rem;
+  overflow-x: auto;
+}
+
+.planBanner {
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 0.75rem;
+}
+
+.planGood {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.35);
+}
+
+.planBad {
+  background: rgba(198, 40, 40, 0.1);
+  color: #c62828;
+  border: 1px solid rgba(198, 40, 40, 0.35);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  font-size: 0.82rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.stat strong {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panelTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+}
+
+.panel {
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 8px;
+  max-height: 220px;
+  overflow: auto;
+  font-size: 0.75rem;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.rowLine {
+  display: grid;
+  grid-template-columns: 2.5rem 3.5rem 1fr 4.5rem;
+  gap: 0.35rem;
+  padding: 0.25rem 0.45rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.rowExamined {
+  background: rgba(255, 193, 7, 0.15);
+}
+
+.rowMatched {
+  background: rgba(46, 125, 50, 0.18);
+  font-weight: 600;
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.stepItem {
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.25rem;
+  border: 1px solid transparent;
+}
+
+.stepActive {
+  border-color: var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.08);
+}
+
+.stepOpcode {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.costBar {
+  display: flex;
+  height: 1.25rem;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  background: var(--ifm-emphasis-200);
+}
+
+.costFill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  min-width: 2rem;
+  transition: width 0.35s ease;
+}

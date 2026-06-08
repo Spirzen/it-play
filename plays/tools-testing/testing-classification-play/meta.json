@@ -1,0 +1,12 @@
+{
+  "title": "Testing Classification",
+  "description": "Интерактивное демо «Testing Classification» — раздел Инструменты · Тестирование.",
+  "category": "tools-testing",
+  "categoryTitle": "Инструменты · Тестирование",
+  "component": "testing-classification-play",
+  "tags": [
+    "toolstesting"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/tools/testing/1",
+  "order": 98
+}

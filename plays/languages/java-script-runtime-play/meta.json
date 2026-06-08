@@ -1,0 +1,13 @@
+{
+  "title": "JavaScript Runtime",
+  "description": "Интерактивное демо «JavaScript Runtime» — раздел Энциклопедия · Языки программирования.",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "java-script-runtime-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-01-javascript/14",
+  "order": 1
+}

@@ -1,0 +1,216 @@
+.root {
+  --genre-accent: var(--ifm-color-primary);
+}
+
+.hubTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.hubTab {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.hubTabActive {
+  border-color: var(--genre-accent, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--genre-accent, var(--ifm-color-primary)) 14%, transparent);
+  font-weight: 600;
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.badge {
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+}
+
+.layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.status {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  min-height: 2.5em;
+}
+
+.score {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Arcade */
+.arcadeBoard {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
+  max-width: 360px;
+  aspect-ratio: 9 / 11;
+  padding: 0.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: #0f172a;
+}
+
+.arcadeCell {
+  border-radius: 3px;
+  background: #1e293b;
+}
+
+.arcadePlayer {
+  background: #22c55e;
+  box-shadow: 0 0 6px #22c55e;
+}
+
+.arcadeFoe {
+  background: #ef4444;
+  box-shadow: 0 0 6px #ef4444;
+}
+
+.controlsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* Platformer */
+.platformTrack {
+  position: relative;
+  height: 72px;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: linear-gradient(180deg, #bae6fd 0%, #e0f2fe 55%, #78716c 55%, #57534e 100%);
+  overflow: hidden;
+}
+
+.platformGap {
+  position: absolute;
+  bottom: 0;
+  height: 28%;
+  background: #1e293b;
+}
+
+.platformHero {
+  position: absolute;
+  bottom: 45%;
+  width: 22px;
+  height: 22px;
+  margin-left: -11px;
+  border-radius: 4px;
+  background: var(--genre-accent, #22c55e);
+  transition: left 0.08s linear, bottom 0.08s linear;
+}
+
+.platformGoal {
+  position: absolute;
+  right: 8px;
+  bottom: 45%;
+  width: 16px;
+  height: 28px;
+  border-radius: 3px;
+  background: #fbbf24;
+}
+
+/* Puzzle */
+.puzzleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 56px);
+  gap: 4px;
+}
+
+.puzzleTile {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.puzzleTileEmpty {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Turn-based */
+.turnGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  gap: 3px;
+}
+
+.turnCell {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  padding: 0;
+}
+
+.turnCellSelected {
+  outline: 2px solid var(--genre-accent);
+}
+
+.turnPlayer {
+  background: color-mix(in srgb, #22c55e 35%, transparent);
+}
+
+.turnEnemy {
+  background: color-mix(in srgb, #ef4444 35%, transparent);
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.choiceBtn {
+  text-align: left;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.choiceBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+}
+
