@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import DemoShell, {DemoCard} from '@/components/shared/DemoShell';
 import {LINTER_LANGS, LINTER_SAMPLES, LINTERS} from '@/components/shared/kb/toolsTestingData';
 import toolStyles from '@/components/shared/kb/toolDemo.module.css';
-import styles from './linterLivePlay.module.css';
+import styles from '@/components/demos/LinterLivePlay.module.css';
 
 function LinterLivePlayInner() {
   const [lang, setLang] = useState('js');
