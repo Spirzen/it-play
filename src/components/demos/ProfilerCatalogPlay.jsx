@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import DemoShell, {DemoCard} from '@/components/shared/DemoShell';
 import {PROFILER_FILTERS, PROFILERS} from '@/components/shared/kb/toolsTestingData';
 import toolStyles from '@/components/shared/kb/toolDemo.module.css';
-import styles from './profilerCatalogPlay.module.css';
+import styles from '@/components/demos/ProfilerCatalogPlay.module.css';
 
 function simulateProfile(intensity) {
   const cpu = Math.min(98, 25 + intensity * 0.07 + Math.random() * 8);

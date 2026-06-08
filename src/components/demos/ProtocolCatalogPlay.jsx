@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import DemoShell, {DemoCard} from '@/components/shared/DemoShell';
 import {PROTOCOL_LAYERS, PROTOCOLS} from '@/components/shared/kb/toolsNetworkData';
 import NetworkStackExplorerPlay from '@/components/demos/NetworkStackExplorerPlay';
-import styles from './protocolCatalogPlay.module.css';
+import styles from '@/components/demos/ProtocolCatalogPlay.module.css';
 
 function ProtocolCatalogPlayInner() {
   const [picked, setPicked] = useState('http');
