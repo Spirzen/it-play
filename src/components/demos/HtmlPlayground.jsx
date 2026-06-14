@@ -13,13 +13,13 @@ import {
   PLAYGROUND_MESSAGE_TYPE,
   PRESETS,
 } from '@/components/shared/kb/htmlPlaygroundEngine';
-import styles from '@/components/demos/HTMLPlayground.module.css';
+import styles from '@/components/demos/HtmlPlayground.module.css';
 
 const DEBOUNCE_MS = 450;
 const MIN_EDITOR_RATIO = 0.25;
 const MAX_EDITOR_RATIO = 0.75;
 
-function HTMLPlaygroundInner() {
+function HtmlPlaygroundInner() {
   const [code, setCode] = useState(DEFAULT_CODE);
   const [presetId, setPresetId] = useState('default');
   const [previewState, setPreviewState] = useState('idle');
@@ -388,4 +388,4 @@ function HTMLPlaygroundInner() {
   );
 }
 
-export default HTMLPlaygroundInner;
+export default HtmlPlaygroundInner;

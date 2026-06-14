@@ -13,6 +13,10 @@ function kebabToPascal(kebab: string): string {
     .join('');
 }
 
+function normalizeComponentId(id: string): string {
+  return id.replace(/[-_]/g, '').toLowerCase();
+}
+
 function moduleBaseName(filePath: string): string {
   const file = filePath.split('/').pop() ?? '';
   return file.replace(/\.(jsx|js|tsx|ts)$/, '');
@@ -20,10 +24,16 @@ function moduleBaseName(filePath: string): string {
 
 function findDemoLoader(componentId: string): DemoLoader | undefined {
   const pascal = kebabToPascal(componentId);
+  const normalizedId = normalizeComponentId(componentId);
 
   for (const [filePath, loader] of Object.entries(demoModules)) {
     const base = moduleBaseName(filePath);
-    if (base === componentId || base === pascal || base.toLowerCase() === componentId) {
+    if (
+      base === componentId ||
+      base === pascal ||
+      base.toLowerCase() === componentId ||
+      normalizeComponentId(base) === normalizedId
+    ) {
       return loader;
     }
   }
