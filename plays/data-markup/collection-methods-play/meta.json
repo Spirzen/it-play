@@ -1,0 +1,14 @@
+{
+  "title": "Методы коллекции",
+  "description": "Интерактивное демо операций со списком: добавить, вставить, удалить, диапазон — с синтаксисом разных языков.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "collection-methods-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia",
+    "collections"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-02-struktury-dannyh/1",
+  "order": 7
+}
