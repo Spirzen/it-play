@@ -1,0 +1,13 @@
+{
+  "title": "Лестница грейдов",
+  "description": "Интерактивное демо «Лестница грейдов» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "grade-ladder-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-26-karera-v-it-i-mify/3",
+  "order": 53
+}

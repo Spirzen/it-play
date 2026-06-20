@@ -1,0 +1,24 @@
+.svg {
+  display: block;
+  width: 100%;
+  max-width: min(300px, 100%);
+  margin: 0.65rem auto;
+  border-radius: var(--ai-radius-sm, 8px);
+  border: 1px solid var(--ai-border, var(--demo-border));
+  background: var(--ai-surface, var(--ifm-background-surface-color));
+}
+
+.ring {
+  fill: none;
+  stroke: var(--ai-border, var(--ifm-color-emphasis-300));
+  stroke-width: 0.6;
+}
+
+.bullseye {
+  fill: var(--ai-error, #c62828);
+}
+
+.shot {
+  fill: var(--ifm-color-primary);
+  opacity: 0.8;
+}

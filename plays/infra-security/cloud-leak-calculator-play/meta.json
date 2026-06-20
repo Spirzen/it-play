@@ -1,0 +1,13 @@
+{
+  "title": "FinOps — утечки",
+  "description": "Интерактивное демо «FinOps — утечки» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "cloud-leak-calculator-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-16-finops-pet-project/1",
+  "order": 48
+}

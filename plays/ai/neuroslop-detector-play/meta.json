@@ -1,0 +1,10 @@
+{
+  "title": "Детектор нейрослопа",
+  "description": "Интерактивное демо «Детектор нейрослопа» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "neuroslop-detector-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2",
+  "order": 26
+}

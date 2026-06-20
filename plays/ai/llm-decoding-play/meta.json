@@ -1,0 +1,10 @@
+{
+  "title": "Параметры декодирования LLM",
+  "description": "Интерактивное демо «Параметры декодирования LLM» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "llm-decoding-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-04-modeli-i-instrumenty/118",
+  "order": 12
+}

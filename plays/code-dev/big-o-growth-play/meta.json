@@ -1,0 +1,13 @@
+{
+  "title": "Рост классов Big-O",
+  "description": "Интерактивное демо «Рост классов Big-O» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "big-o-growth-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-01-algoritmy/311",
+  "order": 62
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Вывод в КС-грамматике",
+  "description": "Интерактивное демо «Вывод в КС-грамматике» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "grammar-derivation-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/41",
+  "order": 71
+}

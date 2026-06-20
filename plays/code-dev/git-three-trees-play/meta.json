@@ -1,0 +1,13 @@
+{
+  "title": "Три дерева Git",
+  "description": "Интерактивное демо «Три дерева Git» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "git-three-trees-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112",
+  "order": 75
+}

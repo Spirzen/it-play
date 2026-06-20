@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: 0.65rem 0;
+}
+
+.cell {
+  padding: 0.5rem 0.25rem;
+  border-radius: var(--ai-radius-sm, 8px);
+  text-align: center;
+  border: 1px solid var(--ai-border, var(--demo-border));
+  transition: transform 0.15s ease;
+}
+
+.cell:hover {
+  transform: scale(1.03);
+}
+
+.cellTok {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cellW {
+  display: block;
+  font-size: 0.68rem;
+  margin-top: 0.2rem;
+  font-family: var(--ai-mono, var(--ifm-font-family-monospace));
+  color: var(--ai-muted, var(--ifm-color-content-secondary));
+}
+
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cell:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Golden path IDP",
+  "description": "Интерактивное демо «Golden path IDP» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "golden-path-builder-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/6",
+  "order": 35
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Фишинг — red flags",
+  "description": "Интерактивное демо «Фишинг — red flags» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "phishing-red-flags-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/11",
+  "order": 40
+}

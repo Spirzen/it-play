@@ -1,0 +1,13 @@
+{
+  "title": "VACUUM и bloat",
+  "description": "Интерактивное демо «VACUUM и bloat» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "vacuum-bloat-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2",
+  "order": 89
+}

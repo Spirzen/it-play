@@ -1,0 +1,10 @@
+{
+  "title": "Симулятор scope creep",
+  "description": "Fixed-price спринт: «мелочи» заказчика и их влияние на срок.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "scope-creep-simulator-play",
+  "tags": ["project", "encyclopedia", "change"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-22-upravlenie-izmeneniyami/1",
+  "order": 40
+}

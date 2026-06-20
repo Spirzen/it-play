@@ -1,0 +1,13 @@
+{
+  "title": "REST CRUD — мини API",
+  "description": "Интерактивное демо «REST CRUD — мини API» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "http-crud-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-17-veb-razrabotka/1",
+  "order": 65
+}

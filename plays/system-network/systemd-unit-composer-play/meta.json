@@ -1,0 +1,10 @@
+{
+  "title": "Конструктор systemd unit",
+  "description": "Интерактивное демо «Конструктор systemd unit» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "systemd-unit-composer-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93",
+  "order": 62
+}

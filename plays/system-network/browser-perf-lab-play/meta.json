@@ -1,0 +1,10 @@
+{
+  "title": "Мини-бенчмарк в браузере",
+  "description": "Интерактивное демо «Мини-бенчмарк в браузере» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "browser-perf-lab-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-03-set-i-internet/617",
+  "order": 66
+}

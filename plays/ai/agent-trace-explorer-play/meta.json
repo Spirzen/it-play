@@ -1,0 +1,10 @@
+{
+  "title": "Trace агента",
+  "description": "Интерактивное демо «Trace агента» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "agent-trace-explorer-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-08-agentops/1",
+  "order": 18
+}

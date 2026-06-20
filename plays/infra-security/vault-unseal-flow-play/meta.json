@@ -1,0 +1,13 @@
+{
+  "title": "Vault unseal",
+  "description": "Интерактивное демо «Vault unseal» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "vault-unseal-flow-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-14-praktikum-vault/1",
+  "order": 46
+}

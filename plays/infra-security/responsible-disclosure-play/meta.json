@@ -1,0 +1,13 @@
+{
+  "title": "Responsible disclosure",
+  "description": "Интерактивное демо «Responsible disclosure» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "responsible-disclosure-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/2",
+  "order": 52
+}

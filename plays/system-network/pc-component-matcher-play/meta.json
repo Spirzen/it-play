@@ -1,0 +1,10 @@
+{
+  "title": "Подбор совместимости ПК",
+  "description": "Интерактивное демо «Подбор совместимости ПК» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "pc-component-matcher-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-10-zhelezo/1011",
+  "order": 64
+}

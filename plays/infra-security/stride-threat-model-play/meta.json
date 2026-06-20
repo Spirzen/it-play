@@ -1,0 +1,13 @@
+{
+  "title": "STRIDE threat model",
+  "description": "Интерактивное демо «STRIDE threat model» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "stride-threat-model-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/10",
+  "order": 39
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Конструктор запроса 1С",
+  "description": "Интерактивное демо «Конструктор запроса 1С».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "one-c-query-builder-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-27-1s/117",
+  "order": 511
+}

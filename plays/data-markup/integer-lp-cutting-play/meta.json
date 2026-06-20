@@ -1,0 +1,13 @@
+{
+  "title": "Целочисленное LP",
+  "description": "Интерактивное демо «Целочисленное LP» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "integer-lp-cutting-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/intro",
+  "order": 105
+}

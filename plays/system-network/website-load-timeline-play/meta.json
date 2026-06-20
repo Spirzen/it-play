@@ -1,0 +1,10 @@
+{
+  "title": "Таймлайн загрузки сайта",
+  "description": "Интерактивное демо «Таймлайн загрузки сайта» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "website-load-timeline-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-03-set-i-internet/5",
+  "order": 60
+}

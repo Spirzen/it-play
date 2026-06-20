@@ -1,0 +1,13 @@
+{
+  "title": "Строковые инструкции Assembler",
+  "description": "Интерактивное демо «Строковые инструкции Assembler».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "string-ops-assembler-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-16-starye-yazyki/assembler/14",
+  "order": 507
+}

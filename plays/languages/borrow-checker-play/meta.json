@@ -1,0 +1,13 @@
+{
+  "title": "Borrow checker Rust",
+  "description": "Интерактивное демо «Borrow checker Rust».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "borrow-checker-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-13-rust/13",
+  "order": 502
+}

@@ -1,0 +1,13 @@
+{
+  "title": "JSON Schema",
+  "description": "Интерактивное демо «JSON Schema» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "json-schema-validator-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/220",
+  "order": 76
+}

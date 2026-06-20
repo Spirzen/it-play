@@ -1,0 +1,13 @@
+{
+  "title": "Калькулятор растра",
+  "description": "Интерактивное демо «Калькулятор растра» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "pixel-budget-calculator-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-16-grafika/3",
+  "order": 59
+}

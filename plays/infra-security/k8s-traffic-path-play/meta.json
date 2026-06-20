@@ -1,0 +1,13 @@
+{
+  "title": "K8s traffic path",
+  "description": "Интерактивное демо «K8s traffic path» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "k8s-traffic-path-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/120",
+  "order": 53
+}

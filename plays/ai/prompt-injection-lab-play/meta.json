@@ -1,0 +1,10 @@
+{
+  "title": "Лаборатория prompt injection",
+  "description": "Интерактивное демо «Лаборатория prompt injection» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "prompt-injection-lab-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/6",
+  "order": 25
+}

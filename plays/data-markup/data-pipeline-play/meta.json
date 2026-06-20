@@ -1,0 +1,13 @@
+{
+  "title": "Конвейер обработки данных",
+  "description": "Интерактивное демо «Конвейер обработки данных» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "data-pipeline-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/1",
+  "order": 61
+}

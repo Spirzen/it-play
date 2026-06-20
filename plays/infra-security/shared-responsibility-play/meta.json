@@ -1,0 +1,13 @@
+{
+  "title": "Shared responsibility",
+  "description": "Интерактивное демо «Shared responsibility» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "shared-responsibility-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/12",
+  "order": 54
+}

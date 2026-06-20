@@ -1,0 +1,13 @@
+{
+  "title": "SQL — оконные функции",
+  "description": "Интерактивное демо «SQL — оконные функции» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "sql-window-functions-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-07-sql/7",
+  "order": 84
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Выбор языка программирования",
+  "description": "Интерактивное демо «Выбор языка программирования».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "language-decision-tree-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/kak-vybrat-yazyk-programmirovaniya",
+  "order": 503
+}

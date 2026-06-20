@@ -1,0 +1,10 @@
+{
+  "title": "OWASP LLM Top 10",
+  "description": "Интерактивное демо «OWASP LLM Top 10» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "owasp-llm-top10-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/2",
+  "order": 24
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Bug Bounty scope",
+  "description": "Интерактивное демо «Bug Bounty scope» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "bug-bounty-scope-quiz-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/3",
+  "order": 51
+}

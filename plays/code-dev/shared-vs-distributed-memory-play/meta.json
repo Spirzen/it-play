@@ -1,0 +1,13 @@
+{
+  "title": "Shared vs Distributed memory",
+  "description": "Интерактивное демо «Shared vs Distributed memory» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "shared-vs-distributed-memory-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/3",
+  "order": 72
+}

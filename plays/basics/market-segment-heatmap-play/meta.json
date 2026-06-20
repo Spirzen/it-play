@@ -1,0 +1,13 @@
+{
+  "title": "Тепловая карта рынка",
+  "description": "Интерактивное демо «Тепловая карта рынка» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "market-segment-heatmap-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-05-preduprezhdenie/1",
+  "order": 63
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Macro expander",
+  "description": "Интерактивное демо «Macro expander».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "macro-expander-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-28-clojure/intro",
+  "order": 510
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Тюнер чанков RAG",
+  "description": "Интерактивное демо «Тюнер чанков RAG» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "rag-chunk-tuner-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-05-razrabotka-ii/124",
+  "order": 16
+}

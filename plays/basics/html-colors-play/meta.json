@@ -1,0 +1,16 @@
+{
+  "title": "HTML-цвета: справочник и тренажёр",
+  "description": "147 имён цветов W3C — справочник по группам, тренажёр имён/HEX/RGB и карточки для запоминания.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "html-colors-play",
+  "tags": [
+    "basics",
+    "encyclopedia",
+    "css",
+    "html",
+    "colors"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-25-interfeys/2",
+  "order": 45
+}

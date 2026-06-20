@@ -1,0 +1,13 @@
+{
+  "title": "Pattern matching",
+  "description": "Интерактивное демо «Pattern matching».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "pattern-matching-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-10-typescript/12",
+  "order": 509
+}

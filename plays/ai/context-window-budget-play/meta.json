@@ -1,0 +1,10 @@
+{
+  "title": "Бюджет контекстного окна",
+  "description": "Интерактивное демо «Бюджет контекстного окна» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "context-window-budget-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-01-vvedenie-v-ii/113",
+  "order": 10
+}

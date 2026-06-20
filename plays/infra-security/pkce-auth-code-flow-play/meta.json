@@ -1,0 +1,13 @@
+{
+  "title": "OIDC + PKCE flow",
+  "description": "Интерактивное демо «OIDC + PKCE flow» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "pkce-auth-code-flow-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/8",
+  "order": 37
+}

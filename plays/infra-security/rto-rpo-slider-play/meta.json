@@ -1,0 +1,13 @@
+{
+  "title": "RTO / RPO слайдер",
+  "description": "Интерактивное демо «RTO / RPO слайдер» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "rto-rpo-slider-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-15-praktikum-dr/1",
+  "order": 47
+}

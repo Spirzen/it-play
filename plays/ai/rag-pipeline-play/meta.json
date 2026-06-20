@@ -1,0 +1,10 @@
+{
+  "title": "RAG-пайплайн",
+  "description": "Интерактивное демо «RAG-пайплайн» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "rag-pipeline-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-04-modeli-i-instrumenty/121",
+  "order": 15
+}

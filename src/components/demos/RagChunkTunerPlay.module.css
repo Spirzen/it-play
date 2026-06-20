@@ -1,0 +1,34 @@
+.chunks {
+  padding: 0.4rem;
+  margin: 0.65rem 0;
+}
+
+.chunk {
+  font-size: 0.72rem;
+  line-height: 1.45;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--ai-border, var(--demo-border));
+  margin-bottom: 0.3rem;
+}
+
+.chunkId {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  font-family: var(--ai-mono, var(--ifm-font-family-monospace));
+}
+
+.qList {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+.hit {
+  color: var(--ai-success, #2e7d32);
+}
+
+.miss {
+  color: var(--ai-error, #c62828);
+}

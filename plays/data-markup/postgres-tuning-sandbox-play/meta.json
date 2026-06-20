@@ -1,0 +1,13 @@
+{
+  "title": "PostgreSQL — tuning",
+  "description": "Интерактивное демо «PostgreSQL — tuning» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "postgres-tuning-sandbox-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2",
+  "order": 88
+}

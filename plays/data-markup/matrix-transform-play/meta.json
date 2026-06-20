@@ -1,0 +1,13 @@
+{
+  "title": "Матричные преобразования",
+  "description": "Интерактивное демо «Матричные преобразования» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "matrix-transform-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/34",
+  "order": 69
+}

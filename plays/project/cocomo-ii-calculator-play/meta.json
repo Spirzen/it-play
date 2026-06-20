@@ -1,0 +1,10 @@
+{
+  "title": "Калькулятор COCOMO II",
+  "description": "KSLOC и факторы масштаба → трудоёмкость в человеко-месяцах.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "cocomo-ii-calculator-play",
+  "tags": ["project", "encyclopedia", "economics"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/1",
+  "order": 38
+}

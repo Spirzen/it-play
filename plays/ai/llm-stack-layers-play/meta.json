@@ -1,0 +1,10 @@
+{
+  "title": "7 слоёв LLM-стека",
+  "description": "Интерактивное демо «7 слоёв LLM-стека» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "llm-stack-layers-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-05-razrabotka-ii/119",
+  "order": 17
+}

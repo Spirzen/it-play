@@ -1,0 +1,13 @@
+{
+  "title": "Нормализация БД",
+  "description": "Интерактивное демо «Нормализация БД» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "normalization-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-07-sql/103",
+  "order": 81
+}

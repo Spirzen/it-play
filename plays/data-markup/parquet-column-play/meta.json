@@ -1,0 +1,13 @@
+{
+  "title": "Parquet — колоночное хранение",
+  "description": "Интерактивное демо «Parquet — колоночное хранение» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "parquet-column-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/222",
+  "order": 79
+}

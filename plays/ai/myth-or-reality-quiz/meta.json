@@ -1,0 +1,10 @@
+{
+  "title": "Миф или реальность?",
+  "description": "Интерактивное демо «Миф или реальность?» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "myth-or-reality-quiz",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-01-vvedenie-v-ii/114",
+  "order": 13
+}

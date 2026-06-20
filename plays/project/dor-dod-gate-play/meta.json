@@ -1,0 +1,10 @@
+{
+  "title": "DoR и DoD — проверка готовности",
+  "description": "Чек-лист Definition of Ready и Definition of Done для user story.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "dor-dod-gate-play",
+  "tags": ["project", "encyclopedia", "delivery"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-25-dostavka-i-gotovnost/1",
+  "order": 39
+}

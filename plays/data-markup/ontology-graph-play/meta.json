@@ -1,0 +1,13 @@
+{
+  "title": "Онтология и граф знаний",
+  "description": "Интерактивное демо «Онтология и граф знаний» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "ontology-graph-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/328",
+  "order": 73
+}

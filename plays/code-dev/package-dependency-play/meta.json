@@ -1,0 +1,13 @@
+{
+  "title": "Граф зависимостей пакетов",
+  "description": "Интерактивное демо «Граф зависимостей пакетов».",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Разработка кода",
+  "component": "package-dependency-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-01-javascript/25",
+  "order": 512
+}

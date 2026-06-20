@@ -1,0 +1,10 @@
+{
+  "title": "Симулятор Scrum-спринта",
+  "description": "Burndown, velocity и эффект scope creep в фиксированном спринте.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "scrum-sprint-simulator-play",
+  "tags": ["project", "encyclopedia", "scrum"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-14-scrum/4",
+  "order": 30
+}

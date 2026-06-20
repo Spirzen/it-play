@@ -1,0 +1,13 @@
+{
+  "title": "Транспортная задача",
+  "description": "Интерактивное демо «Транспортная задача» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "transport-problem-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/intro",
+  "order": 104
+}

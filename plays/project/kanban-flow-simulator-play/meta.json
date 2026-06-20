@@ -1,0 +1,10 @@
+{
+  "title": "Симулятор Kanban-потока",
+  "description": "WIP-лимиты, lead time и expedite в потоке задач.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "kanban-flow-simulator-play",
+  "tags": ["project", "encyclopedia", "kanban"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-18-kanban/4",
+  "order": 32
+}

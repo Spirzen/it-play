@@ -1,0 +1,10 @@
+{
+  "title": "Лаборатория связности и сцепления",
+  "description": "Классификация cohesion/coupling по фрагментам кода.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "cohesion-coupling-lab-play",
+  "tags": ["project", "encyclopedia", "construction"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-12-konstruirovanie-po/2",
+  "order": 41
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Prompt injection sandbox",
+  "description": "Интерактивное демо «Prompt injection sandbox» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "prompt-injection-sandbox-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/7",
+  "order": 36
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Стойка дата-центра",
+  "description": "Интерактивное демо «Стойка дата-центра» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "datacenter-rack-explorer-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-10-zhelezo/3",
+  "order": 63
+}

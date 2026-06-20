@@ -1,0 +1,10 @@
+{
+  "title": "K-fold кросс-валидация",
+  "description": "Интерактивное демо «K-fold кросс-валидация» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "k-fold-visualizer-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/6",
+  "order": 23
+}

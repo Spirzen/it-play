@@ -1,0 +1,13 @@
+{
+  "title": "Мосты КёнигсBERG",
+  "description": "Интерактивное демо «Мосты КёнигсBERG» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "euler-bridges-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-01-algoritmy/4",
+  "order": 63
+}

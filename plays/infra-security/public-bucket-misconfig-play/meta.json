@@ -1,0 +1,13 @@
+{
+  "title": "Public S3 bucket",
+  "description": "Интерактивное демо «Public S3 bucket» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "public-bucket-misconfig-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/11",
+  "order": 55
+}

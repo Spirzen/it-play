@@ -1,0 +1,10 @@
+{
+  "title": "Карта угроз открытого Wi‑Fi",
+  "description": "Интерактивное демо «Карта угроз открытого Wi‑Fi» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "open-wifi-threat-map-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/113",
+  "order": 58
+}

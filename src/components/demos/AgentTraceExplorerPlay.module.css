@@ -1,0 +1,71 @@
+.tree {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.4rem;
+}
+
+.span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--ai-border, var(--demo-border));
+  border-radius: 6px;
+  font-size: 0.74rem;
+  font-family: var(--ai-mono, var(--ifm-font-family-monospace));
+  cursor: pointer;
+  background: var(--ai-bg, var(--ifm-background-color));
+  color: inherit;
+  text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.span:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.spanActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--ai-primary-softer, color-mix(in srgb, var(--ifm-color-primary) 10%, transparent));
+  box-shadow: inset 3px 0 0 var(--ifm-color-primary);
+}
+
+.spanName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.spanMs {
+  flex-shrink: 0;
+  color: var(--ai-muted, var(--ifm-color-content-secondary));
+  font-size: 0.68rem;
+}
+
+.spanTitle {
+  font-family: var(--ai-mono, var(--ifm-font-family-monospace));
+  font-size: 0.85rem;
+}
+
+.type_llm { border-left: 3px solid color-mix(in srgb, var(--ifm-color-primary) 80%, #42a5f5); }
+.type_tool { border-left: 3px solid var(--ai-warning, #ed6c02); }
+.type_decision { border-left: 3px solid #ab47bc; }
+.type_trace { border-left: 3px solid var(--ai-success, #2e7d32); }
+
+.meta {
+  margin: 0.35rem 0 0;
+  font-size: 0.72rem;
+  font-family: var(--ai-mono, var(--ifm-font-family-monospace));
+  color: var(--ai-muted, var(--ifm-color-content-secondary));
+}
+
+@media (max-width: 480px) {
+  .span {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+}

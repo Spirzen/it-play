@@ -1,0 +1,10 @@
+{
+  "title": "Симулятор реагирования на инцидент",
+  "description": "P1: triage, mitigate, rollback и postmortem — влияние на MTTR.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "incident-response-simulator-play",
+  "tags": ["project", "encyclopedia", "incidents"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-21-incidenty-i-ekspluatatsiya/1",
+  "order": 34
+}

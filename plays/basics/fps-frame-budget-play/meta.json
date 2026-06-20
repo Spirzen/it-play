@@ -1,0 +1,13 @@
+{
+  "title": "Бюджет кадра FPS",
+  "description": "Интерактивное демо «Бюджет кадра FPS» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "fps-frame-budget-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-16-grafika/1",
+  "order": 61
+}

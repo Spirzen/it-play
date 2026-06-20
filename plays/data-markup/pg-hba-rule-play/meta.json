@@ -1,0 +1,13 @@
+{
+  "title": "pg_hba.conf",
+  "description": "Интерактивное демо «pg_hba.conf» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "pg-hba-rule-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2",
+  "order": 90
+}

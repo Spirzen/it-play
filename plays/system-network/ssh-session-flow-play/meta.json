@@ -1,0 +1,10 @@
+{
+  "title": "SSH: от Open до команды",
+  "description": "Интерактивное демо «SSH: от Open до команды» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "ssh-session-flow-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-05-terminal/1131",
+  "order": 55
+}

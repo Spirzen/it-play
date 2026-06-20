@@ -1,0 +1,10 @@
+{
+  "title": "Planning Poker",
+  "description": "Относительные оценки story points и обсуждение расхождений в команде.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "planning-poker-play",
+  "tags": ["project", "encyclopedia", "scrum"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-14-scrum/6",
+  "order": 31
+}

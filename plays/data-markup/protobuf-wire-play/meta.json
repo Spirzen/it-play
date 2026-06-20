@@ -1,0 +1,13 @@
+{
+  "title": "Protobuf wire format",
+  "description": "Интерактивное демо «Protobuf wire format» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "protobuf-wire-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/216",
+  "order": 78
+}

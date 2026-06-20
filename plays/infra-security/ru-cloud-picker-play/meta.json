@@ -1,0 +1,13 @@
+{
+  "title": "Облака РФ — выбор",
+  "description": "Интерактивное демо «Облака РФ — выбор» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "ru-cloud-picker-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/5",
+  "order": 34
+}

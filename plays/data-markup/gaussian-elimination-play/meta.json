@@ -1,0 +1,13 @@
+{
+  "title": "Жордан–Гаусс",
+  "description": "Интерактивное демо «Жордан–Гаусс» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "gaussian-elimination-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/3",
+  "order": 103
+}

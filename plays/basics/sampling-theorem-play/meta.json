@@ -1,0 +1,13 @@
+{
+  "title": "Теорема отсчётов",
+  "description": "Интерактивное демо «Теорема отсчётов» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "sampling-theorem-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-17-audio-i-video/1",
+  "order": 55
+}

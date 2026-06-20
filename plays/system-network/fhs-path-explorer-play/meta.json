@@ -1,0 +1,10 @@
+{
+  "title": "FHS — проводник путей Linux",
+  "description": "Интерактивное демо «FHS — проводник путей Linux» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "fhs-path-explorer-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-05-terminal/101",
+  "order": 61
+}

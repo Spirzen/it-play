@@ -1,0 +1,13 @@
+{
+  "title": "Декомпозиция ряда",
+  "description": "Интерактивное демо «Декомпозиция ряда» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "time-series-decompose-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-11-analiz-dannyh/424",
+  "order": 99
+}

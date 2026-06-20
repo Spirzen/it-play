@@ -1,0 +1,13 @@
+{
+  "title": "PageRank — симулятор",
+  "description": "Интерактивное демо «PageRank — симулятор» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "pagerank-simulator-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-01-algoritmy/42",
+  "order": 61
+}

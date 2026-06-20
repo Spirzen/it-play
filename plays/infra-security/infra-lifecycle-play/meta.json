@@ -1,0 +1,13 @@
+{
+  "title": "Жизненный цикл инфраструктуры",
+  "description": "Интерактивное демо «Жизненный цикл инфраструктуры» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "infra-lifecycle-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/1",
+  "order": 41
+}

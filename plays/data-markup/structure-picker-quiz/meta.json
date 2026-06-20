@@ -1,0 +1,13 @@
+{
+  "title": "Выбор структуры данных",
+  "description": "Интерактивное демо «Выбор структуры данных» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "structure-picker-quiz",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-02-struktury-dannyh/3",
+  "order": 66
+}

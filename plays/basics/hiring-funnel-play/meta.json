@@ -1,0 +1,13 @@
+{
+  "title": "Воронка найма",
+  "description": "Интерактивное демо «Воронка найма» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "hiring-funnel-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-26-karera-v-it-i-mify/6",
+  "order": 52
+}

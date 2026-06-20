@@ -1,0 +1,13 @@
+{
+  "title": "ACID и транзакции",
+  "description": "Интерактивное демо «ACID и транзакции» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "acid-transaction-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/4",
+  "order": 82
+}

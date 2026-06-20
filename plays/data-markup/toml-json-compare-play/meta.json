@@ -1,0 +1,13 @@
+{
+  "title": "TOML ↔ JSON",
+  "description": "Интерактивное демо «TOML ↔ JSON» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "toml-json-compare-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/218",
+  "order": 75
+}

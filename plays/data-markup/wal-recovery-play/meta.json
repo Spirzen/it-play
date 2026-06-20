@@ -1,0 +1,13 @@
+{
+  "title": "WAL и восстановление",
+  "description": "Интерактивное демо «WAL и восстановление» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "wal-recovery-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8",
+  "order": 83
+}

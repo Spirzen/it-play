@@ -2498,5 +2498,460 @@
     "example": "infra-security/data-leak-scenario-play",
     "title": "Путь утечки данных",
     "component": "data-leak-scenario-play"
+  },
+  "ItRolesMapPlay": {
+    "example": "basics/it-roles-map-play",
+    "title": "Карта IT-ролей",
+    "component": "it-roles-map-play"
+  },
+  "AtsResumeMatcherPlay": {
+    "example": "basics/ats-resume-matcher-play",
+    "title": "ATS: резюме и вакансия",
+    "component": "ats-resume-matcher-play"
+  },
+  "HiringFunnelPlay": {
+    "example": "basics/hiring-funnel-play",
+    "title": "Воронка найма",
+    "component": "hiring-funnel-play"
+  },
+  "GradeLadderPlay": {
+    "example": "basics/grade-ladder-play",
+    "title": "Лестница грейдов",
+    "component": "grade-ladder-play"
+  },
+  "StarAnswerBuilderPlay": {
+    "example": "basics/star-answer-builder-play",
+    "title": "Конструктор STAR",
+    "component": "star-answer-builder-play"
+  },
+  "SamplingTheoremPlay": {
+    "example": "basics/sampling-theorem-play",
+    "title": "Теорема отсчётов",
+    "component": "sampling-theorem-play"
+  },
+  "CodecAbComparePlay": {
+    "example": "basics/codec-ab-compare-play",
+    "title": "Сравнение кодеков",
+    "component": "codec-ab-compare-play"
+  },
+  "VideoBitrateBudgetPlay": {
+    "example": "basics/video-bitrate-budget-play",
+    "title": "Бюджет битрейта видео",
+    "component": "video-bitrate-budget-play"
+  },
+  "HdrToneMapPlay": {
+    "example": "basics/hdr-tone-map-play",
+    "title": "SDR vs HDR",
+    "component": "hdr-tone-map-play"
+  },
+  "PixelBudgetCalculatorPlay": {
+    "example": "basics/pixel-budget-calculator-play",
+    "title": "Калькулятор растра",
+    "component": "pixel-budget-calculator-play"
+  },
+  "GpuPipelinePlay": {
+    "example": "basics/gpu-pipeline-play",
+    "title": "Конвейер GPU",
+    "component": "gpu-pipeline-play"
+  },
+  "FpsFrameBudgetPlay": {
+    "example": "basics/fps-frame-budget-play",
+    "title": "Бюджет кадра FPS",
+    "component": "fps-frame-budget-play"
+  },
+  "ColorSpacePickerPlay": {
+    "example": "basics/color-space-picker-play",
+    "title": "Цветовые пространства",
+    "component": "color-space-picker-play"
+  },
+  "MarketSegmentHeatmapPlay": {
+    "example": "basics/market-segment-heatmap-play",
+    "title": "Тепловая карта рынка",
+    "component": "market-segment-heatmap-play"
+  },
+  "EmploymentFormatComparePlay": {
+    "example": "basics/employment-format-compare-play",
+    "title": "Форматы занятости",
+    "component": "employment-format-compare-play"
+  },
+  "EndiannessBytePlay": {
+    "example": "data-markup/endianness-byte-play",
+    "title": "Endianness — порядок байтов",
+    "component": "endianness-byte-play"
+  },
+  "DataPipelinePlay": {
+    "example": "data-markup/data-pipeline-play",
+    "title": "Конвейер обработки данных",
+    "component": "data-pipeline-play"
+  },
+  "BitMaskPlay": {
+    "example": "data-markup/bit-mask-play",
+    "title": "Битовые маски",
+    "component": "bit-mask-play"
+  },
+  "HashCollisionPlay": {
+    "example": "data-markup/hash-collision-play",
+    "title": "Коллизии хеш-таблицы",
+    "component": "hash-collision-play"
+  },
+  "BTreePagePlay": {
+    "example": "data-markup/b-tree-page-play",
+    "title": "B-дерево и страницы",
+    "component": "b-tree-page-play"
+  },
+  "ProbabilisticStructuresPlay": {
+    "example": "data-markup/probabilistic-structures-play",
+    "title": "Bloom filter",
+    "component": "probabilistic-structures-play"
+  },
+  "StructurePickerQuiz": {
+    "example": "data-markup/structure-picker-quiz",
+    "title": "Выбор структуры данных",
+    "component": "structure-picker-quiz"
+  },
+  "RelationalAlgebraPlay": {
+    "example": "data-markup/relational-algebra-play",
+    "title": "Реляционная алгебра",
+    "component": "relational-algebra-play"
+  },
+  "GraphTheoryPlay": {
+    "example": "data-markup/graph-theory-play",
+    "title": "Теория графов",
+    "component": "graph-theory-play"
+  },
+  "MatrixTransformPlay": {
+    "example": "data-markup/matrix-transform-play",
+    "title": "Матричные преобразования",
+    "component": "matrix-transform-play"
+  },
+  "ProbabilityBayesPlay": {
+    "example": "data-markup/probability-bayes-play",
+    "title": "Байес — условная вероятность",
+    "component": "probability-bayes-play"
+  },
+  "GrammarDerivationPlay": {
+    "example": "data-markup/grammar-derivation-play",
+    "title": "Вывод в КС-грамматике",
+    "component": "grammar-derivation-play"
+  },
+  "TuringMachinePlay": {
+    "example": "data-markup/turing-machine-play",
+    "title": "Машина Тьюринга",
+    "component": "turing-machine-play"
+  },
+  "OntologyGraphPlay": {
+    "example": "data-markup/ontology-graph-play",
+    "title": "Онтология и граф знаний",
+    "component": "ontology-graph-play"
+  },
+  "CsvParsePlay": {
+    "example": "data-markup/csv-parse-play",
+    "title": "CSV — разбор",
+    "component": "csv-parse-play"
+  },
+  "TomlJsonComparePlay": {
+    "example": "data-markup/toml-json-compare-play",
+    "title": "TOML ↔ JSON",
+    "component": "toml-json-compare-play"
+  },
+  "JsonSchemaValidatorPlay": {
+    "example": "data-markup/json-schema-validator-play",
+    "title": "JSON Schema",
+    "component": "json-schema-validator-play"
+  },
+  "GraphQLQueryPlay": {
+    "example": "data-markup/graph-ql-query-play",
+    "title": "GraphQL — запрос",
+    "component": "graph-ql-query-play"
+  },
+  "ProtobufWirePlay": {
+    "example": "data-markup/protobuf-wire-play",
+    "title": "Protobuf wire format",
+    "component": "protobuf-wire-play"
+  },
+  "ParquetColumnPlay": {
+    "example": "data-markup/parquet-column-play",
+    "title": "Parquet — колоночное хранение",
+    "component": "parquet-column-play"
+  },
+  "CoddRulesCheckerPlay": {
+    "example": "data-markup/codd-rules-checker-play",
+    "title": "12 правил Кодда",
+    "component": "codd-rules-checker-play"
+  },
+  "NormalizationPlay": {
+    "example": "data-markup/normalization-play",
+    "title": "Нормализация БД",
+    "component": "normalization-play"
+  },
+  "AcidTransactionPlay": {
+    "example": "data-markup/acid-transaction-play",
+    "title": "ACID и транзакции",
+    "component": "acid-transaction-play"
+  },
+  "WalRecoveryPlay": {
+    "example": "data-markup/wal-recovery-play",
+    "title": "WAL и восстановление",
+    "component": "wal-recovery-play"
+  },
+  "SqlWindowFunctionsPlay": {
+    "example": "data-markup/sql-window-functions-play",
+    "title": "SQL — оконные функции",
+    "component": "sql-window-functions-play"
+  },
+  "SqlExecutionOrderPlay": {
+    "example": "data-markup/sql-execution-order-play",
+    "title": "Порядок выполнения SQL",
+    "component": "sql-execution-order-play"
+  },
+  "SqlNullLogicPlay": {
+    "example": "data-markup/sql-null-logic-play",
+    "title": "SQL и NULL",
+    "component": "sql-null-logic-play"
+  },
+  "SqlIndexComparePlay": {
+    "example": "data-markup/sql-index-compare-play",
+    "title": "Seq Scan vs Index Scan",
+    "component": "sql-index-compare-play"
+  },
+  "PostgresTuningSandboxPlay": {
+    "example": "data-markup/postgres-tuning-sandbox-play",
+    "title": "PostgreSQL — tuning",
+    "component": "postgres-tuning-sandbox-play"
+  },
+  "VacuumBloatPlay": {
+    "example": "data-markup/vacuum-bloat-play",
+    "title": "VACUUM и bloat",
+    "component": "vacuum-bloat-play"
+  },
+  "PgHbaRulePlay": {
+    "example": "data-markup/pg-hba-rule-play",
+    "title": "pg_hba.conf",
+    "component": "pg-hba-rule-play"
+  },
+  "BackupRestoreTimelinePlay": {
+    "example": "data-markup/backup-restore-timeline-play",
+    "title": "Backup и PITR",
+    "component": "backup-restore-timeline-play"
+  },
+  "WebComponentsPlay": {
+    "example": "data-markup/web-components-play",
+    "title": "Web Components",
+    "component": "web-components-play"
+  },
+  "CssHasPlay": {
+    "example": "data-markup/css-has-play",
+    "title": "CSS :has()",
+    "component": "css-has-play"
+  },
+  "CssSpecificityCalculatorPlay": {
+    "example": "data-markup/css-specificity-calculator-play",
+    "title": "Специфичность CSS",
+    "component": "css-specificity-calculator-play"
+  },
+  "A11yLandmarksPlay": {
+    "example": "data-markup/a11y-landmarks-play",
+    "title": "A11y — landmarks",
+    "component": "a11y-landmarks-play"
+  },
+  "StatisticsTrapsPlay": {
+    "example": "data-markup/statistics-traps-play",
+    "title": "Ловушки статистики",
+    "component": "statistics-traps-play"
+  },
+  "GoodhartMetricPlay": {
+    "example": "data-markup/goodhart-metric-play",
+    "title": "Закон Гудхарта",
+    "component": "goodhart-metric-play"
+  },
+  "RegressionLinePlay": {
+    "example": "data-markup/regression-line-play",
+    "title": "Линейная регрессия",
+    "component": "regression-line-play"
+  },
+  "TimeSeriesDecomposePlay": {
+    "example": "data-markup/time-series-decompose-play",
+    "title": "Декомпозиция ряда",
+    "component": "time-series-decompose-play"
+  },
+  "CapTheoremPlay": {
+    "example": "data-markup/cap-theorem-play",
+    "title": "CAP-теорема",
+    "component": "cap-theorem-play"
+  },
+  "ConsistencyModelPlay": {
+    "example": "data-markup/consistency-model-play",
+    "title": "Модели согласованности",
+    "component": "consistency-model-play"
+  },
+  "NosqlChooserPlay": {
+    "example": "data-markup/nosql-chooser-play",
+    "title": "Выбор NoSQL",
+    "component": "nosql-chooser-play"
+  },
+  "GaussianEliminationPlay": {
+    "example": "data-markup/gaussian-elimination-play",
+    "title": "Жордан–Гаусс",
+    "component": "gaussian-elimination-play"
+  },
+  "TransportProblemPlay": {
+    "example": "data-markup/transport-problem-play",
+    "title": "Транспортная задача",
+    "component": "transport-problem-play"
+  },
+  "IntegerLpCuttingPlay": {
+    "example": "data-markup/integer-lp-cutting-play",
+    "title": "Целочисленное LP",
+    "component": "integer-lp-cutting-play"
+  },
+  "DijkstraPathPlay": {
+    "example": "code-dev/dijkstra-path-play",
+    "title": "Алгоритм Дейкстры — пошагово",
+    "component": "dijkstra-path-play"
+  },
+  "PagerankSimulatorPlay": {
+    "example": "code-dev/pagerank-simulator-play",
+    "title": "PageRank — симулятор",
+    "component": "pagerank-simulator-play"
+  },
+  "BigOGrowthPlay": {
+    "example": "code-dev/big-o-growth-play",
+    "title": "Рост классов Big-O",
+    "component": "big-o-growth-play"
+  },
+  "EulerBridgesPlay": {
+    "example": "code-dev/euler-bridges-play",
+    "title": "Мосты КёнигсBERG",
+    "component": "euler-bridges-play"
+  },
+  "AlgorithmThinkingPlay": {
+    "example": "code-dev/algorithm-thinking-play",
+    "title": "Алгоритмическое мышление",
+    "component": "algorithm-thinking-play"
+  },
+  "HttpCrudPlay": {
+    "example": "code-dev/http-crud-play",
+    "title": "REST CRUD — мини API",
+    "component": "http-crud-play"
+  },
+  "CorsGatePlay": {
+    "example": "code-dev/cors-gate-play",
+    "title": "CORS — браузерный контроль",
+    "component": "cors-gate-play"
+  },
+  "WebProjectPipelinePlay": {
+    "example": "code-dev/web-project-pipeline-play",
+    "title": "8 этапов веб-проекта",
+    "component": "web-project-pipeline-play"
+  },
+  "NPlusOneQueryPlay": {
+    "example": "code-dev/n-plus-one-query-play",
+    "title": "N+1 запросов ORM",
+    "component": "n-plus-one-query-play"
+  },
+  "OrmMigrationPlay": {
+    "example": "code-dev/orm-migration-play",
+    "title": "ORM Code First / Database First",
+    "component": "orm-migration-play"
+  },
+  "FlynnTaxonomyPlay": {
+    "example": "code-dev/flynn-taxonomy-play",
+    "title": "Таксономия Флинна",
+    "component": "flynn-taxonomy-play"
+  },
+  "AmdahlSpeedupPlay": {
+    "example": "code-dev/amdahl-speedup-play",
+    "title": "Закон Амдала",
+    "component": "amdahl-speedup-play"
+  },
+  "SharedVsDistributedMemoryPlay": {
+    "example": "code-dev/shared-vs-distributed-memory-play",
+    "title": "Shared vs Distributed memory",
+    "component": "shared-vs-distributed-memory-play"
+  },
+  "MobileLifecyclePlay": {
+    "example": "code-dev/mobile-lifecycle-play",
+    "title": "Жизненный цикл Activity",
+    "component": "mobile-lifecycle-play"
+  },
+  "MobileStackPickerPlay": {
+    "example": "code-dev/mobile-stack-picker-play",
+    "title": "Выбор мобильного стека",
+    "component": "mobile-stack-picker-play"
+  },
+  "GitThreeTreesPlay": {
+    "example": "code-dev/git-three-trees-play",
+    "title": "Три дерева Git",
+    "component": "git-three-trees-play"
+  },
+  "GitIgnoreMatcherPlay": {
+    "example": "code-dev/git-ignore-matcher-play",
+    "title": ".gitignore — проверка пути",
+    "component": "git-ignore-matcher-play"
+  },
+  "EventLoopFreezePlay": {
+    "example": "code-dev/event-loop-freeze-play",
+    "title": "UI-поток и блокировка",
+    "component": "event-loop-freeze-play"
+  },
+  "TypeNarrowingPlay": {
+    "example": "languages/type-narrowing-play",
+    "title": "Сужение типов TypeScript",
+    "component": "type-narrowing-play"
+  },
+  "BorrowCheckerPlay": {
+    "example": "languages/borrow-checker-play",
+    "title": "Borrow checker Rust",
+    "component": "borrow-checker-play"
+  },
+  "LanguageDecisionTreePlay": {
+    "example": "languages/language-decision-tree-play",
+    "title": "Выбор языка программирования",
+    "component": "language-decision-tree-play"
+  },
+  "StreamPipelinePlay": {
+    "example": "languages/stream-pipeline-play",
+    "title": "Stream pipeline",
+    "component": "stream-pipeline-play"
+  },
+  "TsCompilerPlay": {
+    "example": "languages/ts-compiler-play",
+    "title": "Компилятор TypeScript",
+    "component": "ts-compiler-play"
+  },
+  "GenericConstraintPlay": {
+    "example": "languages/generic-constraint-play",
+    "title": "Generic constraints",
+    "component": "generic-constraint-play"
+  },
+  "StringOpsAssemblerPlay": {
+    "example": "languages/string-ops-assembler-play",
+    "title": "Строковые инструкции Assembler",
+    "component": "string-ops-assembler-play"
+  },
+  "ReactivityPlay": {
+    "example": "code-dev/reactivity-play",
+    "title": "Reactive pipeline",
+    "component": "reactivity-play"
+  },
+  "PatternMatchingPlay": {
+    "example": "languages/pattern-matching-play",
+    "title": "Pattern matching",
+    "component": "pattern-matching-play"
+  },
+  "MacroExpanderPlay": {
+    "example": "languages/macro-expander-play",
+    "title": "Macro expander",
+    "component": "macro-expander-play"
+  },
+  "OneCQueryBuilderPlay": {
+    "example": "languages/one-c-query-builder-play",
+    "title": "Конструктор запроса 1С",
+    "component": "one-c-query-builder-play"
+  },
+  "PackageDependencyPlay": {
+    "example": "code-dev/package-dependency-play",
+    "title": "Граф зависимостей пакетов",
+    "component": "package-dependency-play"
   }
 }

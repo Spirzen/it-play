@@ -1,0 +1,10 @@
+{
+  "title": "Калькулятор SLA и «девяток»",
+  "description": "Доступность 99.x% → допустимый простой в год и месяц.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "sla-nines-calculator-play",
+  "tags": ["project", "encyclopedia", "itsm"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-16-itsm-i-it-uslugi/2",
+  "order": 36
+}

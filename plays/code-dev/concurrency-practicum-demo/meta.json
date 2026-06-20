@@ -1,0 +1,15 @@
+{
+  "title": "Практикум — пять загрузок",
+  "description": "Сравнение последовательного и параллельного I/O с прогресс-барами и временной шкалой.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "concurrency-practicum-demo",
+  "tags": [
+    "code-dev",
+    "encyclopedia",
+    "async",
+    "concurrency"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-05-asinhronnost/3",
+  "order": 30
+}

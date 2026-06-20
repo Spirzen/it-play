@@ -1,0 +1,13 @@
+{
+  "title": "Конвейер GPU",
+  "description": "Интерактивное демо «Конвейер GPU» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "gpu-pipeline-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-16-grafika/1",
+  "order": 60
+}

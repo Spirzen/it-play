@@ -1,0 +1,13 @@
+{
+  "title": "Карта IT-ролей",
+  "description": "Интерактивное демо «Карта IT-ролей» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "it-roles-map-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1",
+  "order": 50
+}

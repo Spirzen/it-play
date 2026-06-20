@@ -1,0 +1,13 @@
+{
+  "title": "Компилятор TypeScript",
+  "description": "Интерактивное демо «Компилятор TypeScript».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "ts-compiler-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-10-typescript/15",
+  "order": 505
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Коллизии хеш-таблицы",
+  "description": "Интерактивное демо «Коллизии хеш-таблицы» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "hash-collision-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-02-struktury-dannyh/2",
+  "order": 63
+}

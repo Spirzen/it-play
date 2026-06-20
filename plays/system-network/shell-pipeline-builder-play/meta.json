@@ -1,0 +1,10 @@
+{
+  "title": "Конструктор конвейера shell",
+  "description": "Интерактивное демо «Конструктор конвейера shell» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "shell-pipeline-builder-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-05-terminal/11",
+  "order": 54
+}

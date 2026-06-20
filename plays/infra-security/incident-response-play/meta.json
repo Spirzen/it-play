@@ -1,0 +1,13 @@
+{
+  "title": "Инцидент и rollback",
+  "description": "Интерактивное демо «Инцидент и rollback» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "incident-response-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/3",
+  "order": 44
+}

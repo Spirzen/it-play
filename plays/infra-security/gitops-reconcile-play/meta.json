@@ -1,0 +1,13 @@
+{
+  "title": "GitOps reconcile",
+  "description": "Интерактивное демо «GitOps reconcile» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "gitops-reconcile-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/4",
+  "order": 33
+}

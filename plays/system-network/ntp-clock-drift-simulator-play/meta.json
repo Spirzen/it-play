@@ -1,0 +1,10 @@
+{
+  "title": "Дрейф часов и NTP",
+  "description": "Интерактивное демо «Дрейф часов и NTP» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "ntp-clock-drift-simulator-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31",
+  "order": 59
+}

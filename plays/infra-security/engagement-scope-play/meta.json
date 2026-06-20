@@ -1,0 +1,13 @@
+{
+  "title": "Black / grey / white box",
+  "description": "Интерактивное демо «Black / grey / white box» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "engagement-scope-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/1",
+  "order": 50
+}

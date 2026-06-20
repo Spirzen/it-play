@@ -1,0 +1,10 @@
+{
+  "title": "Матрица разрешений ОС",
+  "description": "Интерактивное демо «Матрица разрешений ОС» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "platform-permissions-matrix-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/41",
+  "order": 67
+}

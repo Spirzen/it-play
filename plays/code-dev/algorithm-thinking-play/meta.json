@@ -1,0 +1,13 @@
+{
+  "title": "Алгоритмическое мышление",
+  "description": "Интерактивное демо «Алгоритмическое мышление» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "algorithm-thinking-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-01-algoritmy/11",
+  "order": 64
+}

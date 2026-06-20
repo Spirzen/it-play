@@ -1,0 +1,13 @@
+{
+  "title": "Конструктор STAR",
+  "description": "Интерактивное демо «Конструктор STAR» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "star-answer-builder-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-26-karera-v-it-i-mify/5",
+  "order": 54
+}

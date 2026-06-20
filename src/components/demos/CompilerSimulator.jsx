@@ -96,7 +96,7 @@ function CompilerSimulatorInner() {
       ];
       setLogs(finalLogs);
       setCompiledBinary({
-        size: `${Math.floor(Math.random() * 50 + 10)} KB`,
+        size: `${Math.max(64, code.length * 2 + declaredVariables.length * 16)} байт`,
         timestamp: new Date().toLocaleTimeString(),
         variables: declaredVariables.length,
       });
@@ -128,9 +128,14 @@ function CompilerSimulatorInner() {
     } catch (err) {
       setCurrentLine(err.index);
       setErrorDetails(err.message);
+      if (err.vars) setVariables(err.vars);
+      if (err.outputLines) setOutput(err.outputLines);
       setLogs([
         ...(err.logs || []).map((l) => ({type: l.type, text: l.text})),
         {type: 'error', text: `Строка ${err.index + 1}: ${err.message}`},
+        ...(err.outputLines?.length
+          ? [{type: 'info', text: `Выполнено строк до ошибки: ${err.index}`}]
+          : []),
       ]);
       setStatus('error');
     }
@@ -142,7 +147,7 @@ function CompilerSimulatorInner() {
     <DemoShell className={mode === 'compile' ? styles.modeCompile : styles.modeInterpret}>
       <DemoCard
         title="Компилятор и интерпретатор"
-        subtitle="Сравните построчное выполнение и проверку всего файла целиком"
+        subtitle="Псевдо-JavaScript: let для переменных, console.log для вывода"
       >
         <div className={styles.modeBar}>
           <button
@@ -225,8 +230,9 @@ function CompilerSimulatorInner() {
         </div>
 
         <p style={{fontSize: '0.75rem', color: 'var(--demo-muted)', margin: '0.35rem 0 0.75rem'}}>
-          Синтаксис: <code>let x = 10</code>, <code>print(выражение)</code>, конкатенация строк через{' '}
-          <code>+</code>
+          Синтаксис: <code>let x = 10</code>, <code>console.log(выражение)</code>, арифметика (
+          <code>+ − * /</code>), конкатенация строк через <code>+</code>. Пример «С ошибкой» — сравните
+          частичное выполнение и полную проверку при компиляции.
         </p>
 
         {mode === 'compile' && status === 'compiling' && (
@@ -300,7 +306,7 @@ function CompilerSimulatorInner() {
               </div>
             )}
 
-            {output.length > 0 && mode === 'interpret' && (
+            {output.length > 0 && mode === 'interpret' && (status === 'success' || status === 'error') && (
               <div style={{marginTop: '0.75rem'}}>
                 <strong style={{fontSize: '0.8rem'}}>Вывод:</strong>
                 {output.map((line, i) => (
@@ -320,7 +326,7 @@ function CompilerSimulatorInner() {
               </div>
             )}
 
-            {Object.keys(variables).length > 0 && mode === 'interpret' && status === 'success' && (
+            {Object.keys(variables).length > 0 && mode === 'interpret' && (status === 'success' || status === 'error') && (
               <div className={styles.varsGrid}>
                 {Object.entries(variables).map(([name, value]) => (
                   <div key={name} className={styles.varCell}>

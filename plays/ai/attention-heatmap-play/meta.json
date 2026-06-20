@@ -1,0 +1,10 @@
+{
+  "title": "Self-attention heatmap",
+  "description": "Интерактивное демо «Self-attention heatmap» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "attention-heatmap-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-09-transformery-i-nlp/2",
+  "order": 20
+}

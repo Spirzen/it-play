@@ -1,0 +1,13 @@
+{
+  "title": "Stream pipeline",
+  "description": "Интерактивное демо «Stream pipeline».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "stream-pipeline-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-03-java/295",
+  "order": 504
+}

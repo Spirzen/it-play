@@ -1,0 +1,13 @@
+{
+  "title": "Сужение типов TypeScript",
+  "description": "Интерактивное демо «Сужение типов TypeScript».",
+  "category": "languages",
+  "categoryTitle": "Энциклопедия · Языки программирования",
+  "component": "type-narrowing-play",
+  "tags": [
+    "languages",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/5-languages/5-10-typescript/10",
+  "order": 501
+}

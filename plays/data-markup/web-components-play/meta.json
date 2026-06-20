@@ -1,0 +1,13 @@
+{
+  "title": "Web Components",
+  "description": "Интерактивное демо «Web Components» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "web-components-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-09-html/25",
+  "order": 92
+}

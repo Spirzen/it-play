@@ -1,0 +1,10 @@
+{
+  "title": "Лаборатория паролей и хешей",
+  "description": "Интерактивное демо «Лаборатория паролей и хешей» — раздел Энциклопедия · Система и сеть.",
+  "category": "system-network",
+  "categoryTitle": "Энциклопедия · Система и сеть",
+  "component": "password-hash-lab-play",
+  "tags": ["system-network", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/114",
+  "order": 57
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Feature flags и gradual rollout",
+  "description": "Постепенный выкат, ошибки на prod и kill switch.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "feature-flag-rollout-play",
+  "tags": ["project", "encyclopedia", "delivery"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-25-dostavka-i-gotovnost/3",
+  "order": 33
+}

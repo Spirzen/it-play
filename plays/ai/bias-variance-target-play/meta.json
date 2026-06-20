@@ -1,0 +1,10 @@
+{
+  "title": "Bias–variance на мишени",
+  "description": "Интерактивное демо «Bias–variance на мишени» — раздел Энциклопедия · Искусственный интеллект.",
+  "category": "ai",
+  "categoryTitle": "Энциклопедия · Искусственный интеллект",
+  "component": "bias-variance-target-play",
+  "tags": ["ai", "encyclopedia"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/8",
+  "order": 22
+}

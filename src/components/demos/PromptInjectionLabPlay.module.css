@@ -1,0 +1,43 @@
+.systemBox {
+  padding: 0.55rem 0.7rem;
+  margin-bottom: 0.65rem;
+  border-radius: var(--ai-radius-sm, 8px);
+  border: 1px dashed var(--ai-border, var(--demo-border));
+  background: var(--ai-code-bg, var(--ifm-code-background));
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+.systemBox p {
+  margin: 0.25rem 0 0;
+}
+
+.systemLabel,
+.msgLabel {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  margin-right: 0.35rem;
+}
+
+.msg {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.rag {
+  margin: 0.45rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ai-error, #c62828);
+}
+
+.response {
+  margin: 0 0 0.45rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}

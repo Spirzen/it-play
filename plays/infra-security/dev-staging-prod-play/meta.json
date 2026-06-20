@@ -1,0 +1,13 @@
+{
+  "title": "dev / staging / prod",
+  "description": "Интерактивное демо «dev / staging / prod» — раздел Энциклопедия · Инфраструктура и безопасность.",
+  "category": "infra-security",
+  "categoryTitle": "Энциклопедия · Инфраструктура и безопасность",
+  "component": "dev-staging-prod-play",
+  "tags": [
+    "infra-security",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/1",
+  "order": 42
+}

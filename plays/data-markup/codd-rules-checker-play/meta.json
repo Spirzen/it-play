@@ -1,0 +1,13 @@
+{
+  "title": "12 правил Кодда",
+  "description": "Интерактивное демо «12 правил Кодда» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "codd-rules-checker-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/5",
+  "order": 80
+}

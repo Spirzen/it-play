@@ -1,0 +1,13 @@
+{
+  "title": "ATS: резюме и вакансия",
+  "description": "Интерактивное демо «ATS: резюме и вакансия» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "ats-resume-matcher-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-26-karera-v-it-i-mify/6",
+  "order": 51
+}

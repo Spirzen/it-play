@@ -1,0 +1,13 @@
+{
+  "title": "Машина Тьюринга",
+  "description": "Интерактивное демо «Машина Тьюринга» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "turing-machine-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/45",
+  "order": 72
+}

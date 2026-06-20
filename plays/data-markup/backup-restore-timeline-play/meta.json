@@ -1,0 +1,13 @@
+{
+  "title": "Backup и PITR",
+  "description": "Интерактивное демо «Backup и PITR» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "backup-restore-timeline-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2",
+  "order": 91
+}

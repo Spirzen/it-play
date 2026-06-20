@@ -1,0 +1,13 @@
+{
+  "title": "Bloom filter",
+  "description": "Интерактивное демо «Bloom filter» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "probabilistic-structures-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-02-struktury-dannyh/2",
+  "order": 65
+}

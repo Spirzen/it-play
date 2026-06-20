@@ -1,0 +1,205 @@
+.root {
+  display: grid;
+  gap: 1rem;
+  max-width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.05rem, 3.5vw, 1.3rem);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.45;
+}
+
+.timerRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.timerChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 90%, var(--ifm-color-primary) 10%);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.timerChip strong {
+  font-size: 0.95rem;
+}
+
+.taskList {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.taskRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 2fr) auto;
+  gap: 0.55rem;
+  align-items: center;
+  font-size: 0.82rem;
+}
+
+.taskUrl {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.track {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--ifm-color-primary), #4fcb8a);
+  transition: width 40ms linear;
+}
+
+.fillSeq {
+  background: linear-gradient(90deg, #6b8cce, #8aa8e8);
+}
+
+.fillPar {
+  background: linear-gradient(90deg, #2ecc71, #4fcb8a);
+}
+
+.taskMeta {
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-color-emphasis-600);
+  min-width: 3.2rem;
+  text-align: right;
+}
+
+.gantt {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.ganttTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.ganttRow {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 0.45rem;
+  align-items: center;
+  margin-bottom: 0.35rem;
+  font-size: 0.72rem;
+}
+
+.ganttLane {
+  position: relative;
+  height: 14px;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+  overflow: hidden;
+}
+
+.ganttBar {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 3px;
+  min-width: 2px;
+}
+
+.ganttBarSeq {
+  background: #6b8cce;
+}
+
+.ganttBarPar {
+  background: #2ecc71;
+}
+
+.compare {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+.compareTitle {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 0.55rem;
+  align-items: center;
+  font-size: 0.82rem;
+}
+
+.barTrack {
+  height: 12px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.barSeq {
+  background: #6b8cce;
+}
+
+.barPar {
+  background: #2ecc71;
+}
+
+.verdict {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .taskRow {
+    grid-template-columns: 1fr;
+  }
+
+  .barRow {
+    grid-template-columns: 1fr;
+  }
+}

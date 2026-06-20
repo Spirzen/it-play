@@ -1,0 +1,10 @@
+{
+  "title": "ADR — жизненный цикл решения",
+  "description": "Шаблон Nygard, статусы Proposed → Accepted → Superseded.",
+  "category": "project",
+  "categoryTitle": "Энциклопедия · Проект",
+  "component": "adr-lifecycle-play",
+  "tags": ["project", "encyclopedia", "adr"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/7-project/7-20-adr-i-arhitekturnaya-pamyat/1",
+  "order": 35
+}

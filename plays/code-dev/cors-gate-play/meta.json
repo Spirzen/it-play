@@ -1,0 +1,13 @@
+{
+  "title": "CORS — браузерный контроль",
+  "description": "Интерактивное демо «CORS — браузерный контроль» — раздел Энциклопедия · Код и разработка.",
+  "category": "code-dev",
+  "categoryTitle": "Энциклопедия · Код и разработка",
+  "component": "cors-gate-play",
+  "tags": [
+    "code-dev",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/4-code-dev/4-17-veb-razrabotka/1",
+  "order": 66
+}

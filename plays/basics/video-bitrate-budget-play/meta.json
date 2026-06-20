@@ -1,0 +1,13 @@
+{
+  "title": "Бюджет битрейта видео",
+  "description": "Интерактивное демо «Бюджет битрейта видео» — раздел Энциклопедия · Основы.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "video-bitrate-budget-play",
+  "tags": [
+    "basics",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-17-audio-i-video/1",
+  "order": 57
+}

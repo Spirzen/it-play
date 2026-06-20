@@ -1,0 +1,13 @@
+{
+  "title": "GraphQL — запрос",
+  "description": "Интерактивное демо «GraphQL — запрос» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "graph-ql-query-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/221",
+  "order": 77
+}

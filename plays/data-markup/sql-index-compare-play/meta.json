@@ -1,0 +1,13 @@
+{
+  "title": "Seq Scan vs Index Scan",
+  "description": "Интерактивное демо «Seq Scan vs Index Scan» — раздел Энциклопедия · Данные и разметка.",
+  "category": "data-markup",
+  "categoryTitle": "Энциклопедия · Данные и разметка",
+  "component": "sql-index-compare-play",
+  "tags": [
+    "data-markup",
+    "encyclopedia"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/3-data-markup/3-07-sql/44",
+  "order": 87
+}
