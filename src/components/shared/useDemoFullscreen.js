@@ -1,6 +1,6 @@
 import {useCallback, useEffect, useState} from 'react';
 
-var EMBED_PARENT_ORIGINS = [
+var FALLBACK_PARENT_ORIGINS = [
   'https://spirzen.ru',
   'https://www.spirzen.ru',
   'http://localhost:3000',
@@ -12,15 +12,54 @@ function isEmbedContext() {
   return window.location.pathname.indexOf('/p/embed/') !== -1;
 }
 
-function notifyParentFullscreen(active) {
-  if (!isEmbedContext() || !window.parent || window.parent === window) return;
-  EMBED_PARENT_ORIGINS.forEach(function (origin) {
+function isEmbeddedInParent() {
+  if (typeof window === 'undefined') return false;
+  try {
+    return window.parent && window.parent !== window;
+  } catch (e) {
+    return true;
+  }
+}
+
+function resolveParentOrigin() {
+  if (!isEmbeddedInParent()) return null;
+  try {
+    return window.parent.location.origin;
+  } catch (e) {
+    if (typeof document !== 'undefined' && document.referrer) {
+      try {
+        return new URL(document.referrer).origin;
+      } catch (e2) {
+        /* ignore */
+      }
+    }
+  }
+  return null;
+}
+
+function postToParent(message) {
+  if (!isEmbeddedInParent()) return;
+  var origin = resolveParentOrigin();
+  if (origin) {
     try {
-      window.parent.postMessage({type: 'it-play-fullscreen', active: active}, origin);
+      window.parent.postMessage(message, origin);
+    } catch (e) {
+      /* ignore */
+    }
+    return;
+  }
+  FALLBACK_PARENT_ORIGINS.forEach(function (fallbackOrigin) {
+    try {
+      window.parent.postMessage(message, fallbackOrigin);
     } catch (e) {
       /* ignore */
     }
   });
+}
+
+function notifyParentFullscreen(active) {
+  if (!isEmbedContext() || !isEmbeddedInParent()) return;
+  postToParent({type: 'it-play-fullscreen', active: active});
 }
 
 function syncFullscreenDom(active) {
@@ -28,12 +67,7 @@ function syncFullscreenDom(active) {
   const root = document.documentElement;
   if (active) {
     root.setAttribute('data-it-demo-fullscreen', '');
-    if (isEmbedContext()) {
-      const main = document.querySelector('.embed-main');
-      if (main) {
-        main.style.minHeight = `${Math.ceil(main.offsetHeight)}px`;
-      }
-    } else {
+    if (!isEmbeddedInParent()) {
       root.classList.add('it-demo-fullscreen-lock');
     }
   } else {
@@ -76,7 +110,9 @@ export default function useDemoFullscreen() {
   useEffect(() => {
     if (!isEmbedContext()) return undefined;
     const onMessage = (event) => {
-      if (!EMBED_PARENT_ORIGINS.includes(event.origin)) return;
+      const allowed = resolveParentOrigin() || FALLBACK_PARENT_ORIGINS;
+      const origins = Array.isArray(allowed) ? allowed : [allowed];
+      if (!origins.includes(event.origin)) return;
       const data = event.data;
       if (!data || typeof data !== 'object') return;
       if (data.type === 'it-play-fullscreen-close') {

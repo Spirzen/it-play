@@ -2,7 +2,7 @@
   var isEmbedPath = window.location.pathname.indexOf('/p/embed/') !== -1;
   if (!isEmbedPath) return;
 
-  var allowed = [
+  var FALLBACK_PARENT_ORIGINS = [
     'https://spirzen.ru',
     'https://www.spirzen.ru',
     'http://localhost:3000',
@@ -13,8 +13,6 @@
 
   var lastPosted = 0;
   var rafId = 0;
-  var settleTimer = 0;
-  var settling = false;
 
   function hideLoadingMask() {
     var mask = document.getElementById('embed-loading');
@@ -23,6 +21,50 @@
 
   function isFullscreenActive() {
     return document.documentElement.hasAttribute('data-it-demo-fullscreen');
+  }
+
+  function isEmbeddedInParent() {
+    try {
+      return window.parent && window.parent !== window;
+    } catch (e) {
+      return true;
+    }
+  }
+
+  function resolveParentOrigin() {
+    if (!isEmbeddedInParent()) return null;
+    try {
+      return window.parent.location.origin;
+    } catch (e) {
+      if (document.referrer) {
+        try {
+          return new URL(document.referrer).origin;
+        } catch (e2) {
+          /* ignore */
+        }
+      }
+    }
+    return null;
+  }
+
+  function postToParent(message) {
+    if (!isEmbeddedInParent()) return;
+    var origin = resolveParentOrigin();
+    if (origin) {
+      try {
+        window.parent.postMessage(message, origin);
+      } catch (e) {
+        /* ignore */
+      }
+      return;
+    }
+    FALLBACK_PARENT_ORIGINS.forEach(function (fallbackOrigin) {
+      try {
+        window.parent.postMessage(message, fallbackOrigin);
+      } catch (e) {
+        /* ignore */
+      }
+    });
   }
 
   function measureHeight() {
@@ -42,102 +84,40 @@
     );
   }
 
-  function postHeightNow(force) {
+  function postHeightNow() {
     rafId = 0;
-    if (!force && isFullscreenActive()) {
+    if (isFullscreenActive()) {
       return;
     }
 
     var height = Math.max(measureHeight(), 120);
-    if (!force && Math.abs(height - lastPosted) < 2) {
+    if (Math.abs(height - lastPosted) < 2) {
       return;
     }
     lastPosted = height;
     hideLoadingMask();
-    if (window.parent && window.parent !== window) {
-      allowed.forEach(function (origin) {
-        try {
-          window.parent.postMessage({type: 'it-play-embed-height', height: height}, origin);
-        } catch (e) {
-          /* ignore */
-        }
-      });
-    }
+    postToParent({type: 'it-play-embed-height', height: height});
   }
 
   function schedulePostHeight() {
     if (isFullscreenActive()) {
       return;
     }
-    if (settling) {
-      return;
-    }
     if (rafId) return;
-    rafId = requestAnimationFrame(function () {
-      postHeightNow(false);
+    rafId = requestAnimationFrame(postHeightNow);
+  }
+
+  function scheduleRemeasureAfterFullscreen() {
+    [80, 250, 500].forEach(function (ms) {
+      window.setTimeout(schedulePostHeight, ms);
     });
   }
 
-  function clearEmbedMainMinHeight() {
-    var main = document.querySelector('.embed-main');
-    if (main) {
-      main.style.minHeight = '';
-    }
-  }
-
-  function settleHeightAfterFullscreen() {
-    settling = true;
-    if (settleTimer) {
-      clearTimeout(settleTimer);
-    }
-
-    var attempts = 0;
-    var lastMeasure = 0;
-    var stableCount = 0;
-
-    function tick() {
-      if (isFullscreenActive()) {
-        settling = false;
-        return;
-      }
-
-      var height = measureHeight();
-      attempts += 1;
-
-      if (Math.abs(height - lastMeasure) < 2) {
-        stableCount += 1;
-      } else {
-        stableCount = 0;
-        lastMeasure = height;
-      }
-
-      if (stableCount >= 2 || attempts >= 16) {
-        settling = false;
-        postHeightNow(true);
-        settleTimer = window.setTimeout(function () {
-          clearEmbedMainMinHeight();
-          schedulePostHeight();
-        }, 120);
-        return;
-      }
-
-      settleTimer = window.setTimeout(tick, 60);
-    }
-
-    settleTimer = window.setTimeout(tick, 80);
-  }
-
   window.addEventListener('it-demo-fullscreen-change', function (event) {
-    var active = event.detail && event.detail.active;
-    if (active) {
-      if (settleTimer) {
-        clearTimeout(settleTimer);
-        settleTimer = 0;
-      }
-      settling = false;
+    if (event.detail && event.detail.active) {
       return;
     }
-    settleHeightAfterFullscreen();
+    scheduleRemeasureAfterFullscreen();
   });
 
   window.addEventListener('load', schedulePostHeight);

@@ -735,17 +735,9 @@ html[data-theme='dark'] .it-demo__alert--info {
   position: fixed;
 }
 
-html.embed-doc .embed-main {
-  position: relative;
-}
-
 html.embed-doc .it-demo--fullscreen {
   inset: 0;
   border-radius: 0;
-}
-
-html.embed-doc .it-demo--fullscreen:has(> .it-demo__fullscreen-btn--shell) {
-  position: absolute;
 }
 
 /* Grids */
