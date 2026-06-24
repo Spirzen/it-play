@@ -8,7 +8,7 @@ import styles from '@/components/demos/SpirzenOnlineToolsPanel.module.css';
 
 function SpirzenOnlineToolsPanelInner({
   title = 'Онлайн-инструменты автора',
-  subtitle = 'Отдельные веб-приложения на spirzen.github.io — дополнение к встроенным демо энциклопедии',
+  subtitle = 'Отдельные веб-приложения автора — html.spirzen.ru и spirzen.github.io; дополнение к встроенным демо энциклопедии',
 }) {
   return (
     <DemoShell className={styles.root}>

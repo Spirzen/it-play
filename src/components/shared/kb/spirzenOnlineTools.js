@@ -1,6 +1,14 @@
-/** Онлайн-инструменты автора на spirzen.github.io (отдельные от встроенных демо энциклопедии). */
+/** Онлайн-инструменты автора: spirzen.github.io и домены экосистемы (html.spirzen.ru). */
 
 export const SPIRZEN_ONLINE_TOOLS = {
+  webEditor: {
+    id: 'webEditor',
+    name: 'WebEditor',
+    shortName: 'WebEditor',
+    href: 'https://html.spirzen.ru/',
+    tagline:
+      'Онлайн-редактор HTML, CSS и JavaScript с живым предпросмотром — обновляется при вводе.',
+  },
   schemaMaker: {
     id: 'schemaMaker',
     name: 'Schema Maker Online',

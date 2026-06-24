@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import DemoShell, {DemoCard} from '@/components/shared/DemoShell';
 
 
+import SpirzenOnlineToolLink from '@/components/demos/SpirzenOnlineToolLink';
 import useCopyToClipboard from '@/components/shared/kb/useCopyToClipboard';
 import {
   countLines,
@@ -383,6 +384,7 @@ function HtmlPlaygroundInner() {
           Предпросмотр обновляется автоматически · Tab — отступ · Ctrl+Enter — принудительный запуск
           · перетащите разделитель между панелями
         </p>
+        <SpirzenOnlineToolLink toolId="webEditor" />
       </div>
     </DemoShell>
   );
