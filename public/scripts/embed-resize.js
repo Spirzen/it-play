@@ -13,10 +13,16 @@
 
   var lastPosted = 0;
   var rafId = 0;
+  var settleTimer = 0;
+  var settling = false;
 
   function hideLoadingMask() {
     var mask = document.getElementById('embed-loading');
     if (mask) mask.hidden = true;
+  }
+
+  function isFullscreenActive() {
+    return document.documentElement.hasAttribute('data-it-demo-fullscreen');
   }
 
   function measureHeight() {
@@ -36,10 +42,14 @@
     );
   }
 
-  function postHeightNow() {
+  function postHeightNow(force) {
     rafId = 0;
+    if (!force && isFullscreenActive()) {
+      return;
+    }
+
     var height = Math.max(measureHeight(), 120);
-    if (Math.abs(height - lastPosted) < 2) {
+    if (!force && Math.abs(height - lastPosted) < 2) {
       return;
     }
     lastPosted = height;
@@ -56,9 +66,79 @@
   }
 
   function schedulePostHeight() {
+    if (isFullscreenActive()) {
+      return;
+    }
+    if (settling) {
+      return;
+    }
     if (rafId) return;
-    rafId = requestAnimationFrame(postHeightNow);
+    rafId = requestAnimationFrame(function () {
+      postHeightNow(false);
+    });
   }
+
+  function clearEmbedMainMinHeight() {
+    var main = document.querySelector('.embed-main');
+    if (main) {
+      main.style.minHeight = '';
+    }
+  }
+
+  function settleHeightAfterFullscreen() {
+    settling = true;
+    if (settleTimer) {
+      clearTimeout(settleTimer);
+    }
+
+    var attempts = 0;
+    var lastMeasure = 0;
+    var stableCount = 0;
+
+    function tick() {
+      if (isFullscreenActive()) {
+        settling = false;
+        return;
+      }
+
+      var height = measureHeight();
+      attempts += 1;
+
+      if (Math.abs(height - lastMeasure) < 2) {
+        stableCount += 1;
+      } else {
+        stableCount = 0;
+        lastMeasure = height;
+      }
+
+      if (stableCount >= 2 || attempts >= 16) {
+        settling = false;
+        postHeightNow(true);
+        settleTimer = window.setTimeout(function () {
+          clearEmbedMainMinHeight();
+          schedulePostHeight();
+        }, 120);
+        return;
+      }
+
+      settleTimer = window.setTimeout(tick, 60);
+    }
+
+    settleTimer = window.setTimeout(tick, 80);
+  }
+
+  window.addEventListener('it-demo-fullscreen-change', function (event) {
+    var active = event.detail && event.detail.active;
+    if (active) {
+      if (settleTimer) {
+        clearTimeout(settleTimer);
+        settleTimer = 0;
+      }
+      settling = false;
+      return;
+    }
+    settleHeightAfterFullscreen();
+  });
 
   window.addEventListener('load', schedulePostHeight);
   window.addEventListener('resize', schedulePostHeight);

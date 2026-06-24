@@ -67,6 +67,10 @@ body {
   padding: 0;
 }
 
+html.embed-doc {
+  scrollbar-gutter: stable;
+}
+
 html.embed-doc,
 html.embed-doc body.embed-body {
   height: auto;

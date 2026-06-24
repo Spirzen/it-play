@@ -23,18 +23,38 @@ function notifyParentFullscreen(active) {
   });
 }
 
+function syncFullscreenDom(active) {
+  if (typeof document === 'undefined') return;
+  const root = document.documentElement;
+  if (active) {
+    root.setAttribute('data-it-demo-fullscreen', '');
+    if (isEmbedContext()) {
+      const main = document.querySelector('.embed-main');
+      if (main) {
+        main.style.minHeight = `${Math.ceil(main.offsetHeight)}px`;
+      }
+    } else {
+      root.classList.add('it-demo-fullscreen-lock');
+    }
+  } else {
+    root.removeAttribute('data-it-demo-fullscreen');
+    root.classList.remove('it-demo-fullscreen-lock');
+  }
+  window.dispatchEvent(new CustomEvent('it-demo-fullscreen-change', {detail: {active}}));
+}
+
 /** Полноэкранный режим для интерактивных демо (Escape — выход). */
 export default function useDemoFullscreen() {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
+    syncFullscreenDom(isFullscreen);
+    notifyParentFullscreen(isFullscreen);
+
     if (!isFullscreen) {
-      notifyParentFullscreen(false);
       return undefined;
     }
-    notifyParentFullscreen(true);
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+
     const onKey = (e) => {
       if (e.key === 'Escape') {
         setIsFullscreen(false);
@@ -42,11 +62,16 @@ export default function useDemoFullscreen() {
     };
     window.addEventListener('keydown', onKey);
     return () => {
-      document.body.style.overflow = prevOverflow;
       window.removeEventListener('keydown', onKey);
-      notifyParentFullscreen(false);
     };
   }, [isFullscreen]);
+
+  useEffect(() => {
+    return () => {
+      syncFullscreenDom(false);
+      notifyParentFullscreen(false);
+    };
+  }, []);
 
   useEffect(() => {
     if (!isEmbedContext()) return undefined;
