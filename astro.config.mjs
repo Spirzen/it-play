@@ -2,6 +2,7 @@ import {defineConfig} from 'astro/config';
 import react from '@astrojs/react';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import patchAstroRedirects from '../it-portals/packages/shared/src/integrations/patch-astro-redirects.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -16,7 +17,7 @@ export default defineConfig({
   site,
   base,
   output: 'static',
-  integrations: [react()],
+  integrations: [react(), patchAstroRedirects()],
   vite: {
     resolve: {
       alias: {
