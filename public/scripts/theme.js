@@ -34,9 +34,28 @@
       try {
         localStorage.setItem(STORAGE_KEY, resolved);
       } catch (e) {}
+      notifyParentTheme(resolved);
     }
     syncToggle(resolved);
     return resolved;
+  }
+
+  function isEmbedContext() {
+    return window.location.pathname.indexOf('/p/embed/') !== -1;
+  }
+
+  function notifyParentTheme(theme) {
+    if (!isEmbedContext()) return;
+    var post =
+      window.ITUParentOrigin && window.ITUParentOrigin.postToParent
+        ? window.ITUParentOrigin.postToParent
+        : function (payload) {
+            if (!window.parent || window.parent === window) return;
+            try {
+              window.parent.postMessage(payload, '*');
+            } catch (e) {}
+          };
+    post({type: 'itu-theme-change', theme: theme, source: 'itu-play'});
   }
 
   function syncToggle(theme) {
