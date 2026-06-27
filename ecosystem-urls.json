@@ -1,0 +1,89 @@
+{
+  "$schema": "./docs/schemas/ecosystem-urls.schema.json",
+  "version": 1,
+  "updated": "2026-06-28",
+  "domains": {
+    "spirzen": "https://spirzen.ru",
+    "terms": "https://terms.spirzen.ru",
+    "lab": "https://lab.spirzen.ru",
+    "games": "https://games.spirzen.ru",
+    "kids": "https://kids.spirzen.ru",
+    "tools": "https://tools.spirzen.ru",
+    "code": "https://code.spirzen.ru",
+    "play": "https://play.spirzen.ru",
+    "assets": "https://assets.spirzen.ru",
+    "html": "https://html.spirzen.ru"
+  },
+  "routes": {
+    "glossaryPrefix": "/glossary",
+    "labPrefix": "/lab",
+    "toolsPrefix": "/tools",
+    "gamesPrefix": "/games",
+    "kidsPrefix": "/kids"
+  },
+  "localDev": {
+    "terms": "http://localhost:4330",
+    "lab": "http://localhost:4331",
+    "games": "http://localhost:4332",
+    "kids": "http://localhost:4333",
+    "tools": "http://localhost:4334",
+    "code": "http://localhost:4321",
+    "play": "http://localhost:4322"
+  },
+  "nav": {
+    "ecosystem": [
+      {
+        "id": "spirzen",
+        "label": "Энциклопедия",
+        "hrefKey": "spirzen"
+      },
+      {
+        "id": "terms",
+        "label": "Глоссарий",
+        "hrefKey": "terms",
+        "routeKey": "glossaryPrefix",
+        "suffix": "/intro"
+      },
+      {
+        "id": "lab",
+        "label": "Лаборатория",
+        "hrefKey": "lab"
+      },
+      {
+        "id": "code",
+        "label": "Код",
+        "hrefKey": "code"
+      },
+      {
+        "id": "play",
+        "label": "Play",
+        "hrefKey": "play"
+      },
+      {
+        "id": "tools",
+        "label": "Инструменты",
+        "hrefKey": "tools"
+      },
+      {
+        "id": "games",
+        "label": "Игры",
+        "hrefKey": "games"
+      },
+      {
+        "id": "kids",
+        "label": "Для детей",
+        "hrefKey": "kids"
+      },
+      {
+        "id": "html",
+        "label": "WebEditor",
+        "hrefKey": "html"
+      }
+    ]
+  },
+  "postMessage": {
+    "themeRequest": "itu-theme-request",
+    "themeChange": "itu-theme-change",
+    "source": "itu-portal"
+  }
+}

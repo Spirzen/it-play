@@ -1,21 +1,21 @@
-import type {ReactNode} from 'react';
+import React from 'react';
+import ItuLoader from './ItuLoader';
 
 /** Заглушка вместо Docusaurus BrowserOnly fallback. */
-export function demoLoadingFallback(message = 'Компонент загружается…'): ReactNode {
+export function demoLoadingFallback(message = 'Загрузка интерактивного демо…') {
   return (
-    <div className="it-demo it-demo--loading" role="status" aria-live="polite">
-      {message}
-    </div>
+    <ItuLoader
+      title="Play IT"
+      label={message}
+      className="it-demo it-demo--loading"
+    />
   );
 }
 
-export function demoSkeletonFallback(message = 'Компонент загружается…'): ReactNode {
+export function demoSkeletonFallback(message = 'Загрузка интерактивного демо…') {
   return (
     <div className="it-demo">
-      <div className="it-demo__skeleton" aria-hidden="true" />
-      <div className="it-demo it-demo--loading" role="status" aria-live="polite" style={{marginTop: '0.75rem'}}>
-        {message}
-      </div>
+      <ItuLoader title="Play IT" label={message} />
     </div>
   );
 }

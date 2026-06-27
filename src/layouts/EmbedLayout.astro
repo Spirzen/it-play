@@ -1,5 +1,7 @@
 ---
 import {sitePath} from '@/lib/site';
+import ItuLoader from '@/components/ItuLoader.astro';
+import '@/styles/itu-loader.css';
 
 interface Props {
   title: string;
@@ -37,9 +39,12 @@ const {title} = Astro.props;
   </head>
   <body class="embed-body">
     <main class="embed-main">
-      <div id="embed-loading" class="embed-loading" aria-live="polite">
-        Компонент загружается…
-      </div>
+      <ItuLoader
+        id="embed-loading"
+        variant="overlay"
+        title="Play IT"
+        label="Загрузка интерактивного демо…"
+      />
       <slot />
     </main>
     <script is:inline src={sitePath('scripts/embed-resize.js')}></script>

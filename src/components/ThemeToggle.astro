@@ -1,0 +1,23 @@
+---
+---
+
+<button type="button" class="theme-toggle" data-itu-theme-toggle aria-label="Переключить тему">
+  <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀</span>
+  <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">☽</span>
+</button>
+
+<style>
+  .theme-toggle__icon--dark {
+    display: none;
+  }
+
+  :global(:root[data-theme='dark']) .theme-toggle__icon--light,
+  :global(html.dark) .theme-toggle__icon--light {
+    display: none;
+  }
+
+  :global(:root[data-theme='dark']) .theme-toggle__icon--dark,
+  :global(html.dark) .theme-toggle__icon--dark {
+    display: inline;
+  }
+</style>

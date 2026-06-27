@@ -1,5 +1,6 @@
 (function () {
-  var STORAGE_KEY = 'theme';
+  var STORAGE_KEY = 'itu-portal-theme';
+  var LEGACY_KEY = 'theme';
   var html = document.documentElement;
 
   function resolveSystemTheme() {
@@ -11,6 +12,11 @@
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored === 'light' || stored === 'dark') {
         return stored;
+      }
+      var legacy = localStorage.getItem(LEGACY_KEY);
+      if (legacy === 'light' || legacy === 'dark') {
+        localStorage.setItem(STORAGE_KEY, legacy);
+        return legacy;
       }
     } catch (e) {}
     return null;
@@ -30,13 +36,14 @@
   function applyTheme(theme, persist) {
     var resolved = theme === 'light' || theme === 'dark' ? theme : resolveSystemTheme();
     html.setAttribute('data-theme', resolved);
+    html.classList.toggle('dark', resolved === 'dark');
+    html.style.colorScheme = resolved;
     if (persist) {
       try {
         localStorage.setItem(STORAGE_KEY, resolved);
       } catch (e) {}
       notifyParentTheme(resolved);
     }
-    syncToggle(resolved);
     return resolved;
   }
 
@@ -58,32 +65,32 @@
     post({type: 'itu-theme-change', theme: theme, source: 'itu-play'});
   }
 
-  function syncToggle(theme) {
-    document.querySelectorAll('[data-theme-toggle]').forEach(function (btn) {
-      var target = btn.getAttribute('data-theme-toggle');
-      var active = target === theme;
-      btn.classList.toggle('is-active', active);
-      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-    });
-  }
-
   function init() {
     var initial = readUrlTheme() || readStoredTheme() || resolveSystemTheme();
     applyTheme(initial, false);
 
     document.addEventListener('click', function (event) {
-      var btn = event.target.closest('[data-theme-toggle]');
-      if (!btn) return;
-      var theme = btn.getAttribute('data-theme-toggle');
-      if (theme !== 'light' && theme !== 'dark') return;
-      applyTheme(theme, true);
+      var ituBtn = event.target.closest('[data-itu-theme-toggle]');
+      if (ituBtn) {
+        var current = readStoredTheme() || resolveSystemTheme();
+        applyTheme(current === 'dark' ? 'light' : 'dark', true);
+        return;
+      }
     });
 
     window.addEventListener('message', function (event) {
       var data = event.data;
-      if (!data || data.type !== 'it-play-theme') return;
-      if (data.theme !== 'light' && data.theme !== 'dark') return;
-      applyTheme(data.theme, false);
+      if (!data || typeof data !== 'object') return;
+      if (data.type === 'itu-theme-change' && (data.theme === 'light' || data.theme === 'dark')) {
+        applyTheme(data.theme, false);
+        try {
+          localStorage.setItem(STORAGE_KEY, data.theme);
+        } catch (e) {}
+        return;
+      }
+      if (data.type === 'it-play-theme' && (data.theme === 'light' || data.theme === 'dark')) {
+        applyTheme(data.theme, false);
+      }
     });
 
     try {

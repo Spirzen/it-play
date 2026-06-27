@@ -84,6 +84,7 @@ html.embed-doc body.embed-body {
 
 .embed-main {
   position: relative;
+  min-height: 160px;
   padding: var(--embed-pad-y) var(--embed-pad-x);
   width: 100%;
   max-width: 100%;
@@ -107,7 +108,8 @@ html.embed-doc body.embed-body {
   background: var(--embed-surface);
 }
 
-.embed-loading[hidden] {
+.embed-loading[hidden],
+.itu-loader-host[hidden] {
   display: none !important;
 }
 

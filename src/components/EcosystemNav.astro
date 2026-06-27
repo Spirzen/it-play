@@ -1,0 +1,36 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+
+/** @typedef {{ id: string, label: string, href: string, active?: boolean }} NavItem */
+
+interface Props {
+  brandLabel: string;
+  brandHref: string;
+  navItems: NavItem[];
+}
+
+const {brandLabel, brandHref, navItems} = Astro.props;
+---
+
+<header class="ecosystem-nav">
+  <a class="ecosystem-nav__brand" href={brandHref}>
+    <span class="ecosystem-nav__brand-mark" aria-hidden="true">IT</span>
+    <span>{brandLabel}</span>
+  </a>
+  <nav class="ecosystem-nav__links" aria-label="Экосистема Вселенная IT">
+    {
+      navItems.map((item) => (
+        <a
+          class:list={['ecosystem-nav__link', item.active && 'is-active']}
+          href={item.href}
+          aria-current={item.active ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+  <div class="ecosystem-nav__actions">
+    <ThemeToggle />
+  </div>
+</header>

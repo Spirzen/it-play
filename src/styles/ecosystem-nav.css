@@ -1,0 +1,117 @@
+:root {
+  --itu-nav-height: 56px;
+  --itu-nav-bg: rgba(255, 255, 255, 0.92);
+  --itu-text: #0f172a;
+  --itu-text-muted: #475569;
+  --itu-border: #cbd5e1;
+  --itu-accent: #5b21b6;
+  --itu-accent-soft: #ede9fe;
+  --itu-bg-subtle: #e8edf7;
+  --itu-bg-elevated: #ffffff;
+}
+
+:root[data-theme='dark'],
+html.dark {
+  --itu-nav-bg: rgba(11, 16, 32, 0.92);
+  --itu-text: #e2e8f0;
+  --itu-text-muted: #94a3b8;
+  --itu-border: #334155;
+  --itu-accent: #a78bfa;
+  --itu-accent-soft: #2e1065;
+  --itu-bg-subtle: #1a2440;
+  --itu-bg-elevated: #121a2e;
+}
+
+.ecosystem-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: var(--itu-nav-height);
+  padding: 0 1.25rem;
+  border-bottom: 1px solid var(--itu-border);
+  background: var(--itu-nav-bg);
+  backdrop-filter: blur(10px);
+}
+
+.ecosystem-nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 700;
+  color: var(--itu-text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ecosystem-nav__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--itu-accent), #2563eb);
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.ecosystem-nav__links {
+  display: flex;
+  flex: 1;
+  gap: 0.35rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding-bottom: 2px;
+}
+
+.ecosystem-nav__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  color: var(--itu-text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+
+.ecosystem-nav__link:hover {
+  color: var(--itu-text);
+  background: var(--itu-bg-subtle);
+}
+
+.ecosystem-nav__link.is-active {
+  color: var(--itu-accent);
+  background: var(--itu-accent-soft);
+  font-weight: 600;
+}
+
+.ecosystem-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.ecosystem-nav .theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--itu-border);
+  border-radius: 999px;
+  background: var(--itu-bg-elevated);
+  color: var(--itu-text);
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.ecosystem-nav .theme-toggle:hover {
+  border-color: var(--itu-accent);
+  transform: scale(1.04);
+}
