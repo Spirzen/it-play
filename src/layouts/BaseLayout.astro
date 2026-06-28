@@ -1,5 +1,6 @@
 ---
 import EcosystemNav from '@/components/EcosystemNav.astro';
+import EcosystemFooter from '@/components/EcosystemFooter.astro';
 import {getPortalContext} from '@/lib/portal.mjs';
 import {sitePath} from '@/lib/site';
 import '@/styles/ecosystem-nav.css';
@@ -61,18 +62,6 @@ const {navItems, brandHref, brandLabel, ecosystemConfigJson} = getPortalContext(
     <main class="site-main">
       <slot />
     </main>
-    <footer class="site-footer">
-      <div class="wrap site-footer__inner">
-        <p>
-          Часть проекта{' '}
-          <a href="https://spirzen.ru/" rel="noopener noreferrer">Вселенная IT</a>.
-          Исходники —{' '}
-          <a href="https://github.com/spirzen/it-play" rel="noopener noreferrer">it-play</a>.
-        </p>
-        <p class="site-footer__muted">
-          Для авторов: embed <code>/p/embed/&lt;slug&gt;/</code>
-        </p>
-      </div>
-    </footer>
+    <EcosystemFooter />
   </body>
 </html>

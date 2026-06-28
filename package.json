@@ -1,51 +1,52 @@
 {
-  "name": "it-play",
-  "version": "0.1.0",
-  "description": "Интерактивные демо и визуализации для энциклопедии Вселенная IT (play.spirzen.ru)",
-  "license": "MIT",
-  "type": "module",
-  "author": "Тагиров Тимур Владиславович",
-  "homepage": "https://play.spirzen.ru",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/spirzen/it-play.git"
-  },
-  "bugs": {
-    "url": "https://github.com/spirzen/it-play/issues"
-  },
-  "keywords": [
-    "interactive-demos",
-    "astro",
-    "react",
-    "spirzen",
-    "it-knowledge-base",
-    "visualization"
-  ],
-  "scripts": {
-    "dev": "astro dev --port 4322",
-    "build": "astro build",
-    "preview": "astro preview --port 4322",
-    "check": "astro check"
-  },
-  "dependencies": {
-    "@astrojs/react": "^4.2.1",
-    "astro": "^5.10.0",
-    "clsx": "^2.1.1",
-    "html2canvas": "^1.4.1",
-    "jspdf": "^4.2.1",
-    "konva": "^10.3.0",
-    "qrcode": "^1.5.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-konva": "^19.2.4",
-    "uuid": "^14.0.0"
-  },
-  "devDependencies": {
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "typescript": "^5.9.3"
-  },
-  "engines": {
-    "node": ">=20.0"
-  }
+    "name":  "it-play",
+    "version":  "0.1.0",
+    "description":  "Интерактивные демо и визуализации для энциклопедии Вселенная IT (play.spirzen.ru)",
+    "license":  "MIT",
+    "type":  "module",
+    "author":  "Тагиров Тимур Владиславович",
+    "homepage":  "https://play.spirzen.ru",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/spirzen/it-play.git"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/spirzen/it-play/issues"
+             },
+    "keywords":  [
+                     "interactive-demos",
+                     "astro",
+                     "react",
+                     "spirzen",
+                     "it-knowledge-base",
+                     "visualization"
+                 ],
+    "scripts":  {
+                    "dev":  "astro dev --port 4322",
+                    "build":  "astro build",
+                    "preview":  "astro preview --port 4322",
+                    "check":  "astro check"
+                },
+    "dependencies":  {
+                         "@astrojs/react":  "^4.2.1",
+                         "astro":  "^5.10.0",
+                         "clsx":  "^2.1.1",
+                         "html2canvas":  "^1.4.1",
+                         "jspdf":  "^4.2.1",
+                         "konva":  "^10.3.0",
+                         "qrcode":  "^1.5.4",
+                         "react":  "^19.1.0",
+                         "react-dom":  "^19.1.0",
+                         "react-konva":  "^19.2.4",
+                         "uuid":  "^14.0.0",
+                         "@astrojs/sitemap":  "^3.4.1"
+                     },
+    "devDependencies":  {
+                            "@types/react":  "^19.1.2",
+                            "@types/react-dom":  "^19.1.2",
+                            "typescript":  "^5.9.3"
+                        },
+    "engines":  {
+                    "node":  "\u003e=20.0"
+                }
 }

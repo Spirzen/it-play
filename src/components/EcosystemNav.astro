@@ -1,5 +1,6 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
+import {sitePath} from '@/lib/site';
 
 /** @typedef {{ id: string, label: string, href: string, active?: boolean }} NavItem */
 
@@ -10,11 +11,19 @@ interface Props {
 }
 
 const {brandLabel, brandHref, navItems} = Astro.props;
+const mascotSrc = sitePath('img/docusaurus.png');
 ---
 
 <header class="ecosystem-nav">
   <a class="ecosystem-nav__brand" href={brandHref}>
-    <span class="ecosystem-nav__brand-mark" aria-hidden="true">IT</span>
+    <img
+      class="ecosystem-nav__brand-mark"
+      src={mascotSrc}
+      alt=""
+      width="28"
+      height="28"
+      decoding="async"
+    />
     <span>{brandLabel}</span>
   </a>
   <nav class="ecosystem-nav__links" aria-label="Экосистема Вселенная IT">

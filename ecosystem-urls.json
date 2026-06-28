@@ -12,7 +12,13 @@
     "code": "https://code.spirzen.ru",
     "play": "https://play.spirzen.ru",
     "assets": "https://assets.spirzen.ru",
-    "html": "https://html.spirzen.ru"
+    "html": "https://html.spirzen.ru",
+    "search": "https://search.spirzen.ru",
+    "color": "https://color.spirzen.ru",
+    "random": "https://random.spirzen.ru",
+    "writer": "https://writer.spirzen.ru",
+    "schema": "https://schema.spirzen.ru",
+    "sql": "https://sql.spirzen.ru"
   },
   "routes": {
     "glossaryPrefix": "/glossary",
@@ -28,7 +34,9 @@
     "kids": "http://localhost:4333",
     "tools": "http://localhost:4334",
     "code": "http://localhost:4321",
-    "play": "http://localhost:4322"
+    "play": "http://localhost:4322",
+    "search": "http://localhost:4335",
+    "color": "http://localhost:4336"
   },
   "nav": {
     "ecosystem": [
@@ -85,5 +93,152 @@
     "themeRequest": "itu-theme-request",
     "themeChange": "itu-theme-change",
     "source": "itu-portal"
+  },
+  "footer": {
+    "copyright": "Copyright © {year} Тагиров Тимур Владиславович. Все права защищены.",
+    "columns": [
+      {
+        "title": "Энциклопедия",
+        "items": [
+          {
+            "label": "Основы",
+            "hrefKey": "spirzen",
+            "path": "/section/basics"
+          },
+          {
+            "label": "Система и сеть",
+            "hrefKey": "spirzen",
+            "path": "/section/system-network"
+          },
+          {
+            "label": "Данные и разметка",
+            "hrefKey": "spirzen",
+            "path": "/section/data-markup"
+          },
+          {
+            "label": "Код и разработка",
+            "hrefKey": "spirzen",
+            "path": "/section/code-dev"
+          },
+          {
+            "label": "Инфраструктура и безопасность",
+            "hrefKey": "spirzen",
+            "path": "/section/infra-security"
+          }
+        ]
+      },
+      {
+        "title": "Экосистема",
+        "items": [
+          {
+            "label": "Поиск",
+            "hrefKey": "search"
+          },
+          {
+            "label": "Глоссарий",
+            "hrefKey": "terms",
+            "routeKey": "glossaryPrefix",
+            "suffix": "/intro"
+          },
+          {
+            "label": "Лаборатория",
+            "hrefKey": "lab",
+            "routeKey": "labPrefix",
+            "suffix": "/intro"
+          },
+          {
+            "label": "Для детей",
+            "hrefKey": "kids",
+            "routeKey": "kidsPrefix",
+            "suffix": "/intro"
+          },
+          {
+            "label": "Видеоигры",
+            "hrefKey": "games",
+            "routeKey": "gamesPrefix",
+            "suffix": "/intro"
+          },
+          {
+            "label": "Инструменты",
+            "hrefKey": "tools",
+            "routeKey": "toolsPrefix",
+            "suffix": "/intro"
+          },
+          {
+            "label": "Color",
+            "hrefKey": "color"
+          },
+          {
+            "label": "Random",
+            "hrefKey": "random"
+          },
+          {
+            "label": "Writer",
+            "hrefKey": "writer"
+          },
+          {
+            "label": "WebEditor",
+            "hrefKey": "html"
+          },
+          {
+            "label": "Schema",
+            "hrefKey": "schema"
+          },
+          {
+            "label": "SQL",
+            "hrefKey": "sql"
+          }
+        ]
+      },
+      {
+        "title": "Контекст и рефлексия",
+        "items": [
+          {
+            "label": "Контекст",
+            "hrefKey": "spirzen",
+            "path": "/context/intro"
+          },
+          {
+            "label": "Философия",
+            "hrefKey": "spirzen",
+            "path": "/philosophy/intro"
+          }
+        ]
+      },
+      {
+        "title": "О проекте",
+        "items": [
+          {
+            "label": "О проекте",
+            "hrefKey": "spirzen",
+            "path": "/about/project"
+          },
+          {
+            "label": "Тематические подборки",
+            "hrefKey": "spirzen",
+            "path": "/about/collections"
+          },
+          {
+            "label": "Манифест и правила",
+            "hrefKey": "spirzen",
+            "path": "/about/manifest"
+          },
+          {
+            "label": "Поддержать проект",
+            "hrefKey": "spirzen",
+            "path": "/about/author#support"
+          },
+          {
+            "label": "Об авторе",
+            "hrefKey": "spirzen",
+            "path": "/about/author"
+          },
+          {
+            "label": "GitHub",
+            "href": "https://github.com/spirzen/it-knowledge-base"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -37,7 +37,7 @@ function GameIndustryHubInner() {
           Цепочка индустрии: {ECOSYSTEM_LAYERS.map((l) => l.label).join(' → ')}. Подраздел{' '}
           <Link to="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro">Игроведение</Link>{' '}
           — 25 интерактивных серий с хронологией релизов. Практика:{' '}
-          <Link to="/tools/games/4">каталог игр для знакомства с жанрами</Link>.
+          <Link to="/games/9-031-gametools/4">каталог игр для знакомства с жанрами</Link>.
         </p>
         <div className={styles.layerDetail} style={{'--layer-color': layer.color}}>
           <span className={styles.layerTag}>{layer.tag}</span>

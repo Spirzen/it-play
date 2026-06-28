@@ -1,0 +1,30 @@
+---
+import {loadEcosystemConfig} from '@/lib/ecosystem.mjs';
+import {buildFooterSections} from '@/lib/ecosystem-footer.mjs';
+import '@/styles/ecosystem-footer.css';
+
+const config = loadEcosystemConfig({dev: import.meta.env.DEV});
+const {columns, copyright} = buildFooterSections(config);
+---
+
+<footer class="ecosystem-footer">
+  <div class="ecosystem-footer__grid">
+    {
+      columns.map((column) => (
+        <section class="ecosystem-footer__col">
+          <h2 class="ecosystem-footer__title">{column.title}</h2>
+          <ul class="ecosystem-footer__list">
+            {column.items.map((item) => (
+              <li>
+                <a href={item.href} rel="noopener noreferrer">
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+  {copyright ? <p class="ecosystem-footer__copy">{copyright}</p> : null}
+</footer>

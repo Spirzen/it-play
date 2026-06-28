@@ -1,0 +1,56 @@
+.ecosystem-footer {
+  margin-top: auto;
+  padding: 2.25rem 1.25rem 1.5rem;
+  background: #18181b;
+  color: #a1a1aa;
+  border-top: 1px solid color-mix(in srgb, #fff 8%, transparent);
+}
+
+.ecosystem-footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1.75rem 2rem;
+  width: min(1140px, calc(100% - 1rem));
+  margin-inline: auto;
+}
+
+.ecosystem-footer__title {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f4f4f5;
+}
+
+.ecosystem-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.ecosystem-footer__list a {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.ecosystem-footer__list a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.ecosystem-footer__copy {
+  width: min(1140px, calc(100% - 1rem));
+  margin: 1.5rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, #fff 8%, transparent);
+  font-size: 0.82rem;
+  color: #71717a;
+  text-align: center;
+}
+
+html[data-theme='light'] .ecosystem-footer {
+  background: #27272a;
+}

@@ -70,3 +70,5 @@ export function buildNavItems(config, portalId, activeId = portalId) {
     active: item.id === activeId,
   }));
 }
+
+export {buildFooterSections, buildDocusaurusFooter, resolveFooterItemHref} from './ecosystem-footer.mjs';

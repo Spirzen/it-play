@@ -3,6 +3,7 @@ import react from '@astrojs/react';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import patchAstroRedirects from './src/integrations/patch-astro-redirects.mjs';
+import ituSitemap from './src/integrations/sitemap.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -17,7 +18,7 @@ export default defineConfig({
   site,
   base,
   output: 'static',
-  integrations: [react(), patchAstroRedirects()],
+  integrations: [react(), ituSitemap({ excludeRoot: false }), patchAstroRedirects()],
   vite: {
     resolve: {
       alias: {

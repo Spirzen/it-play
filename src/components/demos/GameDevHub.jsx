@@ -40,7 +40,7 @@ function GameDevHubInner() {
         </p>
         <p className={styles.hint}>
           Типичный путь: {firstStages}… В статьях — интерактивные модели конвейера, движков и MDA.
-          Референсы: <Link to="/tools/games/4">каталог игр с фильтром и случайным выбором</Link>.
+          Референсы: <Link to="/games/9-031-gametools/4">каталог игр с фильтром и случайным выбором</Link>.
         </p>
       </DemoCard>
     </DemoShell>

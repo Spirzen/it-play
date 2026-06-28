@@ -36,7 +36,21 @@ function parseUrlPlayProps(): Record<string, unknown> {
 }
 
 function isTrustedParentOrigin(origin: string): boolean {
-  return TRUSTED_PARENT_ORIGINS.has(origin);
+  if (TRUSTED_PARENT_ORIGINS.has(origin)) {
+    return true;
+  }
+  try {
+    const {hostname} = new URL(origin);
+    if (hostname === 'spirzen.ru' || hostname.endsWith('.spirzen.ru')) {
+      return true;
+    }
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      return true;
+    }
+  } catch {
+    /* ignore */
+  }
+  return false;
 }
 
 /**
