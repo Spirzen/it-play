@@ -2953,5 +2953,10 @@
     "example": "code-dev/package-dependency-play",
     "title": "Граф зависимостей пакетов",
     "component": "package-dependency-play"
+  },
+  "GraphicsModelRenderPlay": {
+    "example": "code-dev/graphics-model-render-play",
+    "title": "Модель, update и render",
+    "component": "graphics-model-render-play"
   }
 }
