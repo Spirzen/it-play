@@ -77,24 +77,26 @@
 .itu-loader__book {
   position: relative;
   width: 132px;
-  height: auto;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   filter: drop-shadow(0 12px 24px color-mix(in srgb, var(--itu-loader-accent, #7b68ee) 22%, transparent));
 }
 
-.itu-loader__book-cover,
-.itu-loader__book-page {
+.itu-loader__book-cover {
   display: block;
   width: 100%;
   height: auto;
 }
 
 .itu-loader__book-page {
+  display: block;
+  width: 50%;
+  height: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 52%;
-  transform-origin: left center;
-  animation: itu-loader-page 0.55s ease-in-out infinite;
+  transform-origin: left;
+  animation: itu-loader-page 0.15s linear infinite;
 }
 
 .itu-loader__label {
@@ -117,11 +119,11 @@
   0% {
     transform: rotateY(0deg) skewY(0deg);
   }
-  45% {
-    transform: rotateY(88deg) skewY(-12deg);
+  50% {
+    transform: rotateY(90deg) skewY(-20deg);
   }
   100% {
-    transform: rotateY(0deg) skewY(0deg);
+    transform: rotateY(180deg) skewY(0deg);
   }
 }
 
