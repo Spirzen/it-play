@@ -882,6 +882,231 @@ export const READINESS_QUIZZES = {
     },
     navigatorUrl: NAVIGATOR_URL,
   },
+
+  gamer: {
+    id: 'gamer',
+    title: 'Тест на геймера',
+    subtitle: 'Платформы, устройство игры, железо, индустрия и куда двигаться дальше — без экзамена по прохождениям',
+    accent: '#66c0f4',
+    emoji: '🎮',
+    passScore: 60,
+    blocks: [
+      {
+        id: 'platforms',
+        title: 'Платформы и экосистемы',
+        emoji: '🕹️',
+        questions: [
+          mc(
+            'plat-1',
+            'Steam на PC — это в первую очередь…',
+            [
+              {id: 'a', text: 'Магазин, клиент, библиотека и социальные функции в одной экосистеме', correct: true},
+              {id: 'b', text: 'Только сайт с ключами без клиента', correct: false},
+              {id: 'c', text: 'Операционная система вместо Windows', correct: false},
+              {id: 'd', text: 'Консоль от Valve без PC-игр', correct: false},
+            ],
+            'Steam — лаунчер + магазин + обновления + друзья + облачные сохранения.',
+          ),
+          mc(
+            'plat-2',
+            'Эксклюзив на одной консоли означает для игрока…',
+            [
+              {id: 'a', text: 'Игра официально доступна только на этой платформе (или ограниченный порт позже)', correct: true},
+              {id: 'b', text: 'Игра бесплатна навсегда', correct: false},
+              {id: 'c', text: 'Игра не требует интернета', correct: false},
+              {id: 'd', text: 'Игра автоматически лучше по графике на всех платформах', correct: false},
+            ],
+            'Эксклюзив — маркетинговая и техническая привязка к экосистеме.',
+          ),
+          mc(
+            'plat-3',
+            'GOG отличается от Steam тем, что часто продаёт игры…',
+            [
+              {id: 'a', text: 'Без DRM — установщик можно запускать без постоянной проверки лицензии', correct: true},
+              {id: 'b', text: 'Только в облачном стриминге', correct: false},
+              {id: 'c', text: 'Только на Nintendo Switch', correct: false},
+              {id: 'd', text: 'Только по подписке Game Pass', correct: false},
+            ],
+            'GOG делает ставку на автономные установщики и классику PC.',
+          ),
+        ],
+      },
+      {
+        id: 'engine',
+        title: 'Как устроена игра',
+        emoji: '⚙️',
+        questions: [
+          mc(
+            'eng-1',
+            'Game loop (игровой цикл) — это…',
+            [
+              {id: 'a', text: 'Повторяющийся цикл: ввод → обновление логики → отрисовка кадра', correct: true},
+              {id: 'b', text: 'Один запуск main() без повторений', correct: false},
+              {id: 'c', text: 'Только сетевой чат между игроками', correct: false},
+              {id: 'd', text: 'Установка патчей из Steam', correct: false},
+            ],
+            '60 FPS ≈ 60 таких циклов в секунду.',
+          ),
+          mc(
+            'eng-2',
+            'Игровой движок (Unity, Unreal, Godot) — это…',
+            [
+              {id: 'a', text: 'Набор инструментов: рендер, физика, звук, скрипты, редактор уровней', correct: true},
+              {id: 'b', text: 'Антивирус для игр', correct: false},
+              {id: 'c', text: 'Только магазин скинов', correct: false},
+              {id: 'd', text: 'Драйвер видеокарты', correct: false},
+            ],
+            'Движок ускоряет разработку — не каждая студия пишет рендер с нуля.',
+          ),
+          mc(
+            'eng-3',
+            'FPS упал с 60 до 30 — что это чаще всего значит для игрока?',
+            [
+              {id: 'a', text: 'Кадры реже обновляются — движение менее плавное; причина: нагрузка на GPU/CPU или настройки', correct: true},
+              {id: 'b', text: 'Игра стала безопаснее', correct: false},
+              {id: 'c', text: 'Интернет стал быстрее', correct: false},
+              {id: 'd', text: 'Разрешение монитора автоматически удвоилось', correct: false},
+            ],
+            'Frame time вырос — визуально заметна менее плавная картинка.',
+          ),
+        ],
+      },
+      {
+        id: 'hardware',
+        title: 'Железо и настройки',
+        emoji: '🖥️',
+        questions: [
+          mc(
+            'hw-1',
+            'Для современных AAA-игр на PC чаще всего «узкое место» — …',
+            [
+              {id: 'a', text: 'Видеокарта (GPU) при высоких настройках графики', correct: true},
+              {id: 'b', text: 'Клавиатура', correct: false},
+              {id: 'c', text: 'Wi‑Fi роутер в одиночной офлайн-игре', correct: false},
+              {id: 'd', text: 'Блок питания без нагрузки', correct: false},
+            ],
+            'CPU тоже важен, но GPU чаще лимитирует картинку и ray tracing.',
+          ),
+          mc(
+            'hw-2',
+            'DLSS / FSR — это технологии…',
+            [
+              {id: 'a', text: 'Апскейлинга: рендер ниже нативного разрешения, затем улучшение картинки', correct: true},
+              {id: 'b', text: 'Шифрования сохранений', correct: false},
+              {id: 'c', text: 'Записи клипов для Twitch', correct: false},
+              {id: 'd', text: 'Смены языка интерфейса', correct: false},
+            ],
+            'Помогают поднять FPS на той же видеокарте.',
+          ),
+          mc(
+            'hw-3',
+            'Игра на SSD vs HDD — типичное отличие для игрока…',
+            [
+              {id: 'a', text: 'Быстрее загрузка уровней и меньше «фризов» при подгрузке ассетов', correct: true},
+              {id: 'b', text: 'Автоматически +100 FPS', correct: false},
+              {id: 'c', text: 'Только онлайн-режим становится доступен', correct: false},
+              {id: 'd', text: 'Нет разницы никогда', correct: false},
+            ],
+            'Open-world особенно чувствительны к скорости диска.',
+          ),
+        ],
+      },
+      {
+        id: 'industry',
+        title: 'Индустрия и магазины',
+        emoji: '🏪',
+        questions: [
+          mc(
+            'ind-1',
+            'Издатель (publisher) в игровой индустрии обычно…',
+            [
+              {id: 'a', text: 'Финансирует, маркетирует и выпускает игру; студия делает продукт', correct: true},
+              {id: 'b', text: 'Только пишет код движка', correct: false},
+              {id: 'c', text: 'Заменяет Steam Guard', correct: false},
+              {id: 'd', text: 'Это синоним «игрок»', correct: false},
+            ],
+            'Indie часто обходится без крупного издателя — Steam Direct и аналоги.',
+          ),
+          mc(
+            'ind-2',
+            'Early Access на Steam — это…',
+            [
+              {id: 'a', text: 'Продажа незавершённой версии с обновлениями по feedback игроков', correct: true},
+              {id: 'b', text: 'Бесплатная подписка навсегда', correct: false},
+              {id: 'c', text: 'Только демо без сохранений', correct: false},
+              {id: 'd', text: 'Режим только для киберспорта', correct: false},
+            ],
+            'Риск для покупателя: игра может так и не быть допилена.',
+          ),
+          mc(
+            'ind-3',
+            'Steam Guard / 2FA на аккаунте нужен, чтобы…',
+            [
+              {id: 'a', text: 'Защитить библиотеку и кошелёк при утечке пароля', correct: true},
+              {id: 'b', text: 'Увеличить FPS в играх', correct: false},
+              {id: 'c', text: 'Снять региональные цены', correct: false},
+              {id: 'd', text: 'Отключить обновления', correct: false},
+            ],
+            'У аккаунта с играми на тысячи рублей — ценная цель для воров.',
+          ),
+        ],
+      },
+      {
+        id: 'path',
+        title: 'Куда двигаться дальше',
+        emoji: '🧭',
+        questions: [
+          mc(
+            'path-1',
+            'Хочу понимать жанры и культуру игр — логичный следующий шаг…',
+            [
+              {id: 'a', text: 'Раздел «Игроведение»: жанры, франшизы, история', correct: true},
+              {id: 'b', text: 'Сразу ERP и 1С', correct: false},
+              {id: 'c', text: 'Только настройка Linux-сервера', correct: false},
+              {id: 'd', text: 'Изучение COBOL', correct: false},
+            ],
+            'Игроведение — «гуманитарный» маршрут для игрока.',
+          ),
+          mc(
+            'path-2',
+            'Хочу делать игры — с чего разумнее начать в IT-энциклопедии?',
+            [
+              {id: 'a', text: 'Раздел «Разработка игр» + практикум (Python/Unity) после базового кода', correct: true},
+              {id: 'b', text: 'Сразу AAA-шейдеры без программирования', correct: false},
+              {id: 'c', text: 'Только покупать ассеты в Steam', correct: false},
+              {id: 'd', text: 'Только просмотр стримов', correct: false},
+            ],
+            'Tetris, Match-3, Godot — типичный мягкий вход.',
+          ),
+          mc(
+            'path-3',
+            'Crunch в геймдеве — это…',
+            [
+              {id: 'a', text: 'Переработки перед релизом; тема карьеры и культуры студии', correct: true},
+              {id: 'b', text: 'Новый жанр хорроров', correct: false},
+              {id: 'c', text: 'Режим низкой графики', correct: false},
+              {id: 'd', text: 'Скидка в Steam', correct: false},
+            ],
+            'Полезно знать и игроку (качество релизов), и будущему разработчику.',
+          ),
+        ],
+      },
+    ],
+    blockLinks: {
+      platforms: {label: 'Steam — хаб', url: 'https://spirzen.ru/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435'},
+      engine: {label: 'Компьютерные игры', url: 'https://spirzen.ru/encyclopedia/1-basics/1-18-kompyuternye-igry/1'},
+      hardware: {label: 'Железо — подборка', url: 'https://spirzen.ru/encyclopedia/2-system-network/2-10-zhelezo/intro'},
+      industry: {label: 'Цифровые магазины', url: 'https://spirzen.ru/encyclopedia/9-spinoff/9-03-igrovaya-industriya/113'},
+      path: {label: 'Игроведение', url: 'https://games.spirzen.ru/games/9-03-igrovaya-industriya/game-studies/intro'},
+    },
+    resultLinks: [
+      {label: 'Подборка «База для геймера»', url: 'https://spirzen.ru/about/collections'},
+      {label: 'Игровой портал games.spirzen.ru', url: 'https://games.spirzen.ru/games/intro'},
+      {label: 'Каталог игр для знакомства с жанрами', url: 'https://games.spirzen.ru/games/9-031-gametools/4'},
+      {label: 'Разработка игр — о разделе', url: 'https://spirzen.ru/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro'},
+    ],
+    navigatorUrl: 'https://games.spirzen.ru/games/intro',
+  },
 };
 
 export function getReadinessQuiz(quizId) {

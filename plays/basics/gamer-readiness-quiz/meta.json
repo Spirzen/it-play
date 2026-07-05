@@ -1,0 +1,10 @@
+{
+  "title": "Тест на геймера",
+  "description": "Интерактивная диагностика: платформы, устройство игры, железо, индустрия и маршруты для игрока и будущего геймдева.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "gamer-readiness-quiz",
+  "tags": ["basics", "encyclopedia", "quiz", "games", "gamer"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-18-kompyuternye-igry/101",
+  "order": 202
+}

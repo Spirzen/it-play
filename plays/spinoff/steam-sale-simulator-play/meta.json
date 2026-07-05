@@ -1,0 +1,15 @@
+{
+  "title": "Симулятор распродажи Steam",
+  "description": "Интерактивное демо «Симулятор распродажи Steam» — магазин, корзина, библиотека и авто-режим типичного геймера.",
+  "category": "spinoff",
+  "categoryTitle": "Энциклопедия · Спин-офф",
+  "component": "steam-sale-simulator-play",
+  "tags": [
+    "spinoff",
+    "encyclopedia",
+    "steam",
+    "games"
+  ],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435",
+  "order": 2
+}

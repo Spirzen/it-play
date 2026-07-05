@@ -2958,5 +2958,15 @@
     "example": "code-dev/graphics-model-render-play",
     "title": "Модель, update и render",
     "component": "graphics-model-render-play"
+  },
+  "SteamSaleSimulatorPlay": {
+    "example": "spinoff/steam-sale-simulator-play",
+    "title": "Симулятор распродажи Steam",
+    "component": "steam-sale-simulator-play"
+  },
+  "GamerReadinessQuiz": {
+    "example": "basics/gamer-readiness-quiz",
+    "title": "Тест на геймера",
+    "component": "gamer-readiness-quiz"
   }
 }

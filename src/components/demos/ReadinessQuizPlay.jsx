@@ -220,7 +220,7 @@ function ReadinessQuizInner({quizId = 'programming'}) {
             })}
           </div>
 
-          {(weakBlocks.length > 0 || quiz.navigatorUrl) && (
+          {(weakBlocks.length > 0 || quiz.navigatorUrl || quiz.resultLinks?.length > 0) && (
             <div className={styles.recoSection}>
               <p className={styles.recoTitle}>Что изучить дальше</p>
               <ul className={styles.recoList}>
@@ -241,11 +241,18 @@ function ReadinessQuizInner({quizId = 'programming'}) {
                     </li>
                   );
                 })}
+                {quiz.resultLinks?.map((link) => (
+                  <li key={link.url}>
+                    <a href={link.url} target="_blank" rel="noopener noreferrer">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
                 {quiz.navigatorUrl && (
                   <li>
                     Зафиксируйте интерес в{' '}
                     <a href={quiz.navigatorUrl} target="_blank" rel="noopener noreferrer">
-                      Навигаторе новичка и профилей
+                      {quizId === 'gamer' ? 'игровом портале' : 'Навигаторе новичка и профилей'}
                     </a>
                   </li>
                 )}
