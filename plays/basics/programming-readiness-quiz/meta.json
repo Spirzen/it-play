@@ -1,0 +1,10 @@
+{
+  "title": "Тест на готовность к программированию",
+  "description": "Интерактивная диагностика: среда, код, инструменты, структуры данных и языки — с результатом по блокам.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "programming-readiness-quiz",
+  "tags": ["basics", "encyclopedia", "quiz", "roadmap"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/2",
+  "order": 201
+}

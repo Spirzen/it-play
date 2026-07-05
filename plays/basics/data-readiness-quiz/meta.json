@@ -1,0 +1,10 @@
+{
+  "title": "Тест на готовность к работе с данными",
+  "description": "Интерактивная диагностика: качество данных, структуры, операции, SQL и NoSQL.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "data-readiness-quiz",
+  "tags": ["basics", "encyclopedia", "quiz", "roadmap"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/212",
+  "order": 203
+}

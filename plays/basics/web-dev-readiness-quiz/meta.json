@@ -1,0 +1,10 @@
+{
+  "title": "Тест на готовность к веб-разработке",
+  "description": "Интерактивная диагностика: HTTP, архитектура, HTML, CSS и JavaScript.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "web-dev-readiness-quiz",
+  "tags": ["basics", "encyclopedia", "quiz", "roadmap"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/213",
+  "order": 204
+}

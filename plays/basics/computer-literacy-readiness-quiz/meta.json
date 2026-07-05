@@ -1,0 +1,10 @@
+{
+  "title": "Тест на компьютерную грамотность",
+  "description": "Интерактивная диагностика: файлы, ОС, сеть, безопасность и цифровая этика.",
+  "category": "basics",
+  "categoryTitle": "Энциклопедия · Основы",
+  "component": "computer-literacy-readiness-quiz",
+  "tags": ["basics", "encyclopedia", "quiz", "roadmap"],
+  "encyclopediaUrl": "https://spirzen.ru/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/211",
+  "order": 202
+}
